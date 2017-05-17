@@ -1,0 +1,89 @@
+<div class="modal-header bgm-bluegray m-b-20 ">
+	<h4 class="modal-title c-white t-uppercase">Ajouter un reglement pour le debiteur :  "{{ nom_client }}"  <span class="debtor-name"></span> </h4>
+</div>
+<div class="modal-body">
+	<div class="row">
+		<div class="col-md-3">
+			<p class="c-black f-500 m-b-20">Type de réglement</p>
+		</div>
+		<div class="col-md-2">
+			<div class="radio m-b-15">
+				<label>
+					<input type="radio" name="sample" value="">
+					<i class="input-helper"></i>
+					Débit
+				</label>
+			</div>
+		</div>
+		<div class="col-md-2">
+			<div class="radio m-b-15">
+				<label>
+					<input type="radio" name="sample" value="">
+					<i class="input-helper"></i>
+					Crédit
+				</label>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-6">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="zmdi zmdi-folder"></i></span>
+				<div class="fg-line">
+					<input class="form-control" placeholder="N° de dossier" type="text">
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="col-md-6">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="zmdi zmdi-file"></i></span>
+				<div class="fg-line">
+					<input class="form-control" placeholder="N° de facture" type="text">
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="col-md-3">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="zmdi zmdi-money"></i></span>
+				<div class="fg-line">
+					<input class="form-control" placeholder="Montant du réglement" type="text">
+				</div>
+			</div>
+		</div>
+		<div class="col-md-3">
+			<select is="selectpicker" name="type" autocomplete="off">
+				<option disabled selected>Moyen de paiement</option>
+				<option value="1">cheque</option>
+				<option value="2">carte de credit</option>
+				<option value="3">virement</option>
+				<option value="4">especes</option>
+			</select>
+		</div>
+		<br>
+
+		<div class="col-md-6">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="zmdi zmdi-money"></i></span>
+				<div class="fg-line">
+					<input class="form-control" placeholder="Réference du reglement" type="text">
+				</div>
+			</div>
+		</div>
+		<br>
+	</div>
+	<hr>
+	<div class="col-md-12">
+		<textarea cols="80" is="ckeditor" id="editeur-one-reglement" name="message" rows="10" ></textarea>
+	</div>
+	</div>
+	<hr>
+
+	<div class="modal-footer">
+		<p>
+			<button type="button" class="btn btn-primary">Enregistrer</button>
+			<button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+		</p>
+	</div>
+</div>

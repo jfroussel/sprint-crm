@@ -1,0 +1,15 @@
+<extend "layout/main">
+	
+    <attr selector="body" addClass="home"/>
+    <attr selector="body" data-lead-category="<?=App\Model\Lead::CHEQUE_IMPAYE?>"/>
+	<prepend title>MyCreance.com</prepend>
+	<append title> - cheques impayes</append>
+	<remove "#navbar-items" />
+	<append "header">
+		<include "ci">
+	</append>
+	<write main>
+		<incorpore "lead-sections.tml">
+	</write>
+	<append "body"> <script type="text/javascript" src="dist/app-lead.js"></script> </append>
+</extend>

@@ -1,0 +1,63 @@
+<div class="modal-header bgm-bluegray m-b-20 ">
+	<h4 class="modal-title c-white t-uppercase">Ajouter un litige pour le debiteur :  "{{nom_client}}"  <span class="debtor-name"></span> </h4>
+</div>
+<div class="modal-body">
+	<div class="col-md-12">
+		<h5>Factures</h5>
+		<table is="datatables" id="paperworks-table-litige" class="table table-striped table-vmiddle">
+			<thead>
+			<tr>
+				<th></th>
+				<th data-column="id" data-visible="false">id</th>
+				<th data-column="date_echeance">echeance</th>
+				<th data-column="libelle" data-order="desc">libellé</th>
+				<th data-column="journal" data-order="desc">journal</th>
+				<th data-column="numero_piece" data-order="desc">Nr piece</th>
+				<th data-column="montant" data-order="desc">montant</th>
+				<th data-column="lettrage">lettrage</th>
+			</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+	</div>
+	<hr>
+	<div class="col-md-12">
+		<div class="col-md-2">
+			<p class="c-black f-500 m-b-20">Type</p>
+		</div>
+		<div class="col-md-4">
+			<select is="selectpicker" class="" name="type" autocomplete="off">
+				<option disabled selected>Type</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+			</select>
+		</div>
+		<div class="col-md-2">
+			<p class="c-black f-500 m-b-20">Solutionner</p>
+		</div>
+		<div class="col-md-4">
+			<select is="selectpicker" class="" name="solutionner" autocomplete="off">
+				<option disabled selected>Solutionner</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+			</select>
+		</div>
+
+	</div>
+	<hr>
+	<div class="col-md-12">
+		<textarea cols="80" is="ckeditor" id="editeur-litige" name="message" rows="10" ></textarea>
+		<hr>
+	</div>
+
+	<div class="modal-footer">
+		<p>
+			<button type="button" class="btn btn-success">Enregistrer</button>
+			<button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+		</p>
+	</div>
+</div>

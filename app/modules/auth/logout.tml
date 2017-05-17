@@ -1,0 +1,31 @@
+<extend "layout/main">
+	<write main>
+		<div class="container"  style="padding-top: 120px;padding-bottom: 120px;">
+			<if "isset($authResponseMessage)">
+				<div class="alert alert-success">
+					<strong><?=$authResponseMessage?></strong>
+				</div>
+			</if>
+			<if "count($errors)">
+				<div class="alert alert-danger">
+					<strong>Oups!</strong><br>
+					<ul>
+						<foreach "$errors as $error">
+							<li><?=$error?></li>
+						</foreach>
+					</ul>
+				</div>
+			</if>
+		</div>
+	</write>
+	<append body>
+		<if "!count($errors)">
+			<script type="text/javascript">
+
+				setTimeout(function(){
+					window.location = 'auth/login';
+				},2000);
+			</script>
+		</if>
+	</append>
+</extend>

@@ -1,0 +1,61 @@
+<div class="modal-header bgm-bluegray m-b-20 ">
+	<h4 class="modal-title c-white t-uppercase">Ajouter une promesse pour le debiteur :  "{{nom_client}}"  <span class="debtor-name"></span> </h4>
+</div>
+<div class="modal-body">
+	<div class="col-md-4">
+		<div class="form-group fg-float">
+			<div class="fg-line">
+				<input class="input-lg form-control fg-input" type="text">
+				<label class="fg-label">Montant de la promesse</label>
+			</div>
+		</div>
+	</div>
+
+	<div class="col-md-12">
+		<h5>Factures</h5>
+		<table is="datatables"  id="paperworks-table-promesse" class="table table-striped table-vmiddle">
+			<thead>
+			<tr>
+				<th></th>
+				<th data-column="id" data-visible="false">id</th>
+				<th data-column="date_echeance">echeance</th>
+				<th data-column="libelle" data-order="desc">libellé</th>
+				<th data-column="journal" data-order="desc">journal</th>
+				<th data-column="numero_piece" data-order="desc">Nr piece</th>
+				<th data-column="montant" data-order="desc">montant</th>
+				<th data-column="lettrage">lettrage</th>
+			</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+	</div>
+	<hr>
+	<div class="col-md-12">
+		<div class="col-sm-4">
+			<p class="c-black f-500 m-b-20">Date d'envoi du réglement</p>
+			<div class="input-group form-group">
+				<span class="input-group-addon"><i class="zmdi zmdi-calendar"></i></span>
+				<div class="dtp-container">
+					<input is="datepicker" type="text" class="form-control"
+						   placeholder="Cliquez ici...">
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<p class="c-black f-500 m-b-20">Delai d'intervention</p>
+			<select is="selectpicker" class="show-tick" name="solutionner" autocomplete="off">
+				<option disabled selected>Delai d'intervention</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+			</select>
+		</div>
+	</div>
+	<div class="modal-footer">
+		<p>
+			<button type="button" class="btn btn-success">Enregistrer</button>
+			<button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+		</p>
+	</div>
+</div>

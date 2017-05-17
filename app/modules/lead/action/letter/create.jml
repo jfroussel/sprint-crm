@@ -1,0 +1,72 @@
+<div class="modal-header bgm-bluegray m-b-20 ">
+	<h4 class="modal-title c-white t-uppercase">Envoyer un courrier pour le debiteur :  "{{debtor.nom_client}}"<span class="debtor-name"></span> </h4>
+	<div class="timer" id="timer"><span>{{minutes}}</span>:<span>{{seconds}}</span></div>
+</div>
+<div class="modal-body">
+	<form class="form-horizontal" j-name="letter"  id="letter">
+
+		<div class="col-md-12">
+			<div class="col-md-4">
+				<div class="fg-line">
+					<p class="c-black f-500 m-b-20">Type de courrier</p>
+					<div class="select">
+						<select  class="form-control" name="type" autocomplete="off">
+							<option value="">Choix affranchissement ...</option>
+							<option value="LETTRE_VERTE">lettre verte</option>
+							<option value="LETTRE_ECOPLI">lettre ecopli</option>
+							<option value="LETTRE_PRIORITAIRE">lettre prioritaire</option>
+							<option value="LETTRE_RECOMMANDEE_AVEC_AR">lettre recommandé A/R</option>
+							<option value="LETTRE_RECOMMANDEE">lettre recommandée</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-4">
+				<div class="fg-line">
+					<p class="c-black f-500 m-b-20">Choisir le destinataire</p>
+					<div class="select">
+						<select  class="form-control" name="contact_id" autocomplete="off">
+							<option value="">Choisir votre destinataire</option>
+							<option j-for="contact in contactsList" :value="{{contact.id}}">{{contact.nom}} {{contact.prenom}}</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="fg-line">
+					<p class="c-black f-500 m-b-20">Modéle de courrier</p>
+					<div class="select">
+						<select  class="form-control"  name="template_id" autocomplete="off">
+							<option value="">Choisir votre template ...</option>
+							<option j-for="(id, template) in templatesList" :value="{{id}}">{{template.name}}</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<hr>
+		</div>
+		<div class="col-md-12">
+
+			<h5>Commentaires</h5>
+			<div j-show="letter.template_id" class="letter-preview">
+
+			</div>
+			<div j-show="!letter.template_id">
+				<textarea cols="80" is="ckeditor"  id="editeur-one-courrier" name="message" rows="10" ></textarea>
+			</div>
+			<hr>
+		</div>
+		<div class="col-md-12">
+
+		</div>
+		<hr>
+		<hr>
+		<div class="modal-footer">
+			<p>
+				<button type="submit" id="html2pdf" class="btn btn-success">Envoyer</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+			</p>
+		</div>
+	</form>
+</div>

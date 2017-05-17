@@ -1,0 +1,61 @@
+<div class="modal-header bgm-bluegray m-b-20 ">
+	<h4 class="modal-title c-white t-uppercase">Ajouter une note dans l'agenda  pour le debiteur : "{{debtor.nom_client}}"  <span class="debtor-name"></span> </h4>
+	<div class="timer" id="timer"><span>{{minutes}}</span>:<span>{{seconds}}</span></div>
+</div>
+<div class="modal-body">
+	<div class="row">
+		<form class="form-horizontal" j-name="agenda"  id="agenda">
+			<div class="row">
+				<div class="col-md-4">
+					<p class="c-black f-500 m-b-20">Action à faire ...</p>
+					<div class="fg-line">
+						<div class="select">
+							<select  class="form-control"  name="type" autocomplete="off">
+								<option value="" disabled selected>type d'action...</option>
+								<option value="email">email</option>
+								<option value="appel">appel</option>
+								<option value="tache">tâche à réaliser</option>
+								<option value="alerte">alerte</option>
+								<option value="courrier">courrier</option>
+								<option value="fax">fax</option>
+							</select>
+						</div>
+					</div>
+					<hr>
+				</div>
+				<div class="col-md-4">
+					<p class="c-black f-500 m-b-20">Date...</p>
+					<input type="text" is="datepicker" class="form-control" name="todo_date" placeholder="à faire le ..." autocomplete="off" required>
+				</div>
+				<div class="col-md-4">
+					<div class="fg-line">
+						<p class="c-black f-500 m-b-20">Contact(s)</p>
+						<div class="select">
+							<select class="form-control"  name="contact_id" autocomplete="off">
+								<option value="">Choisir votre destinataire</option>
+								<option j-for="contact in contactsList" :value="{{contact.id}}">{{contact.nom}} {{contact.prenom}}</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-12">
+				<h5>Commentaires</h5>
+				<textarea cols="80" is="ckeditor"  id="editeur-agenda-note" name="message" rows="10" ></textarea>
+			</div>
+			<div class="col-md-12">
+
+
+			</div>
+
+			<hr>
+			<div class="modal-footer">
+				<p>
+					<button type="submit" class="btn btn-success">Enregistrer</button>
+					<button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+				</p>
+			</div>
+		</form>
+	</div>
+</div>

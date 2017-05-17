@@ -1,0 +1,16 @@
+<section id="content">
+	<ol class="breadcrumb">
+		<li class="active"><a j-href="debtors/update?id={{debtor_id}}">Débiteur /  </a></li>
+	</ol>
+    <div class="container-fluid">
+		<div class="jumbotron lead-email">
+			<h1 class="display-3">Détail de l'email</h1>
+			<p class="lead">Historique de l'action {{table}} enregistrée le {{history.ctime}}</p>
+			<hr class="my-4">
+			<p>{{message}}</p>
+			<p class="lead lead-email">
+				<a class="btn btn-primary" j-href="debtors/update?id={{debtor_id}}" role="button">Retour fiche débiteur</a>
+			</p>
+		</div>
+	</div>
+</section>

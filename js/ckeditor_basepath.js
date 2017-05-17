@@ -1,0 +1,1 @@
+window.CKEDITOR_BASEPATH = '/vendor/bower-asset/ckeditor/';

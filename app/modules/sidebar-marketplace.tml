@@ -1,0 +1,41 @@
+<div class="col-md-2">
+    <aside id="sidebar" class="toggled">
+        <div class="sidebar-inner c-overflow">
+            <div class="profile-menu">
+                <a href="#" onclick="return false;">
+                    <div class="profile-pic">
+                        <if "is_file('content/user/'.$user->id.'/avatar.png')">
+                        <img class="img-responsive" src="content/user/'.$user->id?>/avatar.png?_t=<?=time()?>" width="47" height="47">
+                        <else/>
+                        <img class="img-responsive round-border" src="http://www.gravatar.com/avatar/<?=md5($user->email);?>?s=47&d=<?=urlencode('http://www.gravatar.com/avatar/'.md5($redcat['default-gravatar']).'?s=47');?>" width="47" height="47">
+                        </if>
+                    </div>
+
+                    <div class="profile-info <?=$user->name&&$user->email?'profile-with-name':''?>">
+                        <if "$user->name">
+                        <?=$user->name?><br>
+                        </if>
+                        <?=$user->getEmail() ?>
+                        <i class="zmdi zmdi-caret-down"></i>
+                    </div>
+                </a>
+
+                <ul class="main-menu">
+                    <li>
+                        <a href="#users/update?id=<?=$user->id?>"><i class="zmdi zmdi-account"></i> Mon compte</a>
+                    </li>
+                    <li>
+                        <a href="#users/all"><i class="zmdi zmdi-accounts"></i> Utilisateurs</a>
+                    </li>
+                    <li>
+                        <a href="auth/logout"><i class="zmdi zmdi-time-restore"></i> Deconnexion</a>
+                    </li>
+                </ul>
+            </div>
+
+            <ul class="main-menu">
+                <li class="active"><a href="#"><i class="zmdi zmdi-home"></i> Accueil</a></li>
+            </ul>
+        </div>
+    </aside>
+</div>

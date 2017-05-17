@@ -1,0 +1,329 @@
+<div class="card" >
+    <div class="card-header  ch-alt text-left">
+        <img class="i-logo" src="/img/logo.png" alt="">
+    </div>
+
+    <div class="card-body card-padding" id="invoice">
+        <div class="row m-b-25">
+            <div class="col-xs-6">
+                <div class="text-left">
+                    <p class="c-gray">Expediteur :</p>
+
+                    <h4>MyCreance.com</h4>
+
+                    <span class="text-muted">
+                        <address>
+                            4 Rue Fizeau
+                            75015 Paris<br>
+                            France
+                        </address>
+
+                        01 56 56 65 16<br/>
+                        info@mycreance.com
+                    </span>
+                </div>
+            </div>
+
+            <div class="col-xs-6">
+                <div class="i-to">
+                    <p class="c-gray">Destinataire :</p>
+
+                    <h4>{{company.company_name}}</h4>
+                    <h5>{{company.last_name}} {{company.first_name}}</h5>
+
+                    <span class="text-muted">
+                        <address>
+                            {{company.address}}
+                            {{company.postal_code}} {{company.city}}<br>
+                            {{company.country}}.
+                        </address>
+
+                        {{company.phone}}<br/>
+                        {{company.email}}
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="row m-t-25 p-0 m-b-25">
+            <div class="col-xs-3">
+                <div class="bgm-bluegray brd-2 p-15">
+                    <div class="c-white m-b-5">Ref.facture</div>
+                    <h2 class="m-0 c-white f-300">{{billing.ref}}</h2>
+                </div>
+            </div>
+
+            <div class="col-xs-3">
+                <div class="bgm-bluegray brd-2 p-15">
+                    <div class="c-white m-b-5">Date</div>
+                    <h2 class="m-0 c-white f-300">{{billing.billingDate}}</h2>
+                </div>
+            </div>
+
+
+            <div class="col-xs-3">
+                <div class="bgm-bluegray brd-2 p-15">
+                    <div class="c-white m-b-5">Total ttc</div>
+                    <h2 class="m-0 c-white f-300" id="ttc">{{billing.totalttc}} € TTC</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <table class="table i-table m-t-25 m-b-25">
+            <thead class="text-uppercase">
+            <th>libellé</th>
+            <th class="text-right">prix unitaire</th>
+            <th class="text-center">quantité</th>
+            <th class="highlight text-right">total</th>
+            </thead>
+
+            <tbody>
+
+            <tr>
+                <td width="50%">
+                    <h5 class="text-uppercase f-400">Abonnement plan "premium"</h5>
+                    <p class="text-muted"></p>
+                </td>
+
+                <td class="text-right">{{billing.plan}} €</td>
+                <td class="text-center">1</td>
+                <td class="highlight text-right">{{billing.plan}} € TTC</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h5 class="text-uppercase f-400">Utilisation du service "sms"</h5>
+                    <p class="text-muted"></p>
+                </td>
+                <td class="text-right">0.5 €</td>
+                <td class="text-center">{{billing.sms}}</td>
+                <td class="highlight text-right">{{billing.smsPrice}} € TTC</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h5 class="text-uppercase f-400">Utilisation du service "emailing"</h5>
+                    <p class="text-muted"></p>
+                </td>
+                <td class="text-right">0.2 €</td>
+                <td class="text-center">{{billing.email}}</td>
+                <td class="highlight text-right">{{billing.emailPrice}} € TTC</td>
+            </tr>
+
+            <tr>
+                <td>
+                    <h5 class="text-uppercase f-400">Utilisation du service "courrier simple"</h5>
+                    <p class="text-muted"></p>
+                </td>
+                <td class="text-right">1.50 €</td>
+                <td class="text-center">{{billing.simpleletter}}</td>
+                <td class="highlight text-right">{{billing.simpleletterPrice}} € TTC</td>
+            </tr>
+            <tr>
+                <td>
+                    <h5 class="text-uppercase f-400">Utilisation du service "courrier recommandé"</h5>
+                    <p class="text-muted"></p>
+                </td>
+                <td class="text-right">3.50 €</td>
+                <td class="text-center">{{billing.registeredletter}}</td>
+                <td class="highlight text-right">{{billing.registeredletterPrice}} € TTC</td>
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+
+                <td class="highlight text-right">TOTAL {{billing.totalttc}} € TTC</td>
+            </tr>
+        </table>
+
+        <div class="clearfix"></div>
+
+        <div class="p-25">
+            <h4 class="c-green f-400">REMARKS</h4>
+            <p class="c-gray">Ornare non tortor. Nam quis ipsum vitae dolor porttitor interdum.
+                Curabitur faucibus erat vel ante fermentum lacinia. Integer porttitor laoreet
+                suscipit. Sed cursus cursus massa ut pellentesque. Phasellus vehicula dictum arcu,
+                eu interdum massa bibendum.</p>
+
+            <br/>
+
+            <h4 class="c-green f-400">MERCY FOR YOUR BUSINESS</h4>
+            <p class="c-gray">Proin ac iaculis metus. Etiam nisi nulla, fermentum blandit
+                consectetur sed, ornare non tortor. Nam quis ipsum vitae dolor porttitor interdum.
+                Curabitur faucibus erat vel ante fermentum lacinia. Integer porttitor laoreet
+                suscipit. Sed cursus cursus massa ut pellentesque. Phasellus vehicula dictum arcu,
+                eu interdum massa bibendum sit amet.</p>
+        </div>
+
+
+    <footer class="m-t-15 p-20">
+        <ul class="list-inline text-center list-unstyled">
+            <li class="m-l-5 m-r-5">
+                <small>support@mycreance.com</small>
+            </li>
+            <li class="m-l-5 m-r-5">
+                <small>01 56 56 65 16</small>
+            </li>
+            <li class="m-l-5 m-r-5">
+                <small>www.mycreance.com</small>
+            </li>
+        </ul>
+    </footer>
+</div>
+<a class="btn btn-float bgm-red m-btn" data-ma-action="print" id="html2pdf"><i class="zmdi zmdi-print"></i></a>
+</div>
+
+<div class="html2pdf" style="display:none">
+    <div>
+        <div>
+            <img src="/img/logo.png" alt="">
+        </div>
+        <br>
+        <hr>
+        <table>
+            <tr>
+                <td width="30%">
+
+                    <div>
+                        <p>Expediteur :</p>
+
+                        <h4>MyCreance.com</h4>
+
+                        <span>
+                        <div>
+                            4 Rue Fizeau
+                            75015 Paris<br>
+                            France
+                        </div>
+
+                        01 56 56 65 16<br/>
+                        info@mycreance.com
+                        </span>
+                    </div>
+                </td>
+                <td width="20%">
+                    <div>
+                        <p>Destinataire :</p>
+
+                        <h4>{{company.company_name}}</h4>
+                        <h5>{{company.last_name}} {{company.first_name}}</h5>
+
+                        <span>
+                        <div>
+                            {{company.address}}
+                            {{company.postal_code}} {{company.city}}<br>
+                            {{company.country}}.
+                        </div>
+
+                        {{company.phone}}<br/>
+                        {{company.email}}
+                    </span>
+                    </div>
+                <td width="20%">
+                <td>
+                    <div>
+                        <div>
+                            <div>
+                                <div>Ref.facture</div>
+                                <h5>{{billing.ref}}</h5>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div>
+                                <div>Date</div>
+                                <h5>{{billing.billingDate}}</h5>
+                            </div>
+                        </div>
+
+
+                        <div>
+                            <div>
+                                <div>Total ttc</div>
+                                <h5>{{billing.totalttc}} € TTC</h5>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <hr>
+        <table style="border: 1px solid black;padding:10px 10px 10px 10px">
+                <thead style="padding: 15px">
+                <th style="height:30px;border:1px solid black;text-align: center">libellé</th>
+                <th style="border: 1px solid black;text-align: center">prix unitaire</th>
+                <th style="border: 1px solid black;text-align: center">quantité</th>
+                <th style="border: 1px solid black;text-align: center">total</th>
+                </thead>
+
+                <tbody>
+
+                <tr>
+                    <td width="60%" style=" padding: 15px;">
+                        <h5>Abonnement plan "premium"</h5>
+                        <p></p>
+                    </td>
+
+                    <td width="15%" style="text-align: center">{{billing.plan}} €</td>
+                    <td width="15%" style="text-align: center">1</td>
+                    <td width="15%" style="text-align: center">{{billing.plan}} € TTC</td>
+                </tr>
+
+                <tr>
+                    <td style=" padding: 15px;">
+                        <h5>Utilisation du service "sms"</h5>
+                        <p></p>
+                    </td>
+                    <td style="text-align: center">0.5 €</td>
+                    <td style="text-align: center">{{billing.sms}}</td>
+                    <td style="text-align: center">{{billing.smsPrice}} € TTC</td>
+                </tr>
+
+                <tr>
+                    <td style=" padding: 15px;">
+                        <h5>Utilisation du service "emailing"</h5>
+                        <p></p>
+                    </td>
+                    <td style="text-align: center">0.2 €</td>
+                    <td style="text-align: center">{{billing.email}}</td>
+                    <td style="text-align: center">{{billing.emailPrice}} € TTC</td>
+                </tr>
+
+                <tr>
+                    <td style=" padding: 15px;">
+                        <h5>Utilisation du service "courrier simple"</h5>
+                        <p></p>
+                    </td>
+                    <td style="text-align: center">1.50 €</td>
+                    <td style="text-align: center">{{billing.simpleletter}}</td>
+                    <td style="text-align: center">{{billing.simpleletterPrice}} € TTC</td>
+                </tr>
+                <tr>
+                    <td style=" padding: 15px;">
+                        <h5>Utilisation du service "courrier recommandé"</h5>
+                        <p></p>
+                    </td>
+                    <td style="text-align: center">3.50 €</td>
+                    <td style="text-align: center">{{billing.registeredletter}}</td>
+                    <td style="text-align: center">{{billing.registeredletterPrice}} € TTC</td>
+                </tr>
+                <tr>
+                    <td colspan="3"></td>
+
+                    <td style="text-align: center">TOTAL {{billing.totalttc}} € TTC</td>
+                </tr>
+            </table>
+
+        <p> support@mycreance.com - 01 56 56 65 16 - www.mycreance.com</p>
+    </div>
+</div>
+
+
+
+
+

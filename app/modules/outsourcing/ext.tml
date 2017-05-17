@@ -1,0 +1,160 @@
+<div class="carousel-inner" role="listbox">
+    <div class="item active">
+        <img src="img/mycreance/landing/ext.png" alt=""/>
+        <!--        <video class="video1 hidden-xs hidden-sm hidden-md" autoplay poster=" " id="bgvid1" loop>-->
+        <!--            <source src="video/mycreance/1.mp4" type="video/mp4">-->
+        <!--        </video>-->
+        <div class="carousel-caption">
+            <div class="landing-baseline pull-right">
+                <h2>EXTERNALISER LE RECOUVREMENT DE VOTRE SOCIETE ?</h2>
+                <h3><em> « Nous souhaitions externaliser le recouvrement des factures de notre société.
+                    Nous avons contacté MyCreance, qui nous a fait une étude.
+                    Après 4 mois d’intervention de MyCreance, nos clients nous payent plus vite,
+                    soit 15 jours de retard de paiement en moins » <br class="hidden-xs hidden-sm"/></em></h3>
+                <a href="#" onclick="return false;" title="En savoir plus de notre logiciel de recouvrement" class="hidden-xs hidden-sm btn btn-xl" data-toggle="modal" data-target="#devis-ext">Je lance une simulation !  </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade devis-first-step" id="devis-ext" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #337ab7;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h3 class="modal-title" id="myModalLabel">SIMULER LE COÛT DE RECOUVREMENT POUR <br> EXTERNALISER VOS CREANCES</h3>
+            </div>
+            <div class="modal-body">
+                <form action="" method="post" id="addoutsourcing" j-name="outsourcing">
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <br>
+                            <br/>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <br/>
+                                    <p>
+                                        <select class="form-control-mc2" name="ca_annuel" required="required" autocomplete="off">
+                                            <option value="">Votre chiffre d'affaire annuel ?</option>
+                                            <option value="-1million€"> - 1 million €</option>
+                                            <option value="de1a3millions€">de 1 à 3 millions €</option>
+                                            <option value="+3millions€">+ de 3 millions €</option>
+                                        </select>
+                                    </p>
+                                </div>
+                                <div class="form-group">
+                                <p>
+                                    <select class="form-control-mc2" name="nb_clients">
+                                        <option value="">Nb clients facturés par an ?</option>
+                                        <option value="0">de 0 à 49</option>
+                                        <option value="50">de 50 à 99</option>
+                                        <option value="100">de 100 à 149</option>
+                                        <option value="150">de 150 à 199</option>
+                                        <option value="200">de 200 à plus</option>
+                                    </select>
+                                </p>
+                                </div>
+                                <div class="form-group">
+                                <p>
+                                    <select class="form-control-mc2" name="type_clients">
+                                        <option value="">typologie de vos clients ?</option>
+                                        <option value="societe">sociétés uniquement</option>
+                                        <option value="particulier">particuliers uniquement</option>
+                                        <option value="societe_particulier">sociétés et particuliers</option>
+                                    </select>
+                                </p>
+                                </div>
+                                <br/>
+                                <br/>
+                                <div class="media-left media-top testimo-mc" style="vertical-align: middle">
+                                    <a href="#">
+                                        <img class="media-object" src="img/mycreance/testimo.jpg" alt="...">
+                                    </a>
+                                </div>
+                                <div class="media-body" style="color:#000">
+                                    <em>«J’ai fait appel à Mycreance pour deux factures impayées vieilles de 13 mois. Ils m’ont mis en relation avec une agence de recouvrement qui m’a recouvré ma créance en 21 jours.»</em>
+                                </div>
+
+                            </div>
+                            <div class="col-md-1"></div>
+                            <div class="col-md-7">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="zmdi zmdi-account"></i></span>
+                                        <div class="fg-line">
+                                            <input type="text" class="form-control" placeholder="Nom" name="nom" required data-validation-required-message="Ce champ est requis" autocomplete="off">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="zmdi zmdi-account"></i></span>
+                                        <div class="fg-line">
+                                            <input type="text" class="form-control" placeholder="Prenom" name="prenom" required data-validation-required-message="Ce champ est requis" autocomplete="off">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="zmdi zmdi-email"></i></span>
+                                        <div class="fg-line">
+                                            <input type="email" class="form-control" placeholder="Email" name="email" required data-validation-required-message="Ce champ est requis" autocomplete="off">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="zmdi zmdi-phone"></i></span>
+                                        <div class="fg-line">
+                                            <input type="text" class="form-control" placeholder="téléphone" name="tel" required data-validation-required-message="Ce champ est requis" autocomplete="off">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="zmdi zmdi-account"></i></span>
+                                        <div class="fg-line">
+                                            <input type="text" class="form-control" placeholder="Raison sociale" name="raison_sociale" required data-validation-required-message="Ce champ est requis" autocomplete="off">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="zmdi zmdi-my-location"></i></span>
+                                        <div class="fg-line">
+                                            <input type="text" class="form-control" placeholder="Adresse" name="adresse" required data-validation-required-message="Ce champ est requis" autocomplete="off">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="zmdi zmdi-my-location"></i></span>
+                                        <div class="fg-line">
+                                            <input type="text" class="form-control" placeholder="Code postal" name="code_postal" required data-validation-required-message="Ce champ est requis" autocomplete="off">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="zmdi zmdi-my-location"></i></span>
+                                        <div class="fg-line">
+                                            <input type="text" class="form-control" placeholder="Ville" name="ville" required data-validation-required-message="Ce champ est requis" autocomplete="off">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                <div class="modal-footer">
+                    <input type="submit" class="next-btn-mc" value="Valider">
+                    <if "isset($error)">
+                    <div style="color:#f00;font-size:16px;font-weight:bold;"><?=$error?></div>
+                    </if>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+</div>

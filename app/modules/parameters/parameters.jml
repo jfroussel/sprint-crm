@@ -1,0 +1,23 @@
+<div class="card">
+	<div class="card-header">
+		<h2>Parametrage de mycreance</h2>
+	</div>
+	<div class="card-body card-padding">
+		<div role="tabpanel">
+			<ul class="tab-nav" role="tablist">
+				<li class="active"><a href="#tab-parameters-home" data-jview="parameters/tab-parameters-home" role="tab" data-toggle="tab">Accueil</a></li>
+				<li><a href="#files-import" data-jview="parameters/tab-files-import" role="tab" data-toggle="tab">Import de fichiers</a> </li>
+				<li><a href="#api" data-jview="parameters/tab-api" role="tab" data-toggle="tab">Api</a></li>
+				<li><a href="#billings" data-jview="parameters/tab-billings" role="tab" data-toggle="tab">Factures</a></li>
+				<li><a href="#plugins" data-jview="parameters/tab-plugins" role="tab" data-toggle="tab">Plugin's & Services</a></li>
+			</ul>
+			<div class="tab-content">
+				<div role="tabpanel" class="tab-pane active" id="tab-parameters-home"></div>
+				<div role="tabpanel" class="tab-pane" id="files-import"></div>
+				<div role="tabpanel" class="tab-pane" id="api"></div>
+				<div role="tabpanel" class="tab-pane" id="billings"></div>
+				<div role="tabpanel" class="tab-pane" id="plugins"></div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,12 @@
+<div class="modal-header bgm-bluegray m-b-20 ">
+	<h4 class="modal-title c-white t-uppercase">Envoyer un courrier pour le debiteur :  "{{nom_client}}"  <span class="debtor-name"></span> </h4>
+</div>
+<div class="modal-body">
+	<hr>
+	<div class="modal-footer">
+		<p>
+			<button type="button" class="btn btn-primary">Enregistrer</button>
+			<button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+		</p>
+	</div>
+</div>

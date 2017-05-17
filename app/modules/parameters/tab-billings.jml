@@ -1,0 +1,88 @@
+
+<div class="row">
+<h4>Statistiques des services utilisés pour le mois de : {{month}} </h4>
+    <h5>Nombre d'utilisateurs : {{users}}</h5>
+    <br>
+    <div class="mini-charts">
+        <div class="col-sm-6 col-md-3">
+            <div class="mini-charts-item bgm-cyan">
+                <div class="clearfix">
+                    <div class="chart stats-bar"></div>
+                    <div class="count">
+                        <small>Email envoyés  </small>
+                        <h2>{{email}}</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <div class="mini-charts-item bgm-lightgreen">
+                <div class="clearfix">
+                    <div class="chart stats-bar-2"></div>
+                    <div class="count">
+                        <small>Sms envoyés </small>
+                        <h2>{{sms}}</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <div class="mini-charts-item bgm-orange">
+                <div class="clearfix">
+                    <div class="chart stats-line"></div>
+                    <div class="count">
+                        <small>Courriers simples envoyés</small>
+                        <h2>{{simpleletter}}</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+            <div class="mini-charts-item bgm-pink">
+                <div class="clearfix">
+                    <div class="chart stats-line-2"></div>
+                    <div class="count">
+                        <small>Courriers recommandés envoyés  </small>
+                        <h2>{{registeredletter}}</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="row">
+    <h4>Historique des factures</h4>
+    <table
+            is="datatables"
+            j-data-ajax--url="plugins/datatables.json?table=billing"
+            j-data-scroll-y="258px"
+            j-data-order="billingDate"
+            j-data-sort="desc"
+            id="billings-table"
+            class="table table-hover table-bordered"
+    >
+        <thead>
+        <tr>
+            <th></th>
+            <th data-column="id" data-visible="false">id</th>
+            <th data-column="ref">reference</th>
+            <th data-column="billingDate">date de facture</th>
+            <th data-column="firstdayOfMonth">periode du</th>
+            <th data-column="lastDayOfMonth">au</th>
+            <th data-column="plan">plan</th>
+            <th data-column="sms">sms</th>
+            <th data-column="email">email</th>
+            <th data-column="simpleletter">courrier simple</th>
+            <th data-column="registeredletter">courrier A/R</th>
+            <th data-column="total">total</th>
+            <th data-column="tva">tva</th>
+            <th data-column="totalttc">total ttc</th>
+            <th data-action="edit" data-route="parameters/billing/update?id="></th>
+            <!--<th data-action="download">Telecharger votre facture</th>-->
+            <!--<th data-action="edit" data-route="history/update?id="></th>-->
+        </tr>
+        </thead>
+    </table>
+</div>

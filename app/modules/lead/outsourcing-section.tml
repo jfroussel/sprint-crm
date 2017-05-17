@@ -1,0 +1,203 @@
+
+<section id="about-mc">
+    <div class="container-fluide" style="padding-top: 0px">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Qu'est-ce que Mycreance Services ?</h2>
+            </div>
+            <div class="col-md-12 text-center">
+                <p>Avec MyCreance <em>Services</em>, vous avez une ou plusieurs factures impayées et vous souhaitez
+                    les confier à une agence de recouvrement.<br>Choisissez la formule de votre choix, et MyCreances <em>Services</em> effectue les
+                    actions de relance.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="fonctionnement" style="padding-top: 0px">
+    <div class="container">
+        <div class="col-lg-12 text-center">
+            <h2 class="section-heading">Fonctionnement de MyCreance Services</h2>
+        </div>
+        <div data-wow-delay="0.1s" data-wow-duration="2s" class="row mt-60 mt-xs-30 wow fadeIn" style="visibility: visible; animation-duration: 2s; animation-delay: 0.1s; animation-name: fadeIn;">
+            <div class="col-sm-4 text-center">
+                <div class="service-item1">
+                    <i class="fa fa-calculator fa-4x c-lightblue"></i>
+                    <br/>
+                    <h3 class="alt-font c-lightblue">Etape 1</h3>
+                    <br/>
+                    <div class="service-desc">
+                        <p>à définir</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 text-center">
+                <div class="service-item1">
+                    <i class="fa fa-pencil-square-o fa-4x c-pink"></i>
+                    <br/>
+                    <h3 class="alt-font c-pink">Etape 2</h3>
+                    <br/>
+                    <div class="service-desc">
+                        <p>à définir!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4 text-center">
+                <div class="service-item1">
+                    <i class="fa fa-money fa-4x c-green"></i>
+                    <br/>
+                    <h3 class="alt-font c-green">Etape 3</h3>
+                    <br/>
+                    <div class="service-desc">
+                        <p>à définir</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div class="row">
+    <div class="col-md-12 text-center">
+
+        <section class="gallery margin-top-2x" id="gallery">
+            <h2 class="section-heading" style="padding-top: 50px">ILS EN PARLENT !</h2>
+            <div id="light-gallery" class="grid owl-carousel">
+                <figure class="effect-marley">
+                    <img src="img/mycreance/gallery/1.jpg" alt="img01" />
+                    <figcaption>
+                        <h3>Brice GRELET <br><span>Agence TASH</span></h3>
+
+                        <p>"Avec MyCreance notre agence a résolu de façon
+                            durable ses problèmes d'impayés., en utilisant les
+                            scenario personnalisés et la méthode de relance
+                            automatisée."<br><br></p>
+
+                        <a href="#" class="prettyPhoto popup-link">View more</a>
+                    </figcaption>
+                </figure>
+
+                <figure class="effect-marley">
+                    <img src="img/mycreance/gallery/2.jpg" alt="img01" />
+                    <figcaption>
+                        <h3>Karim Omair<br> <span>Les Experts du Recouvrement</span></h3>
+                        <p>"MyCreance nous a permis de mettre en place une
+                            procèdure systèmatique de chaque débiteur avec une
+                            procèdure adaptée à chaque contexte. Avec
+                            MyCreance, notre balance âgée est à présent
+                            maitrisée."<br><br></p>
+                        <a href="#" class="prettyPhoto popup-link">View more</a>
+                    </figcaption>
+                </figure>
+
+                <figure class="effect-marley">
+                    <img src="img/mycreance/gallery/3.jpg" alt="img01" />
+                    <figcaption>
+                        <h3> Marc Eclasf<br><span>CMS</span></h3>
+                        <p>"En intégrant MyCreance dans notre politique de
+                            gestion du poste clients, nous avons récupéré 15 jours
+                            de délai de règlement. Si vous rechercher à maîtriser le
+                            retard de paiement de vos clients, utilisez MyCreance."<br><br></p>
+                        <a href="#" class="prettyPhoto popup-link">View more</a>
+                    </figcaption>
+                </figure>
+
+                <figure class="effect-marley">
+                    <img src="img/mycreance/gallery/4.jpg" alt="img01" />
+                    <figcaption>
+                        <h3>Francois Pierre <span>Indépendant</span></h3>
+                        <p>"J'utilise MyCreance comme un outil de génération de
+                            leads qui me permet d'avoir un complèment de
+                            revenu. Les leads fournis par MyCreance concernent
+                            tous types de créances : factures commerciales, loyers
+                            impayés, et autre"<br><br><small><em>Credit Manager Freelance </em></small></p>
+                        <a href="#" class="prettyPhoto popup-link">View more</a>
+                    </figcaption>
+                </figure>
+
+                <!--<figure class="effect-marley">-->
+                <!--<img src="img/mycreance/gallery/5.jpg" alt="img01" />-->
+                <!--<figcaption>-->
+                <!--<h3>MyCreance <span>experience</span></h3>-->
+                <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda autem excepturi hic inventore necessitatibus nobis nostrum perferendis perspiciatis possimus recusandae repellat sequi sunt, vel! Doloremque impedit ipsum necessitatibus rem ut!</p>-->
+                <!--<a href="" class="prettyPhoto popup-link">View more</a>-->
+                <!--</figcaption>-->
+                <!--</figure>-->
+            </div>
+        </section>
+    </div></div>
+
+
+<section id="newsletter" class="bg-light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">S'inscrire à la newsletter</h2>
+                <p>Inscrivez-vous à la newsletter pour recevoir des informations sur Mycreance.com.</p>
+            </div>
+        </div>
+        <div class="row">
+            <form class="form-inline" id="newsletterForm" novalidate>
+                <div class="form-group">
+                    <input type="email" class="form-control input-lg" id="nwsltr-email" name="nwsltr-email" required data-validation-required-message="Entrez votre adresse email" placeholder="Entrez votre email">
+                    <button name="nwsltr-submit" type="submit" class="btn btn-warning"> Inscription</button>
+                    <p class="help-block text-danger"></p>
+                    <div class="success"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Nous contacter</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <form name="sentMessage" id="contactForm" novalidate>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" name="contact-society" class="form-control" placeholder="Société" id="society" required data-validation-required-message="Entrez le nom de votre société">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="contact-fullname" class="form-control" placeholder="Nom et prénom" id="fullname" required data-validation-required-message="Entrez votre nom et prénom">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="contact-email" class="form-control" placeholder="Email" id="email" required data-validation-required-message="Entrez votre adresse email">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" name="contact-tel" class="form-control" placeholder="Téléphone" id="tel" required data-validation-required-message="Entrez votre numéro de téléphone">
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group select">
+                                <select class="form-control" name="contact-type" id="type">
+                                    <option value="DDVP15">Demande de démonstration</option>
+                                    <option value="Inscription à des Webinaires">Inscription à des webinaires</option>
+                                    <option value="Recevoir Nos Plaquette">Recevoir nos plaquettes</option>
+                                    <option value="Etre rappelé">Etre rappelé</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" name="contact-message" placeholder="Message" id="message" required data-validation-required-message="Entrez votre message"></textarea>
+                                <p class="help-block text-danger"></p>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div class="col-lg-12 text-center">
+                            <div class="success"></div>
+                            <button type="submit" name="contact-submit" class="btn btn-xl">Envoyer</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <br><br><br>
+    </div>
+</section>

@@ -1,0 +1,235 @@
+<section id="content">
+
+	<div class="container-fluid">
+
+		<div class="block-header">
+			<h2>{{user.name}}</h2>
+			<h2>{{user.first_name}}&nbsp{{user.last_name}}
+				<small>Appartient au Groupe : <b>{{user.group}}</b></small>
+			</h2>
+		</div>
+		<form class="pm-body clearfix" j-name="user">
+			
+			<div class="card" id="profile-main">
+				<div class="pm-overview pm-overview-user">
+
+					<div class="pmo-pic">
+						<div class="p-relative">
+
+							<a href="#" onclick="return false;">
+								<img class="img-responsive" :src="{{avatar}}" style="width: 250px">
+							</a>
+
+							<a  class="pmop-edit ">
+								<div>
+									<input is="fileinputImg" type="file" accept="image/*" name="avatarFile" id="avatar" :data-src="{{avatarLocal}}" class="fileinput-img">
+								</div>
+								<i class="zmdi zmdi-camera"></i>
+								<span class="hidden-xs" >Mettre à jour votre photo</span>
+							</a>
+						</div>
+
+						<div class="pmo-stat ">
+							<h4 class="m-0 c-white "></h4><br>
+							Date d'inscription : {{user.ctime}}<br>
+							Profil Mise à jour le : {{user.mtime}}
+
+						</div>
+					</div>
+
+					<div class="pmo-block pmo-contact hidden-xs">
+						<h2>Contact</h2>
+
+						<ul>
+							<li j-if="user.email"><i class="zmdi zmdi-email "></i><a class="icon-contact" :href="mailto:{{user.email}}">{{user.email}}</a></li>
+							<li j-if="user.phone"><i class="fa fa-phone"></i><a class="icon-contact" :href="tel:{{user.phone}}">{{user.phone}}</a></li>
+							<li j-if="user.cellphone"><i class="fa fa-mobile"></i><a class="icon-contact" :href="tel:{{cuser.ellphone}}">{{user.cellphone}}</a></li>
+							<li j-if="user.facebook"><i class="fa fa-facebook"><a class="icon-contact"></i>{{user.facebook}}</a></li>
+							<li j-if="user.skype"><i class="fa fa-skype"></i><a class="icon-contact" :href="callto:{{user.skype}}">{{user.skype}}</a></li>
+							<li j-if="user.twitter"><i class="fa fa-twitter"></i><a class="icon-contact" :href="https://twitter.com/{{user.twitter}}">@{{user.twitter}}</a></li>
+							<li j-if="user.google"><i class="zmdi zmdi-google-plus"></i><a class="icon-contact" :href="https://plus.google.com/{{user.google}}">@{{user.google}}</a></li>
+
+							<li j-if="user.address">
+								<i class="zmdi zmdi-pin"></i>
+								<address class="m-b-0 icon-contact pull-left">
+									{{user.address}}<br>
+									{{user.postal_code}} {{user.city}}<br>
+									{{user.country}}<br>
+								</address>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+
+				<div class="pm-body clearfix">
+
+					<div class="pmb-block">
+						<div class="pmbb-header">
+							<h2><i class="zmdi zmdi-equalizer m-r-10"></i> Informations de votre administrateur</h2>
+						</div>
+						<div class="pmbb-body p-l-30">
+							<div class="pmbb-view">
+								Sed eu est vulputate, fringilla ligula ac, maximus arcu. Donec sed felis vel
+								magna mattis ornare ut non turpis. Sed id arcu elit. Sed nec sagittis tortor.
+								Mauris ante urna, ornare sit amet mollis eu, aliquet ac ligula. Nullam dolor
+								metus, suscipit ac imperdiet nec, consectetur sed ex. Sed cursus porttitor leo.
+							</div>
+
+							<div class="pmbb-edit">
+								<div class="fg-line">
+									<textarea class="form-control" rows="5" placeholder="Summary...">Sed eu est vulputate, fringilla ligula ac, maximus arcu. Donec sed felis vel magna mattis ornare ut non turpis. Sed id arcu elit. Sed nec sagittis tortor. Mauris ante urna, ornare sit amet mollis eu, aliquet ac ligula. Nullam dolor metus, suscipit ac imperdiet nec, consectetur sed ex. Sed cursus porttitor leo.</textarea>
+								</div>
+								<div class="m-t-10">
+									<button class="btn btn-primary btn-sm">Save</button>
+									<button data-ma-action="profile-edit-cancel" class="btn btn-link btn-sm">Cancel</button>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="pmb-block">
+						
+						<div class="pmbb-header">
+							<h2><i class="zmdi zmdi-account m-r-10"></i> Informations de votre compte</h2>
+						</div>
+						<div class="pmbb-body p-l-30">
+							<div class="pmbb-body">
+								<div class="col-md-6">
+									<div class="pmbb-view">
+										<dl class="dl-horizontal">
+											<fieldset class="form-group form-inline">
+												<dt class="p-t-10"><label  for="civility">Civilité</label></dt>
+												<dd>
+													<select name="civility" id="civility" class="select">
+														<option value=""></option>
+														<option value="Mr">Monsieur</option>
+														<option value="Me">Madame</option>
+														<option value="Mlle">Mademoiselle</option>
+													</select>
+												</dd>
+											</fieldset>
+										</dl>
+										<dl class="dl-horizontal">
+											<fieldset class="form-group form-inline">
+												<dt class="p-t-10"><label  for="first_name">Prénom</label></dt>
+												<dd><input name="first_name" type="text" id="first_name" class="form-control"></dd>
+											</fieldset>
+										</dl>
+										<dl class="dl-horizontal">
+											<fieldset class="form-group form-inline">
+												<dt class="p-t-10"><label  for="last_name">Nom</label></dt>
+												<dd><input name="last_name" type="text"	id="last_name" class="form-control"></dd>
+											</fieldset>
+										</dl>
+										<dl class="dl-horizontal">
+											<fieldset class="form-group form-inline">
+												<dt class="p-t-10"><label  for="function">Fonction</label></dt>
+												<dd><input name="function" class="form-control" id="function"></dd>
+											</fieldset>
+										</dl>
+										<dl class="dl-horizontal">
+											<fieldset class="form-group form-inline">
+												<dt class="p-t-10"><label  for="group">Groupe</label></dt>
+												<dd>
+													<select name="group" id="group" class="form-control">
+														<option value=""></option>
+														<option value="sales">Sales</option>
+														<option value="assistant">Assistant</option>
+														<option value="gestionnaire">Gestionnaire</option>
+													</select>
+												</dd>
+											</fieldset>
+										</dl>
+										<dl class="dl-horizontal">
+											<fieldset class="form-group form-inline">
+												<dt class="p-t-10"><label for="email">Email</label></dt>
+												<dd><input name="email" class="form-control" id="email"></dd>
+											</fieldset>
+										</dl>
+										<dl class="dl-horizontal">
+											<fieldset class="form-group form-inline">
+												<dt><label for="phone">Téléphone</label></dt>
+												<dd><input name="phone" class="form-control" id="phone"></dd>
+											</fieldset>
+										</dl>
+										<dl class="dl-horizontal">
+											<fieldset class="form-group form-inline">
+												<dt class="p-t-10"><label for="cellphone">Tél.portable</label></dt>
+												<dd><input name="cellphone" class="form-control" id="cellphone"></dd>
+											</fieldset>
+										</dl>
+									</div>
+								</div>
+								<div class="col-md-6">
+
+									<div class="pmbb-view">
+										<div class="input-group">
+											<span class="input-group-addon"><i class="zmdi zmdi-twitter"></i></span>
+											<div class="fg-line">
+												<input type="text" name="twitter" class="form-control" placeholder="Twitter">
+											</div>
+										</div>
+										<br>
+										<div class="input-group">
+											<span class="input-group-addon"><i class="zmdi zmdi-skype"></i></span>
+											<div class="fg-line">
+												<input type="text" name="skype" class="form-control" placeholder="Skype">
+											</div>
+										</div>
+										<br>
+										<div class="input-group">
+											<span class="input-group-addon"><i class="zmdi zmdi-facebook"></i></span>
+											<div class="fg-line">
+												<input type="text" name="facebook" class="form-control" placeholder="Facebook">
+											</div>
+										</div>
+										<br>
+										<div class="input-group">
+											<span class="input-group-addon"><i class="zmdi zmdi-google-plus"></i></span>
+											<div class="fg-line">
+												<input type="text" name="google" class="form-control" placeholder="Google +">
+											</div>
+										</div>
+										<br>
+										<br>
+									</div>
+									<div class="pmbb-view">
+
+										<dl class="dl-horizontal">
+											<fieldset class="form-group form-inline">
+												<dt><label  for="id">N° identifiant</label></dt>
+												<dd><input type="text" id="id" name="id" readonly class="form-control"></dd>
+											</fieldset>
+										</dl>
+										<dl class="dl-horizontal">
+											<fieldset class="form-group form-inline">
+												<dt><label  for="password">Nouveau mot de passe</label></dt>
+												<dd><input type="password" id="password" name="password" autocomplete="false" readonly onfocus="this.removeAttribute('readonly');" class="form-control"></dd>
+											</fieldset>
+										</dl>
+										<dl class="dl-horizontal">
+											<div class="checkbox">
+												<label>
+													<input type="checkbox" name="active" value="1">
+													<i class="input-helper"></i>
+													Activer le compte de cet utilisateur
+												</label>
+											</div>
+											<button type="submit" class="btn btn-primary">Mettre à jour votre profil</button>
+										</dl>
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			
+			</div>
+		
+		</form>
+	
+	</div>
+
+</section>

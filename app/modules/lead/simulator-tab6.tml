@@ -1,0 +1,14 @@
+<div class="col-xs-12">
+	<div class="col-md-12">
+		<h2 class="align-center"> Félicitation ! </h2>
+        <p>Votre mandat de recouvrement est bien enregistré.Rendez vous dans votre boite email et cliquez sur le lien envoyé à l'adresse <?= $lead->email ?></p>
+        <p>Si vous ne trouvez pas l'email verifiez votre boite SPAM ou alors cliquez sur :</p>
+        <if "$create">
+        <div class="align-center">
+            <button class="btn btn-default resend-mail" type="button"> <i class="zmdi zmdi-email-send"></i> Renvoyer l'e-mail </button>
+        </div>
+        </if>
+		<br>
+		<br>
+	</div>
+</div>

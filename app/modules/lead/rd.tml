@@ -1,0 +1,75 @@
+<div class="carousel-inner" role="listbox">
+    <div class="item active">
+        <video class="video1 hidden-xs hidden-sm hidden-md" autoplay poster=" " id="bgvid1" loop>
+            <source src="video/mycreance/1.mp4" type="video/mp4">
+        </video>
+        <div class="carousel-caption">
+            <h2>VOUS AVEZ DES RECONNAISSANCES DE DETTES A RECOUVRER</h2>
+            <h3>ESTIMEZ LE COÛT POUR RECCOUVRER VOS RECONNAISSANCES DE DETTES, ET RECEVEZ   <br class="hidden-xs hidden-sm"/> GRATUITEMENT UN DEVIS  DE RECOUVREMENT.</h3>
+            <a href="#" onclick="return false;" title="En savoir plus de notre logiciel de recouvrement" class="hidden-xs hidden-sm btn btn-xl" data-toggle="modal" data-target="#devis-ci">Je lance une simulation !  </a>
+        </div>
+    </div>
+</div>
+<div class="modal fade devis-first-step" id="devis-ci" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: rgba(236,100,75,1);">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">SIMULER LE COÛT DE RECOUVREMENT POUR <br> VOS RECONNAISSANCES DE DETTES</h4>
+            </div>
+            <form action="" method="post">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <input name="method" value="addLead" type="hidden">
+                            <input type="text" name="category" value="reconnaissance dette" type="hidden">
+                            <br>
+                            <div class="form-group">
+                                <p>
+                                    <select class="form-control-mc1" name="seniority" required="required" autocomplete="off">
+                                        <option value="">Ancienneté de votre facture ?</option>
+                                        <option value="+1an"> +1 an</option>
+                                        <option value="-1an">-1 an</option>
+                                    </select>
+                                </p>
+                            </div>
+                            <div class="form-group">
+                                <p>
+                                    <input type="text" name="amount" class="form-control-mc1" id="form-control-mc-input" autocomplete="off" placeholder="Cumul des sommes ?" <?=isset($lead)?$lead->amount:''?> >
+                                </p>
+                            </div>
+                            <p>
+                                <select class="form-control-mc1" name="type" id="select-type-rd" autocomplete="off">
+                                    <option value="">Type d'action ?</option>
+                                    <option value="amiable">Amiable</option>
+                                    <option value="contentieux">Contentieux</option>
+                                </select>
+                            </p>
+                            <div class="form-group">
+                                <p>
+                                    <input type="text" name="email" class="form-control-mc1 mc-input" id="form-control-mc-input" autocomplete="off" placeholder="Votre E-mail" <?=isset($lead)?$lead->email:''?> >
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-8 mc-info-lead" id="">
+                            <h3>DÉTAILS DE L'ACTION SÉLECTIONNÉE</h3>
+                            <hr/>
+                            <h4>EN QUOI CONSISTE CETTE ACTION:</h4>
+                            <p>Cette procédure convient lorsque l’ancienneté du chèque est supérieure à un an. Le chèque n’a plus valeur de titre exécutoire, seule une procédure amiable peut déclencher le paiement de la part du débiteur.</p>
+                            <h4>MONTANT MINIMUM DE LA CRÉANCE:</h4>
+                            <p>Valable pour des chèques de tout montant</p>
+
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" class="next-btn-mc" value="Suivant">
+                    <if "isset($error)">
+						<div style="color:#f00;font-size:16px;font-weight:bold;"><?=$error?></div>
+                    </if>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

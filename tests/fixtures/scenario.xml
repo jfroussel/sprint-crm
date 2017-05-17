@@ -1,0 +1,121 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="dbphpunit">
+	<table_structure name="scenario">
+		<field Field="id" Type="int(11) unsigned" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="name" Type="varchar(191)" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="category" Type="varchar(191)" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="type" Type="varchar(191)" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="active" Type="tinyint(1) unsigned" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="user_id" Type="int(11) unsigned" Null="YES" Key="MUL" Extra="" Comment="" />
+		<field Field="start_day" Type="varchar(191)" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="letter" Type="varchar(191)" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="instance_id" Type="int(11) unsigned" Null="YES" Key="MUL" Extra="" Comment="" />
+		<key Table="scenario" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="id" Collation="A" Cardinality="9" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="scenario" Non_unique="1" Key_name="c_fk_scenario_user_id" Seq_in_index="1" Column_name="user_id" Collation="A" Cardinality="4" Null="YES" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="scenario" Non_unique="1" Key_name="c_fk_scenario_instance_id" Seq_in_index="1" Column_name="instance_id" Collation="A" Cardinality="4" Null="YES" Index_type="BTREE" Comment="" Index_comment="" />
+		<options Name="scenario" Engine="InnoDB" Version="10" Row_format="Compact" Rows="9" Avg_row_length="1820" Data_length="16384" Max_data_length="0" Index_length="32768" Data_free="30408704" Auto_increment="41" Create_time="2016-12-28 10:26:43" Collation="utf8_unicode_ci" Create_options="" Comment="" />
+	</table_structure>
+	<table_data name="scenario">
+	<row>
+		<field name="id">1</field>
+		<field name="name">Model scenario A</field>
+		<field name="category">cheque-impaye</field>
+		<field name="type">amiable</field>
+		<field name="active">1</field>
+		<field name="user_id">1</field>
+		<field name="start_day">-30</field>
+		<field name="letter">A</field>
+		<field name="instance_id" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">2</field>
+		<field name="name">Model scenario B</field>
+		<field name="category">cheque-impaye</field>
+		<field name="type">amiable</field>
+		<field name="active">1</field>
+		<field name="user_id">1</field>
+		<field name="start_day">-7</field>
+		<field name="letter">B</field>
+		<field name="instance_id">1</field>
+	</row>
+	<row>
+		<field name="id">3</field>
+		<field name="name">model scenario C</field>
+		<field name="category">creance-commerciale</field>
+		<field name="type">amiable</field>
+		<field name="active">1</field>
+		<field name="user_id">1</field>
+		<field name="start_day">-30</field>
+		<field name="letter">C</field>
+		<field name="instance_id" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">7</field>
+		<field name="name">Modele scenario D</field>
+		<field name="category">cheque-impaye</field>
+		<field name="type">amiable</field>
+		<field name="active">1</field>
+		<field name="user_id">1</field>
+		<field name="start_day">-30</field>
+		<field name="letter">D</field>
+		<field name="instance_id" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">35</field>
+		<field name="name">Modele scenario E</field>
+		<field name="category">cheque-impaye</field>
+		<field name="type">amiable</field>
+		<field name="active">1</field>
+		<field name="user_id">1</field>
+		<field name="start_day">-30</field>
+		<field name="letter">E</field>
+		<field name="instance_id" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">36</field>
+		<field name="name">Modele scenario F</field>
+		<field name="category">cheque-impaye</field>
+		<field name="type">amiable</field>
+		<field name="active">1</field>
+		<field name="user_id">1</field>
+		<field name="start_day">0</field>
+		<field name="letter">F</field>
+		<field name="instance_id" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">38</field>
+		<field name="name">scenario test B</field>
+		<field name="category" xsi:nil="true" />
+		<field name="type" xsi:nil="true" />
+		<field name="active">1</field>
+		<field name="user_id" xsi:nil="true" />
+		<field name="start_day">3</field>
+		<field name="letter">B</field>
+		<field name="instance_id">1</field>
+	</row>
+	<row>
+		<field name="id">39</field>
+		<field name="name">jbd</field>
+		<field name="category" xsi:nil="true" />
+		<field name="type" xsi:nil="true" />
+		<field name="active">1</field>
+		<field name="user_id" xsi:nil="true" />
+		<field name="start_day">0</field>
+		<field name="letter">C</field>
+		<field name="instance_id">1</field>
+	</row>
+	<row>
+		<field name="id">40</field>
+		<field name="name">myscenario</field>
+		<field name="category" xsi:nil="true" />
+		<field name="type" xsi:nil="true" />
+		<field name="active">1</field>
+		<field name="user_id" xsi:nil="true" />
+		<field name="start_day">-1</field>
+		<field name="letter">D</field>
+		<field name="instance_id">1</field>
+	</row>
+	</table_data>
+</database>
+</mysqldump>

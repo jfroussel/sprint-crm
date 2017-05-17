@@ -1,0 +1,31 @@
+<ol class="breadcrumb">
+	<li class="active"><a>Actions</a></li>
+</ol>
+<div class="card">
+    <div class="card-header ch-alt">
+        <h2>Liste des actions</h2>
+        <table
+			is="datatables"
+			j-data-ajax--url="plugins/datatables.json?table=paperwork"
+            j-data-paging="true"
+            j-data-scroll-y="458px"
+            j-data-scroll-X="2000px"
+			id="paperworks-table"
+			class="table table-striped table-bordered"
+		>
+            <thead>
+            <tr style="font-size: 10px">
+                <th data-column="id" data-visible="false">id</th>
+                <th data-column="categorie">Categorie</th>
+                <th data-column="a_faire_par">à faire par</th>
+                <th data-column="">Type compte</th>
+                <th data-column="date_debut" data-format="dateformat">date de debut</th>
+                <th data-column="date_fin" data-format="dateformat">date de fin</th>
+                <th data-column="statut">statut</th>
+                <th data-action="edit" data-route="paperworks/update?id="></th>
+            </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+<div class="modal-header bgm-bluegray m-b-20 ">
+	<h4 class="modal-title c-white t-uppercase">Envoyer un sms  pour le debiteur :  "{{nom_client}}"  <span class="debtor-name"></span> </h4>
+</div>
+<div class="modal-body">
+	<div class="row">
+		<div class="col-md-2">
+			<p class="c-black f-500 m-b-20">Expediteur</p>
+		</div>
+		<div class="col-md-4">
+			<select is="selectpicker" class="show-tick" name="active" autocomplete="off">
+				<option disabled selected>Votre choix...</option>
+				<option value="note">name1</option>
+				<option value="email">name2</option>
+				<option value="appel">name3</option>
+				<option value="courrier">name4</option>
+			</select>
+			<hr>
+		</div>
+		<div class="col-md-2">
+			<p class="c-black f-500 m-b-20">Destinataire(s)</p>
+		</div>
+		<div class="col-md-4">
+			<select is="selectpicker" class="show-tick" multiple name="active" autocomplete="off">
+				<option value="note">name1</option>
+				<option value="email">name2</option>
+				<option value="appel">name3</option>
+				<option value="courrier">name4</option>
+			</select>
+			<hr>
+		</div>
+		<div class="col-md-12">
+			<textarea style="min-width:100%"  id="editeur-one-sms" name="message" rows="10" ></textarea>
+			<em><h5 class="pull-right text-lowercase">Nombre de caractéres 0 (Maximum 160) </h5></em>
+
+			<hr>
+		</div>
+	</div>
+	<hr>
+	<div class="modal-footer">
+		<p>
+			<button type="button" class="btn btn-success">Envoyer</button>
+			<button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+		</p>
+	</div>
+</div>

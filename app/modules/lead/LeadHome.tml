@@ -1,0 +1,13 @@
+<extend "layout/main">
+    <prepend title>Lead - </prepend>
+    <append head>
+        <!-- ici tu peux mettre tes "<link href=" avec des css spécifiques à cette page si tu as besoin -->
+    </append>
+    <write main>
+        <div class="container">
+            <div class="row">
+                <h1> Tarification pour votre simulation</h1>
+            </div>
+        </div>
+    </write>
+</extend>

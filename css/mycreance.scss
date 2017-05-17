@@ -1,0 +1,40 @@
+.mc-header {
+    background-color: #006f7d;
+}
+button[disabled],
+a[disabled] {
+	cursor: default;
+    pointer-events: none;
+}
+
+#simulator #tab3 .validation-error{
+	margin-left:0;
+}
+.input-file-clear{
+	cursor:pointer;
+	display:none;
+}
+
+.breadcrumb > .active {
+    color: #398bdb;
+}
+button{
+	color: #3781d5;
+}
+
+.select_row {
+	text-align:right;
+}
+
+
+.bootstrap-select > .dropdown-toggle.bs-placeholder{
+	 &,
+	 &:hover,
+	 &:focus,
+	 &:active{
+		>span{
+			color:#FFF !important;
+		}
+	 }
+}
+

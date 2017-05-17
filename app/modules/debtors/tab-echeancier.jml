@@ -1,0 +1,28 @@
+<div class="card">
+	<div class="card-header ch-alt">
+		<h2>Gestion des echeanciers <small>Espace de gestion de écheanciers.</small></h2>
+	</div>
+	<table
+		is="datatables"
+		j-data-ajax--url="plugins/datatables.json?table=schedule&where_debtor_id={{id}}"
+		id="schedules-table"
+		class="table table-hover table-bordered"
+	>
+		<thead>
+		<tr>
+			<th data-column="id" data-visible="false">id</th>
+			<th data-column="type">type</th>
+			<th data-column="base_schedule">montant total</th>
+			<th data-column="message">message</th>
+			<th
+					data-column="active"
+					data-format="active"
+					data-css-class="toggler"
+			>statut</th>
+			<th data-column="ctime" data-format="dateformat" data-order="desc">enregistré le</th>
+			<th data-action="edit" data-route="action/schedule/update?id="></th>
+			<th data-action="remove"></th>
+		</tr>
+		</thead>                                           
+	</table>
+</div>

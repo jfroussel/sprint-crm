@@ -1,0 +1,69 @@
+
+<h1>Confirmation de votre commande <?= $lead->mandat_number ?> sur Mycreance.com</h1>
+
+<if "$create">
+	<a href="<?=$baseHref?>/auth/make-password?key=<?=$token?>">Créer un mot de passe</a>
+<else/>
+	<a href="<?=$baseHref?>/auth/login">Accédez à votre compte</a>
+</if>
+
+<br><br><hr><br><br>
+<div><h3> Mandat de recouvrement  N° <?= $lead->mandat_number ?></h3></div>
+<div><h4> categorie de la demande : <?= $lead->category ?> </h4></div>
+<hr/>
+<div>Vos coordonnées :</div>
+    <p><?= $lead->corporate_name ?></p>
+    <p><?= $lead->first_name ?> <?= $lead->last_name ?></p>
+    <p><?= $lead->phone ?></p>
+    <p><?= $lead->email ?></p>
+    <p><?= $lead->address ?></p>
+    <p><?= $lead->zip_code ?> <?= $lead->city ?></p>
+    <p><?= $lead->country ?></p>
+<hr/>
+<div>Votre débiteur :</div>
+    <p><?= $lead->debit_name ?></p>
+    <p><?= $lead->debit_first_name ?> <?= $lead->debit_last_name ?></p>
+    <p><?= $lead->debit_phone ?></p>
+    <p><?= $lead->debit_email ?></p>
+    <p><?= $lead->debit_address ?></p>
+    <p><?= $lead->debit_zip_code ?> <?= $lead->debit_city ?></p>
+    <p><?= $lead->debit_country ?></p>
+<hr/>
+
+
+<div class="col-md-12">
+	<br>
+	<br>
+	<h4> Tableau des créances</h4>
+
+	<br>
+	<br>
+	<div class="col-md-6">
+		<ul class="list-group">
+			<li class="list-group-item">
+				<span class="badge"><?=$lead->getInvoiceTotalUnpaid()?> € HT</span>
+				<b>Total à recouvrer :</b>
+			</li>
+		</ul>
+		<ul class="list-group">
+			<li class="list-group-item">
+				<span class="badge">125 € HT  soit  15%</span>
+				<b>Honoraires Mycreance au succés :</b>
+			</li>
+		</ul>
+		<ul class="list-group">
+			<li class="list-group-item">
+				<span class="badge"> 450 € HT soit 15%</span>
+				<b>Frais de procédure :</b>
+			</li>
+		</ul>
+	</div>
+	<div class="col-md-6">
+		<div>
+			Frais de dossier payable à l'acceptation  :  <?= $lead->frais ?> € HT
+		</div>
+		<div>
+			Frais de dossier payable au succes  :  <?= $lead->frais_issu ?> € HT
+		</div>
+	</div>
+</div>

@@ -1,0 +1,73 @@
+
+<div class="container">
+	<form class="form-signin" role="form" method="POST" action="">
+
+        <input type="hidden" name="action" value="login">
+		<h3 class="form-signin-heading  text-center"><span class="text-capitalize">Déjà client ?</span><br><br> connectez vous à votre compte</h3>
+		<br>
+		<div class="row">
+			<div class="col-md-12">
+				<label for="inputEmail" class="sr-only">Email address</label>
+				<div class="fg-line">
+					<input type="text" id="inputEmail" name="login" class="form-control" placeholder="E-mail" required autofocus>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<label for="inputPassword" class="sr-only">Password</label>
+				<div class="fg-line">
+					<input type="password" id="inputPassword" name="password" class="form-control" placeholder="Mot de passe" required>
+				</div>
+			</div>
+		</div>
+
+
+
+		<!--<div class="checkbox" >-->
+			<!--<label>-->
+				<!--<input type="checkbox"  style=" height: 20px; width:20px; margin-left:-40px; margin-top:0px"value="1">  Se souvenir de moi-->
+			<!--</label>-->
+		<!--</div>-->
+		<br>
+		<br>
+		<button class="btn btn-lg btn-yellow btn-block" id="btn-login" type="submit">Se connecter</button>
+		<div class="clearfix"></div>
+		<br>
+
+		<div class="checkbox" style="text-align: center">
+			<a href="auth/register" id="mc-btn-register">Pas encore de compte ?&nbsp    </a>&nbsp
+			<a href="auth/resend" id="mc-btn-resend"> Mot de passe oublié ?</a>
+		</div>
+
+
+
+        <if "$action=='login'">
+		<if "isset($authResponseMessage)">
+		<hr>
+		<div class="alert alert-success">
+			<strong><?=$authResponseMessage?></strong>
+			<if "$redirect">
+			<script type="text/javascript">
+				setTimeout(function(){
+					window.location = '<?=$redirect?>';
+				},2000);
+			</script>
+			Vous allez être redirigé dans quelques instants.
+			</if>
+		</div>
+		</if>
+		<if "count($errors)">
+		<hr>
+		<div class="alert alert-danger">
+			<strong>Whoops!</strong> There were some problems with your input.<br><br>
+			<ul>
+				<foreach "$errors as $error">
+				<li><?=$error?></li>
+				</foreach>
+			</ul>
+		</div>
+		</if>
+		</if>
+	</form>
+</div>

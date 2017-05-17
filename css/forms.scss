@@ -1,0 +1,24 @@
+select option[default] {
+    content:"";
+}
+.form-group.required .control-label:after {
+  content:"*";
+  color:red;
+}
+.form-group {
+    margin-bottom: 5px;
+}
+
+.fg-float.form-group{
+    margin-top: 15px;
+}
+
+select option[disabled]:first-child {
+	display: none;
+}
+
+.start-day {
+  text-align: center;
+  color:#891008;
+
+}

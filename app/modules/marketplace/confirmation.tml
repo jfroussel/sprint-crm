@@ -1,0 +1,19 @@
+<div class="row">
+    <div class="col-xs-12">
+        <div class="col-md-12">
+            <h2 class="align-center"> Félicitation ! </h2>
+            <p><h5>Votre compte est bien enregistré.Rendez vous dans votre boite email et cliquez sur le lien envoyé à l'adresse <?= $user->email ?></h5></p>
+            <p><h5>Si vous ne trouvez pas l'email verifiez votre boite SPAM ou alors cliquez sur :</h5></p>
+
+            <div class="align-center">
+                <button class="btn btn-default resend-mail" type="button"> <i class="zmdi zmdi-email-send"></i> Renvoyer l'e-mail </button>
+            </div>
+
+            <div class="resend-ok" style="display:none;">
+                L'email a bien été renvoyé
+            </div>
+            <br>
+            <br>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,30 @@
+<div class="card">
+	<div class="card-header ch-alt">
+		<h2>Gestion des contacts <small>Espace de gestion de contacts.</small></h2>
+		<button class="btn bgm-bluegray btn-icon-text waves-effect pull-right" data-toggle-jbs="modal" data-target="#debtor-contact" data-jview="action/contact/create" data-jview-inherit><i class="zmdi zmdi-calendar"></i>Ajouter un contact</button>
+	</div>
+	<table
+		is="datatables"
+		j-data-ajax--url="plugins/datatables.json?table=contact&where_debtor_id={{id}}"
+		id="contacts-table"
+		class="table table-hover table-bordered"
+	>
+		<thead>
+			<tr>
+				<th data-column="id" data-visible="false">id</th>
+				<th data-column="principal">cp</th>
+				<th data-column="nom">nom</th>
+				<th data-column="prenom">prenom</th>
+				<th data-column="fonction">fonction</th>
+				<th data-column="email">email</th>
+				<th data-column="tel">tel</th>
+				<th data-column="fax">fax</th>
+				<th data-column="portable">portable</th>
+				<th data-column="active" data-format="active" data-css-class="toggler">statut</th>
+				<!--<th data-column="ctime" data-format="dateformat" data-order="desc">enregistré le</th>-->
+				<th data-action="edit" data-type="modal" data-view="action/contact/update" data-view-inherit="debtorTab"></th>
+				<th data-action="remove"></th>
+			</tr>
+		</thead>
+	</table>
+</div>

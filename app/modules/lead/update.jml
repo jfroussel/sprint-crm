@@ -1,0 +1,345 @@
+<section id="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 debtor-sidebar">
+                <div>
+                    <div class="card-header">
+                        <div class="mini-charts-item  mini-charts-mc">
+                            <div class="creditsafe" id="creditsafe">
+                                <div class="scroring"></div>
+                                <span style="font-size:10px">scoring</span>
+                                <div class="letter" id="letter"></div>
+                            </div>
+                            <div class="clearfix">
+                                <div class="count countDebtor">
+                                    <small>CREANCIER</small>
+                                    <div j-if="!lead.corporate_name==null">
+                                        <small>{{lead.corporate_name==null?'non defini':lead.corporate_name}}</small>
+                                    </div>
+
+                                    <small>{{lead.first_name==null?'non defini':lead.first_name}} {{lead.last_name==null?'non defini':lead.last_name}}</small>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div>
+                            <h5>Informations creancier</h5>
+                            <b>N° Mandat :</b> {{lead.mandat_number==null?'non defini':lead.mandat_number}}  <br>
+                            <hr>
+                            <b>Gestionnaire du dossier :</b>
+                            <form>
+                                <select j-on-j:input="updateManager" is="select" id="updateManager" name="user_id" autocomplete="off">
+                                    <option value="">Aucun</option>
+                                    <option j-for="user in usersList" :value="{{user.id}}">{{user.first_name}} {{user.last_name}} {{user.first_name||user.last_name?'':user.email}}</option>
+                                </select>
+                            </form>
+                            <br>
+                            <b>Type de compte :</b> {{lead.profil_type==null?'non defini':lead.profil_type}}<br>
+                            <b>Siret :</b> {{lead.siren==null?'non defini':lead.siren}} <br>
+                            <b>Inscription :</b> {{lead.ctime==null?'non defini':lead.ctime}}<br>
+                            <b>Adresse :</b> {{lead.address==null?'non defini':lead.address}} <br>{{lead.zip_code==null?'non defini':lead.zip_code}} {{lead.city==null?'non defini':lead.city}}  <br>
+                            <b>Telephone fixe :</b> {{lead.phone==null?'non defini':lead.phone}}<br>
+                            <b>Telephone portable :</b> {{lead.mobile_phone==null?'non defini':lead.mobile_phone}}<br>
+                            <b>Email : </b> {{lead.corporate_email==null?'non defini':lead.corporate_email}}<br>
+
+                            <br>
+
+                        </div>
+                        <hr>
+                        <div>
+                            <h5>Informations débiteur</h5>
+                            <b>Type de compte :</b> {{lead.deb_type==null?'non defini':lead.deb_type}}<br>
+                            <b>Société : </b>{{lead.deb_name==null?'non defini':lead.deb_name}}<br>
+                            <b>Siret :</b> {{lead.debit_siren==null?'non defini':lead.debit_siren}} <br>
+                            <b>Adresse :</b> {{lead.debit_address==null?'non defini':lead.debit_address}} <br>{{lead.debit_zip_code==null?'non defini':lead.debit_zip_code}} {{lead.debit_city==null?'non defini':lead.debit_city}}  <br>
+                            <b>Telephone fixe :</b> {{lead.debit_phone==null?'non defini':lead.debit_phone}} <br>
+                            <b>Telephone portable :</b> {{lead.debit_mobile==null?'non defini':lead.debit_mobile}}<br>
+                            <b>Email : </b> {{lead.debit_email==null?'non defini':lead.debit_email}}<br>
+                            <br>
+
+                        </div>
+                        <hr>
+                        <div>
+                            <h5>Contact principal</h5>
+                            <i class="fa fa-user" aria-hidden="true"></i>&nbsp{{lead.debit_first_name==null?'non defini':lead.debit_first_name}} {{lead.debit_last_name==null?'non defini':lead.debit_last_name}}
+                            &nbsp<br>
+                            <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp&nbsp{{lead.debit_email==null?'non defini':lead.debit_email}}<br>
+                            <i class="fa fa-phone" aria-hidden="true"></i>&nbsp&nbsp{{lead.debit_phone==null?'non defini':lead.debit_phone}}<br>
+                            <i class="fa fa-mobile" aria-hidden="true"></i>&nbsp{{lead.debit_mobile==null?'non defini':lead.debit_mobile}}<br>
+                            <!--<em><a href="#debtors-contacts" data-jview="debtors/tab-debtors-contacts" data-jview-inherit="debtorOne" role="tab" data-toggle="tab" aria-expanded="true">Voir plus ...</a><br></em>-->
+
+                        </div>
+                        <hr>
+                        <h5>Surveillance</h5>
+                        <b>Date de MAJ : </b>}<br>
+                        <b>Procedure collective : </b> <br>
+                        <b>Date : </b> } <br>
+                        <b>Privilége : </b>  <br>
+                        <b>Tresor public : </b>  <br>
+                        <b>Urssaf : </b>  <br>
+                        <b>Scoring : </b> <br>
+                        <b>Lettre : </b><br>
+                        <em><a href="#debtors-surveillance" data-jview="debtors/tab-debtors-surveillance" data-jview-inherit="debtorOne" role="tab" data-toggle="tab" aria-expanded="true">Voir plus ...</a><br></em>
+                        <hr>
+                        <h5>Statut</h5>
+                        <b>Etat :</b> etat <br>
+                        <b>Sous etat :</b> sous etat <br>
+                        <hr>
+                        <h5>Frais de retard</h5>
+
+                        <b>Encours :</b>  <br>
+                        <b>Intérêt de retard : </b><br>
+                        <b>Clause pénale : </b><br>
+                        <b>Pénalités de retard : </b> <br>
+                        <b>IFR : </b> <br>
+                        <span j-if="total > 0">
+                                <b>FR : </b> <br>
+                            </span>
+                        <span j-if="total <= 0">
+                                <b>FR : </b> 0.00 €<br>
+                            </span>
+
+                        <span id="totalInfo" data-toggle="tooltip" title="Le total dû est la somme de l'encours + IR + CP + PR + IFR + FR"><b>TOTAL : </b>{{(totalPenalities==null?'non defini':totalPenalities)}} <br></span>
+
+                        <hr>
+                        <h5>Timeline des actions</h5>
+                        <div j-for="ss in scenarioStep">
+                            <b>{{ss.type}} : </b>
+
+                            <span j-if="ss.runned_day">
+                                    réalisé le : {{ss.runned_day}} <i class="zmdi zmdi-check c-green"></i>
+
+                                </span>
+                            <span j-if="!ss.runned_day">
+                                    prevu le : {{ss.expected_run_day}}
+                                </span>
+                        </div>
+                        </hr>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-10">
+                <div class="card">
+                    <div class="col-md-3">
+                        <div class="mini-charts-item bgm-lightgreen">
+                            <div class="clearfix">
+                                <div class="count">
+                                    <h2></h2>
+                                    <small>Encours en € </small>
+                                    <small> écriture(s)</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="mini-charts-item bgm-deeporange">
+                            <div class="clearfix">
+                                <div class="count">
+                                    <h2 id="count-promesses"></h2>
+                                    <small>Promesses en €</small>
+                                    <small> écriture(s)</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="mini-charts-item bgm-pink">
+                            <div class="clearfix">
+                                <div class="count">
+                                    <h2 id="count-echeances"></h2>
+                                    <small>Echeances en cours en €</small>
+                                    <small> écriture(s)</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="mini-charts-item bgm-gray">
+                            <div class="clearfix">
+                                <div class="count">
+                                    <h2 id="count-litiges"></h2>
+                                    <small>Litiges en €</small>
+                                    <small> écriture(s)</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-header" >
+                        <h4>STATISTIQUES DU DÉBITEUR AU : {{moment().format('LL')}}</h4>
+                    </div>
+                    <div class="col-12 text-left task-bar-mc">
+                        <button class="btn bgm-bluegray btn-icon-text waves-effect" data-toggle-jbs="modal" data-target="#debtor-note" data-jview="lead/action/note/create"><i class="zmdi zmdi-comment-text"></i>note</button>
+                        <button class="btn bgm-bluegray btn-icon-text waves-effect" data-toggle-jbs="modal" data-target="#debtor-agenda" data-jview="lead/action/agenda/create"><i class="zmdi zmdi-comment-text"></i>agenda</button>
+                        <button class="btn bgm-bluegray btn-icon-text waves-effect" data-toggle-jbs="modal" data-target="#debtor-email" data-jview="lead/action/email/create"><i class="zmdi zmdi-email"></i>email</button>
+                        <button class="btn bgm-bluegray btn-icon-text waves-effect" data-toggle-jbs="modal" data-target="#debtor-sms" data-jview="lead/action/sms/create"><i class="zmdi zmdi-smartphone-iphone"></i>sms</button>
+                        <button class="btn bgm-bluegray btn-icon-text waves-effect" data-toggle-jbs="modal" data-target="#debtor-promise" data-jview="lead/action/promise/create"><i class="zmdi zmdi-comment-edit"></i>promesse</button>
+                        <button class="btn bgm-bluegray btn-icon-text waves-effect" data-toggle-jbs="modal" data-target="#debtor-litige" data-jview="lead/action/litige/create"><i class="zmdi zmdi-balance"></i>litige</button>
+                        <button class="btn bgm-bluegray btn-icon-text waves-effect" data-toggle-jbs="modal" data-target="#debtor-letter" data-jview="lead/action/letter/create"><i class="zmdi zmdi-edit"></i>courrier</button>
+                        <button class="btn bgm-bluegray btn-icon-text waves-effect" data-toggle-jbs="modal" data-target="#debtor-payment" data-jview="lead/action/payment/create"><i class="zmdi zmdi-receipt"></i>reglement</button>
+                        <button class="btn bgm-bluegray btn-icon-text waves-effect" data-toggle-jbs="modal" data-target="#debtor-schedule" data-jview="lead/action/schedule/create"><i class="zmdi zmdi-calendar"></i>echeancier</button>
+                    </div>
+                    <div class="col-md-12">
+                        <br>
+                        <table
+                        is="datatables"
+                        j-data-ajax--url="plugins/datatables.json?table=lead_invoice&where_lead_id={{id}}"
+                        id="lead_invoice-table"
+                        class="table table-striped table-bordered"
+                        >
+                        <thead>
+                        <tr>
+                        <th data-column="id" data-order="asc">id</th>
+                        <th data-column="date" data-order="asc">date</th>
+                        <th data-column="echeance">echeance</th>
+                        <th data-column="montant">montant</th>
+                        <th data-column="restant">restant dû</th>
+                        <th data-column="facture">facture</th>
+                        <th data-column="libelle">libéllé</th>
+                        <th data-column="documents">documents</th>
+                        <th data-action="edit"></th>
+                        <th data-action="remove"></th>
+                        </tr>
+                        </thead>
+                        <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+<!--<section id="content" >-->
+    <!--<div class="container-fluid">-->
+        <!--<br>-->
+        <!--<div class="row">-->
+            <!--<div class="col-md-2">-->
+                <!--<h5>Informations</h5>-->
+                <!--<hr>-->
+                <!--<p>Référence du mandat :  {{lead.mandat_number}}</p>-->
+                <!--<p>Categorie :  {{lead.category}}</p>-->
+                <!--<p>-->
+                <!--<form>-->
+                    <!--<label>Assigner le débiteur à un gestionnaire</label>-->
+                    <!--<select j-on-j:input="updateManager" is="select" name="user_id" autocomplete="off">-->
+                        <!--<option value="">Aucun</option>-->
+                        <!--<option j-for="user in usersList" :value="{{user.id}}">{{user.first_name}} {{user.last_name}} {{user.first_name||user.last_name?'':user.email}}</option>-->
+                    <!--</select>-->
+                <!--</form>-->
+                <!--</p>-->
+                <!--<hr>-->
+                <!--<h5>Scenario</h5>-->
+                <!--<hr>-->
+                <!--<p>-->
+                    <!--Timeline du scenario :-->
+                <!--</p>-->
+            <!--</div>-->
+            <!--<div class="col-md-10">-->
+                <!--<div class="col-md-6">-->
+                    <!--<div class="card">-->
+                        <!--<div class="card-header ch-alt">-->
+                            <!--<h2>Informations du créancier-->
+                                <!--<small>Details des informations du créancier...</small>-->
+                            <!--</h2>-->
+                        <!--</div>-->
+                        <!--<div class="card-body">-->
+                            <!--<blockquote class="m-b-25">-->
+                                <!--id : </b>{{id}} <br>-->
+                                <!--Société : </b>{{lead.corporate_name}} <br>-->
+                                <!--Siren : <br>-->
+                                <!--Siret : <br>-->
+                                <!--Tva intra. : <br>-->
+                                <!--Adresse : </b>{{lead.address}}<br>-->
+                                <!--Code postal : </b>{{lead.zip_code}}<br>-->
+                                <!--Ville : </b>{{lead.city}}<br>-->
+                                <!--Pays : {{lead.country}}<br>-->
+                                <!--<hr>-->
+                                <!--Nom : {{lead.last_name}}<br>-->
+                                <!--Prenom : {{lead.first_name}}<br>-->
+                                <!--Téléphone fixe : {{lead.phone}}<br>-->
+                                <!--Téléphone mobile : {{lead.mobile_phone}}<br>-->
+                                <!--Télécopie : {{lead.fax}}<br>-->
+                                <!--Email : {{lead.email}}<br>-->
+                            <!--</blockquote>-->
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-md-6">-->
+                    <!--<div class="card">-->
+                        <!--<div class="card-header ch-alt">-->
+                            <!--<h2>Informations du débiteur-->
+                                <!--<small>Details des informations du débiteur...</small>-->
+                            <!--</h2>-->
+                        <!--</div>-->
+                        <!--<div class="card-body">-->
+                            <!--<blockquote class="m-b-25">-->
+                                <!--Société : </b>{{lead.debit_name}} <br>-->
+                                <!--Siren : </b>{{lead.debit_siren}}<br>-->
+                                <!--Tva intra. : </b>{{lead.debit_tva}}<br>-->
+                                <!--Adresse : </b>{{lead.debit_address}}<br>-->
+                                <!--Code postal : </b>{{lead.debit_zip_code}}<br>-->
+                                <!--Ville : </b>{{lead.debit_city}}<br>-->
+                                <!--Pays : {{lead.debit_country}}<br>-->
+                                <!--<hr>-->
+                                <!--Nom : {{lead.debit_last_name}}<br>-->
+                                <!--Prenom : {{lead.debit_first_name}}<br>-->
+                                <!--Téléphone fixe : {{lead.debit_phone}}<br>-->
+                                <!--Email : {{lead.debit_email}}<br>-->
+                            <!--</blockquote>-->
+
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+                <!--<div class="col-md-12">-->
+                    <!--<div class="card">-->
+                        <!--<div class="card-header ch-alt">-->
+                            <!--<h2>Detail du dossier-->
+                                <!--<small>Details des informations du dossier...</small>-->
+                            <!--</h2>-->
+                        <!--</div>-->
+                        <!--<div class="card-body ">-->
+                            <!--<blockquote class="m-b-25">-->
+                                <!--Categorie : </b>{{lead.category}} <br>-->
+                                <!--Type : </b>{{lead.type}}<br>-->
+                                <!--Ancienneté : </b>{{lead.seniority}}<br>-->
+                                <!--Montant previsionnel du dossier : </b>{{lead.amount}}<br>-->
+                                <!--Montant reel du dossier : </b>{{lead.total}}<br>-->
+                                <!--Frais payable au : </b>{{lead.type_frais}}<br>-->
+                                <!--Cgu validées : </b>{{lead.validated}}<br>-->
+                            <!--</blockquote>-->
+                            <!--<table-->
+                                    <!--is="datatables"-->
+                                    <!--j-data-ajax&#45;&#45;url="plugins/datatables.json?table=lead_invoice&where_lead_id={{id}}"-->
+                                    <!--id="lead_invoice-table"-->
+                                    <!--class="table table-striped table-bordered"-->
+                            <!--&gt;-->
+                                <!--<thead>-->
+                                <!--<tr>-->
+                                    <!--<th data-column="id" data-order="asc">id</th>-->
+                                    <!--<th data-column="date" data-order="asc">date</th>-->
+                                    <!--<th data-column="echeance">echeance</th>-->
+                                    <!--<th data-column="montant">montant</th>-->
+                                    <!--<th data-column="restant">restant dû</th>-->
+                                    <!--<th data-column="facture">facture</th>-->
+                                    <!--<th data-column="libelle">libéllé</th>-->
+                                    <!--<th data-column="documents">documents</th>-->
+                                    <!--<th data-action="edit"></th>-->
+                                    <!--<th data-action="remove"></th>-->
+                                <!--</tr>-->
+                                <!--</thead>-->
+                                <!--<tbody></tbody>-->
+                            <!--</table>-->
+
+                        <!--</div>-->
+                    <!--</div>-->
+                <!--</div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->

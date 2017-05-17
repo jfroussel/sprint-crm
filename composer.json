@@ -1,0 +1,103 @@
+{
+    "name": "surikat/desico-redcat",
+    "type": "redcat-overlay",
+    "description": "Desico-RedCat Partner",
+    "keywords": [
+        "Full-Stack",
+        "Framework",
+        "Corporate"
+    ],
+    "license": "",
+    "homepage": "https://github.com/redcatphp/desico-redcat",
+    "authors": [
+        {
+            "name": "Jo Surikat",
+            "email": "jo@surikat.pro",
+            "homepage": "http://surikat.pro",
+            "role": "Lead Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "letudiant/composer-shared-package-plugin": "^3.1",
+        "paragonie/random_compat": "~2.0.0",
+        "neitanod/forceutf8": "~2.0.0",
+        "symfony/filesystem": "~3.1.0",
+        "mailgun/mailgun-php": "~2.1.0",
+        "php-http/curl-client": "~1.6.0",
+        "guzzlehttp/psr7": "~1.3.0",
+        "mikehaertl/phpwkhtmltopdf": "~2.2.0",
+        "redcatphp/redcatphp": "dev-master",
+        "foxorm/validate": "@dev",
+        "surikat/esker": "dev-master",
+        "surikat/service-postal": "~2.0.0",
+        "redcatphp/csv-tools": "~1.0.0",
+        "redcatphp/file-io": "@dev",
+        "redcatphp/autoload": "@dev",
+        "stripe/stripe-php": "~4.4.0",
+        "bower-asset/stylize-common": "@dev",
+        "bower-asset/fileinput-img": "@dev",
+        "bower-asset/bootstrap-material-wrap": "~0.2.0",
+        "bower-asset/timeliner": "@dev",
+        "bower-asset/scssphp-compass": "@dev",
+        "bower-asset/notifyjs": "^0.4.2"
+
+    },
+    "repositories": [
+
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/redcatphp/composer-shared-package-plugin"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/surikat/esker"
+        }
+    ],
+    "scripts": {
+        "post-install-cmd": [
+            "RedCat\\Artist\\ComposerArtist::redcatInstall",
+            "RedCat\\Artist\\ComposerArtist::mySetup"
+        ],
+        "post-update-cmd": [
+            "RedCat\\Artist\\ComposerArtist::redcatInstall",
+            "RedCat\\Artist\\ComposerArtist::mySetup"
+        ],
+        "post-create-project-cmd": [
+            "RedCat\\Artist\\ComposerArtist::redcatInstall",
+            "RedCat\\Artist\\ComposerArtist::mySetup"
+        ]
+    },
+    "config": {
+        "github-oauth": {
+
+        }
+    },
+    "minimum-stability": "dev",
+    "extra": {
+        "shared-package": {
+			"symlink-base-path": "./vendor/composer.shared",
+			"vendor-dir": "vendor/composer.shared",
+			"symlink-dir": "vendor",
+            "package-list": [
+                "*"
+            ],
+			"disable-on-windows":true
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.0",
+        "phpunit/php-code-coverage": "^5.0",
+        "phpunit/dbunit": "^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "RedCat\\Artist\\": "vendor/redcatphp/artist/src",
+            "App\\Artist\\": "plugins/artist"
+        }
+    }
+}

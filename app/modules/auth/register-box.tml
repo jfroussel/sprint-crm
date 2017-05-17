@@ -1,0 +1,70 @@
+<div class="container">
+	<form class="form-signin" method="POST">
+		<input type="hidden" name="action" value="register">
+		<h2 class="form-signin-heading">S'enregistrer sur Mycreance.com</h2>
+		<br>
+		<div class="row">
+			<div class="col-md-12">
+				<label for="inputEmail" class="sr-only">Email address</label>
+				<div class="fg-line">
+					<input type="email" id="inputEmail" name="email" class="form-control" placeholder="Saisir un E-mail valide" required autofocus>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<label for="Password" class="sr-only">Password</label>
+				<div class="fg-line">
+					<input type="password" id="Password" name="password" class="form-control" placeholder="Creez votre mot de passe" required>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<label for="Password-confirmation" class="sr-only">Password</label>
+				<div class="fg-line">
+					<input type="password" id="Password-confirmation" name="password_confirmation" class="form-control" placeholder="Confirmez votre mot de passe" required>
+				</div>
+			</div>
+		</div>
+
+		<br>
+		<button class="btn btn-lg btn-primary btn-block" type="submit">S'enregistrer</button>
+		<div class="clearfix"></div>
+		<br>
+		<div class="form-group">
+			<div class="col-sm-10">
+				<div class="checkbox ">
+					<label>
+						<input  type="checkbox" style="height: 20px; width:20px; margin-left:-40px; margin-top:0px">
+						Je declare avoir pris connaissance des conditions d'utilisation du site.
+						<a href="cgu">En savoir plus</a>
+					</label>
+				</div>
+				<div class="clearfix"></div>
+				<br>
+			</div>
+		</div>
+
+		<if "$action=='register'">
+			<if "isset($authResponse)&&$authResponse==App\Auth\Auth::ERROR_EMAIL_REGISTERING">
+				<a href="auth/resend" class="btn btn-primary btn-sm">Renvoyer un email d'activation</a>
+			</if>
+			<if "isset($authResponseMessage)">
+				<div class="alert alert-success">
+					<strong><?=$authResponseMessage?></strong>
+				</div>
+			</if>
+			<if "count($errors)">
+				<div class="alert alert-danger">
+					<strong>Oups!</strong> Veuillez vérifier les données saisies.<br><br>
+					<ul>
+						<foreach "$errors as $error">
+							<li><?=$error?></li>
+						</foreach>
+					</ul>
+				</div>
+			</if>
+		</if>
+	</form>
+</div>

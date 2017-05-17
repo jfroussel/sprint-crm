@@ -1,0 +1,25 @@
+<table
+        is="datatables"
+        j-data-ajax--url="plugins/datatables.json?table=agenda&where_todo_date={{currentDate}}"
+        j-data-paging="true"
+        id="debtors-table"
+        class="table table-striped table-bordered"
+>
+    <thead>
+    <tr>
+        <th data-column="id">id</th>
+        <th data-column="category">Categorie</th>
+        <th data-column="type">type d'action</th>
+        <th data-column="debtor_name">Nom client</th>
+        <th data-column="message">message</th>
+        <th data-column="ctime">crée le</th>
+        <th data-column="todo_date">à faire le</th>
+
+        <th data-column="status">statut</th>
+        <!--<th data-action="edit"  data-route="action/agenda/update?id="></th>-->
+        <th data-action="edit" data-type="modal" data-view="action/agenda/update" data-target="debtor-agenda"></th>
+
+    </tr>
+    </thead>
+    <tbody></tbody>
+</table>

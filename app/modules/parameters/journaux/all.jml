@@ -1,0 +1,33 @@
+<div class="card">
+    <div class="card-header ch-alt">
+        <h2>Parametrage des codes journaux</h2>
+        <button class="btn bgm-bluegray btn-icon-text waves-effect pull-right" data-toggle-jbs="modal" data-target="#journaux-new" data-jview="parameters/journaux/create" data-jview-inherit><i class="zmdi zmdi-calendar"></i>Créez un  code journal</button>
+
+    </div>
+
+    <table
+            is="datatables"
+            j-data-ajax--url="plugins/datatables.json?table=journaux",
+            j-data-checkbox-name="_many_journaux"
+            id="journaux-table"
+            class="table table-striped table-bordered"
+    >
+        <thead>
+        <tr>
+            <th></th>
+            <th></th>
+            <th data-column="id" data-visible="false">id</th>
+            <th data-column="code_journal"  data-order="desc">Code journal du client</th>
+            <th data-column="category_journal"  data-order="desc">Categorie journal</th>
+            <th data-column="if_debit"  data-order="desc">Si écriture au debit</th>
+            <th data-column="if_credit"  data-order="desc">Si écriture au credit</th>
+            <th data-column="ctime" data-format="dateformat" data-order="desc">enregistré le</th>
+            <th data-action="edit" data-type="modal" data-view="parameters/journaux/update"></th>
+
+            <th data-action="remove" data-url="journaux/all.json?method=delete" data-remove-body="Êtes-vous sûr de vouloir supprimer ce code « %s » ?"></th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <div class="modal fade" id="journaux-new" tabindex="-1" role="dialog" aria-hidden="true"></div>
+</div>

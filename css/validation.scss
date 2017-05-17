@@ -1,0 +1,23 @@
+.tab-content .form-group {
+    float:left;
+    width:100%;
+}
+.validation-error{
+	margin-left: 39px;
+
+	margin-top: -20px;
+
+	margin-bottom: 0;
+	display:block;
+	float:left;
+}
+.fg-float .validation-error{
+	margin-top: 0;
+	margin-left: 0;
+}
+.form-inline .validation-error{
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 40%;
+	clear:both;
+}

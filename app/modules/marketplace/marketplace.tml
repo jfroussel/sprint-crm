@@ -1,0 +1,15 @@
+<extend "layout/main">
+    <attr selector="body" addClass="home"/>
+    <prepend title>MyCreance.com</prepend>
+    <append title> - market place</append>
+    <append "header">
+		<include "market.tml">
+    </append>
+    <remove "#navbar-items" />
+    <append body>
+        <script type="text/javascript" src="dist/app-marketplace.js"></script>
+    </append>
+    <write main>
+        <incorpore "../lead/marketplace-section.tml">
+    </write>
+</extend>

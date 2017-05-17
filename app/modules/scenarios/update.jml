@@ -1,0 +1,301 @@
+<div class="container-fluid">
+
+	<form class="form-horizontal new-scenario" j-on-submit="updateScenario">
+		
+		<div class="card-header ch-alt">
+			<h4>Détail du scenario  {{scenario.name}}</h4>
+		</div>
+		
+		<hr>
+		<br>
+		<div class="card-body card-padding">
+			<div class="row">
+				<div class="col-md-2 float-wrap">
+					<div class="form-group fg-float">
+						<div class="fg-line">
+							<input type="text" name="scenario.name" class="form-control">
+						</div>
+						<label class="fg-label">Nom de votre scenario</label>
+					</div>
+				</div>
+				<div j-if="is_superroot">
+					<div class="col-md-2">
+						<div class="fg-line">
+							<div class="select">
+								<select class="form-control" name="scenario.category"  autocomplete="off">
+									<option>Selectionnez la categorie...</option>
+                                    <option value="loyer-impaye">loyer impayé</option>
+                                    <option value="cheque-impaye">chèque impayé</option>
+                                    <option value="creance-commerciale">créance commerciale</option>
+                                    <option value="reactivation-creance">réactivation de creance</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="fg-line">
+							<div class="select">
+								<select class="form-control" name="scenario.type"  autocomplete="off">
+									<option>Selectionnez le type...</option>
+									<option value="amiable">amiable</option>
+									<option value="judiciaire">judiciaire</option>
+									<option value="pre-contentieux">pre-contentieux</option>
+									<option value="injonction-payer">injonction de payer</option>
+									<option value="assignation-refere">assignation référé</option>
+									<option value="assignation-saisie">assignation saisie</option>
+									<option value="assignation-expulsion">assignation expulsion</option>
+									<option value="assignation-au-fond">assignation au fond</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div j-else class="col-md-2">
+					<div class="fg-line">
+						<div class="select">
+							<select class="form-control" name="scenario.letter"  autocomplete="off">
+								<option>Selectionnez la lettre...</option>
+								<option value="A">A</option>
+								<option value="B">B</option>
+								<option value="C">C</option>
+								<option value="D">D</option>
+								<option value="E">E</option>
+								<option value="F">F</option>
+								<option value="G">G</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2">
+					<div class="fg-line">
+						<div class="select">
+							<select class="form-control" name="scenario.active" autocomplete="off">
+								<option>Selectionnez la statut...</option>
+								<option value="1">Actif</option>
+								<option value="0">Inactif</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-2 float-wrap">
+					<div class="form-group fg-float">
+						<div class="fg-line">
+							<input is="inputnumber" type="text" value="" max="30" min="-30" step="1" class="form-control" name="scenario.start_day" autocomplete="off">
+						</div>
+						<label class="fg-label">Jour de démarrage</label>
+					</div>
+				</div>
+			</div>
+			<br>
+		</div>
+
+		<hr>
+		<div j-if="is_superroot" class="row" id="scenario-add-steps">
+			<div class="col-md-10">
+				<h4>Renseigner les étapes de votre scenario lead</h4>
+				<br>
+				<table class="scenario-step-list table table-bordered table-hover tab_logic">
+					<thead>
+					<tr >
+						<th class="text-left">
+							N° de l'étape
+						</th>
+						<th class="text-left">Ancienneté de la facture étalon</th>
+						<th class="text-left">
+							Type d'action
+						</th>
+						<th class="text-left">
+							Modéle associé à l'action
+						</th>
+						<th class="text-left">
+							Intervales entre 2 actions(jours)
+						</th>
+						<th class="text-left">
+							<a j-on-click="addStep" class="add_row btn btn-success btn-icon waves-effect waves-circle waves-float pull-right">+</a>
+						</th>
+					</tr>
+					</thead>
+					<tbody>
+					<tr j-for="(i,index,scenario_step_row) in scenario_step" class="template-step-row">
+						<td>{{i}}</td>
+						<td>
+							<div class="row">
+								<div class="col-md-3">
+									<div class="form-group">
+										<div class="fg-line">
+											<input class="form-control start-day " type="text" readonly>
+										</div>
+										<label class="text-center w-100 f-300">Du jour</label>
+									</div>
+								</div>
+								<div class="col-md-3">
+									<div class="form-group">
+										<div class="fg-line text-left">
+											<input is="inputnumber" step="1" class="form-control end-day" type="text">
+										</div>
+										<label class="text-center w-100 f-300">Au jour</label>
+									</div>
+								</div>
+							</div>
+						</td>
+						<td>
+							<select is="select" j-data-style="btn-default" class="show-tick" :name="scenario_step[{{index}}][type]" autocomplete="off">
+								<option value="" selected disabled>Selectionnez le type d'action...</option>
+								<option value="tel">Appel tel</option>
+								<option value="sms">Sms</option>
+								<option value="email">email</option>
+								<option value="LETTRE_ECOPLI">lettre ecopli</option>
+								<option value="LETTRE_RECOMMANDEE_AVEC_AR">lettre recommandé A/R</option>
+							</select>
+						</td>
+
+						<td>
+							
+							<div j-if="scenario.category == 'loyer-impaye' ">
+								<select is="select" class="show-tick" j-data-style="btn-default" :name="scenario_step[{{index}}][template_id]" autocomplete="off">
+									<option value="" selected disabled>Selectionnez le modele associé...</option>
+									<option j-for="(id, template) in templatesLoyerImpaye" :value="{{id}}">{{template.name}}</option>
+								</select>
+							</div>
+							<div j-if="scenario.category=='cheque-impaye'">
+								<select is="select" class="show-tick" j-data-style="btn-default" :name="scenario_step[{{index}}][template_id]" autocomplete="off">
+									<option value="" selected disabled>Selectionnez le modele associé...</option>
+									<option j-for="(id, template) in templatesChequeImpaye" :value="{{id}}">{{template.name}}</option>
+								</select>
+							</div>
+							<div j-if="scenario.category=='creance-commerciale'">
+								<select is="select" class="show-tick" j-data-style="btn-default" :name="scenario_step[{{index}}][template_id]" autocomplete="off">
+									<option value="" selected disabled>Selectionnez le modele associé...</option>
+									<option j-for="(id, template) in templatesCreanceCommerciale" :value="{{id}}">{{template.name}}</option>
+								</select>
+							</div>
+							<div j-if="scenario.category=='reactivation-creance'">
+								<select is="select" class="show-tick" j-data-style="btn-default" :name="scenario_step[{{index}}][template_id]" autocomplete="off">
+									<option value="" selected disabled>Selectionnez le modele associé...</option>
+									<option j-for="(id, template) in templatesReactivationCreance" :value="{{id}}">{{template.name}}</option>
+								</select>
+							</div>
+							
+						</td>
+						<td>
+							<div class="fg-line">
+								<input is="inputnumber" type="text" value="1" max="30" min="1" step="1" :name="scenario_step[{{index}}][length]" class="form-control step-length">
+							</div>
+						</td>
+						<td>
+							<a j-on-click="removeStep" class="delete_row btn btn-danger btn-icon waves-effect waves-circle waves-float pull-right">-</a>
+						</td>
+					</tr>
+					</tbody>
+				</table>
+				<br>
+				<button type="submit" class="btn btn-success pull-right">Enregistrer</button>
+			</div>
+
+		</div>
+		<div j-else class="row" id="scenario-add-steps">
+			<div class="col-md-10">
+				<h4>Renseigner les étapes de votre scenario</h4>
+				<br>
+				<table class="scenario-step-list table table-bordered table-hover tab_logic">
+					<thead>
+					<tr >
+						<th class="text-left">
+							N° de l'étape
+						</th>
+						<th class="text-left">Ancienneté de la facture étalon</th>
+						<th class="text-left">
+							Type d'action
+						</th>
+
+						<th class="text-left">
+							Groupe destinataire
+						</th>
+
+						<th class="text-left">
+							Modéle associé à l'action
+						</th>
+						<th class="text-left">
+							Intervales entre 2 actions(jours)
+						</th>
+						<th class="text-left">
+							<a j-on-click="addStep" class="add_row btn btn-success btn-icon waves-effect waves-circle waves-float pull-right">+</a>
+						</th>
+					</tr>
+					</thead>
+					<tbody>
+						<tr j-for="(i,index,scenario_step_row) in scenario_step" class="template-step-row">
+							<td>{{i}}</td>
+							<td>
+								<div class="row">
+									<div class="col-md-3">
+										<div class="form-group">
+											<div class="fg-line">
+												<input class="form-control start-day " type="text" readonly>
+											</div>
+											<label class="text-center w-100 f-300">Du jour</label>
+										</div>
+									</div>
+									<div class="col-md-3">
+										<div class="form-group">
+											<div class="fg-line text-left">
+												<input is="inputnumber" step="1" class="form-control end-day" type="text">
+											</div>
+											<label class="text-center w-100 f-300">Au jour</label>
+										</div>
+									</div>
+								</div>
+							</td>
+							<td>
+								<select is="select" j-data-style="btn-default" class="show-tick" :name="scenario_step[{{index}}][type]" autocomplete="off">
+									<option value="" selected disabled>Selectionnez le type d'action...</option>
+									<option value="tel">Appel tel</option>
+									<option value="sms">Sms</option>
+									<option value="email">email</option>
+									<option value="LETTRE_VERTE">lettre verte</option>
+									<option value="LETTRE_ECOPLI">lettre ecopli</option>
+									<option value="LETTRE_PRIORITAIRE">lettre prioritaire</option>
+									<option value="LETTRE_RECOMMANDEE_AVEC_AR">lettre recommandé A/R</option>
+									<option value="LETTRE_RECOMMANDEE">lettre recommandée</option>
+								</select>
+							</td>
+							<td>
+								<select is="select" j-data-style="btn-default" class="show-tick" :name="scenario_step[{{index}}][group_recipient]" autocomplete="off">
+									<option value="" selected disabled>Selectionnez le destinataire.</option>
+									<optgroup label="pour le creancier">
+										<option value="creancier-gestionnaire">le gestionnaire</option>
+										<option value="creancier-directeur-commercial">le directeur commercial</option>
+										<option value="creancier-comptable">le comptable</option>
+									</optgroup>
+									<optgroup label="pour le debiteur">
+										<option value="debiteur-contact">le contact preferentiel</option>
+										<option value="debiteur-comptable">le comptable</option>
+									</optgroup>
+								</select>
+							</td>
+
+							<td>
+								<select is="select" class="show-tick" j-data-style="btn-default" :name="scenario_step[{{index}}][template_id]" autocomplete="off">
+									<option value="" selected disabled>Selectionnez le modele associé...</option>
+									<option j-for="(id, template) in templatesList" :value="{{id}}">{{template.name}}</option>
+								</select>
+							</td>
+							<td>
+								<div class="fg-line">
+									<input is="inputnumber" type="text" value="1" max="30" min="1" step="1" :name="scenario_step[{{index}}][length]" class="form-control step-length">
+								</div>
+							</td>
+							<td>
+								<a j-on-click="removeStep" class="delete_row btn btn-danger btn-icon waves-effect waves-circle waves-float pull-right">-</a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<br>
+				<button type="submit" class="btn btn-success pull-right">Enregistrer</button>
+			</div>
+		</div>
+	</form>
+
+</div>

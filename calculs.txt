@@ -1,0 +1,180 @@
+CI (cheques impayes)
+	honoraire = 15%
+	if type == amiable
+		if <=128€
+			frais = 105%
+		elseif <=1280€
+			frais = 25%
+		else
+			frais = 20%
+	if type == judiciaire
+		procedure = 0%
+	
+LI (loyers impayes)
+	if type == pre-contentieux
+		if <=128€
+			honoraire = 13%
+		else
+			honoraire = 10%
+			
+		if <=128€
+			frais = 81%
+		elseif <= 1280€
+			frais = 15%
+		else
+			frais = 11%
+	
+	if type == assignation-saisie
+		if <=128€
+			honoraire = 13%
+		else
+			honoraire = 10%
+		if <=128€
+			frais = 95%
+		elseif <=1280€
+			frais = 18%
+		else
+			frais = 15%
+		
+	if type == assignation-expulsion
+		if <=128€
+			honoraire = 13%
+		else
+			honoraire = 10%
+		if <=128€
+			frais = 126%
+		elseif <=1280€
+			frais = 25%
+		else
+			frais = 19%
+
+CC (creances commerciales)
+	if type == amiable
+		frais = 0%
+		if seniority == +1an
+			if <=1999€
+				honoraire = 20%
+			elseif <=14999€
+				if pre-contentieuse
+					honoraire = 16%
+				else
+					honoraire = 17%
+			elseif <=24999€
+				honoraire = 14%
+			else
+				honoraire = 11%	
+
+		if seniority == -1an
+			if <=1999€
+				honoraire = 15%
+			elseif <=14999€
+				honoraire = 14%
+			else
+				honoraire = 10%
+	
+	if type == pre contentieuse
+		frais = 210 €
+		if seniority == +1an
+			if <= 1999€
+				honoraire = 20%
+			elseif <= 14999€
+				honoraire = 16%
+			else
+				honoraire = 11%
+		
+		if seniority == -1an
+			if <= 1999€
+				honoraire = 15%
+			elseif <= 14999€
+				honoraire = 14%
+			else
+				honoraire = 10%
+		
+		
+	if type == injonction de payer
+		frais = 350 €
+		if seniority == +1an
+			if <= 1999€
+				honoraire = 20%
+			elseif <= 14999€
+				honoraire = 16%
+			else
+				honoraire = 11%
+						
+		if seniority == -1an
+			  if <= 1999€
+				honoraire = 15%
+			  elseif <= 14999€
+				honoraire = 14%
+			  else
+				honoraire = 10%
+
+	if type == assignation en refere
+		frais = 1500 €
+		if seniority == +1an
+			if <= 1999€
+				honoraire = 20%
+			elseif <= 14999€
+				honoraire = 16%
+			else
+				honoraire = 11%
+		
+		if seniority == -1an
+			if <= 1999€
+				honoraire = 15%
+			elseif <= 14999€
+				honoraire = 14%
+			else
+				honoraire = 10%
+
+RC (reactivation de creances)
+	if type == amiable
+		frais = 0%
+		if seniority == +1an
+			if <=1999€
+				honoraire = 20%
+			elseif <= 14999€
+				honoraire = 17%
+			elseif <= 24999€
+				honoraire = 13%
+			else
+				honoraire = 11%
+		
+		if seniority == -1an
+			frais = 0%
+			if <= 1999€
+				honoraire = 18%
+			elseif <= 14999€
+				honoraire = 14%
+			else
+				honoraire = 10%
+
+	if type == pre contentieuse && seniority == +1an
+		frais = 210 €
+		if <= 1999€
+			honoraire = 20%
+		elseif <= 14999€
+			honoraire = 17%
+		elseif <= 24999€
+			honoraire = 13%
+		else
+			honoraire = 11%
+
+
+	if type == injonction de payer
+		if <= 1999€
+			honoraire = 20%
+		elseif <= 14999€
+			honoraire = 17%
+		elseif <= 24999€
+			honoraire = 13%
+		else
+			honoraire = 11%
+		
+		if seniority == +1an
+			frais 350 €
+
+		if seniority == -1an
+			frais = 1500 €
+
+

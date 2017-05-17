@@ -1,0 +1,517 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="dbphpunit">
+	<table_structure name="scenario_step">
+		<field Field="id" Type="int(11) unsigned" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="type" Type="varchar(191)" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="template" Type="int(11) unsigned" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="interval" Type="int(11) unsigned" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="scenario_id" Type="int(11) unsigned" Null="YES" Key="MUL" Extra="" Comment="" />
+		<field Field="length" Type="int(11) unsigned" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="user_id" Type="int(11) unsigned" Null="YES" Key="MUL" Extra="" Comment="" />
+		<field Field="template_id" Type="int(11) unsigned" Null="YES" Key="MUL" Extra="" Comment="" />
+		<field Field="running_scenario_id" Type="int(11) unsigned" Null="YES" Key="MUL" Extra="" Comment="" />
+		<field Field="old_invoice_from" Type="double" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="old_invoice_to" Type="int(11) unsigned" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="group_recipient" Type="varchar(191)" Null="YES" Key="" Extra="" Comment="" />
+		<key Table="scenario_step" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="id" Collation="A" Cardinality="35" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="scenario_step" Non_unique="1" Key_name="c_fk_scenario_details_scenario_id" Seq_in_index="1" Column_name="scenario_id" Collation="A" Cardinality="35" Null="YES" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="scenario_step" Non_unique="1" Key_name="c_fk_scenario_step_user_id" Seq_in_index="1" Column_name="user_id" Collation="A" Cardinality="2" Null="YES" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="scenario_step" Non_unique="1" Key_name="c_fk_scenario_step_template_id" Seq_in_index="1" Column_name="template_id" Collation="A" Cardinality="7" Null="YES" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="scenario_step" Non_unique="1" Key_name="c_fk_scenario_step_running_scenario_id" Seq_in_index="1" Column_name="running_scenario_id" Collation="A" Cardinality="2" Null="YES" Index_type="BTREE" Comment="" Index_comment="" />
+		<options Name="scenario_step" Engine="InnoDB" Version="10" Row_format="Compact" Rows="35" Avg_row_length="468" Data_length="16384" Max_data_length="0" Index_length="65536" Data_free="30408704" Auto_increment="1782" Create_time="2016-12-28 10:26:43" Collation="utf8_unicode_ci" Create_options="" Comment="" />
+	</table_structure>
+	<table_data name="scenario_step">
+	<row>
+		<field name="id">2</field>
+		<field name="type">sms</field>
+		<field name="template">2</field>
+		<field name="interval">3</field>
+		<field name="scenario_id">1</field>
+		<field name="length">1</field>
+		<field name="user_id" xsi:nil="true" />
+		<field name="template_id" xsi:nil="true" />
+		<field name="running_scenario_id" xsi:nil="true" />
+		<field name="old_invoice_from" xsi:nil="true" />
+		<field name="old_invoice_to" xsi:nil="true" />
+		<field name="group_recipient" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">3</field>
+		<field name="type">courrier-simple</field>
+		<field name="template">3</field>
+		<field name="interval">5</field>
+		<field name="scenario_id">1</field>
+		<field name="length">1</field>
+		<field name="user_id" xsi:nil="true" />
+		<field name="template_id" xsi:nil="true" />
+		<field name="running_scenario_id" xsi:nil="true" />
+		<field name="old_invoice_from" xsi:nil="true" />
+		<field name="old_invoice_to" xsi:nil="true" />
+		<field name="group_recipient" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">4</field>
+		<field name="type">sms</field>
+		<field name="template">1</field>
+		<field name="interval">0</field>
+		<field name="scenario_id">2</field>
+		<field name="length">11</field>
+		<field name="user_id" xsi:nil="true" />
+		<field name="template_id">1</field>
+		<field name="running_scenario_id" xsi:nil="true" />
+		<field name="old_invoice_from" xsi:nil="true" />
+		<field name="old_invoice_to" xsi:nil="true" />
+		<field name="group_recipient">creancier-gestionnaire</field>
+	</row>
+	<row>
+		<field name="id">5</field>
+		<field name="type">tel</field>
+		<field name="template">3</field>
+		<field name="interval">2</field>
+		<field name="scenario_id">2</field>
+		<field name="length">6</field>
+		<field name="user_id" xsi:nil="true" />
+		<field name="template_id">1</field>
+		<field name="running_scenario_id" xsi:nil="true" />
+		<field name="old_invoice_from" xsi:nil="true" />
+		<field name="old_invoice_to" xsi:nil="true" />
+		<field name="group_recipient">creancier-gestionnaire</field>
+	</row>
+	<row>
+		<field name="id">6</field>
+		<field name="type">sms</field>
+		<field name="template">3</field>
+		<field name="interval">6</field>
+		<field name="scenario_id">2</field>
+		<field name="length">2</field>
+		<field name="user_id" xsi:nil="true" />
+		<field name="template_id">1</field>
+		<field name="running_scenario_id" xsi:nil="true" />
+		<field name="old_invoice_from" xsi:nil="true" />
+		<field name="old_invoice_to" xsi:nil="true" />
+		<field name="group_recipient">creancier-gestionnaire</field>
+	</row>
+	<row>
+		<field name="id">7</field>
+		<field name="type">tel</field>
+		<field name="template" xsi:nil="true" />
+		<field name="interval">0</field>
+		<field name="scenario_id">3</field>
+		<field name="length">1</field>
+		<field name="user_id" xsi:nil="true" />
+		<field name="template_id">1</field>
+		<field name="running_scenario_id" xsi:nil="true" />
+		<field name="old_invoice_from" xsi:nil="true" />
+		<field name="old_invoice_to" xsi:nil="true" />
+		<field name="group_recipient">creancier-gestionnaire</field>
+	</row>
+	<row>
+		<field name="id">8</field>
+		<field name="type">email</field>
+		<field name="template">2</field>
+		<field name="interval">4</field>
+		<field name="scenario_id">3</field>
+		<field name="length">1</field>
+		<field name="user_id" xsi:nil="true" />
+		<field name="template_id">1</field>
+		<field name="running_scenario_id" xsi:nil="true" />
+		<field name="old_invoice_from" xsi:nil="true" />
+		<field name="old_invoice_to" xsi:nil="true" />
+		<field name="group_recipient">creancier-gestionnaire</field>
+	</row>
+	<row>
+		<field name="id">9</field>
+		<field name="type">courrier-recommande</field>
+		<field name="template">4</field>
+		<field name="interval">6</field>
+		<field name="scenario_id">3</field>
+		<field name="length">1</field>
+		<field name="user_id" xsi:nil="true" />
+		<field name="template_id">1</field>
+		<field name="running_scenario_id" xsi:nil="true" />
+		<field name="old_invoice_from" xsi:nil="true" />
+		<field name="old_invoice_to" xsi:nil="true" />
+		<field name="group_recipient">creancier-gestionnaire</field>
+	</row>
+	<row>
+		<field name="id">1738</field>
+		<field name="type">tel</field>
+		<field name="template">2</field>
+		<field name="interval" xsi:nil="true" />
+		<field name="scenario_id">7</field>
+		<field name="length">1</field>
+		<field name="user_id" xsi:nil="true" />
+		<field name="template_id" xsi:nil="true" />
+		<field name="running_scenario_id" xsi:nil="true" />
+		<field name="old_invoice_from" xsi:nil="true" />
+		<field name="old_invoice_to" xsi:nil="true" />
+		<field name="group_recipient" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1739</field>
+		<field name="type">tel</field>
+		<field name="template">2</field>
+		<field name="interval" xsi:nil="true" />
+		<field name="scenario_id">7</field>
+		<field name="length">1</field>
+		<field name="user_id" xsi:nil="true" />
+		<field name="template_id" xsi:nil="true" />
+		<field name="running_scenario_id" xsi:nil="true" />
+		<field name="old_invoice_from" xsi:nil="true" />
+		<field name="old_invoice_to" xsi:nil="true" />
+		<field name="group_recipient" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1746</field>
+		<field name="type">tel</field>
+		<field name="template" xsi:nil="true" />
+		<field name="interval" xsi:nil="true" />
+		<field name="scenario_id">7</field>
+		<field name="length">1</field>
+		<field name="user_id" xsi:nil="true" />
+		<field name="template_id" xsi:nil="true" />
+		<field name="running_scenario_id" xsi:nil="true" />
+		<field name="old_invoice_from" xsi:nil="true" />
+		<field name="old_invoice_to" xsi:nil="true" />
+		<field name="group_recipient" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1747</field>
+		<field name="type">tel</field>
+		<field name="template" xsi:nil="true" />
+		<field name="interval" xsi:nil="true" />
+		<field name="scenario_id">7</field>
+		<field name="length">1</field>
+		<field name="user_id" xsi:nil="true" />
+		<field name="template_id" xsi:nil="true" />
+		<field name="running_scenario_id" xsi:nil="true" />
+		<field name="old_invoice_from" xsi:nil="true" />
+		<field name="old_invoice_to" xsi:nil="true" />
+		<field name="group_recipient" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1748</field>
+		<field name="type">tel</field>
+		<field name="template" xsi:nil="true" />
+		<field name="interval" xsi:nil="true" />
+		<field name="scenario_id">7</field>
+		<field name="length">1</field>
+		<field name="user_id" xsi:nil="true" />
+		<field name="template_id" xsi:nil="true" />
+		<field name="running_scenario_id" xsi:nil="true" />
+		<field name="old_invoice_from" xsi:nil="true" />
+		<field name="old_invoice_to" xsi:nil="true" />
+		<field name="group_recipient" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1753</field>
+		<field name="type">tel</field>
+		<field name="template" xsi:nil="true" />
+		<field name="interval" xsi:nil="true" />
+		<field name="scenario_id">2</field>
+		<field name="length">3</field>
+		<field name="user_id" xsi:nil="true" />
+		<field name="template_id">1</field>
+		<field name="running_scenario_id" xsi:nil="true" />
+		<field name="old_invoice_from" xsi:nil="true" />
+		<field name="old_invoice_to" xsi:nil="true" />
+		<field name="group_recipient">creancier-gestionnaire</field>
+	</row>
+	<row>
+		<field name="id">1755</field>
+		<field name="type">tel</field>
+		<field name="template" xsi:nil="true" />
+		<field name="interval" xsi:nil="true" />
+		<field name="scenario_id">35</field>
+		<field name="length">1</field>
+		<field name="user_id" xsi:nil="true" />
+		<field name="template_id" xsi:nil="true" />
+		<field name="running_scenario_id" xsi:nil="true" />
+		<field name="old_invoice_from" xsi:nil="true" />
+		<field name="old_invoice_to" xsi:nil="true" />
+		<field name="group_recipient" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1756</field>
+		<field name="type">sms</field>
+		<field name="template" xsi:nil="true" />
+		<field name="interval" xsi:nil="true" />
+		<field name="scenario_id">35</field>
+		<field name="length">1</field>
+		<field name="user_id" xsi:nil="true" />
+		<field name="template_id" xsi:nil="true" />
+		<field name="running_scenario_id" xsi:nil="true" />
+		<field name="old_invoice_from" xsi:nil="true" />
+		<field name="old_invoice_to" xsi:nil="true" />
+		<field name="group_recipient" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1757</field>
+		<field name="type">courrier-simple</field>
+		<field name="template" xsi:nil="true" />
+		<field name="interval" xsi:nil="true" />
+		<field name="scenario_id">35</field>
+		<field name="length">1</field>
+		<field name="user_id" xsi:nil="true" />
+		<field name="template_id" xsi:nil="true" />
+		<field name="running_scenario_id" xsi:nil="true" />
+		<field name="old_invoice_from" xsi:nil="true" />
+		<field name="old_invoice_to" xsi:nil="true" />
+		<field name="group_recipient" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1758</field>
+		<field name="type">tel</field>
+		<field name="template" xsi:nil="true" />
+		<field name="interval" xsi:nil="true" />
+		<field name="scenario_id">36</field>
+		<field name="length">1</field>
+		<field name="user_id" xsi:nil="true" />
+		<field name="template_id">1</field>
+		<field name="running_scenario_id" xsi:nil="true" />
+		<field name="old_invoice_from" xsi:nil="true" />
+		<field name="old_invoice_to" xsi:nil="true" />
+		<field name="group_recipient">creancier-gestionnaire</field>
+	</row>
+	<row>
+		<field name="id">1759</field>
+		<field name="type">courrier-simple</field>
+		<field name="template" xsi:nil="true" />
+		<field name="interval" xsi:nil="true" />
+		<field name="scenario_id">36</field>
+		<field name="length">6</field>
+		<field name="user_id" xsi:nil="true" />
+		<field name="template_id">1</field>
+		<field name="running_scenario_id" xsi:nil="true" />
+		<field name="old_invoice_from" xsi:nil="true" />
+		<field name="old_invoice_to" xsi:nil="true" />
+		<field name="group_recipient">creancier-gestionnaire</field>
+	</row>
+	<row>
+		<field name="id">1760</field>
+		<field name="type">courrier-recommande</field>
+		<field name="template" xsi:nil="true" />
+		<field name="interval" xsi:nil="true" />
+		<field name="scenario_id">36</field>
+		<field name="length">4</field>
+		<field name="user_id" xsi:nil="true" />
+		<field name="template_id">1</field>
+		<field name="running_scenario_id" xsi:nil="true" />
+		<field name="old_invoice_from" xsi:nil="true" />
+		<field name="old_invoice_to" xsi:nil="true" />
+		<field name="group_recipient">creancier-gestionnaire</field>
+	</row>
+	<row>
+		<field name="id">1761</field>
+		<field name="type">sms</field>
+		<field name="template" xsi:nil="true" />
+		<field name="interval" xsi:nil="true" />
+		<field name="scenario_id">36</field>
+		<field name="length">3</field>
+		<field name="user_id" xsi:nil="true" />
+		<field name="template_id">1</field>
+		<field name="running_scenario_id" xsi:nil="true" />
+		<field name="old_invoice_from" xsi:nil="true" />
+		<field name="old_invoice_to" xsi:nil="true" />
+		<field name="group_recipient">creancier-gestionnaire</field>
+	</row>
+	<row>
+		<field name="id">1762</field>
+		<field name="type">tel</field>
+		<field name="template" xsi:nil="true" />
+		<field name="interval" xsi:nil="true" />
+		<field name="scenario_id">36</field>
+		<field name="length">1</field>
+		<field name="user_id" xsi:nil="true" />
+		<field name="template_id">1</field>
+		<field name="running_scenario_id" xsi:nil="true" />
+		<field name="old_invoice_from" xsi:nil="true" />
+		<field name="old_invoice_to" xsi:nil="true" />
+		<field name="group_recipient">creancier-gestionnaire</field>
+	</row>
+	<row>
+		<field name="id">1768</field>
+		<field name="type">email</field>
+		<field name="template" xsi:nil="true" />
+		<field name="interval" xsi:nil="true" />
+		<field name="scenario_id">38</field>
+		<field name="length">7</field>
+		<field name="user_id" xsi:nil="true" />
+		<field name="template_id">6</field>
+		<field name="running_scenario_id" xsi:nil="true" />
+		<field name="old_invoice_from" xsi:nil="true" />
+		<field name="old_invoice_to" xsi:nil="true" />
+		<field name="group_recipient">creancier-gestionnaire</field>
+	</row>
+	<row>
+		<field name="id">1769</field>
+		<field name="type">courrier-simple</field>
+		<field name="template" xsi:nil="true" />
+		<field name="interval" xsi:nil="true" />
+		<field name="scenario_id">38</field>
+		<field name="length">1</field>
+		<field name="user_id" xsi:nil="true" />
+		<field name="template_id">1</field>
+		<field name="running_scenario_id" xsi:nil="true" />
+		<field name="old_invoice_from" xsi:nil="true" />
+		<field name="old_invoice_to" xsi:nil="true" />
+		<field name="group_recipient">creancier-gestionnaire</field>
+	</row>
+	<row>
+		<field name="id">1770</field>
+		<field name="type">tel</field>
+		<field name="template" xsi:nil="true" />
+		<field name="interval" xsi:nil="true" />
+		<field name="scenario_id">38</field>
+		<field name="length">4</field>
+		<field name="user_id" xsi:nil="true" />
+		<field name="template_id">1</field>
+		<field name="running_scenario_id" xsi:nil="true" />
+		<field name="old_invoice_from" xsi:nil="true" />
+		<field name="old_invoice_to" xsi:nil="true" />
+		<field name="group_recipient">creancier-gestionnaire</field>
+	</row>
+	<row>
+		<field name="id">1771</field>
+		<field name="type">tel</field>
+		<field name="template" xsi:nil="true" />
+		<field name="interval" xsi:nil="true" />
+		<field name="scenario_id">38</field>
+		<field name="length">1</field>
+		<field name="user_id" xsi:nil="true" />
+		<field name="template_id">1</field>
+		<field name="running_scenario_id" xsi:nil="true" />
+		<field name="old_invoice_from" xsi:nil="true" />
+		<field name="old_invoice_to" xsi:nil="true" />
+		<field name="group_recipient">creancier-gestionnaire</field>
+	</row>
+	<row>
+		<field name="id">1772</field>
+		<field name="type" xsi:nil="true" />
+		<field name="template" xsi:nil="true" />
+		<field name="interval" xsi:nil="true" />
+		<field name="scenario_id">39</field>
+		<field name="length" xsi:nil="true" />
+		<field name="user_id" xsi:nil="true" />
+		<field name="template_id" xsi:nil="true" />
+		<field name="running_scenario_id" xsi:nil="true" />
+		<field name="old_invoice_from" xsi:nil="true" />
+		<field name="old_invoice_to" xsi:nil="true" />
+		<field name="group_recipient" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1773</field>
+		<field name="type" xsi:nil="true" />
+		<field name="template" xsi:nil="true" />
+		<field name="interval" xsi:nil="true" />
+		<field name="scenario_id">39</field>
+		<field name="length" xsi:nil="true" />
+		<field name="user_id" xsi:nil="true" />
+		<field name="template_id" xsi:nil="true" />
+		<field name="running_scenario_id" xsi:nil="true" />
+		<field name="old_invoice_from" xsi:nil="true" />
+		<field name="old_invoice_to" xsi:nil="true" />
+		<field name="group_recipient" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1774</field>
+		<field name="type" xsi:nil="true" />
+		<field name="template" xsi:nil="true" />
+		<field name="interval" xsi:nil="true" />
+		<field name="scenario_id">39</field>
+		<field name="length" xsi:nil="true" />
+		<field name="user_id" xsi:nil="true" />
+		<field name="template_id" xsi:nil="true" />
+		<field name="running_scenario_id" xsi:nil="true" />
+		<field name="old_invoice_from" xsi:nil="true" />
+		<field name="old_invoice_to" xsi:nil="true" />
+		<field name="group_recipient" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1775</field>
+		<field name="type" xsi:nil="true" />
+		<field name="template" xsi:nil="true" />
+		<field name="interval" xsi:nil="true" />
+		<field name="scenario_id">39</field>
+		<field name="length" xsi:nil="true" />
+		<field name="user_id" xsi:nil="true" />
+		<field name="template_id" xsi:nil="true" />
+		<field name="running_scenario_id" xsi:nil="true" />
+		<field name="old_invoice_from" xsi:nil="true" />
+		<field name="old_invoice_to" xsi:nil="true" />
+		<field name="group_recipient" xsi:nil="true" />
+	</row>
+	<row>
+		<field name="id">1776</field>
+		<field name="type">tel</field>
+		<field name="template" xsi:nil="true" />
+		<field name="interval" xsi:nil="true" />
+		<field name="scenario_id">40</field>
+		<field name="length">21</field>
+		<field name="user_id" xsi:nil="true" />
+		<field name="template_id">1</field>
+		<field name="running_scenario_id" xsi:nil="true" />
+		<field name="old_invoice_from" xsi:nil="true" />
+		<field name="old_invoice_to" xsi:nil="true" />
+		<field name="group_recipient">creancier-gestionnaire</field>
+	</row>
+	<row>
+		<field name="id">1777</field>
+		<field name="type">email</field>
+		<field name="template" xsi:nil="true" />
+		<field name="interval" xsi:nil="true" />
+		<field name="scenario_id">40</field>
+		<field name="length">7</field>
+		<field name="user_id" xsi:nil="true" />
+		<field name="template_id">1</field>
+		<field name="running_scenario_id" xsi:nil="true" />
+		<field name="old_invoice_from" xsi:nil="true" />
+		<field name="old_invoice_to" xsi:nil="true" />
+		<field name="group_recipient">creancier-gestionnaire</field>
+	</row>
+	<row>
+		<field name="id">1778</field>
+		<field name="type">courrier-simple</field>
+		<field name="template" xsi:nil="true" />
+		<field name="interval" xsi:nil="true" />
+		<field name="scenario_id">40</field>
+		<field name="length">4</field>
+		<field name="user_id" xsi:nil="true" />
+		<field name="template_id">1</field>
+		<field name="running_scenario_id" xsi:nil="true" />
+		<field name="old_invoice_from" xsi:nil="true" />
+		<field name="old_invoice_to" xsi:nil="true" />
+		<field name="group_recipient">creancier-gestionnaire</field>
+	</row>
+	<row>
+		<field name="id">1780</field>
+		<field name="type">tel</field>
+		<field name="template" xsi:nil="true" />
+		<field name="interval" xsi:nil="true" />
+		<field name="scenario_id">40</field>
+		<field name="length">1</field>
+		<field name="user_id" xsi:nil="true" />
+		<field name="template_id">1</field>
+		<field name="running_scenario_id" xsi:nil="true" />
+		<field name="old_invoice_from" xsi:nil="true" />
+		<field name="old_invoice_to" xsi:nil="true" />
+		<field name="group_recipient">creancier-gestionnaire</field>
+	</row>
+	<row>
+		<field name="id">1781</field>
+		<field name="type">tel</field>
+		<field name="template" xsi:nil="true" />
+		<field name="interval" xsi:nil="true" />
+		<field name="scenario_id">40</field>
+		<field name="length">1</field>
+		<field name="user_id" xsi:nil="true" />
+		<field name="template_id">1</field>
+		<field name="running_scenario_id" xsi:nil="true" />
+		<field name="old_invoice_from" xsi:nil="true" />
+		<field name="old_invoice_to" xsi:nil="true" />
+		<field name="group_recipient">creancier-gestionnaire</field>
+	</row>
+	</table_data>
+</database>
+</mysqldump>

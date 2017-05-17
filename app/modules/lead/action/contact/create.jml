@@ -1,0 +1,98 @@
+<div class="modal-header bgm-bluegray m-b-20 ">
+	<h4 class="modal-title c-white t-uppercase">Ajouter un contact  pour le debiteur :  "{{nom_client}}"  <span class="debtor-name"></span> </h4>
+</div>
+<div class="modal-body">
+	<form class="form-horizontal" j-name="contact"  id="contact">
+		<div class="row">
+			<div class="col-md-5">
+				<div class="checkbox m-b-15">
+					<label>
+						<input value="1" type="checkbox" name="principal">
+						<i class="input-helper"></i>
+						Contact principal
+					</label>
+				</div>
+				<div class="input-group">
+					<span class="input-group-addon"><i class="zmdi zmdi-assignment-account"></i></span>
+					<div class="fg-line">
+						<input class="form-control" placeholder="Nom" name="nom" type="text">
+					</div>
+				</div>
+				<div class="input-group">
+					<span class="input-group-addon"><i class="zmdi zmdi-assignment-account"></i></span>
+					<div class="fg-line">
+						<input class="form-control" placeholder="Prenom" name="prenom" type="text">
+					</div>
+				</div>
+				<div class="input-group">
+					<span class="input-group-addon"><i class="zmdi zmdi-account"></i></span>
+					<div class="fg-line">
+						<input class="form-control" placeholder="fonction" name="role" type="text">
+					</div>
+				</div>
+				<div class="input-group">
+					<span class="input-group-addon"><i class="zmdi zmdi-email"></i></span>
+					<div class="fg-line">
+						<input class="form-control" placeholder="email" name="email" type="text">
+					</div>
+				</div>
+				<div class="input-group">
+					<span class="input-group-addon"><i class="zmdi zmdi-phone-in-talk"></i></span>
+					<div class="fg-line">
+						<input class="form-control" placeholder="telephone" name="tel" type="text">
+					</div>
+				</div>
+				<div class="input-group">
+					<span class="input-group-addon"><i class="zmdi zmdi-phone-in-talk"></i></span>
+					<div class="fg-line">
+						<input class="form-control" placeholder="télécopie" name="fax" type="text">
+					</div>
+				</div>
+				<div class="input-group">
+					<span class="input-group-addon"><i class="zmdi zmdi-smartphone-android"></i></span>
+					<div class="fg-line">
+						<input class="form-control" placeholder="portable" name="portable" type="text">
+					</div>
+				</div>
+				<div class="input-group">
+					<span class="input-group-addon"><i class="zmdi zmdi-pin"></i></span>
+					<div class="fg-line">
+						<input class="form-control" placeholder="adresse" name="address" type="text">
+					</div>
+				</div>
+				<div class="input-group">
+					<span class="input-group-addon"><i class="zmdi zmdi-pin"></i></span>
+					<div class="fg-line">
+						<input class="form-control" placeholder="code postal" name="postal_code" type="text">
+					</div>
+				</div>
+				<div class="input-group">
+					<span class="input-group-addon"><i class="zmdi zmdi-pin"></i></span>
+					<div class="fg-line">
+						<input class="form-control" placeholder="ville" name="city" type="text">
+					</div>
+				</div>
+				<div class="input-group">
+					<span class="input-group-addon"><i class="zmdi zmdi-pin"></i></span>
+					<div class="fg-line">
+						<input class="form-control" placeholder="pays" name="country" type="text">
+					</div>
+				</div>
+			</div>	
+			
+			<div class="col-md-7">
+				<h5>Commentaires</h5>
+				<textarea cols="50"   id="contact-one-note" name="comment" rows="10" ></textarea>
+				<hr>
+			</div>
+			
+		</div>
+		<hr>
+		<div class="modal-footer">
+			<p>
+				<button type="submit" class="btn btn-success">Ajouter</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+			</p>
+		</div>
+	</form>
+</div>

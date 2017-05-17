@@ -1,0 +1,171 @@
+<div class="modal-header bgm-bluegray m-b-20 ">
+	<h4 class="modal-title c-white t-uppercase">Ajouter un échéancier pour le debiteur :  "{{nom_client}}"  <span class="debtor-name"></span> </h4>
+</div>
+<div class="modal-body">
+	<div class="col-md-12">
+		<div class="radio m-b-15">
+			<label>
+				<input type="radio" name="sample" value="">
+				<i class="input-helper"></i>
+				Echéancier du compte initégral
+			</label>
+		</div>
+
+		<div class="radio m-b-15">
+			<label>
+				<input type="radio" name="sample" value="">
+				<i class="input-helper"></i>
+			   Echéancier attaché à des factures du compte
+			</label>
+		</div>
+	</div>
+
+	<div class="col-md-12">
+		<h5>Factures</h5>
+		<table id="paperworks-table-echeancier" class="table table-striped table-vmiddle">
+			<thead>
+			<tr>
+				<th></th>
+				<th data-column="id" data-visible="false">id</th>
+				<th data-column="date_echeance">echeance</th>
+				<th data-column="libelle" data-order="desc" >libellé</th>
+				<th data-column="journal" data-order="desc">journal</th>
+				<th data-column="numero_piece" data-order="desc">Nr piece</th>
+				<th data-column="montant" data-order="desc">montant</th>
+				<th data-column="lettrage">lettrage</th>
+			</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+	</div>
+	<hr>
+	<div class="col-md-12">
+		<div class="col-md-6">
+
+			<div class="col-md-12">
+				<select is="selectpicker" class="" name="type" autocomplete="off">
+					<option disabled selected>Auteur</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+				</select>
+			</div>
+			<div class="col-md-12">
+				<div class="radio m-b-15">
+					<label>
+						<input type="radio" name="sample" value="">
+						<i class="input-helper"></i>
+						Echéances calculées
+					</label>
+				</div>
+			</div>
+
+			<div class="col-md-12">
+				<div class="input-group">
+					<span class="input-group-addon"><i class="zmdi zmdi-calendar-note"></i></span>
+					<div class="fg-line">
+						<input class="form-control" placeholder="Base de l'échéancier" type="text">
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-12">
+				<div class="input-group form-group">
+					<span class="input-group-addon"><i class="zmdi zmdi-calendar"></i></span>
+					<div class="dtp-container">
+						<input is="datepicker" type="text" class="form-control"
+							   placeholder="Date de la 1ére écheance">
+					</div>
+				</div>
+			</div>
+
+
+			<div class="col-md-12">
+				<div class="input-group">
+					<span class="input-group-addon"><i class="zmdi zmdi-money-box"></i></span>
+					<div class="fg-line">
+						<input class="form-control" placeholder="Montant de l'échéance" type="text">
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-12">
+				<div class="input-group">
+					<span class="input-group-addon"><i class="zmdi zmdi-format-list-numbered"></i></span>
+					<div class="fg-line">
+						<input class="form-control" placeholder="Nombre d'échéances" type="text">
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	   <div class="col-md-6">
+		   <div class="col-md-12">
+			   <select is="selectpicker" class="" name="type" autocomplete="off">
+				   <option disabled selected>Intervenant</option>
+				   <option value="1">1</option>
+				   <option value="2">2</option>
+				   <option value="3">3</option>
+				   <option value="4">4</option>
+			   </select>
+		   </div>
+		   <div class="col-md-12">
+			   <div class="radio m-b-15">
+				   <label>
+					   <input type="radio" name="sample" value="">
+					   <i class="input-helper"></i>
+					   Echéances calculées
+				   </label>
+			   </div>
+		   </div>
+		   <div class="col-md-6">
+			   <div class="form-group">
+				   <div class="fg-line">
+					   <input class="form-control" placeholder="Taux" type="text">
+				   </div>
+			   </div>
+		   </div>
+		   <div class="col-md-6">
+			   <select is="selectpicker" class="" name="type" autocomplete="off">
+				   <option disabled selected>Periodicité</option>
+				   <option value="1">1</option>
+				   <option value="2">2</option>
+				   <option value="3">3</option>
+				   <option value="4">4</option>
+			   </select>
+		   </div>
+
+		   <div class="col-md-12" style="text-align: center">
+			   <br>
+			   <button class="btn  btn-info ">Calculer</button>
+		   </div>
+	   </div>
+	</div>
+	<div class="col-md-12">
+		<h5>Factures</h5>
+		<table is="datatables"  id="tableau-amortissement" class="table table-striped table-vmiddle">
+			<thead>
+			<tr>
+				<th></th>
+				<th data-column="id" data-visible="false">id</th>
+				<th data-column="">Date</th>
+				<th data-column="" data-order="desc">Montant</th>
+				<th data-column="journal" data-order="desc">Taux</th>
+				<th data-column="" data-order="desc" >Capital</th>
+				<th data-column="" data-order="desc" >interêts</th>
+				<th data-column="" >Solde</th>
+				<th data-column="" >Payé</th>
+			</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+	</div>
+	<div class="modal-footer">
+		<p>
+			<button type="button" class="btn btn-success">Enregistrer</button>
+			<button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+		</p>
+	</div>
+</div>

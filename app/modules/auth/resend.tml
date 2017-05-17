@@ -1,0 +1,75 @@
+<extend "layout/main">
+	<attr "header>nav"  addClass="navbar-auth">
+    <write main>
+		<div class="container" style="padding-top: 120px;padding-bottom: 120px">
+			<form class="form-signin" role="form" method="post">
+				<if "isset($authResponseMessage)">
+				<div class="alert alert-success">
+					<strong><?=$authResponseMessage?></strong>
+				</div>
+				</if>
+				<if "count($errors)">
+				<div class="alert alert-danger">
+					<strong>Oups!</strong> Veuillez verifier les données saisies.<br><br>
+					<ul>
+						<foreach "$errors as $error">
+						<li><?=$error?></li>
+						</foreach>
+					</ul>
+				</div>
+				</if>
+
+<!--				<input type="hidden" name="action" value="register">-->
+<!--				<input type="hidden" name="action" value="login">-->
+				<h2 class="form-signin-heading">Récuperez votre mot de passe</h2>
+				<br>
+				<label for="inputEmail" class="sr-only">Email address</label>
+				<input type="email" id="inputEmail" name="email" class="form-control" placeholder="Saisir un E-mail valide" required autofocus>
+
+				<br>
+				<hr>
+				<button class="btn btn-lg btn-primary btn-block" type="submit">Envoyer l'email d'activation</button>
+				<div class="clearfix"></div>
+				<br>
+
+
+			</form>
+		</div> <!-- /container -->
+
+		<!--
+        <div class="container" style="padding-top: 220px;padding-bottom: 120px">
+            <h2>Récuperer mon mot de passe</h2>
+            <form class="form-horizontal">
+                <if "isset($authResponseMessage)">
+                <div class="alert alert-success">
+                    <strong><?=$authResponseMessage?></strong>
+                </div>
+                </if>
+                <if "count($errors)">
+                <div class="alert alert-danger">
+                    <strong>Oups!</strong> Veuillez verifier les données saisies.<br><br>
+                    <ul>
+                        <foreach "$errors as $error">
+                        <li><?=$error?></li>
+                        </foreach>
+                    </ul>
+                </div>
+                </if>
+                <div class="form-group form-group-lg">
+                    <label for="inputEmail3" class="col-sm-4 control-label">Email</label>
+                    <div class="col-sm-6">
+                        <input type="email" class="form-control input-sm" id="email" name="email" value="" placeholder="Saisir votre adresse E-mail">
+                    </div>
+                </div>
+                <br>
+                <div class="form-group">
+                    <div class="col-sm-offset-3 col-sm-8 ">
+                        <a href="?p=home" type="button" class="btn btn-lg btn-default">Annuler</a>
+                        <a type="submit" class="btn btn-lg btn-primary">Envoyer l'email d'activation</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        -->
+    </write>
+</extend>

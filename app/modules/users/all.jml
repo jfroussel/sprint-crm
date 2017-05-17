@@ -1,0 +1,32 @@
+<div class="card">
+	<div class="card-header ch-alt">
+		<h2>Gestion des utilisateurs <small>Espace de gestion de vos utilisateurs MyCreance.com.</small></h2>
+		<div class="pull-right"><a j-href="users/create" class="btn btn-brown ">Ajouter un utilisateur</a></div>
+	</div>
+
+	<table
+		is="datatables"
+		j-data-ajax--url="plugins/datatables.json?table=user"
+		id="users-table"
+		class="table table-striped table-bordered"
+	>
+		<thead>
+			<tr>
+				<th data-column="avatar" data-css-class="avatar" class="avatar" data-format="logo"></th>
+				<th data-column="id" data-order="asc">id</th>
+                <th data-column="group">groupe</th>
+				<th data-column="email">email</th>
+				<th data-column="name" data-order="desc">contact</th>
+				<th
+					data-column="active"
+					data-format="active"
+					data-css-class="toggler"
+				>statut</th>
+				<th data-column="ctime" data-format="dateformat" data-order="desc">enregistré le</th>
+				<th data-action="edit" data-route="users/update_user?id="></th>
+				<th data-action="remove" data-remove-column="email" data-url="users/all.json?method=delete" data-remove-body="Êtes-vous sûr de vouloir supprimer l'utilisateur « %s » ?"></th>
+			</tr>
+		</thead>
+		<tbody></tbody>
+	</table>
+</div>

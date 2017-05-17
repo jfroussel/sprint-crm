@@ -1,0 +1,28 @@
+<div id="calendar"></div>
+
+<div id="fullCalModal" class="fade modal">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<!--<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span> <span class="sr-only">close</span></button>-->
+				<p id="modalTitle" class="modal-title"></p>
+				<p id="debtor_name" class="modal-title"></p>
+				<p id="type" class="modal-title"></p>
+				<p id="todo" class="modal-title"></p>
+				<div class="checkbox m-b-15" id="note_completed" >
+					<label>
+						<input value="" type="checkbox" name="status" >
+						<i class="input-helper"></i>
+						Cochez cette note une fois le traitement effectué !
+					</label>
+				</div>
+			</div>
+			<div id="modalBody" class="modal-body"></div>
+			<div class="modal-footer">
+				<button type="submit" class="btn btn-default" data-dismiss="modal">Enregistrer &fermer</button>
+				<!--<button class="btn btn-primary"><a id="eventUrl" target="_blank">Fiche du debiteur</a></button>-->
+				<a class="btn btn-primary"  id="eventUrl">Fiche du debiteur</a>
+			</div>
+		</div>
+	</div>
+</div>

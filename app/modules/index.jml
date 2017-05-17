@@ -1,0 +1,7 @@
+<div class="home">
+    <ol class="breadcrumb">
+        <li><a j-href="#">Accueil</a></li>
+        <li class="active"></li>
+    </ol>
+
+</div>

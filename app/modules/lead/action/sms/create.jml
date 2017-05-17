@@ -1,0 +1,62 @@
+<div class="modal-header bgm-bluegray m-b-20 ">
+	<h4 class="modal-title c-white t-uppercase">Envoyer un sms  pour le debiteur :  "{{debtor.nom_client}}"  <span class="debtor-name"></span> </h4>
+	<div class="timer" id="timer"><span>{{minutes}}</span>:<span>{{seconds}}</span></div>
+
+</div>
+<div class="modal-body">
+	<form class="form-horizontal" j-name="sms"  id="sms">
+
+		<div class="row">
+
+			<!--<div class="col-md-4">-->
+				<!--<div class="fg-line">-->
+					<!--<p class="c-black f-500 m-b-20">Expediteur</p>-->
+					<!--<div class="select">-->
+						<!--<select  class="form-control"  name="expediteur" autocomplete="off">-->
+							<!--<option j-for="(id, user) in usersList" :value="{{user.id}}">{{user.name}}</option>-->
+						<!--</select>-->
+					<!--</div>-->
+				<!--</div>-->
+			<!--</div>-->
+
+			<div class="col-md-4">
+				<div class="fg-line">
+					<p class="c-black f-500 m-b-20">Destinataire(s)</p>
+					<div class="select">
+						<select  class="form-control"  name="contact_id" autocomplete="off">
+							<option value="">Choisir votre destinataire</option>
+							<option j-for="contact in contactsList" :value="{{contact.id}}">{{contact.nom}} {{contact.prenom}}</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="fg-line">
+					<p class="c-black f-500 m-b-20">Modele(s)</p>
+					<div class="select">
+						<select  class="form-control"  name="template_id" id="template-type" autocomplete="off">
+							<option value="">Choisir votre template</option>
+							<option j-for="(id, template) in templatesList" :value="{{id}}">{{template.name}}</option>
+						</select>
+					</div>
+				</div>
+				<hr>
+			</div>
+			<div class="col-md-12">
+				<p class="c-black f-500 m-b-20">Votre message</p>
+				<textarea style="min-width:100%"  id="editeur-one-sms" name="message" rows="10" ></textarea>
+				<em><h5 class="pull-right text-lowercase">Nombre de caractéres 0 (Maximum 160) </h5></em>
+				<hr>
+			</div>
+
+			<hr>
+		</div>
+		<hr>
+		<div class="modal-footer">
+			<p>
+				<button type="submit" class="btn btn-success">Envoyer</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+			</p>
+		</div>
+	</form>
+</div>

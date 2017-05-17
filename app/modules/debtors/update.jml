@@ -1,0 +1,149 @@
+<ol class="breadcrumb">
+	<li><a j-href="debtors/all">Société</a></li>
+	<li class="active">{{raison_sociale}}</li>
+</ol>
+
+<section id="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 debtor-sidebar">
+                <div>
+                    <div class="card-header">
+                        <div class="mini-charts-item  mini-charts-mc">
+                            <div class="clearfix">
+                                <div class="count countDebtor">
+                                    <small>Société</small>
+                                    <small>{{ (raison_sociale==null?'non defini':raison_sociale) }} </small>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div>
+                            <h5>Informations</h5>
+                            <b>ID vp :</b> {{ (primary==null?'non defini':primary) }} <br>
+                            <b>Siret :</b> {{ (siret==null?'non defini':siret) }} <br>
+                            <b>Inscription :</b>{{ (date_de_creation==null?'non defini':date_de_creation) }}<br>
+                            <b>Adresse :</b> {{ (adresse==null?'non defini':adresse) }} <br>
+                            {{ (code_postal==null?'non defini':code_postal) }} {{ (ville==null?'non defini':ville) }}<br>
+
+                        </div>
+                        <hr>
+                        <div>
+                            <h5>Contact principal</h5>
+                            <i class="fa fa-user" aria-hidden="true"></i>&nbsp{{(contact.nom ==null?'non defini':contact.nom)}}
+                            &nbsp{{(contact.prenom ==null?'non defini':contact.prenom)}}({{(contact.fonction ==null?'non defini':contact.fonction)}})<br>
+                            <i class="fa fa-envelope" aria-hidden="true"></i>&nbsp{{(contact.email ==null?'non defini':contact.email)}}<br>
+                            <i class="fa fa-phone" aria-hidden="true"></i>&nbsp{{(contact.tel ==null?'non defini':contact.tel)}}&nbsp
+                            <i class="fa fa-mobile" aria-hidden="true"></i>&nbsp{{(contact.mobile ==null?'non defini':contact.mobile)}}<br>
+                            <em><a href="#debtors-contacts" data-jview="debtors/tab-debtors-contacts" data-jview-inherit="debtorOne" role="tab" data-toggle="tab" aria-expanded="true">Voir plus ...</a><br></em>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-10">
+               <div class="card">
+                   <div class="col-md-2">
+                       <div class="mini-charts-item bgm-lightgreen">
+                           <div class="clearfix">
+                               <div class="count">
+                                   <h2></h2>
+                                   <small> </small>
+                                   <small></small>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-md-2">
+                       <div class="mini-charts-item bgm-bluegray">
+                           <div class="clearfix">
+                               <div class="count">
+                                   <h2></h2>
+                                   <small></small>
+                                   <small></small>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-md-2">
+                       <div class="mini-charts-item bgm-purple">
+                           <div class="clearfix">
+                               <div class="count">
+                                   <h2></h2>
+                                   <small></small>
+                                   <small></small>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-md-2">
+                       <div class="mini-charts-item bgm-deeporange">
+                           <div class="clearfix">
+                               <div class="count">
+                                   <h2 id="count-promesses"></h2>
+                                   <small></small>
+                                   <small></small>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-md-2">
+                       <div class="mini-charts-item bgm-pink">
+                           <div class="clearfix">
+                               <div class="count">
+                                   <h2 id="count-echeances"></h2>
+                                   <small></small>
+                                   <small></small>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-md-2">
+                       <div class="mini-charts-item bgm-gray">
+                           <div class="clearfix">
+                               <div class="count">
+                                   <h2 id="count-litiges"></h2>
+                                   <small></small>
+                                   <small></small>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="card-header">
+                       <h4>STATISTIQUES DE LA SOCIETE AU : {{dateOfDay}}</h4>
+                   </div>
+                   <div class="col-12 text-left task-bar-mc">
+
+                       <button class="btn bgm-bluegray btn-icon-text waves-effect"  data-toggle-jbs="modal" data-target="#debtor-note" data-jview="action/note/create"><i class="zmdi zmdi-comment-text"></i>note</button>
+                       <button class="btn bgm-bluegray btn-icon-text waves-effect"  data-toggle-jbs="modal" data-target="#debtor-agenda" data-jview="action/agenda/create"><i class="zmdi zmdi-comment-text"></i>agenda</button>
+                       <button class="btn bgm-bluegray btn-icon-text waves-effect btn-debtor-email"  data-toggle-jbs="modal" data-target="#debtor-email" data-jview="action/email/create"><i class="zmdi zmdi-email"></i>email</button>
+                       <button class="btn bgm-bluegray btn-icon-text waves-effect btn-debtor-sms"  data-toggle-jbs="modal" data-target="#debtor-sms" data-jview="action/sms/create"><i class="zmdi zmdi-smartphone-iphone"></i>sms</button>
+                       <button class="btn bgm-bluegray btn-icon-text waves-effect btn-debtor-letter"  data-toggle-jbs="modal" data-target="#debtor-letter" data-jview="action/letter/create"><i class="zmdi zmdi-edit"></i>courrier</button>
+
+                   </div>
+                   <div class="col-md-12">
+                       <div role="tabpanel">
+                           <ul class="tab-nav" role="tablist">
+                               <li class="active"><a href="#debtors-paperworks"  data-jview="debtors/tab-debtors-paperworks" data-jview-inherit="debtorOne" aria-controls="paperworks" role="tab" data-toggle="tab" aria-expanded="true">Actions</a></li>
+                               <li class="tab-analyse"><a href="#analyse" data-jview="debtors/tab-analyse" data-jview-inherit="debtorOne" role="tab" data-toggle="tab" aria-expanded="false">Analyse</a></li>
+                               <li class="tab-parametres"><a href="#parametres" data-jview="debtors/tab-parametres" data-jview-inherit="debtorOne" role="tab" data-toggle="tab" aria-expanded="false">Parametres</a></li>
+                               <li class="tab-debtors-contacts"><a href="#debtors-contacts" data-jview="debtors/tab-debtors-contacts" data-jview-inherit="debtorOne" role="tab" data-toggle="tab" aria-expanded="false">Contacts</a></li>
+                               <li class="tab-debtors-surveillance"><a href="#debtors-surveillance" data-jview="debtors/tab-debtors-surveillance" data-jview-inherit="debtorOne" role="tab" data-toggle="tab" aria-expanded="false">Surveillance</a></li>
+                           </ul>
+                           <div class="tab-content">
+                               <div role="tabpanel" class="tab-pane active" id="debtors-paperworks"></div>
+                               <div role="tabpanel" class="tab-pane" id="analyse"></div>
+                               <div role="tabpanel" class="tab-pane" id="parametres"></div>
+                               <div role="tabpanel" class="tab-pane" id="debtors-contacts"></div>
+                               <div role="tabpanel" class="tab-pane" id="debtors-surveillance"></div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+            </div>
+
+		</div>
+    </div>
+</section>

@@ -1,0 +1,99 @@
+<div class="card">
+	<div class="card-header ch-alt">
+		<h2>Gestion des leads</h2>
+	</div>
+	<div class="card">
+		<div class="col-md-2">
+			<div class="mini-charts-item bgm-lightgreen">
+				<div class="clearfix">
+					<div class="count">
+						<h2>0.00 €</h2>
+						<small>Loyers impayés</small>
+						<small>dossier(s)</small>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-2">
+			<div class="mini-charts-item bgm-bluegray">
+				<div class="clearfix">
+					<div class="count">
+						<h2>0.00 €</h2>
+						<small>Cheques impayés</small>
+						<small>dossier(s)</small>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-2">
+			<div class="mini-charts-item bgm-purple">
+				<div class="clearfix">
+					<div class="count">
+						<h2>0.00 €</h2>
+						<small>Creances commerciales</small>
+						<small>dossier(s)</small>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-2">
+			<div class="mini-charts-item bgm-deeporange">
+				<div class="clearfix">
+					<div class="count">
+						<h2>0.00 €</h2>
+						<small>Reactivation de creances</small>
+						<small>dossier(s)</small>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-2">
+			<div class="mini-charts-item bgm-pink">
+				<div class="clearfix">
+					<div class="count">
+						<h2 id="count-echeances">{{oneEcheances}}</h2>
+						<small>Echeances en cours en €</small>
+						<small>{{countOneEcheances}} écriture(s)</small>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-2">
+			<div class="mini-charts-item bgm-gray">
+				<div class="clearfix">
+					<div class="count">
+						<h2 id="count-litiges">{{oneLitiges}}</h2>
+						<small>Litiges en €</small>
+						<small>{{countOneLitiges}} écriture(s)</small>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<table
+		is="datatables"
+		j-data-ajax--url="plugins/datatables.json?table=lead"
+		id="leads-table"
+		class="table table-striped table-vmiddle"
+		j-data-paging="true"
+	>
+		<thead>
+			<tr>
+                <th data-column="id" data-order="asc">id</th>
+				<th data-column="mandat_number" data-order="asc">mandat</th>
+                <th data-column="corporate_name">societe</th>
+                <th data-column="last_name" >nom</th>
+                <th data-column="first_name">prenom</th>
+                <th data-column="category">categorie</th>
+                <th data-column="type">type</th>
+                <th data-column="amount">montant</th>
+				<th data-column="ctime" data-format="dateformat" data-order="desc">enregistré le</th>
+                <th data-format="select" data-column="status">Etat du lead</th>
+                <th data-action="edit" data-route="lead/update?id="></th>
+			</tr>
+		</thead>
+		<tbody></tbody>
+	</table>
+</div>

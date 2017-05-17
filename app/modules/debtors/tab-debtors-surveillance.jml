@@ -1,0 +1,56 @@
+<div class="card">
+    <div class="card">
+        <div class="card-header">
+            <h2>Surveillance du debiteur</h2>
+            <hr>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            note :
+                        </li>
+                        <li class="list-group-item">
+                            Limite :
+                        </li>
+                        <li class="list-group-item">
+                            Statut :
+                        </li>
+                        <li class="list-group-item">
+                            Debt score : {{(debtorOne.score==null?'NC':debtorOne.score)}}
+                        </li>
+                        <li class="list-group-item">
+                            Privilège :
+                        </li>
+                        <li class="list-group-item">
+                            Siret : {{(debtorOne.siret==null?'NC':debtorOne.siret)}}
+                        </li>
+                        <li class="list-group-item">
+                            Nr TVA :
+                        </li>
+                        <li class="list-group-item">
+                            Code APE :
+                        </li>
+                        <li class="list-group-item">
+                            Date Création :
+                        </li>
+                        <li class="list-group-item">
+                            Forme juridique :
+                        </li>
+                        <li class="list-group-item">
+                            Commentaires :
+                        </li>
+                        <li class="list-group-item">
+                            Dirigeants :
+                        </li>
+                        <li class="list-group-item">
+                            Données financier :
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-8">
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+
+<div class="html2pdf">
+    <div class="container">
+        <div>
+            <img class="logo" style="width: 150px" src="<?= realpath('img/logo.png')?>" alt="">
+        </div>
+        <br>
+        <div>
+            <p>
+                Ref.facture :
+                <?=$billing['ref']?><br>
+                Date :
+                <?=$billing['billingDate']?>
+            </p>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>Expediteur :</p>
+                <p>MyCreance.com<br>
+                    4 Rue Fizeau
+                    75015 Paris<br>
+                    France
+                </p>
+            </div>
+            <div class="col">
+                <p>Destinataire :</p>
+                <p><?=$company['company_name']?><br>
+                    <?=$company['address']?><br>
+                    <?=$company['postal_code']?> <?=$company['city']?><br>
+                    <?=$company['country']?>.
+                </p>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <h6>Détail de votre facture</h6>
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+
+                <th style="text-align:left;padding-left: 15px">Libellé</th>
+                <th style="text-align:center">Prix unitaire</th>
+                <th style="text-align:center">Quantité</th>
+                <th style="text-align:right">Total</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th style="font-size: 14px;font-weight: 400;padding-left: 15px">Abonnement plan "premium"</th>
+                <td style="text-align:right"><?=$billing['plan']?> €</td>
+                <td style="text-align:center">1</td>
+                <td style="text-align:right"><?=$billing['plan']?> €</td>
+            </tr>
+            <tr>
+                <th style="font-size: 14px;font-weight: 400;padding-left: 15px">Utilisation du service "sms"</th>
+                <td style="text-align:right">0.5 €</td>
+                <td style="text-align:center"><?=$billing['sms']?></td>
+                <td style="text-align:right"><?=$billing['smsPrice']?> € </td>
+            </tr>
+            <tr>
+                <th style="font-size: 14px;font-weight: 400;padding-left: 15px">Utilisation du service "emailing"</th>
+                <td style="text-align:right">0.2 €</td>
+                <td style="text-align:center"><?=$billing['email']?></td>
+                <td style="text-align:right"><?=$billing['emailPrice']?> €</td>
+            </tr>
+            <tr>
+                <th style="font-size: 14px;font-weight: 400;padding-left: 15px">Utilisation du service "courrier simple"</th>
+                <td style="text-align:right">1.50 €</td>
+                <td style="text-align:center"><?=$billing['simpleletter']?></td>
+                <td style="text-align:right"><?=$billing['simpleletterPrice']?> €</td>
+            </tr>
+            <tr>
+                <th style="font-size: 14px;font-weight: 400;padding-left: 15px">Utilisation du service "courrier recommandé"</th>
+                <td style="text-align:right">3.50 €</td>
+                <td style="text-align:center"><?=$billing['registeredletter']?></td>
+                <td style="text-align:right"><?=$billing['registeredletterPrice']?> €</td>
+            </tr>
+            <tr>
+                <th></th>
+                <td></td>
+                <td>TOTAL</td>
+                <td style="text-align:right"><?=$billing['totalttc']?> € TTC</td>
+            </tr>
+            </tbody>
+        </table>
+        <em><p style="font-size: 12px;text-align: center"> email : support@mycreance.com - tél : 01 56 56 65 16 - website : http://www.mycreance.com</p></em>
+    </div>
+
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

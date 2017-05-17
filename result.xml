@@ -1,0 +1,4641 @@
+[1;32m/var/www/mycreance.dev/plugins/artist/MyDebtorUpdatescore.php[0m : [1;31m41[0m
+"<xmlresponse>
+<header>
+<reportinformation>
+<time>15/03/2017 09:00:21</time>
+<reporttype>getcompanyinformation</reporttype>
+<country>FR</country>
+<version>1.0</version>
+<provider>www.creditsafe.fr</provider>
+<chargereference>
+</chargereference>
+</reportinformation>
+</header>
+<body>
+<reportid>34465811700058</reportid>
+<reportname>INGRAM MICRO</reportname>
+<company>
+<summary>
+<companynumber>34465811700058</companynumber>
+<companyname>INGRAM MICRO</companyname>
+<tradename>INGRAM MICRO</tradename>
+<acronym />
+<safenumber>FR02007017</safenumber>
+<previoussiret />
+<roadcode />
+<numberinroad>208</numberinroad>
+<secondarynumber />
+<typeofroad>ALL</typeofroad>
+<nameofroad>DE L'INNOVATION</nameofroad>
+<postcode>59810</postcode>
+<activitycode>4651Z</activitycode>
+<activitydescription>Commerce de gros (commerce interentreprises) d'ordinateurs, d'équipements informatiques périphériques et de logiciels</activitydescription>
+<legalform code="5710">SAS</legalform>
+<telephone>08 99 70 00 59</telephone>
+<fax>01 34 60 57 94</fax>
+<courtregistrynumber>344658117</courtregistrynumber>
+<courtregistrydescription>RCS Lille Metropole 9 </courtregistrydescription>
+<sharecapital>15297189 Euros</sharecapital>
+<municipality code="59343">LESQUIN</municipality>
+<postaladdress>
+<name>INGRAM MICRO</name>
+<additiontoname />
+<address>208 ALLEE DE L INNOVATION</address>
+<additiontoaddress />
+<specialdistribution />
+<distributionline>59810 LESQUIN</distributionline>
+</postaladdress>
+<incorporationdate>06/1988</incorporationdate>
+<nationality>France</nationality>
+<status code="A">Actif économiquement</status>
+<rating>100</rating>
+<ratingdesc1 />
+<ratingdesc2>Très bonne cote de crédit/solvabilité</ratingdesc2>
+<rating2013>97</rating2013>
+<rating2013desc1 />
+<rating2013desc2>Très bonne cote de crédit/solvabilité</rating2013desc2>
+<creditlimit>2000000</creditlimit>
+<creditlimit2013>5000000</creditlimit2013>
+<lastjudgementdate />
+<lastccjdate>12/09/2013</lastccjdate>
+<ultimateparents>
+<ultimateparent>
+<name>INGRAM MICRO CORP.</name>
+<numberofcompanies>3</numberofcompanies>
+</ultimateparent>
+</ultimateparents>
+<numberofdirectors>4</numberofdirectors>
+<financialsummary>
+<tradingtodate>
+<date>31/12/2015</date>
+<turnover>1348593953</turnover>
+<grossoperatingsurplus>0.84</grossoperatingsurplus>
+<networth>255274679</networth>
+<employees>250 à 499 salariés</employees>
+<profitability>0.04</profitability>
+<liquidity>0.15</liquidity>
+</tradingtodate>
+<tradingtodate>
+<date>31/12/2014</date>
+<turnover>1199045243</turnover>
+<grossoperatingsurplus>0.66</grossoperatingsurplus>
+<networth>254700876</networth>
+<employees>-</employees>
+<profitability>-0.12</profitability>
+<liquidity>-0.17</liquidity>
+</tradingtodate>
+<tradingtodate>
+<date>31/12/2013</date>
+<turnover>1111761626</turnover>
+<grossoperatingsurplus>0.88</grossoperatingsurplus>
+<networth>256095330</networth>
+<employees>-</employees>
+<profitability>0.09</profitability>
+<liquidity>-0.05</liquidity>
+</tradingtodate>
+</financialsummary>
+</summary>
+<baseinformation>
+<companynumber>34465811700058</companynumber>
+<companyname>INGRAM MICRO</companyname>
+<tradename>INGRAM MICRO</tradename>
+<acronym />
+<activitycode>4651Z</activitycode>
+<activitydescription>Commerce de gros (commerce interentreprises) d'ordinateurs, d'équipements informatiques périphériques et de logiciels</activitydescription>
+<registrationcourt>Lille Metropole (59)</registrationcourt>
+<courtregistrynumber>19 9 2B00127</courtregistrynumber>
+<legalform code="5710">SAS</legalform>
+<sharecapital>15297189 Euros</sharecapital>
+<nationality>France</nationality>
+<formationdate>04/1988</formationdate>
+<incorporationdate>06/1988</incorporationdate>
+<deregistrationdate />
+<lastaccountdate>31/12/2015</lastaccountdate>
+<lastaccountpublished>31/12/2015</lastaccountpublished>
+<postaladdress>
+<name>INGRAM MICRO</name>
+<additiontoname />
+<address>208 ALLEE DE L INNOVATION</address>
+<additiontoaddress />
+<specialdistribution />
+<distributionline>59810 LESQUIN</distributionline>
+</postaladdress>
+<tradingaddress>
+<address>208 ALLEE DE L INNOVATION</address>
+<additiontoaddress />
+<specialdistribution />
+<distributionline>59810 LESQUIN</distributionline>
+</tradingaddress>
+<telephone>08 99 70 00 59</telephone>
+<fax>01 34 60 57 94</fax>
+<department>59</department>
+<departmentdescription />
+<region />
+<municipality>LESQUIN</municipality>
+<district>5</district>
+<area>36</area>
+<sizeofurbanarea>Unité urbaine de 200 000 à 1 999 999 habitants</sizeofurbanarea>
+<closuredate />
+<reasonforformation>Autre</reasonforformation>
+<reasonforclosure />
+<status code="A">Actif économiquement</status>
+<reactivationdate />
+<productionrole />
+<nature>-</nature>
+<activitylocation>Autre</activitylocation>
+<locationsurface />
+<recmedirectory />
+<type code="1">Siège social</type>
+<regionality>Unité légale à établissements multiples ayant des établissements dans plusieurs régions, mais au moins 80% des effectifs dans une région</regionality>
+<professionaltext>INFORMATIQUE: MATERIEL ET FOURNITURES</professionaltext>
+<seasonality />
+<activityape>4651Z</activityape>
+<activityapedesc>Commerce de gros (commerce interentreprises) d'ordinateurs, d'équipements informatiques périphériques et de logiciels</activityapedesc>
+<mainactivityaprm />
+<workforceataddress>250 à 499 salariés</workforceataddress>
+<companyworkforce>250 à 499 salariés</companyworkforce>
+<vatnumber>FR50344658117</vatnumber>
+<branches>
+<numberofbranches>4</numberofbranches>
+<monoactivitystatus>Unité légale dont tous les établissements ont la même activité principale</monoactivitystatus>
+<branch>
+<full_address>
+<name>INGRAM MICRO</name>
+<addition_to_name />
+<address>208 ALLEE DE L INNOVATION</address>
+<addition_to_address />
+<special_distribution />
+<distribution>59810 LESQUIN</distribution>
+</full_address>
+<companynumber>34465811700058</companynumber>
+<companyname>INGRAM MICRO</companyname>
+<type code="1">Siège social</type>
+<activityape>Commerce de gros (commerce interentreprises) d'ordinateurs, d'équipements informatiques périphériques et de logiciels</activityape>
+<municipality>LESQUIN</municipality>
+<postcode>59810</postcode>
+<status code="A">Actif économiquement</status>
+<address>CARREFOUR DE L EUROPE CENTRE REGIONAL TRANSPORT</address>
+<tel>0899700059</tel>
+</branch>
+<branch>
+<full_address>
+<name>INGRAM MICRO</name>
+<addition_to_name>PLATEFORME MULTIMODALE</addition_to_name>
+<address>AVENUE DE LA ROTONDE</address>
+<addition_to_address />
+<special_distribution>LOMME</special_distribution>
+<distribution>59160 LILLE</distribution>
+</full_address>
+<companynumber>34465811700082</companynumber>
+<companyname>INGRAM MICRO</companyname>
+<type code="0">Etablissement secondaire</type>
+<activityape>Commerce de gros (commerce interentreprises) d'ordinateurs, d'équipements informatiques périphériques et de logiciels</activityape>
+<municipality>LILLE</municipality>
+<postcode>59160</postcode>
+<status code="A">Actif économiquement</status>
+<address>PLATEFORME MULTIMODALE AV DE LA ROTONDE</address>
+<tel>0825868888</tel>
+</branch>
+<branch>
+<full_address>
+<name>INGRAM MICRO</name>
+<addition_to_name>L ARCADE EN CIEL 2 A 4</addition_to_name>
+<address>2 BOULEVARD DES ILES</address>
+<addition_to_address>IMMEUBLE</addition_to_address>
+<special_distribution />
+<distribution>92130 ISSY LES MOULINEAUX</distribution>
+</full_address>
+<companynumber>34465811700124</companynumber>
+<companyname>INGRAM MICRO</companyname>
+<type code="0">Etablissement secondaire</type>
+<activityape>Commerce de gros (commerce interentreprises) d'ordinateurs, d'équipements informatiques périphériques et de logiciels</activityape>
+<municipality>ISSY LES MOULINEAUX</municipality>
+<postcode>92130</postcode>
+<status code="A">Actif économiquement</status>
+<address>IMMEUBLE L'ARC EN CIEL 2 A 4 2 BD DES ILES</address>
+<tel />
+</branch>
+<branch>
+<full_address>
+<name>INGRAM MICRO</name>
+<addition_to_name />
+<address>25 RUE MICHAEL FARADAY</address>
+<addition_to_address />
+<special_distribution />
+<distribution>78180 MONTIGNY LE BRETONNEUX</distribution>
+</full_address>
+<companynumber>34465811700090</companynumber>
+<companyname>INGRAM MICRO</companyname>
+<type code="0">Etablissement secondaire</type>
+<activityape>Commerce de gros (commerce interentreprises) d'ordinateurs, d'équipements informatiques périphériques et de logiciels</activityape>
+<municipality>MONTIGNY LE BRETONNEUX</municipality>
+<postcode>78180</postcode>
+<status code="A">Actif économiquement</status>
+<address>25 RUE MICHAEL FARADAY</address>
+<tel>0130457575</tel>
+</branch>
+<branch>
+<full_address>
+<name>INGRAM MICRO</name>
+<addition_to_name />
+<address>2 AV DES AMETHYSTES</address>
+<addition_to_address />
+<special_distribution>BP 13813</special_distribution>
+<distribution>44338 NANTES CEDEX 3</distribution>
+</full_address>
+<companynumber>34465811700116</companynumber>
+<companyname>INGRAM MICRO</companyname>
+<type code="0">Etablissement secondaire</type>
+<activityape>Commerce de gros (commerce interentreprises) d'ordinateurs, d'équipements informatiques périphériques et de logiciels</activityape>
+<municipality>NANTES</municipality>
+<postcode>44300</postcode>
+<status code="C">Fermé</status>
+<address>2 AV DES AMETHYSTES</address>
+<tel />
+</branch>
+<branch>
+<full_address>
+<name>INGRAM MICRO</name>
+<addition_to_name />
+<address>19 AV DES INDES</address>
+<addition_to_address>FERME DE COURTABOEUF BAT D</addition_to_address>
+<special_distribution />
+<distribution>91940 LES ULIS</distribution>
+</full_address>
+<companynumber>34465811700074</companynumber>
+<companyname>INGRAM MICRO</companyname>
+<type code="0">Etablissement secondaire</type>
+<activityape>Commerce de gros (commerce interentreprises) d'ordinateurs, d'équipements informatiques périphériques et de logiciels</activityape>
+<municipality>LES ULIS</municipality>
+<postcode>91940</postcode>
+<status code="C">Fermé</status>
+<address>FERME DE COURTABOEUF BAT D 19 AV DES INDES</address>
+<tel />
+</branch>
+<branch>
+<full_address>
+<name>INGRAM MICRO</name>
+<addition_to_name />
+<address>9 RUE MADO ROBIN</address>
+<addition_to_address />
+<special_distribution />
+<distribution>26000 VALENCE</distribution>
+</full_address>
+<companynumber>34465811700108</companynumber>
+<companyname>INGRAM MICRO</companyname>
+<type code="0">Etablissement secondaire</type>
+<activityape>Commerce de gros (commerce interentreprises) d'ordinateurs, d'équipements informatiques périphériques et de logiciels</activityape>
+<municipality>VALENCE</municipality>
+<postcode>26000</postcode>
+<status code="C">Fermé</status>
+<address>9 RUE MADO ROBIN</address>
+<tel />
+</branch>
+</branches>
+</baseinformation>
+<ratings2013>
+<currentdate>03/03/2017</currentdate>
+<currentscore>97</currentscore>
+<currentratingdesc1 />
+<currentratingdesc2>Très bonne cote de crédit/solvabilité</currentratingdesc2>
+<previousratings>
+<previousrating>
+<date>07/05/2016</date>
+<score>98</score>
+<previousratingdesc1 />
+<previousratingdesc2>Très bonne cote de crédit/solvabilité</previousratingdesc2>
+</previousrating>
+<previousrating>
+<date>03/10/2015</date>
+<score>97</score>
+<previousratingdesc1 />
+<previousratingdesc2>Très bonne cote de crédit/solvabilité</previousratingdesc2>
+</previousrating>
+<previousrating>
+<date>02/05/2015</date>
+<score>96</score>
+<previousratingdesc1 />
+<previousratingdesc2>Très bonne cote de crédit/solvabilité</previousratingdesc2>
+</previousrating>
+<previousrating>
+<date>02/08/2014</date>
+<score>97</score>
+<previousratingdesc1 />
+<previousratingdesc2>Très bonne cote de crédit/solvabilité</previousratingdesc2>
+</previousrating>
+<previousrating>
+<date>07/06/2014</date>
+<score>91</score>
+<previousratingdesc1 />
+<previousratingdesc2>Très bonne cote de crédit/solvabilité</previousratingdesc2>
+</previousrating>
+<previousrating>
+<date>05/10/2013</date>
+<score>99</score>
+<previousratingdesc1 />
+<previousratingdesc2>Très bonne cote de crédit/solvabilité</previousratingdesc2>
+</previousrating>
+</previousratings>
+<commentaries>
+<comment color="GREEN">Les capitaux propres sont de 255274679 €</comment>
+<comment color="GREEN">Le délai de règlement fournisseurs correspond à la tendance actuelle</comment>
+<comment color="GREEN">Le total des dettes est de  425147678 €</comment>
+<comment color="GREEN">Le total de l'Actif Circulant net est de 381572588 €</comment>
+<comment color="GREEN">Le Chiffre d'Affaires net est de 1348593953 €</comment>
+<comment color="GREEN">Le bénéfice net est de 1893972 €</comment>
+<comment color="GREEN">Les provisions pour risques sont de 1073753 €</comment>
+<comment color="GREEN">Le total des Actifs est de 681496111 €</comment>
+<comment color="GREEN">Entreprise de taille significative</comment>
+<comment color="GREEN">L'entreprise a 4 dirigeants</comment>
+<comment color="GREEN">Cette structure opère dans un secteur d'activité relativement peu risqué</comment>
+<comment color="ORANGE">Cette structure opère dans une zone géographique modérément risquée</comment>
+<comment color="ORANGE">Cette structure utilise ses actifs à court terme pour générer des ventes de manière modéré, ce qui est encourageant</comment>
+<comment color="ORANGE">L'entreprise tend à financer ses immobilisations en ayant recours aux emprunts ce qui peut être risqué</comment>
+<comment color="ORANGE">Le ratio de rotation des stocks est de 5,07 jours, ce qui reflète une activité stable</comment>
+<comment color="ORANGE">Le rendement que l'entreprise tire de ses investissements est de 0,28, ce qui est modérément risqué</comment>
+</commentaries>
+</ratings2013>
+<limits2013>
+<currentlimit>5000000</currentlimit>
+<currentdate>03/03/2017</currentdate>
+<purchaselimit>Purchase Limit Unavailable</purchaselimit>
+</limits2013>
+<judgements>
+<ccjs code="2" text="Privilège existant">
+<ccj>
+<ccjtype>Privilège(s) trésor</ccjtype>
+<effectdate>12/09/2013</effectdate>
+<amount>6652548</amount>
+<creditor>COMPTABLE DE LA DIRECTION DES GRANDES ENTREPRISES</creditor>
+<radiationamount />
+<partialradiationdate />
+<radiationdate>10/06/2014</radiationdate>
+</ccj>
+</ccjs>
+<preferentials code="2">
+<collectionstatus>Aucune inscription Privilège Urssaf et Trésor à ce jour</collectionstatus>
+<datemonitored>25/03/2009</datemonitored>
+<nbactivepreferentials>0</nbactivepreferentials>
+<totalactiveamount />
+<totaldueactiveamount>0</totaldueactiveamount>
+</preferentials>
+</judgements>
+<eventhistory>
+<statushistory />
+<companyhistory>
+<company code="BXC_A">
+<date>14/09/2016</date>
+<text>Bodacc C : Avis de dépôt des comptes</text>
+</company>
+<company code="ACC_DL">
+<date>09/09/2016</date>
+<text>Prise en compte d'un nouveau bilan ayant entrainé une réévaluation de la solvabilité de l'entreprise</text>
+</company>
+<company code="BXB_1">
+<date>20/07/2016</date>
+<text>Bodacc B : Modification et mutation diverse</text>
+</company>
+<company code="KJ_DR">
+<date>08/07/2016</date>
+<text>JAL : Démission / Révocation du mandataire social</text>
+</company>
+<company code="037">
+<date>06/07/2016</date>
+<text>Changement de Président (PDG, PCA)               </text>
+</company>
+<company code="070">
+<date>06/07/2016</date>
+<text>PV d'Assemblée</text>
+</company>
+<company code="KJ_NO">
+<date>30/06/2016</date>
+<text>JAL : Nomination du mandataire social</text>
+</company>
+<company code="BXB_1">
+<date>22/05/2016</date>
+<text>Bodacc B : Modification et mutation diverse</text>
+</company>
+<company code="RA2013">
+<date>13/05/2016</date>
+<text>Mise à jour du score</text>
+</company>
+<company code="KJ_DR">
+<date>29/04/2016</date>
+<text>JAL : Démission / Révocation du mandataire social</text>
+</company>
+<company code="099">
+<date>25/04/2016</date>
+<text>Acte modificatif                                  </text>
+</company>
+<company code="040">
+<date>25/04/2016</date>
+<text>Modification du Conseil d'Administration          </text>
+</company>
+<company code="037">
+<date>25/04/2016</date>
+<text>Changement de Président (PDG, PCA)               </text>
+</company>
+<company code="KJ_NO">
+<date>31/03/2016</date>
+<text>JAL : Nomination du mandataire social</text>
+</company>
+<company code="BXA_3">
+<date>27/01/2016</date>
+<text>Bodacc A : Vente et cession</text>
+</company>
+<company code="ACC">
+<date>31/12/2015</date>
+<text>Nouveau bilan disponible</text>
+</company>
+<company code="BXC_A">
+<date>07/11/2015</date>
+<text>Bodacc C : Avis de dépôt des comptes</text>
+</company>
+<company code="RA2013">
+<date>20/10/2015</date>
+<text>Mise à jour du score</text>
+</company>
+<company code="ACC_DL">
+<date>20/10/2015</date>
+<text>Prise en compte d'un nouveau bilan ayant entrainé une réévaluation de la solvabilité de l'entreprise</text>
+</company>
+<company code="BXB_1">
+<date>23/08/2015</date>
+<text>Bodacc B : Modification et mutation diverse</text>
+</company>
+<company code="070">
+<date>05/08/2015</date>
+<text>PV d'Assemblée</text>
+</company>
+<company code="037">
+<date>05/08/2015</date>
+<text>Changement de Président (PDG, PCA)               </text>
+</company>
+<company code="081">
+<date>05/08/2015</date>
+<text>Changement de Commissaire aux Comptes             </text>
+</company>
+<company code="RA2013">
+<date>13/05/2015</date>
+<text>Mise à jour du score</text>
+</company>
+<company code="ACC">
+<date>31/12/2014</date>
+<text>Nouveau bilan disponible</text>
+</company>
+<company code="BXC_A">
+<date>17/09/2014</date>
+<text>Bodacc C : Avis de dépôt des comptes</text>
+</company>
+<company code="RA2013">
+<date>28/08/2014</date>
+<text>Mise à jour du score</text>
+</company>
+<company code="ACC_DL">
+<date>28/08/2014</date>
+<text>Prise en compte d'un nouveau bilan ayant entrainé une réévaluation de la solvabilité de l'entreprise</text>
+</company>
+<company code="RA2013">
+<date>11/06/2014</date>
+<text>Mise à jour du score</text>
+</company>
+<company code="GE_C_CP_T">
+<date>28/04/2014</date>
+<text>Radiation partielle d'un privilège Trésor</text>
+</company>
+<company code="ACC">
+<date>31/12/2013</date>
+<text>Nouveau bilan disponible</text>
+</company>
+<company code="RA2013">
+<date>15/10/2013</date>
+<text>Mise à jour du score</text>
+</company>
+<company code="BXC_A">
+<date>27/09/2013</date>
+<text>Bodacc C : Avis de dépôt des comptes</text>
+</company>
+<company code="GE_C_CR_T">
+<date>12/09/2013</date>
+<text>Inscription d’un privilège Trésor Public</text>
+</company>
+<company code="GE_C_CU_T">
+<date>12/09/2013</date>
+<text>Radiation d'un privilège Trésor</text>
+</company>
+<company code="ACC_DL">
+<date>11/09/2013</date>
+<text>Prise en compte d'un nouveau bilan ayant entrainé une réévaluation de la solvabilité de l'entreprise</text>
+</company>
+<company code="ACC">
+<date>31/12/2012</date>
+<text>Nouveau bilan disponible</text>
+</company>
+<company code="GE_C_CU_T">
+<date>27/11/2012</date>
+<text>Radiation d'un privilège Trésor</text>
+</company>
+<company code="GE_C_CR_T">
+<date>27/11/2012</date>
+<text>Inscription d’un privilège Trésor Public</text>
+</company>
+<company code="ACC_DL">
+<date>06/10/2012</date>
+<text>Prise en compte d'un nouveau bilan ayant entrainé une réévaluation de la solvabilité de l'entreprise</text>
+</company>
+<company code="BXC_A">
+<date>17/09/2012</date>
+<text>Bodacc C : Avis de dépôt des comptes</text>
+</company>
+<company code="ACC">
+<date>31/12/2011</date>
+<text>Nouveau bilan disponible</text>
+</company>
+<company code="BXC_A">
+<date>08/09/2011</date>
+<text>Bodacc C : Avis de dépôt des comptes</text>
+</company>
+<company code="ACC_DL">
+<date>19/08/2011</date>
+<text>Prise en compte d'un nouveau bilan ayant entrainé une réévaluation de la solvabilité de l'entreprise</text>
+</company>
+<company code="ACC">
+<date>31/12/2010</date>
+<text>Nouveau bilan disponible</text>
+</company>
+<company code="GE_C_CU_T">
+<date>09/12/2010</date>
+<text>Radiation d'un privilège Trésor</text>
+</company>
+<company code="GE_C_CR_T">
+<date>09/12/2010</date>
+<text>Inscription d’un privilège Trésor Public</text>
+</company>
+<company code="GS_NUP">
+<date>15/10/2010</date>
+<text>Nouvelle tête de groupe</text>
+</company>
+<company code="GS_NP">
+<date>15/10/2010</date>
+<text>Nouvelle maison mère directe détectée</text>
+</company>
+<company code="BXC_A">
+<date>11/10/2010</date>
+<text>Bodacc C : Avis de dépôt des comptes</text>
+</company>
+<company code="BXB_1">
+<date>28/02/2010</date>
+<text>Bodacc B : Modification et mutation diverse</text>
+</company>
+<company code="099">
+<date>26/01/2010</date>
+<text>Acte modificatif                                  </text>
+</company>
+<company code="079">
+<date>26/01/2010</date>
+<text>Statuts mis à jour                               </text>
+</company>
+<company code="010">
+<date>26/01/2010</date>
+<text>Augmentation de Capital                           </text>
+</company>
+<company code="PAY_DEL">
+<date>21/01/2010</date>
+<text>Clôture d’un dossier lié à un retard de paiement</text>
+</company>
+<company code="ACC">
+<date>31/12/2009</date>
+<text>Nouveau bilan disponible</text>
+</company>
+<company code="SE_C_M_EO">
+<date>17/12/2009</date>
+<text>Autre modification à l'établissement</text>
+</company>
+<company code="KJ_MC">
+<date>16/12/2009</date>
+<text>JAL : Modification du capital social</text>
+</company>
+<company code="SE_C_M_EO">
+<date>16/12/2009</date>
+<text>Autre modification à l'établissement</text>
+</company>
+<company code="BXC_A">
+<date>24/09/2009</date>
+<text>Bodacc C : Avis de dépôt des comptes</text>
+</company>
+<company code="SE_C_F_E">
+<date>30/04/2009</date>
+<text>Création de l'établissement</text>
+</company>
+<company code="SE_C_U_WF">
+<date>30/04/2009</date>
+<text>Mise à jour de l'effectif de l'entreprise</text>
+</company>
+<company code="GE_C_A">
+<date>25/03/2009</date>
+<text>Collecte des privilèges activée pour cette société</text>
+</company>
+<company code="ACC">
+<date>31/12/2008</date>
+<text>Nouveau bilan disponible</text>
+</company>
+<company code="PAY_PROT">
+<date>15/12/2008</date>
+<text>Contestation d’un dossier lié à un retard de paiement en cours</text>
+</company>
+<company code="PAY_NEW">
+<date>15/12/2008</date>
+<text>Nouveau retard de paiement détecté</text>
+</company>
+<company code="BXC_A">
+<date>25/10/2008</date>
+<text>Bodacc C : Avis de dépôt des comptes</text>
+</company>
+<company code="ACC">
+<date>31/12/2007</date>
+<text>Nouveau bilan disponible</text>
+</company>
+<company code="ACC">
+<date>31/12/2006</date>
+<text>Nouveau bilan disponible</text>
+</company>
+<company code="ACC">
+<date>31/12/2005</date>
+<text>Nouveau bilan disponible</text>
+</company>
+<company code="055">
+<date>23/11/2005</date>
+<text>Acte sous seing privé</text>
+</company>
+<company code="010">
+<date>23/11/2005</date>
+<text>Augmentation de Capital                           </text>
+</company>
+<company code="070">
+<date>23/11/2005</date>
+<text>PV d'Assemblée</text>
+</company>
+<company code="099">
+<date>23/11/2005</date>
+<text>Acte modificatif                                  </text>
+</company>
+<company code="079">
+<date>23/11/2005</date>
+<text>Statuts mis à jour                               </text>
+</company>
+<company code="083">
+<date>28/09/2005</date>
+<text>Rapport des Commissaires ou du Gérant            </text>
+</company>
+<company code="055">
+<date>28/09/2005</date>
+<text>Acte sous seing privé</text>
+</company>
+<company code="055">
+<date>15/09/2005</date>
+<text>Acte sous seing privé</text>
+</company>
+<company code="083">
+<date>15/09/2005</date>
+<text>Rapport des Commissaires ou du Gérant            </text>
+</company>
+<company code="096">
+<date>22/07/2005</date>
+<text>Requête et Ordonnance                            </text>
+</company>
+<company code="099">
+<date>22/07/2005</date>
+<text>Acte modificatif                                  </text>
+</company>
+<company code="ACC">
+<date>31/12/2004</date>
+<text>Nouveau bilan disponible</text>
+</company>
+<company code="003">
+<date>13/08/2004</date>
+<text>Changement de Forme Juridique avec changement de catégorie</text>
+</company>
+<company code="067">
+<date>13/08/2004</date>
+<text>Nomination/démission des organes de gestion      </text>
+</company>
+<company code="055">
+<date>13/08/2004</date>
+<text>Acte sous seing privé</text>
+</company>
+<company code="083">
+<date>13/08/2004</date>
+<text>Rapport des Commissaires ou du Gérant            </text>
+</company>
+<company code="081">
+<date>13/08/2004</date>
+<text>Changement de Commissaire aux Comptes             </text>
+</company>
+<company code="079">
+<date>13/08/2004</date>
+<text>Statuts mis à jour                               </text>
+</company>
+<company code="004">
+<date>13/08/2004</date>
+<text>Changement de Forme Juridique sans changement de catégorie</text>
+</company>
+<company code="070">
+<date>13/08/2004</date>
+<text>PV d'Assemblée</text>
+</company>
+<company code="037">
+<date>13/08/2004</date>
+<text>Changement de Président (PDG, PCA)               </text>
+</company>
+<company code="099">
+<date>08/07/2004</date>
+<text>Acte modificatif                                  </text>
+</company>
+<company code="096">
+<date>08/07/2004</date>
+<text>Requête et Ordonnance                            </text>
+</company>
+<company code="ACC">
+<date>31/12/2003</date>
+<text>Nouveau bilan disponible</text>
+</company>
+<company code="070">
+<date>05/07/1999</date>
+<text>PV d'Assemblée</text>
+</company>
+<company code="067">
+<date>05/07/1999</date>
+<text>Nomination/démission des organes de gestion      </text>
+</company>
+<company code="034">
+<date>05/07/1999</date>
+<text>Changement de Gérant                             </text>
+</company>
+<company code="055">
+<date>05/07/1999</date>
+<text>Acte sous seing privé</text>
+</company>
+<company code="019">
+<date>08/09/1998</date>
+<text>Modification de l'objet social                    </text>
+</company>
+<company code="067">
+<date>08/09/1998</date>
+<text>Nomination/démission des organes de gestion      </text>
+</company>
+<company code="079">
+<date>08/09/1998</date>
+<text>Statuts mis à jour                               </text>
+</company>
+<company code="070">
+<date>08/09/1998</date>
+<text>PV d'Assemblée</text>
+</company>
+<company code="055">
+<date>08/09/1998</date>
+<text>Acte sous seing privé</text>
+</company>
+<company code="070">
+<date>07/01/1998</date>
+<text>PV d'Assemblée</text>
+</company>
+<company code="099">
+<date>07/01/1998</date>
+<text>Acte modificatif                                  </text>
+</company>
+<company code="006">
+<date>07/01/1998</date>
+<text>Fusion                                            </text>
+</company>
+<company code="061">
+<date>07/01/1998</date>
+<text>Déclaration de conformité                       </text>
+</company>
+<company code="055">
+<date>07/01/1998</date>
+<text>Acte sous seing privé</text>
+</company>
+<company code="055">
+<date>11/12/1997</date>
+<text>Acte sous seing privé</text>
+</company>
+<company code="083">
+<date>11/12/1997</date>
+<text>Rapport des Commissaires ou du Gérant            </text>
+</company>
+<company code="067">
+<date>20/02/1996</date>
+<text>Nomination/démission des organes de gestion      </text>
+</company>
+<company code="079">
+<date>20/02/1996</date>
+<text>Statuts mis à jour                               </text>
+</company>
+<company code="070">
+<date>20/02/1996</date>
+<text>PV d'Assemblée</text>
+</company>
+<company code="034">
+<date>20/02/1996</date>
+<text>Changement de Gérant                             </text>
+</company>
+<company code="067">
+<date>20/06/1994</date>
+<text>Nomination/démission des organes de gestion      </text>
+</company>
+<company code="061">
+<date>20/06/1994</date>
+<text>Déclaration de conformité                       </text>
+</company>
+<company code="034">
+<date>20/06/1994</date>
+<text>Changement de Gérant                             </text>
+</company>
+<company code="079">
+<date>20/06/1994</date>
+<text>Statuts mis à jour                               </text>
+</company>
+<company code="070">
+<date>20/06/1994</date>
+<text>PV d'Assemblée</text>
+</company>
+<company code="061">
+<date>22/02/1994</date>
+<text>Déclaration de conformité                       </text>
+</company>
+<company code="079">
+<date>22/02/1994</date>
+<text>Statuts mis à jour                               </text>
+</company>
+<company code="010">
+<date>22/02/1994</date>
+<text>Augmentation de Capital                           </text>
+</company>
+<company code="070">
+<date>22/02/1994</date>
+<text>PV d'Assemblée</text>
+</company>
+<company code="079">
+<date>26/10/1993</date>
+<text>Statuts mis à jour                               </text>
+</company>
+<company code="010">
+<date>26/10/1993</date>
+<text>Augmentation de Capital                           </text>
+</company>
+<company code="022">
+<date>26/10/1993</date>
+<text>Transfert du Siège dans le ressort du Tribunal de Commerce</text>
+</company>
+<company code="070">
+<date>26/10/1993</date>
+<text>PV d'Assemblée</text>
+</company>
+<company code="013">
+<date>26/10/1993</date>
+<text>Réduction de Capital                             </text>
+</company>
+<company code="061">
+<date>26/10/1993</date>
+<text>Déclaration de conformité                       </text>
+</company>
+<company code="044">
+<date>26/10/1993</date>
+<text>Reconstitution de l'Actif Net                     </text>
+</company>
+<company code="016">
+<date>05/07/1993</date>
+<text>Prorogation de durée                             </text>
+</company>
+<company code="096">
+<date>05/07/1993</date>
+<text>Requête et Ordonnance                            </text>
+</company>
+<company code="061">
+<date>21/08/1992</date>
+<text>Déclaration de conformité                       </text>
+</company>
+<company code="010">
+<date>21/08/1992</date>
+<text>Augmentation de Capital                           </text>
+</company>
+<company code="070">
+<date>21/08/1992</date>
+<text>PV d'Assemblée</text>
+</company>
+<company code="079">
+<date>21/08/1992</date>
+<text>Statuts mis à jour                               </text>
+</company>
+<company code="010">
+<date>05/03/1992</date>
+<text>Augmentation de Capital                           </text>
+</company>
+<company code="028">
+<date>05/03/1992</date>
+<text>Changement de dénomination sociale               </text>
+</company>
+<company code="061">
+<date>05/03/1992</date>
+<text>Déclaration de conformité                       </text>
+</company>
+<company code="079">
+<date>05/03/1992</date>
+<text>Statuts mis à jour                               </text>
+</company>
+<company code="026">
+<date>05/03/1992</date>
+<text>Immatriculation suite à transfert                </text>
+</company>
+<company code="070">
+<date>05/03/1992</date>
+<text>PV d'Assemblée</text>
+</company>
+</companyhistory>
+<establishmenthistory>
+<establishment code="RA">
+<date>09/09/2016</date>
+<text>Mise à jour du score</text>
+</establishment>
+<establishment code="RA">
+<date>05/09/2016</date>
+<text>Mise à jour du score</text>
+</establishment>
+<establishment code="TLF">
+<date>02/08/2016</date>
+<text>Mise à jour des coordonnées téléphoniques</text>
+</establishment>
+<establishment code="TLF">
+<date>06/02/2016</date>
+<text>Mise à jour des coordonnées téléphoniques</text>
+</establishment>
+<establishment code="TLF">
+<date>29/10/2015</date>
+<text>Mise à jour des coordonnées téléphoniques</text>
+</establishment>
+<establishment code="LI">
+<date>20/10/2015</date>
+<text>Mise à jour de la limite de crédit</text>
+</establishment>
+<establishment code="RA">
+<date>20/10/2015</date>
+<text>Mise à jour du score</text>
+</establishment>
+<establishment code="RA">
+<date>04/10/2015</date>
+<text>Mise à jour du score</text>
+</establishment>
+<establishment code="LI">
+<date>04/10/2015</date>
+<text>Mise à jour de la limite de crédit</text>
+</establishment>
+<establishment code="RA">
+<date>06/09/2015</date>
+<text>Mise à jour du score</text>
+</establishment>
+<establishment code="TLF">
+<date>30/07/2015</date>
+<text>Mise à jour des coordonnées téléphoniques</text>
+</establishment>
+<establishment code="SE_H_M">
+<date>30/10/2014</date>
+<text>Modification du siège</text>
+</establishment>
+<establishment code="SE_E_U_AD">
+<date>30/10/2014</date>
+<text>Mise à jour de l'adresse de l'établissement</text>
+</establishment>
+<establishment code="RA">
+<date>11/09/2013</date>
+<text>Mise à jour du score</text>
+</establishment>
+<establishment code="RA">
+<date>05/09/2013</date>
+<text>Mise à jour du score</text>
+</establishment>
+<establishment code="TLF">
+<date>12/01/2013</date>
+<text>Mise à jour des coordonnées téléphoniques</text>
+</establishment>
+<establishment code="LI">
+<date>03/11/2012</date>
+<text>Mise à jour de la limite de crédit</text>
+</establishment>
+<establishment code="LI">
+<date>06/10/2012</date>
+<text>Mise à jour de la limite de crédit</text>
+</establishment>
+<establishment code="LI">
+<date>19/08/2011</date>
+<text>Mise à jour de la limite de crédit</text>
+</establishment>
+<establishment code="RA">
+<date>06/05/2011</date>
+<text>Mise à jour du score</text>
+</establishment>
+<establishment code="LI">
+<date>16/10/2010</date>
+<text>Mise à jour de la limite de crédit</text>
+</establishment>
+<establishment code="RA">
+<date>26/09/2010</date>
+<text>Mise à jour du score</text>
+</establishment>
+<establishment code="RA">
+<date>18/09/2009</date>
+<text>Mise à jour du score</text>
+</establishment>
+<establishment code="RA">
+<date>12/09/2009</date>
+<text>Mise à jour du score</text>
+</establishment>
+<establishment code="RA">
+<date>06/06/2009</date>
+<text>Mise à jour du score</text>
+</establishment>
+<establishment code="SE_H_M">
+<date>30/04/2009</date>
+<text>Modification du siège</text>
+</establishment>
+<establishment code="RA">
+<date>04/08/2008</date>
+<text>Mise à jour du score</text>
+</establishment>
+<establishment code="LI">
+<date>09/12/2007</date>
+<text>Mise à jour de la limite de crédit</text>
+</establishment>
+<establishment code="RA">
+<date>16/10/2007</date>
+<text>Mise à jour du score</text>
+</establishment>
+<establishment code="TLF">
+<date>21/08/2007</date>
+<text>Mise à jour des coordonnées téléphoniques</text>
+</establishment>
+</establishmenthistory>
+<gazette>
+<publication>
+<date>14/09/2016</date>
+<name>C</name>
+<type code="BXC_A" description="Bodacc C : Avis de dépôt des comptes" />
+<description>Comptes annuels et rapports</description>
+<detail1>59 - NORD</detail1>
+<detail2>GREFFE DU TRIBUNAL DE COMMERCE DE LILLE MÉTROPOLE</detail2>
+<detail3>2200 - 344658117 RCS. INGRAM MICRO. Forme : Société par actions simplifiée. Adresse : 208 allée de l'Innovation   59812 Lesquin. Commentaires : Comptes annuels et rapports de l'exercice clos le : 31/12/2015.</detail3>
+<details>59 - NORD. GREFFE DU TRIBUNAL DE COMMERCE DE LILLE MÉTROPOLE. 2200 - 344658117 RCS. INGRAM MICRO. Forme : Société par actions simplifiée. Adresse : 208 allée de l'Innovation   59812 Lesquin. Commentaires : Comptes annuels et rapports de l'exercice clos le : 31/12/2015.</details>
+</publication>
+<publication>
+<date>20/07/2016</date>
+<name>B</name>
+<type code="BXB_1" description="Bodacc B : Modification et mutation diverse" />
+<description>Modification et mutation diverse</description>
+<detail1>59 - NORD</detail1>
+<detail2>GREFFE DU TRIBUNAL DE COMMERCE
+</detail2>
+<detail3>DE LILLE METROPOLE</detail3>
+<details>59 - NORD. GREFFE DU TRIBUNAL DE COMMERCE
+. DE LILLE METROPOLE. 1301 - 344 658 117 RCS Lille Métropole. INGRAM MICRO. Forme : Société par actions simplifiée. Administration : Président partant : Schulz, Gerhard, nomination du Président : Deleval, Sophie. Capital : 15297189.40 EUR. Activité :  . Adresse du siège social : 208 allée de l'Innovation, 59812 Lesquin. Commentaires : modification survenue sur l'administration.</details>
+</publication>
+<publication>
+<date>22/05/2016</date>
+<name>B</name>
+<type code="BXB_1" description="Bodacc B : Modification et mutation diverse" />
+<description>Modification et mutation diverse</description>
+<detail1>59 - NORD</detail1>
+<detail2>GREFFE DU TRIBUNAL DE COMMERCE
+</detail2>
+<detail3>DE LILLE METROPOLE</detail3>
+<details>59 - NORD. GREFFE DU TRIBUNAL DE COMMERCE
+. DE LILLE METROPOLE. 1743 - 344 658 117 RCS Lille Métropole. INGRAM MICRO. Forme : Société par actions simplifiée. Administration : Président partant : Mechali, Pierre-Yvon, nomination du Président : Schulz, Gerhard, nomination du Directeur général : Everaet, Karel. Capital : 15297189.40 EUR. Activité :  . Adresse du siège social : 208 allée de l'Innovation, 59812 Lesquin. Commentaires : modification survenue sur l'administration.</details>
+</publication>
+<publication>
+<date>27/01/2016</date>
+<name>A_REG</name>
+<type code="BXA_3" description="Bodacc A : Vente et cession" />
+<description>Vente et cession : Acheteur</description>
+<detail1>75 - PARIS</detail1>
+<detail2>GREFFE DU TRIBUNAL DE COMMERCE DE PARIS</detail2>
+<detail3>1082 - 344 658 117 RCS Lille Métropole. INGRAM MICRO. Forme : Société par actions simplifiée. Capital : 15297189.40 EUR. Adresse : 208 allée de l'Innovation, 59812 Lesquin. Origine du fonds : Fonds acquis par achat au prix stipulé de 73957,68 euros. Etablissement : Etablissement principal. Activité : Commerce, développement et production de produits et services informatiques y compris support technique et sous-traitance. Adresse : 31 rue de Châteaudun, 75009 Paris. Précédent propriétaire : PARALLELS FRANCE. 494 994 767 RCS Paris. Date de commencement de l’activité : 01/01/0001. Oppositions : à l'adresse du fonds 31 rue de Châteaudun 75009 Paris pour la validité. Descriptif  : Adresse de l'ancien propri¿taire : 31 rue de Ch¿teaudun 75009 Paris par acte SSP du 18/12/2015 enregistr¿ ¿ SIE Paris 9¿me Ouest le 15/01/2016 bordereau 2016/62 case n¿1. Les oppositions seront re¿ues dans les dix jours suivant la publication pr¿vue ¿ l'article L.141-12 du code de commerce. Commentaires : Achat d'un fonds par une personne morale (insertion provisoire).</detail3>
+<details>75 - PARIS. GREFFE DU TRIBUNAL DE COMMERCE DE PARIS. 1082 - 344 658 117 RCS Lille Métropole. INGRAM MICRO. Forme : Société par actions simplifiée. Capital : 15297189.40 EUR. Adresse : 208 allée de l'Innovation, 59812 Lesquin. Origine du fonds : Fonds acquis par achat au prix stipulé de 73957,68 euros. Etablissement : Etablissement principal. Activité : Commerce, développement et production de produits et services informatiques y compris support technique et sous-traitance. Adresse : 31 rue de Châteaudun, 75009 Paris. Précédent propriétaire : PARALLELS FRANCE. 494 994 767 RCS Paris. Date de commencement de l’activité : 01/01/0001. Oppositions : à l'adresse du fonds 31 rue de Châteaudun 75009 Paris pour la validité. Descriptif  : Adresse de l'ancien propri¿taire : 31 rue de Ch¿teaudun 75009 Paris par acte SSP du 18/12/2015 enregistr¿ ¿ SIE Paris 9¿me Ouest le 15/01/2016 bordereau 2016/62 case n¿1. Les oppositions seront re¿ues dans les dix jours suivant la publication pr¿vue ¿ l'article L.141-12 du code de commerce. Commentaires : Achat d'un fonds par une personne morale (insertion provisoire).</details>
+</publication>
+<publication>
+<date>07/11/2015</date>
+<name>C</name>
+<type code="BXC_A" description="Bodacc C : Avis de dépôt des comptes" />
+<description>Comptes annuels et rapports</description>
+<detail1>59 - NORD</detail1>
+<detail2>GREFFE DU TRIBUNAL DE COMMERCE DE LILLE MÉTROPOLE</detail2>
+<detail3>4664 - 344658117 RCS. INGRAM MICRO. Forme : Société par actions simplifiée. Adresse : 208 allée de l'Innovation   59812 Lesquin. Commentaires : Comptes annuels et rapports de l'exercice clos le : 31/12/2014.</detail3>
+<details>59 - NORD. GREFFE DU TRIBUNAL DE COMMERCE DE LILLE MÉTROPOLE. 4664 - 344658117 RCS. INGRAM MICRO. Forme : Société par actions simplifiée. Adresse : 208 allée de l'Innovation   59812 Lesquin. Commentaires : Comptes annuels et rapports de l'exercice clos le : 31/12/2014.</details>
+</publication>
+<publication>
+<date>23/08/2015</date>
+<name>B</name>
+<type code="BXB_1" description="Bodacc B : Modification et mutation diverse" />
+<description>Modification et mutation diverse</description>
+<detail1>59 - NORD</detail1>
+<detail2>GREFFE DU TRIBUNAL DE COMMERCE
+</detail2>
+<detail3>DE LILLE METROPOLE</detail3>
+<details>59 - NORD. GREFFE DU TRIBUNAL DE COMMERCE
+. DE LILLE METROPOLE. 493 - 344 658 117 RCS Lille Métropole. INGRAM MICRO. Forme : Société par actions simplifiée. Administration : Président partant : Everaet, Karel, nomination du Président : Mechali, Pierre-Yvon, Commissaire aux comptes suppléant partant : Laforce, Michel, nomination du Commissaire aux comptes suppléant : Georghiou, Jean-Christophe. Capital : 15297189.40 EUR. Activité :  . Adresse du siège social : carrefour de l Europe Crt de Lesquin, 59810 Lesquin. Commentaires : modification survenue sur l'administration.</details>
+</publication>
+<publication>
+<date>17/09/2014</date>
+<name>C</name>
+<type code="BXC_A" description="Bodacc C : Avis de dépôt des comptes" />
+<description>Comptes annuels et rapports</description>
+<detail1>59 - NORD</detail1>
+<detail2>GREFFE DU TRIBUNAL DE COMMERCE DE LILLE MÉTROPOLE</detail2>
+<detail3>7200 - 344658117 RCS. INGRAM MICRO. Forme : Société par actions simplifiée. Adresse : carrefour de l Europe Crt de Lesquin   59810 Lesquin. Commentaires : Comptes annuels et rapports de l'exercice clos le : 31/12/2013.</detail3>
+<details>59 - NORD. GREFFE DU TRIBUNAL DE COMMERCE DE LILLE MÉTROPOLE. 7200 - 344658117 RCS. INGRAM MICRO. Forme : Société par actions simplifiée. Adresse : carrefour de l Europe Crt de Lesquin   59810 Lesquin. Commentaires : Comptes annuels et rapports de l'exercice clos le : 31/12/2013.</details>
+</publication>
+<publication>
+<date>27/09/2013</date>
+<name>C</name>
+<type code="BXC_A" description="Bodacc C : Avis de dépôt des comptes" />
+<description>Comptes annuels et rapports</description>
+<detail1>59 - NORD</detail1>
+<detail2>GREFFE DU TRIBUNAL DE COMMERCE DE LILLE MÉTROPOLE</detail2>
+<detail3>7842 - 344658117 RCS. INGRAM MICRO. Forme : Société par actions simplifiée. Adresse : carrefour de l Europe Crt de Lesquin   59810 Lesquin. Commentaires : Comptes annuels et rapports de l'exercice clos le : 31/12/2012.</detail3>
+<details>59 - NORD. GREFFE DU TRIBUNAL DE COMMERCE DE LILLE MÉTROPOLE. 7842 - 344658117 RCS. INGRAM MICRO. Forme : Société par actions simplifiée. Adresse : carrefour de l Europe Crt de Lesquin   59810 Lesquin. Commentaires : Comptes annuels et rapports de l'exercice clos le : 31/12/2012.</details>
+</publication>
+<publication>
+<date>17/09/2012</date>
+<name>C</name>
+<type code="BXC_A" description="Bodacc C : Avis de dépôt des comptes" />
+<description>Comptes annuels et rapports</description>
+<detail1>59 - NORD</detail1>
+<detail2>GREFFE DU TRIBUNAL DE COMMERCE DE LILLE</detail2>
+<detail3>8600 - 344658117 RCS. INGRAM MICRO. Forme : Société par actions simplifiée. Adresse : carrefour de l Europe Crt de Lesquin    59810 Lesquin. Commentaires : Comptes annuels et rapports de l'exercice clos le : 31/12/2011.</detail3>
+<details>59 - NORD. GREFFE DU TRIBUNAL DE COMMERCE DE LILLE. 8600 - 344658117 RCS. INGRAM MICRO. Forme : Société par actions simplifiée. Adresse : carrefour de l Europe Crt de Lesquin    59810 Lesquin. Commentaires : Comptes annuels et rapports de l'exercice clos le : 31/12/2011.</details>
+</publication>
+<publication>
+<date>11/10/2010</date>
+<name>C</name>
+<type code="B" description="Bodacc" />
+<description>Comptes annuels et rapports</description>
+<detail1>59 - NORD</detail1>
+<detail2>GREFFE DU TRIBUNAL DE COMMERCE DE LILLE</detail2>
+<detail3>6448 - 344658117 RCS. INGRAM MICRO. Forme : Société par actions simplifiée. Adresse : carrefour de l'Europe Crt de Lesquin    59810 Lesquin. Commentaires : Comptes annuels et rapports de l'exercice clos le : 31/12/2009.</detail3>
+<details>59 - NORD. GREFFE DU TRIBUNAL DE COMMERCE DE LILLE. 6448 - 344658117 RCS. INGRAM MICRO. Forme : Société par actions simplifiée. Adresse : carrefour de l'Europe Crt de Lesquin    59810 Lesquin. Commentaires : Comptes annuels et rapports de l'exercice clos le : 31/12/2009.</details>
+</publication>
+<publication>
+<date>28/02/2010</date>
+<name>B</name>
+<type code="BXB_1" description="Bodacc B : Modification et mutation diverse" />
+<description>Modification et mutation diverse</description>
+<detail1>59 - NORD</detail1>
+<detail2>GREFFE DU TRIBUNAL DE COMMERCE DE LILLE</detail2>
+<detail3>1577 - 344 658 117 RCS Lille. INGRAM MICRO. Forme : Société par actions simplifiée. Administration : Président de la société : EVERAET Karel Commissaire aux comptes titulaire : PRICEWATERHOUSECOOPERS AUDIT SA Commissaire aux comptes suppléant : LAFORCE Michel. Capital : 15297189.40 EUR. Activité : Achat vente négoce de tous matériels informatiques. Adresse de l’établissement principal : carrefour de l'Europe, Crt de Lesquin, 59810 Lesquin. Adresse du siège social : carrefour de l'Europe, Crt de Lesquin, 59810 Lesquin. Commentaires : Augmentation de capital. Date de commencement de l’activité : 21/06/1990. Date d’effet : 16/12/2009.</detail3>
+<details>59 - NORD. GREFFE DU TRIBUNAL DE COMMERCE DE LILLE. 1577 - 344 658 117 RCS Lille. INGRAM MICRO. Forme : Société par actions simplifiée. Administration : Président de la société : EVERAET Karel Commissaire aux comptes titulaire : PRICEWATERHOUSECOOPERS AUDIT SA Commissaire aux comptes suppléant : LAFORCE Michel. Capital : 15297189.40 EUR. Activité : Achat vente négoce de tous matériels informatiques. Adresse de l’établissement principal : carrefour de l'Europe, Crt de Lesquin, 59810 Lesquin. Adresse du siège social : carrefour de l'Europe, Crt de Lesquin, 59810 Lesquin. Commentaires : Augmentation de capital. Date de commencement de l’activité : 21/06/1990. Date d’effet : 16/12/2009.</details>
+</publication>
+<publication>
+<date>24/09/2009</date>
+<name>C</name>
+<type code="B" description="Bodacc" />
+<description>Comptes annuels et rapports</description>
+<detail1>59 - NORD</detail1>
+<detail2>GREFFE DU TRIBUNAL DE COMMERCE DE LILLE</detail2>
+<detail3>3800 - 344658117 RCS. INGRAM MICRO. Forme : Société par actions simplifiée. Adresse : carrefour de l'Europe Crt de Lesquin    59810 Lesquin. Commentaires : Comptes annuels et rapports de l'exercice clos le : 31/12/2008.</detail3>
+<details>59 - NORD. GREFFE DU TRIBUNAL DE COMMERCE DE LILLE. 3800 - 344658117 RCS. INGRAM MICRO. Forme : Société par actions simplifiée. Adresse : carrefour de l'Europe Crt de Lesquin    59810 Lesquin. Commentaires : Comptes annuels et rapports de l'exercice clos le : 31/12/2008.</details>
+</publication>
+<publication>
+<date>25/10/2008</date>
+<name>C</name>
+<type code="B" description="Bodacc" />
+<description>Comptes annuels et rapports</description>
+<detail1>59 - NORD</detail1>
+<detail2>GREFFE DU TRIBUNAL DE COMMERCE DE LILLE</detail2>
+<detail3>6382 - 344658117 RCS. INGRAM MICRO. Forme : Société par actions simplifiée. Adresse : carrefour de l'Europe Crt de Lesquin   59810 Lesquin. Commentaires : Comptes annuels et rapports de l'exercice clos le : 31/12/2007.</detail3>
+<details>59 - NORD. GREFFE DU TRIBUNAL DE COMMERCE DE LILLE. 6382 - 344658117 RCS. INGRAM MICRO. Forme : Société par actions simplifiée. Adresse : carrefour de l'Europe Crt de Lesquin   59810 Lesquin. Commentaires : Comptes annuels et rapports de l'exercice clos le : 31/12/2007.</details>
+</publication>
+<publication>
+<date>07/12/2007</date>
+<name>C</name>
+<type code="B" description="Bodacc" />
+<description>Avis de dépôt des comptes</description>
+<detail1>6687 - 344 658 117. RCS Lille INGRAM MICRO. Forme: Société par actions simplifiée. Adresse du siège social: carrefour de l'Europe Crt de Lesquin 59810 Lesquin. Comptes annuels et rapports de l'exercice clos le: 31 décembre 2006.</detail1>
+<detail2 />
+<detail3 />
+<details>6687 - 344 658 117. RCS Lille INGRAM MICRO. Forme: Société par actions simplifiée. Adresse du siège social: carrefour de l'Europe Crt de Lesquin 59810 Lesquin. Comptes annuels et rapports de l'exercice clos le: 31 décembre 2006.</details>
+</publication>
+<publication>
+<date>05/10/2006</date>
+<name>C</name>
+<type code="B" description="Bodacc" />
+<description>Avis de dépôt des comptes</description>
+<detail1>2580 - RCS Lille B 344 658 117. RC 92-B 127. INGRAM MICRO. Forme: SAS . Adresse du siège social: Carrefour de l'Europe Crt de Lesquin,59810 Lesquin. Comptes annuels et rapports de l'exercice clos le: 31 décembre 2005.</detail1>
+<detail2 />
+<detail3 />
+<details>2580 - RCS Lille B 344 658 117. RC 92-B 127. INGRAM MICRO. Forme: SAS . Adresse du siège social: Carrefour de l'Europe Crt de Lesquin,59810 Lesquin. Comptes annuels et rapports de l'exercice clos le: 31 décembre 2005.</details>
+</publication>
+<publication>
+<date>15/12/2005</date>
+<name>B</name>
+<type code="B" description="Bodacc" />
+<description>Modifications et mutations diverses</description>
+<detail1>961 - Ancienne situation du siège social : RCS Lille B 344 658 117. RC 92-B 127. INGRAM MICRO. Forme : S.A.S. Capital : 6 113 205,59 euros. Adresse : carrefour de l'Europe, C.R.T. de Lesquin, 59810 Nouvelle situation du siège social - Capital : 11 113 180 euros. Etablissement principal - Activité : achat, vente et négoce de tout matériel informatique. Adresse : carrefour de l'Europe, C.R.T. de Lesquin, 59810 Date d'effet : 7 octobre 2005.</detail1>
+<detail2 />
+<detail3 />
+<details>961 - Ancienne situation du siège social : RCS Lille B 344 658 117. RC 92-B 127. INGRAM MICRO. Forme : S.A.S. Capital : 6 113 205,59 euros. Adresse : carrefour de l'Europe, C.R.T. de Lesquin, 59810 Nouvelle situation du siège social - Capital : 11 113 180 euros. Etablissement principal - Activité : achat, vente et négoce de tout matériel informatique. Adresse : carrefour de l'Europe, C.R.T. de Lesquin, 59810 Date d'effet : 7 octobre 2005.</details>
+</publication>
+<publication>
+<date>15/09/2005</date>
+<name>C</name>
+<type code="B" description="Bodacc" />
+<description>Avis de dépôt des comptes</description>
+<detail1>2987 - RCS Lille B 344 658 117. RC 92-B 127. INGRAM MICRO. Forme: SAS . Adresse du siège social: Carrefour de l'Europe Crt de Lesquin,59810 Lesquin. Comptes annuels et rapports de l'exercice clos le: 31 décembre 2004.</detail1>
+<detail2 />
+<detail3 />
+<details>2987 - RCS Lille B 344 658 117. RC 92-B 127. INGRAM MICRO. Forme: SAS . Adresse du siège social: Carrefour de l'Europe Crt de Lesquin,59810 Lesquin. Comptes annuels et rapports de l'exercice clos le: 31 décembre 2004.</details>
+</publication>
+<publication>
+<date>30/09/2004</date>
+<name>B</name>
+<type code="B" description="Bodacc" />
+<description>Modifications et mutations diverses</description>
+<detail1>Ancienne situation du siège social. RCS Lille B 344658117 RC 92-B 127 INGRAM MICRO. Forme : S.A.R.L. Capital : 6 113 205 euros. Adresse : carrefour de l'Europe, C. R.T. de Lesquin, 59810 Lesquin. Administration : nomination en qualité de président : EVERAET (Karel). Commissaire aux comptes titulaire : PRICEWATERHOUSECOOPERS AUDIT S.A. Commissaire aux comptes suppléant : LAFORCE (Michel) Nouvelle situation du siège social. Forme : S.A.S Etablissement principal: Activité : achat, vente et négoce de tout matériel informatique. Adresse : carrefour de l'Europe, C.R.T. de Lesquin, 59810 Lesquin. Date d'effet : 29 juin 2004.</detail1>
+<detail2 />
+<detail3 />
+<details>Ancienne situation du siège social. RCS Lille B 344658117 RC 92-B 127 INGRAM MICRO. Forme : S.A.R.L. Capital : 6 113 205 euros. Adresse : carrefour de l'Europe, C. R.T. de Lesquin, 59810 Lesquin. Administration : nomination en qualité de président : EVERAET (Karel). Commissaire aux comptes titulaire : PRICEWATERHOUSECOOPERS AUDIT S.A. Commissaire aux comptes suppléant : LAFORCE (Michel) Nouvelle situation du siège social. Forme : S.A.S Etablissement principal: Activité : achat, vente et négoce de tout matériel informatique. Adresse : carrefour de l'Europe, C.R.T. de Lesquin, 59810 Lesquin. Date d'effet : 29 juin 2004.</details>
+</publication>
+<publication>
+<date>23/07/1999</date>
+<name>B</name>
+<type code="B" description="Bodacc" />
+<description>Modifications et mutations diverses</description>
+<detail1>o. RCS Lille B 344 658 117 RC 92-B 127 INGRAM MICRO. Forme : S.A.R.L. Capital : 40 100 000 F. Adresse du siège social : carrefour de L'Europe, CRT de Lesquin 59810 Lesquin. Administration : gérant : EVERAET (Karel). Ancien gérant : WINKELHAUS (John) Etablissement principal: Activité : achat, vente, négoce de tous matériels informatiques. Adresse : carrefour de L'Europe, CRT de Lesquin 59810 Lesquin. Date d'effet : 30 juin 1997 Date de début d'activité: 21 juin 1990.</detail1>
+<detail2 />
+<detail3 />
+<details>o. RCS Lille B 344 658 117 RC 92-B 127 INGRAM MICRO. Forme : S.A.R.L. Capital : 40 100 000 F. Adresse du siège social : carrefour de L'Europe, CRT de Lesquin 59810 Lesquin. Administration : gérant : EVERAET (Karel). Ancien gérant : WINKELHAUS (John) Etablissement principal: Activité : achat, vente, négoce de tous matériels informatiques. Adresse : carrefour de L'Europe, CRT de Lesquin 59810 Lesquin. Date d'effet : 30 juin 1997 Date de début d'activité: 21 juin 1990.</details>
+</publication>
+<publication>
+<date>30/05/1996</date>
+<name>A_REG</name>
+<type code="B" description="Bodacc" />
+<description>Création d'établissement</description>
+<detail1>RCS *. RCS Versailles B 344 658 117 INGRAM MICRO. Forme : S.A.R.L. Capital : 40 100 000 F. Adresse du siège social : C.R. T. de Lesquin, carrefour de L'Europe 59182 Lesquin Etablissement principal: Activité : distribution de matériel Hewlett Packard C.S.O., à l'exclusion des produits H.P. 3 000. Adresse : 30, avenue de l'Europe 78140 Vélizy Fonds de Commerce dépendant de l' établissement principal acquis par cession au prix stipulé de 900 000 F. Date d'effet : 30 avril 1996. Précédent propriétaire : : ULTIMATE. RCS RCS B 331 774 745 Publication légale: Les Annonces de La Seine du 13 mai 1996. Oppositions : Ingram Micro S.A.R.L. chez Ultimate, 30, avenue de l'Europe, 78140 Vélizy-Villacoublay.</detail1>
+<detail2 />
+<detail3 />
+<details>RCS *. RCS Versailles B 344 658 117 INGRAM MICRO. Forme : S.A.R.L. Capital : 40 100 000 F. Adresse du siège social : C.R. T. de Lesquin, carrefour de L'Europe 59182 Lesquin Etablissement principal: Activité : distribution de matériel Hewlett Packard C.S.O., à l'exclusion des produits H.P. 3 000. Adresse : 30, avenue de l'Europe 78140 Vélizy Fonds de Commerce dépendant de l' établissement principal acquis par cession au prix stipulé de 900 000 F. Date d'effet : 30 avril 1996. Précédent propriétaire : : ULTIMATE. RCS RCS B 331 774 745 Publication légale: Les Annonces de La Seine du 13 mai 1996. Oppositions : Ingram Micro S.A.R.L. chez Ultimate, 30, avenue de l'Europe, 78140 Vélizy-Villacoublay.</details>
+</publication>
+</gazette>
+<jal>
+<publication>
+<decisiondate>16/12/2009</decisiondate>
+<type code="KJ_MC">Modification du capital social</type>
+<parutiondate>22/01/2010</parutiondate>
+<source>JOURNAUX</source>
+<details>&lt;center&gt;&lt;b&gt;LA GAZETTE DU NORD PAS DE CALAIS&lt;/b&gt;&lt;/center&gt;&lt;br /&gt;&lt;i&gt;Date de décision : &lt;/i&gt;16/12/2009&lt;br /&gt;&lt;i&gt;La société : &lt;/i&gt;344658117 - INGRAM MICRO, CENTRE REGIONAL TRANSPORT, CARREFOUR DE L EUROPE, 59810 LESQUIN&lt;i&gt; a subi une &lt;/i&gt;augmentation &lt;i&gt; de son capital social désormais de &lt;/i&gt;15 297 190 € &lt;br/&gt;</details>
+</publication>
+<publication>
+<decisiondate>16/12/2009</decisiondate>
+<type code="KJ_MC">Modification du capital social</type>
+<parutiondate>22/01/2010</parutiondate>
+<source>JOURNAUX</source>
+<details>&lt;center&gt;&lt;b&gt;LA GAZETTE DU NORD PAS DE CALAIS&lt;/b&gt;&lt;/center&gt;&lt;br /&gt;&lt;i&gt;Date de décision : &lt;/i&gt;16/12/2009&lt;br /&gt;&lt;i&gt;La société : &lt;/i&gt;344658117 - INGRAM MICRO, CENTRE REGIONAL TRANSPORT, CARREFOUR DE L EUROPE, 59810 LESQUIN&lt;i&gt; a subi une &lt;/i&gt;augmentation &lt;i&gt; de son capital social désormais de &lt;/i&gt;14 327 390 € &lt;br/&gt;</details>
+</publication>
+<publication>
+<decisiondate>30/06/2016</decisiondate>
+<type code="KJ_NO">Nomination du mandataire social</type>
+<parutiondate>08/07/2016</parutiondate>
+<source>JOURNAUX</source>
+<details>&lt;center&gt;&lt;b&gt;L Observateur de l avesnois &lt;/b&gt;&lt;/center&gt;&lt;br /&gt;&lt;i&gt;Date de décision : &lt;/i&gt;30/06/2016&lt;br /&gt;&lt;i&gt;Société faisant l'objet d'une nomination : &lt;/i&gt;344658117 - INGRAM MICRO, 19 AV DES INDES, FERME DE COURTABOEUF BAT D, 91940 LES ULIS &lt;br/&gt;&lt;i&gt; Nominé : &lt;/i&gt;Madame Sophie DELEVAL, 59170 CROIX&lt;br/&gt;&lt;i&gt; En la fonction de : &lt;/i&gt;Président&lt;br/&gt;</details>
+</publication>
+<publication>
+<decisiondate>30/06/2016</decisiondate>
+<type code="KJ_DR">Démission / Révocation du mandataire social</type>
+<parutiondate>08/07/2016</parutiondate>
+<source>JOURNAUX</source>
+<details>&lt;center&gt;&lt;b&gt;L Observateur de l avesnois &lt;/b&gt;&lt;/center&gt;&lt;br /&gt;&lt;i&gt;Date de décision : &lt;/i&gt;30/06/2016&lt;br /&gt;&lt;i&gt;La société &lt;/i&gt;344658117 - INGRAM MICRO, 19 AV DES INDES, FERME DE COURTABOEUF BAT D, 91940 LES ULIS &lt;br/&gt;&lt;i&gt;Fait l'objet du départ de &lt;/i&gt; Monsieur Gerhard SCHULZ&lt;br/&gt;</details>
+</publication>
+<publication>
+<decisiondate>31/03/2016</decisiondate>
+<type code="KJ_NO">Nomination du mandataire social</type>
+<parutiondate>29/04/2016</parutiondate>
+<source>JOURNAUX</source>
+<details>&lt;center&gt;&lt;b&gt;Gazette Nord Pas de Calais / Edition du Nord&lt;/b&gt;&lt;/center&gt;&lt;br /&gt;&lt;i&gt;Date de décision : &lt;/i&gt;31/03/2016&lt;br /&gt;&lt;i&gt;Société faisant l'objet d'une nomination : &lt;/i&gt;344658117 - INGRAM MICRO, 19 AV DES INDES, FERME DE COURTABOEUF BAT D, 91940 LES ULIS &lt;br/&gt;&lt;i&gt; Nominé : &lt;/i&gt;Monsieur Karel EVERAET&lt;br/&gt;&lt;i&gt; En la fonction de : &lt;/i&gt;Directeur général&lt;br/&gt;</details>
+</publication>
+<publication>
+<decisiondate>31/03/2016</decisiondate>
+<type code="KJ_DR">Démission / Révocation du mandataire social</type>
+<parutiondate>29/04/2016</parutiondate>
+<source>JOURNAUX</source>
+<details>&lt;center&gt;&lt;b&gt;Gazette Nord Pas de Calais / Edition du Nord&lt;/b&gt;&lt;/center&gt;&lt;br /&gt;&lt;i&gt;Date de décision : &lt;/i&gt;31/03/2016&lt;br /&gt;&lt;i&gt;La société &lt;/i&gt;344658117 - INGRAM MICRO, 19 AV DES INDES, FERME DE COURTABOEUF BAT D, 91940 LES ULIS &lt;br/&gt;&lt;i&gt;Fait l'objet du départ de &lt;/i&gt; Monsieur Pierre-yvon MECHALI&lt;br/&gt;</details>
+</publication>
+</jal>
+</eventhistory>
+<directors>
+<director>
+<name>Mme DELEVAL SOPHIE</name>
+<christianname>SOPHIE</christianname>
+<familyname>DELEVAL</familyname>
+<managerposition>Président</managerposition>
+<dateofbirth>06/08/1969</dateofbirth>
+<placeofbirth>BÉTHUNE (62400)</placeofbirth>
+<typeofmanager>Personne physique</typeofmanager>
+<nameatbirthofmanager />
+</director>
+<director>
+<name>M EVERAET KAREL</name>
+<christianname>KAREL</christianname>
+<familyname>EVERAET</familyname>
+<managerposition>Directeur général</managerposition>
+<dateofbirth>23/10/1965</dateofbirth>
+<placeofbirth>ASSE(BELGIQUE)</placeofbirth>
+<typeofmanager>Personne physique</typeofmanager>
+<nameatbirthofmanager />
+</director>
+<director>
+<name>PRICEWATERHOUSECOOPERS AUDIT</name>
+<nameofrepresentative />
+<christianname />
+<familyname />
+<managerposition>Commissaire aux comptes titulaire</managerposition>
+<placeofbirth />
+<typeofmanager>Personne morale</typeofmanager>
+<nameatbirthofmanager />
+</director>
+<director>
+<name>M GEORGHIOU JEAN-CHRISTOPHE</name>
+<christianname>JEAN-CHRISTOPHE</christianname>
+<familyname>GEORGHIOU</familyname>
+<managerposition>Commissaire aux comptes suppléant</managerposition>
+<dateofbirth>04/05/1965</dateofbirth>
+<placeofbirth>GRENOBLE (38000)</placeofbirth>
+<typeofmanager>Personne physique</typeofmanager>
+<nameatbirthofmanager />
+</director>
+</directors>
+<previousdirectors>
+<director>
+<name>M KAREL EVERAET</name>
+<nameofrepresentative />
+<christianname>KAREL</christianname>
+<familyname>EVERAET</familyname>
+<managerposition>Président</managerposition>
+<dateofbirth />
+<placeofbirth>(BELGIQUE) ASSE(BELGIQUE)</placeofbirth>
+<typeofmanager>Personne physique</typeofmanager>
+<nameatbirthofmanager />
+</director>
+<director>
+<name>M KAREL EVERAET</name>
+<nameofrepresentative />
+<christianname>KAREL</christianname>
+<familyname>EVERAET</familyname>
+<managerposition>Président</managerposition>
+<dateofbirth>23/10/1965</dateofbirth>
+<placeofbirth>(BELGIQUE) ASSE(BELGIQUE) à 23/10/1965</placeofbirth>
+<typeofmanager>Personne physique</typeofmanager>
+<nameatbirthofmanager />
+</director>
+<director>
+<name>M KAREL EVERAET</name>
+<nameofrepresentative />
+<christianname>KAREL</christianname>
+<familyname>EVERAET</familyname>
+<managerposition>Président</managerposition>
+<dateofbirth>23/10/1965</dateofbirth>
+<placeofbirth>(BELGIQUE) ASSE(BELGIQUE) à 23/10/1965</placeofbirth>
+<typeofmanager>Personne physique</typeofmanager>
+<nameatbirthofmanager />
+</director>
+<director>
+<name>M KAREL EVERAET</name>
+<nameofrepresentative />
+<christianname>KAREL</christianname>
+<familyname>EVERAET</familyname>
+<managerposition>Président</managerposition>
+<dateofbirth>23/10/1965</dateofbirth>
+<placeofbirth>(BELGIQUE) ASSE(BENIN) à 23/10/1965</placeofbirth>
+<typeofmanager>Personne physique</typeofmanager>
+<nameatbirthofmanager />
+</director>
+<director>
+<name>M KAREL EVERAET</name>
+<nameofrepresentative />
+<christianname>KAREL</christianname>
+<familyname>EVERAET</familyname>
+<managerposition>Président</managerposition>
+<dateofbirth>23/10/1965</dateofbirth>
+<placeofbirth>ASSE BELGIQUE à 23/10/1965</placeofbirth>
+<typeofmanager>Personne physique</typeofmanager>
+<nameatbirthofmanager />
+</director>
+<director>
+<name>M PIERRE-YVON MECHALI</name>
+<nameofrepresentative />
+<christianname>PIERRE-YVON</christianname>
+<familyname>MECHALI</familyname>
+<managerposition>Président</managerposition>
+<dateofbirth>29/04/1963</dateofbirth>
+<placeofbirth>PARIS (75015) à 29/04/1963</placeofbirth>
+<typeofmanager>Personne physique</typeofmanager>
+<nameatbirthofmanager />
+</director>
+<director>
+<name>M GERHARD SCHULZ</name>
+<nameofrepresentative />
+<christianname>GERHARD</christianname>
+<familyname>SCHULZ</familyname>
+<managerposition>Président</managerposition>
+<dateofbirth>24/01/1963</dateofbirth>
+<placeofbirth>MUNCHEN(ALLEMAGNE) à 24/01/1963</placeofbirth>
+<typeofmanager>Personne physique</typeofmanager>
+<nameatbirthofmanager />
+</director>
+<director>
+<name>M MICHEL LAFORCE</name>
+<nameofrepresentative />
+<christianname>MICHEL</christianname>
+<familyname>LAFORCE</familyname>
+<managerposition>Commissaire aux comptes suppléant</managerposition>
+<dateofbirth />
+<placeofbirth />
+<typeofmanager>Personne physique</typeofmanager>
+<nameatbirthofmanager />
+</director>
+</previousdirectors>
+<groupstructure>
+<ultimateparents>
+<ultimateparent>
+<name>INGRAM MICRO CORP.</name>
+<companynumber>États-Unis</companynumber>
+<share>-</share>
+<latestannualaccounts>N/A</latestannualaccounts>
+<childs>
+<child>
+<name>INTERACT BVBA</name>
+<companynumber>Belgique</companynumber>
+<share>-1</share>
+<latestannualaccounts>N/A</latestannualaccounts>
+</child>
+<child>
+<name>INGRAM MICRO</name>
+<companynumber>344658117</companynumber>
+<share>99.99 %</share>
+<latestannualaccounts>31/12/2015</latestannualaccounts>
+</child>
+</childs>
+</ultimateparent>
+</ultimateparents>
+</groupstructure>
+<accounts>
+<account>
+<full>
+<dateofbalance>31/12/2015</dateofbalance>
+<periodduration>12</periodduration>
+<currency>Euro</currency>
+<activeaccount>
+<creditimmobilizes>
+<code_AA3>0</code_AA3>
+<intangibleassettotal>
+<code_AB>90941</code_AB>
+<code_AC>18449</code_AC>
+<code_AB3>90941</code_AB3>
+<code_AD>0</code_AD>
+<code_AE>0</code_AE>
+<code_AD3>0</code_AD3>
+<code_AF>0</code_AF>
+<code_AG>0</code_AG>
+<code_AF3>0</code_AF3>
+<code_AH>2064586</code_AH>
+<code_AI>0</code_AI>
+<code_AH3>2064586</code_AH3>
+<code_AJ>0</code_AJ>
+<code_AK>0</code_AK>
+<code_AJ3>0</code_AJ3>
+<code_AL>0</code_AL>
+<code_AM>0</code_AM>
+<code_AL3>0</code_AL3>
+</intangibleassettotal>
+<tangibleassetstotal>
+<code_AN>0</code_AN>
+<code_AO>0</code_AO>
+<code_AN3>0</code_AN3>
+<code_AP>0</code_AP>
+<code_AQ>0</code_AQ>
+<code_AP3>0</code_AP3>
+<code_AR>3169510</code_AR>
+<code_AS>3113603</code_AS>
+<code_AR3>55907</code_AR3>
+<code_AT>10577687</code_AT>
+<code_AU>9337538</code_AU>
+<code_AT3>1240150</code_AT3>
+<code_AV>4200</code_AV>
+<code_AW>0</code_AW>
+<code_AV3>4200</code_AV3>
+<code_AX>0</code_AX>
+<code_AY>0</code_AY>
+<code_AX3>0</code_AX3>
+</tangibleassetstotal>
+<immobilizationfinancial>
+<code_CS>0</code_CS>
+<code_CT>0</code_CT>
+<code_CS3>0</code_CS3>
+<code_CU>318598095</code_CU>
+<code_CV>22154363</code_CV>
+<code_CU3>296443733</code_CU3>
+<code_BB>0</code_BB>
+<code_BC>0</code_BC>
+<code_BB3>0</code_BB3>
+<code_BD>0</code_BD>
+<code_BE>0</code_BE>
+<code_BD3>0</code_BD3>
+<code_BF>0</code_BF>
+<code_BG>0</code_BG>
+<code_BF3>0</code_BF3>
+<code_BH>42456</code_BH>
+<code_BI>0</code_BI>
+<code_BH3>42456</code_BH3>
+<code_BJ>334547475</code_BJ>
+<code_BK>34623952</code_BK>
+<code_BJ3>299923523</code_BJ3>
+</immobilizationfinancial>
+</creditimmobilizes>
+<actifcirculant>
+<capital>
+<code_BL>0</code_BL>
+<code_BM>0</code_BM>
+<code_BL3>0</code_BL3>
+<code_BN>0</code_BN>
+<code_BO>0</code_BO>
+<code_BN3>0</code_BN3>
+<code_BP>0</code_BP>
+<code_BQ>0</code_BQ>
+<code_BP3>0</code_BP3>
+<code_BR>0</code_BR>
+<code_BS>0</code_BS>
+<code_BR3>0</code_BR3>
+<code_BT>68946012</code_BT>
+<code_BU>637831</code_BU>
+<code_BT3>68308181</code_BT3>
+<code_BV>0</code_BV>
+<code_BW>0</code_BW>
+<code_BV3>0</code_BV3>
+</capital>
+<credits>
+<code_BX>189449704</code_BX>
+<code_BY>754784</code_BY>
+<code_BX3>188694920</code_BX3>
+<code_BZ>122736165</code_BZ>
+<code_CA>0</code_CA>
+<code_BZ3>122736165</code_BZ3>
+<code_CB>0</code_CB>
+<code_CC>0</code_CC>
+<code_CB3>0</code_CB3>
+<code_CD>0</code_CD>
+<code_CE>0</code_CE>
+<code_CD3>0</code_CD3>
+<code_CF>1179461</code_CF>
+<code_CG>0</code_CG>
+<code_CF3>1179461</code_CF3>
+<code_CH>653861</code_CH>
+<code_CI>0</code_CI>
+<code_CH3>653861</code_CH3>
+<code_CJ>382965203</code_CJ>
+<code_CK>1392615</code_CK>
+<code_CJ3>381572588</code_CJ3>
+</credits>
+</actifcirculant>
+<accountsofregularization>
+<code_CL3>0</code_CL3>
+<code_CM3>0</code_CM3>
+<code_CN3>0</code_CN3>
+<code_CO>717512678</code_CO>
+<code_1A>36016567</code_1A>
+<code_CO3>681496111</code_CO3>
+<code_CP>0</code_CP>
+<code_CR>-60762</code_CR>
+</accountsofregularization>
+</activeaccount>
+<passiveaccount>
+<shareholderequity>
+<code_DA>15297189</code_DA>
+<code_DB>195350260</code_DB>
+<code_EK>0</code_EK>
+<code_DC>0</code_DC>
+<code_DD>1529719</code_DD>
+<code_DE>0</code_DE>
+<code_DF>0</code_DF>
+<code_B1>0</code_B1>
+<code_DG>0</code_DG>
+<code_EJ>0</code_EJ>
+<code_DH>42523707</code_DH>
+<code_DI>573804</code_DI>
+<code_DJ>0</code_DJ>
+<code_DK>0</code_DK>
+<code_DL>255274679</code_DL>
+</shareholderequity>
+<otherfunds>
+<code_DM>0</code_DM>
+<code_DN>0</code_DN>
+<code_DO>0</code_DO>
+</otherfunds>
+<riskprovisions>
+<code_DP>1073753</code_DP>
+<code_DQ>0</code_DQ>
+<code_DR>1073753</code_DR>
+</riskprovisions>
+<liabilities>
+<code_DS>0</code_DS>
+<code_DT>174557920</code_DT>
+<code_DU>0</code_DU>
+<code_DV>9879252</code_DV>
+<code_DW>0</code_DW>
+<code_DX>187759616</code_DX>
+<code_DY>36604475</code_DY>
+<code_DZ>0</code_DZ>
+<code_EA>14454969</code_EA>
+</liabilities>
+<compteregularaire>
+<code_EB>1891447</code_EB>
+<code_EC>425147678</code_EC>
+<code_ED>0</code_ED>
+<code_EE>681496111</code_EE>
+</compteregularaire>
+<renvois>
+<code_EF>0</code_EF>
+<code_EG>1891447</code_EG>
+<code_EH>0</code_EH>
+<code_EI>0</code_EI>
+</renvois>
+</passiveaccount>
+<result>
+<salesofgoods>
+<code_FA>1227608837</code_FA>
+<code_FB>71076166</code_FB>
+<code_FC>1298685003</code_FC>
+<code_FD>0</code_FD>
+<code_FE>0</code_FE>
+<code_FF>0</code_FF>
+<code_FG>35635424</code_FG>
+<code_FH>14273526</code_FH>
+<code_FI>49908950</code_FI>
+<code_FJ>1263244261</code_FJ>
+<code_FK>85349692</code_FK>
+<code_FL>1348593953</code_FL>
+<code_FM>0</code_FM>
+<code_FN>0</code_FN>
+<code_FO>0</code_FO>
+<code_FP>1103996</code_FP>
+<code_FQ>16102</code_FQ>
+<code_FR>1349714051</code_FR>
+</salesofgoods>
+<chargesofgoods>
+<code_FS>1263351861</code_FS>
+<code_FT>3700131</code_FT>
+<code_FU>0</code_FU>
+<code_FV>115151</code_FV>
+<code_FW>42850994</code_FW>
+<code_FX>3497997</code_FX>
+<code_FY>16904453</code_FY>
+<code_FZ>6907306</code_FZ>
+<depreciation>
+<code_GA>314729</code_GA>
+<code_GB>0</code_GB>
+<code_GC>1392615</code_GC>
+<code_GD>0</code_GD>
+<code_GE>245359</code_GE>
+<code_GF>1339280597</code_GF>
+<code_GG>10433454</code_GG>
+</depreciation>
+</chargesofgoods>
+<operationsencommum>
+<code_GH>0</code_GH>
+<code_GI>0</code_GI>
+</operationsencommum>
+<financialincome>
+<code_GJ>0</code_GJ>
+<code_GK>0</code_GK>
+<code_GL>2607321</code_GL>
+<code_GM>0</code_GM>
+<code_GN>446831</code_GN>
+<code_GO>0</code_GO>
+<code_GP>3054152</code_GP>
+</financialincome>
+<financialcharges>
+<code_GQ>0</code_GQ>
+<code_GR>11052511</code_GR>
+<code_GS>466284</code_GS>
+<code_GT>0</code_GT>
+<code_GU>11518794</code_GU>
+<code_GV>-8464643</code_GV>
+<code_GW>1968812</code_GW>
+</financialcharges>
+<extraordinaryincome>
+<code_HA>0</code_HA>
+<code_HB>0</code_HB>
+<code_HC>1443395</code_HC>
+<code_HD>1443395</code_HD>
+</extraordinaryincome>
+<extraordinarycharges>
+<code_HE>1655</code_HE>
+<code_HF>0</code_HF>
+<code_HG>1073753</code_HG>
+<code_HH>1075409</code_HH>
+<code_HI>367986</code_HI>
+<code_HJ>442826</code_HJ>
+<code_HK>1320168</code_HK>
+<code_HL>1354211598</code_HL>
+<code_HM>1353637794</code_HM>
+<code_HN>573804</code_HN>
+</extraordinarycharges>
+<renvois>
+<code_HP>0</code_HP>
+<code_HQ>430983</code_HQ>
+<code_A1>0</code_A1>
+<code_A2>0</code_A2>
+<code_A3>0</code_A3>
+<code_A4>0</code_A4>
+<code_KF>0</code_KF>
+<code_LP>0</code_LP>
+<code_MY>0</code_MY>
+<code_NC>0</code_NC>
+<code_2E>0</code_2E>
+</renvois>
+<immobilisation>
+<code_KA>0</code_KA>
+<code_KB>0</code_KB>
+<code_KC>0</code_KC>
+<code_KD>0</code_KD>
+<code_KE>0</code_KE>
+<code_KF>0</code_KF>
+<code_LN>0</code_LN>
+<code_LO>0</code_LO>
+<code_LP>0</code_LP>
+<code_LQ>0</code_LQ>
+<code_LR>0</code_LR>
+<code_LS>0</code_LS>
+<code_0G>0</code_0G>
+<code_0H>0</code_0H>
+<code_0J>0</code_0J>
+<code_LT1>0</code_LT1>
+<code_LT2>0</code_LT2>
+<code_LU>0</code_LU>
+<code_LV1>0</code_LV1>
+<code_LV2>0</code_LV2>
+<code_LW>0</code_LW>
+<code_MY>0</code_MY>
+<code_NC>0</code_NC>
+<code_NG1>0</code_NG1>
+<code_NG2>0</code_NG2>
+<code_NH>0</code_NH>
+<code_NJ1>0</code_NJ1>
+<code_NJ2>0</code_NJ2>
+<code_NK>0</code_NK>
+<code_0K1>0</code_0K1>
+<code_0K2>0</code_0K2>
+<code_0L>0</code_0L>
+</immobilisation>
+<amortissement>
+<code_PA>0</code_PA>
+<code_PB>0</code_PB>
+<code_PC>0</code_PC>
+<code_PD>0</code_PD>
+<code_PE>0</code_PE>
+<code_PF>0</code_PF>
+<code_PG>0</code_PG>
+<code_PH>0</code_PH>
+<code_QU>0</code_QU>
+<code_QV>0</code_QV>
+<code_QW>0</code_QW>
+<code_QX>0</code_QX>
+<code_0N>0</code_0N>
+<code_0P>0</code_0P>
+<code_0Q>0</code_0Q>
+<code_0R>0</code_0R>
+<code_SM_1>0</code_SM_1>
+<code_SM_2>0</code_SM_2>
+<code_SM>0</code_SM>
+<code_SN>0</code_SN>
+<code_SP>0</code_SP>
+<code_SP_1>0</code_SP_1>
+<code_SP_2>0</code_SP_2>
+<code_SR>0</code_SR>
+</amortissement>
+<provisionsinscritesaubilan>
+<code_TO>0</code_TO>
+<code_3Z>0</code_3Z>
+<code_TS>0</code_TS>
+<code_TT>0</code_TT>
+<code_TU>0</code_TU>
+<code_4D>0</code_4D>
+<code_4H>0</code_4H>
+<code_4M>0</code_4M>
+<code_4S>0</code_4S>
+<code_4W>0</code_4W>
+<code_5A>0</code_5A>
+<code_5E>0</code_5E>
+<code_5K>0</code_5K>
+<code_5P>0</code_5P>
+<code_5R>0</code_5R>
+<code_5S>0</code_5S>
+<code_5T>0</code_5T>
+<code_5U>0</code_5U>
+<code_5Y>0</code_5Y>
+<code_5Z>0</code_5Z>
+<code_TV>0</code_TV>
+<code_TW>0</code_TW>
+<code_TX>0</code_TX>
+<code_6A>0</code_6A>
+<code_6B>0</code_6B>
+<code_6C>0</code_6C>
+<code_6D>0</code_6D>
+<code_6E>0</code_6E>
+<code_6F>0</code_6F>
+<code_6G>0</code_6G>
+<code_6H>0</code_6H>
+<code_02>0</code_02>
+<code_03>0</code_03>
+<code_04>0</code_04>
+<code_05>0</code_05>
+<code_9X>0</code_9X>
+<code_06>0</code_06>
+<code_07>0</code_07>
+<code_08>0</code_08>
+<code_09>0</code_09>
+<code_6N>0</code_6N>
+<code_6P>0</code_6P>
+<code_6R>0</code_6R>
+<code_6S>0</code_6S>
+<code_6T>0</code_6T>
+<code_6U>0</code_6U>
+<code_6V>0</code_6V>
+<code_6W>0</code_6W>
+<code_6X>0</code_6X>
+<code_6Y>0</code_6Y>
+<code_6Z>0</code_6Z>
+<code_7A>0</code_7A>
+<code_7B>0</code_7B>
+<code_TY>0</code_TY>
+<code_TZ>0</code_TZ>
+<code_UA>0</code_UA>
+<code_7C>0</code_7C>
+<code_UB>0</code_UB>
+<code_UC>0</code_UC>
+<code_UD>0</code_UD>
+<code_UE>0</code_UE>
+<code_UF>0</code_UF>
+<code_UG>0</code_UG>
+<code_UH>0</code_UH>
+<code_UJ>0</code_UJ>
+<code_UK>0</code_UK>
+</provisionsinscritesaubilan>
+<etatdesecheancesdescreances>
+<code_UL>0</code_UL>
+<code_UM>0</code_UM>
+<code_UP>0</code_UP>
+<code_UR>0</code_UR>
+<code_UT>0</code_UT>
+<code_UV>0</code_UV>
+<code_VA>0</code_VA>
+<code_UX>0</code_UX>
+<code_UU>0</code_UU>
+<code_UQ>0</code_UQ>
+<code_UY>0</code_UY>
+<code_UZ>0</code_UZ>
+<code_VM>0</code_VM>
+<code_VB>0</code_VB>
+<code_VN>0</code_VN>
+<code_VP>0</code_VP>
+<code_VC>0</code_VC>
+<code_VR>0</code_VR>
+<code_VS>0</code_VS>
+<code_VT>0</code_VT>
+<code_VU>0</code_VU>
+<code_VV>0</code_VV>
+<code_7Y1>0</code_7Y1>
+<code_7Y2>0</code_7Y2>
+<code_7Y3>0</code_7Y3>
+<code_7Z1>0</code_7Z1>
+<code_7Z2>0</code_7Z2>
+<code_7Z3>0</code_7Z3>
+<code_VG1>0</code_VG1>
+<code_VG2>0</code_VG2>
+<code_VG3>0</code_VG3>
+<code_VH1>0</code_VH1>
+<code_VH2>0</code_VH2>
+<code_VH3>0</code_VH3>
+<code_8A1>0</code_8A1>
+<code_8A2>0</code_8A2>
+<code_8A3>0</code_8A3>
+<code_8B1>0</code_8B1>
+<code_8B2>0</code_8B2>
+<code_8B3>0</code_8B3>
+<code_8C1>0</code_8C1>
+<code_8C2>0</code_8C2>
+<code_8C3>0</code_8C3>
+<code_8D1>0</code_8D1>
+<code_8D2>0</code_8D2>
+<code_8D3>0</code_8D3>
+<code_8E1>0</code_8E1>
+<code_8E2>0</code_8E2>
+<code_8E3>0</code_8E3>
+<code_VW1>0</code_VW1>
+<code_VW2>0</code_VW2>
+<code_VW3>0</code_VW3>
+<code_VX1>0</code_VX1>
+<code_VX2>0</code_VX2>
+<code_VX3>0</code_VX3>
+<code_VQ1>0</code_VQ1>
+<code_VQ2>0</code_VQ2>
+<code_VQ3>0</code_VQ3>
+<code_8J1>0</code_8J1>
+<code_8J2>0</code_8J2>
+<code_8J3>0</code_8J3>
+<code_8J4>0</code_8J4>
+<code_VI1>0</code_VI1>
+<code_VI2>0</code_VI2>
+<code_VI3>0</code_VI3>
+<code_VI4>0</code_VI4>
+<code_8K1>0</code_8K1>
+<code_8K2>0</code_8K2>
+<code_8K3>0</code_8K3>
+<code_SZ1>0</code_SZ1>
+<code_SZ2>0</code_SZ2>
+<code_SZ3>0</code_SZ3>
+<code_8L1>0</code_8L1>
+<code_8L2>0</code_8L2>
+<code_8L3>0</code_8L3>
+<code_VY>0</code_VY>
+<code_VZ2>0</code_VZ2>
+<code_VZ3>0</code_VZ3>
+<code_VZ4>0</code_VZ4>
+<code_VJ>0</code_VJ>
+<code_VK>0</code_VK>
+</etatdesecheancesdescreances>
+<tableaudaffectation>
+<code_ZE>0</code_ZE>
+<code_YQ>0</code_YQ>
+<code_YR>0</code_YR>
+<code_YS>0</code_YS>
+<code_YT>0</code_YT>
+<code_XQ>0</code_XQ>
+<code_YU>0</code_YU>
+<code_SS>0</code_SS>
+<code_YV>0</code_YV>
+<code_ST>0</code_ST>
+<code_ZJ>0</code_ZJ>
+<code_YW>0</code_YW>
+<code_9Z>0</code_9Z>
+<code_YX>0</code_YX>
+<code_YY>0</code_YY>
+<code_YZ>0</code_YZ>
+<code_YP>0</code_YP>
+</tableaudaffectation>
+</result>
+<structure>
+<protection>37.45</protection>
+<netgearing>27.07</netgearing>
+<repaymentpower>9399.10</repaymentpower>
+<capitalrequirement>38</capitalrequirement>
+<workingcapitalrequirement>37</workingcapitalrequirement>
+<netcash>0</netcash>
+</structure>
+<performances>
+<returnoninvestedcapital>4</returnoninvestedcapital>
+<roe>0.22</roe>
+<grossprofitratio>2.86</grossprofitratio>
+<growthvsyearagoqtr>149548710</growthvsyearagoqtr>
+<inventoryturns>0</inventoryturns>
+<receivablesdays>51</receivablesdays>
+<payabledays>52</payabledays>
+</performances>
+<sig>
+<profit>2.44</profit>
+<grossprofit>2.86</grossprofit>
+<wageandsalary>61.73</wageandsalary>
+<grossoperatingsurplus>0.84</grossoperatingsurplus>
+<pretaxincome>0.15</pretaxincome>
+<netprofitornetloss>0.04</netprofitornetloss>
+</sig>
+<sig2013>
+<turnover>1348593953</turnover>
+<salesofgoods>1298685003</salesofgoods>
+<purchaseofgoods>1263351861</purchaseofgoods>
+<stockofgoods>3700131</stockofgoods>
+<tradingmargin>31633011</tradingmargin>
+<salesofgoodsproduced>49908950</salesofgoodsproduced>
+<stockedproduction>0</stockedproduction>
+<selfconstructedassets>0</selfconstructedassets>
+<periodproduction>49908950</periodproduction>
+<purchaseofrawmaterials>0</purchaseofrawmaterials>
+<changeinstocksofraws>115151</changeinstocksofraws>
+<otherexternalpurchases>42850994</otherexternalpurchases>
+<addedvalue>38575816</addedvalue>
+<operatinggrants>0</operatinggrants>
+<taxduty>3497997</taxduty>
+<personalcharges>23811759</personalcharges>
+<grossoperatingsurplus>11266060</grossoperatingsurplus>
+<releasesofreserves>1103996</releasesofreserves>
+<otheroperatingincome>16102</otheroperatingincome>
+<depreciation>1707344</depreciation>
+<othercharges>245359</othercharges>
+<operatingresult>10433455</operatingresult>
+<resultofjointventure>0</resultofjointventure>
+<financialincome>3054152</financialincome>
+<financialcharges>11518794</financialcharges>
+<pretaxresult>1968813</pretaxresult>
+<extraordinaryincome>1443395</extraordinaryincome>
+<extraordinarycharges>1075409</extraordinarycharges>
+<extraordinaryresult>367986</extraordinaryresult>
+<employeeprofit>442826</employeeprofit>
+<taxonprofits>1320168</taxonprofits>
+<netresult>573805</netresult>
+</sig2013>
+<ratiossig>
+<structure>
+<fixedassetfinancing>1.42</fixedassetfinancing>
+<globaldebt>113</globaldebt>
+<workingcapital>38</workingcapital>
+<financialindependence>138.36</financialindependence>
+<solvability>37.46</solvability>
+<capacitydebtfutures />
+<coveragecurrentassets>36.84</coveragecurrentassets>
+<generalliquidity />
+<restrictedliquidity />
+<avg_fixedassetfinancing>30.54</avg_fixedassetfinancing>
+<avg_globaldebt>1378.43</avg_globaldebt>
+<avg_workingcapital>3370.73</avg_workingcapital>
+<avg_financialindependence>61589.20</avg_financialindependence>
+<avg_solvability>-49.91</avg_solvability>
+<avg_capacitydebtfutures>154865.05</avg_capacitydebtfutures>
+<avg_coveragecurrentassets>1.41</avg_coveragecurrentassets>
+<avg_generalliquidity>1.21</avg_generalliquidity>
+<avg_restrictedliquidity>2.61</avg_restrictedliquidity>
+<med_fixedassetfinancing>2.99</med_fixedassetfinancing>
+<med_globaldebt>99</med_globaldebt>
+<med_workingcapital>61.50</med_workingcapital>
+<med_financialindependence>328.14</med_financialindependence>
+<med_solvability>40.68</med_solvability>
+<med_capacitydebtfutures>2138.40</med_capacitydebtfutures>
+<med_coveragecurrentassets>43.23</med_coveragecurrentassets>
+<med_generalliquidity>0.84</med_generalliquidity>
+<med_restrictedliquidity>1.33</med_restrictedliquidity>
+</structure>
+<management>
+<needbackground>9</needbackground>
+<treasurery>0</treasurery>
+<inventoryturnover>20</inventoryturnover>
+<averagelength>51</averagelength>
+<averagecredit>52</averagecredit>
+<inventoryturnoverraw>0</inventoryturnoverraw>
+<intermediateproducts />
+<rotationtangibleassets />
+<avg_needbackground>1575.88</avg_needbackground>
+<avg_treasurery>202.38</avg_treasurery>
+<avg_inventoryturnover>51</avg_inventoryturnover>
+<avg_averagelength>1756.74</avg_averagelength>
+<avg_averagecredit>107.83</avg_averagecredit>
+<avg_inventoryturnoverraw>21.95</avg_inventoryturnoverraw>
+<avg_intermediateproducts>4235.67</avg_intermediateproducts>
+<avg_rotationtangibleassets>11448.42</avg_rotationtangibleassets>
+<med_needbackground>15</med_needbackground>
+<med_treasurery>20</med_treasurery>
+<med_inventoryturnover>24</med_inventoryturnover>
+<med_averagelength>57</med_averagelength>
+<med_averagecredit>50</med_averagecredit>
+<med_inventoryturnoverraw>0</med_inventoryturnoverraw>
+<med_intermediateproducts>1468</med_intermediateproducts>
+<med_rotationtangibleassets>1970.62</med_rotationtangibleassets>
+</management>
+<profitability>
+<margintrading>2.35</margintrading>
+<profitabilitybusiness>0.84</profitabilitybusiness>
+<netprofit>0.04</netprofit>
+<growthrate>12.47</growthrate>
+<ratesintegration>2.86</ratesintegration>
+<rateleasingfurniture>0</rateleasingfurniture>
+<workfactor>61.73</workfactor>
+<weightinterests>0.85</weightinterests>
+<avg_margintrading>16.84</avg_margintrading>
+<avg_profitabilitybusiness>209.58</avg_profitabilitybusiness>
+<avg_netprofit>164.04</avg_netprofit>
+<avg_growthrate>48.84</avg_growthrate>
+<avg_ratesintegration>241.31</avg_ratesintegration>
+<avg_rateleasingfurniture>0.21</avg_rateleasingfurniture>
+<avg_workfactor>71.14</avg_workfactor>
+<avg_weightinterests>2.54</avg_weightinterests>
+<med_margintrading>14.42</med_margintrading>
+<med_profitabilitybusiness>3.51</med_profitabilitybusiness>
+<med_netprofit>2.36</med_netprofit>
+<med_growthrate>1.19</med_growthrate>
+<med_ratesintegration>26.18</med_ratesintegration>
+<med_rateleasingfurniture>0</med_rateleasingfurniture>
+<med_workfactor>76.63</med_workfactor>
+<med_weightinterests>0.07</med_weightinterests>
+</profitability>
+<returnoncapital>
+<cashflow>0.15</cashflow>
+<ratesofeconomic>3</ratesofeconomic>
+<financialprofitability>255274679</financialprofitability>
+<returninvestment>0.85</returninvestment>
+<avg_cashflow>188.51</avg_cashflow>
+<avg_ratesofeconomic>20.87</avg_ratesofeconomic>
+<avg_financialprofitability>2002484.66</avg_financialprofitability>
+<avg_returninvestment>2.54</avg_returninvestment>
+<med_cashflow>3.03</med_cashflow>
+<med_ratesofeconomic>14</med_ratesofeconomic>
+<med_financialprofitability>129373</med_financialprofitability>
+<med_returninvestment>0.07</med_returninvestment>
+</returnoncapital>
+<sig>
+<netturnover>1348593953</netturnover>
+<margintrading>2.44</margintrading>
+<addedvalue>2.86</addedvalue>
+<personalcharges>1.77</personalcharges>
+<distributionwage>61.73</distributionwage>
+<grossoperating>0.84</grossoperating>
+<revenues>10433455</revenues>
+<incomefromcontinuing>0.15</incomefromcontinuing>
+<netincome>573804</netincome>
+<profitabilityfinal>0.04</profitabilityfinal>
+<cashflow>1962286</cashflow>
+<totalnetreturn>0.15</totalnetreturn>
+<avg_netturnover>15886289.03</avg_netturnover>
+<avg_margintrading>131.92</avg_margintrading>
+<avg_addedvalue>235.34</avg_addedvalue>
+<avg_personalcharges>27.09</avg_personalcharges>
+<avg_distributionwage>56.99</avg_distributionwage>
+<avg_grossoperating>-9294.82</avg_grossoperating>
+<avg_revenues>150759.06</avg_revenues>
+<avg_incomefromcontinuing>189.84</avg_incomefromcontinuing>
+<avg_netincome>167324.73</avg_netincome>
+<avg_profitabilityfinal>164.48</avg_profitabilityfinal>
+<avg_cashflow>193186.55</avg_cashflow>
+<avg_totalnetreturn>188.20</avg_totalnetreturn>
+<med_netturnover>792863</med_netturnover>
+<med_margintrading>23.90</med_margintrading>
+<med_addedvalue>25.47</med_addedvalue>
+<med_personalcharges>20.23</med_personalcharges>
+<med_distributionwage>70.23</med_distributionwage>
+<med_grossoperating>3.33</med_grossoperating>
+<med_revenues>17326.50</med_revenues>
+<med_incomefromcontinuing>2.53</med_incomefromcontinuing>
+<med_netincome>17694.50</med_netincome>
+<med_profitabilityfinal>2.36</med_profitabilityfinal>
+<med_cashflow>22470</med_cashflow>
+<med_totalnetreturn>3</med_totalnetreturn>
+</sig>
+</ratiossig>
+</full>
+</account>
+<account>
+<full>
+<dateofbalance>31/12/2014</dateofbalance>
+<periodduration>12</periodduration>
+<currency>Euro</currency>
+<activeaccount>
+<creditimmobilizes>
+<code_AA3>0</code_AA3>
+<intangibleassettotal>
+<code_AB>18449</code_AB>
+<code_AC>18449</code_AC>
+<code_AB3>18449</code_AB3>
+<code_AD>0</code_AD>
+<code_AE>0</code_AE>
+<code_AD3>0</code_AD3>
+<code_AF>0</code_AF>
+<code_AG>0</code_AG>
+<code_AF3>0</code_AF3>
+<code_AH>2064586</code_AH>
+<code_AI>0</code_AI>
+<code_AH3>2064586</code_AH3>
+<code_AJ>0</code_AJ>
+<code_AK>0</code_AK>
+<code_AJ3>0</code_AJ3>
+<code_AL>0</code_AL>
+<code_AM>0</code_AM>
+<code_AL3>0</code_AL3>
+</intangibleassettotal>
+<tangibleassetstotal>
+<code_AN>0</code_AN>
+<code_AO>0</code_AO>
+<code_AN3>0</code_AN3>
+<code_AP>0</code_AP>
+<code_AQ>0</code_AQ>
+<code_AP3>0</code_AP3>
+<code_AR>3122267</code_AR>
+<code_AS>3101477</code_AS>
+<code_AR3>20790</code_AR3>
+<code_AT>10249450</code_AT>
+<code_AU>9048934</code_AU>
+<code_AT3>1200516</code_AT3>
+<code_AV>82715</code_AV>
+<code_AW>0</code_AW>
+<code_AV3>82715</code_AV3>
+<code_AX>0</code_AX>
+<code_AY>0</code_AY>
+<code_AX3>0</code_AX3>
+</tangibleassetstotal>
+<immobilizationfinancial>
+<code_CS>0</code_CS>
+<code_CT>0</code_CT>
+<code_CS3>0</code_CS3>
+<code_CU>318598095</code_CU>
+<code_CV>22154363</code_CV>
+<code_CU3>296443733</code_CU3>
+<code_BB>0</code_BB>
+<code_BC>0</code_BC>
+<code_BB3>0</code_BB3>
+<code_BD>0</code_BD>
+<code_BE>0</code_BE>
+<code_BD3>0</code_BD3>
+<code_BF>0</code_BF>
+<code_BG>0</code_BG>
+<code_BF3>0</code_BF3>
+<code_BH>28212</code_BH>
+<code_BI>0</code_BI>
+<code_BH3>28212</code_BH3>
+<code_BJ>334163774</code_BJ>
+<code_BK>34323223</code_BK>
+<code_BJ3>299840551</code_BJ3>
+</immobilizationfinancial>
+</creditimmobilizes>
+<actifcirculant>
+<capital>
+<code_BL>0</code_BL>
+<code_BM>0</code_BM>
+<code_BL3>0</code_BL3>
+<code_BN>0</code_BN>
+<code_BO>0</code_BO>
+<code_BN3>0</code_BN3>
+<code_BP>0</code_BP>
+<code_BQ>0</code_BQ>
+<code_BP3>0</code_BP3>
+<code_BR>0</code_BR>
+<code_BS>0</code_BS>
+<code_BR3>0</code_BR3>
+<code_BT>65245881</code_BT>
+<code_BU>453996</code_BU>
+<code_BT3>64791885</code_BT3>
+<code_BV>0</code_BV>
+<code_BW>0</code_BW>
+<code_BV3>0</code_BV3>
+</capital>
+<credits>
+<code_BX>237268133</code_BX>
+<code_BY>650000</code_BY>
+<code_BX3>236618133</code_BX3>
+<code_BZ>53236576</code_BZ>
+<code_CA>0</code_CA>
+<code_BZ3>53236576</code_BZ3>
+<code_CB>0</code_CB>
+<code_CC>0</code_CC>
+<code_CB3>0</code_CB3>
+<code_CD>0</code_CD>
+<code_CE>0</code_CE>
+<code_CD3>0</code_CD3>
+<code_CF>11051716</code_CF>
+<code_CG>0</code_CG>
+<code_CF3>11051716</code_CF3>
+<code_CH>897329</code_CH>
+<code_CI>0</code_CI>
+<code_CH3>897329</code_CH3>
+<code_CJ>367699635</code_CJ>
+<code_CK>1103996</code_CK>
+<code_CJ3>366595639</code_CJ3>
+</credits>
+</actifcirculant>
+<accountsofregularization>
+<code_CL3>0</code_CL3>
+<code_CM3>0</code_CM3>
+<code_CN3>0</code_CN3>
+<code_CO>701863409</code_CO>
+<code_1A>35427219</code_1A>
+<code_CO3>666436190</code_CO3>
+<code_CP>0</code_CP>
+<code_CR>0</code_CR>
+</accountsofregularization>
+</activeaccount>
+<passiveaccount>
+<shareholderequity>
+<code_DA>15297189</code_DA>
+<code_DB>195350260</code_DB>
+<code_EK>0</code_EK>
+<code_DC>0</code_DC>
+<code_DD>1529719</code_DD>
+<code_DE>0</code_DE>
+<code_DF>0</code_DF>
+<code_B1>0</code_B1>
+<code_DG>0</code_DG>
+<code_EJ>0</code_EJ>
+<code_DH>43918161</code_DH>
+<code_DI>-1394454</code_DI>
+<code_DJ>0</code_DJ>
+<code_DK>0</code_DK>
+<code_DL>254700876</code_DL>
+</shareholderequity>
+<otherfunds>
+<code_DM>0</code_DM>
+<code_DN>0</code_DN>
+<code_DO>0</code_DO>
+</otherfunds>
+<riskprovisions>
+<code_DP>1443395</code_DP>
+<code_DQ>0</code_DQ>
+<code_DR>1443395</code_DR>
+</riskprovisions>
+<liabilities>
+<code_DS>0</code_DS>
+<code_DT>174557920</code_DT>
+<code_DU>0</code_DU>
+<code_DV>11596822</code_DV>
+<code_DW>0</code_DW>
+<code_DX>169461425</code_DX>
+<code_DY>40283769</code_DY>
+<code_DZ>0</code_DZ>
+<code_EA>13122771</code_EA>
+</liabilities>
+<compteregularaire>
+<code_EB>1269211</code_EB>
+<code_EC>410291919</code_EC>
+<code_ED>0</code_ED>
+<code_EE>666436190</code_EE>
+</compteregularaire>
+<renvois>
+<code_EF>0</code_EF>
+<code_EG>410291919</code_EG>
+<code_EH>0</code_EH>
+<code_EI>0</code_EI>
+</renvois>
+</passiveaccount>
+<result>
+<salesofgoods>
+<code_FA>1094736195</code_FA>
+<code_FB>62171902</code_FB>
+<code_FC>1156908097</code_FC>
+<code_FD>0</code_FD>
+<code_FE>0</code_FE>
+<code_FF>0</code_FF>
+<code_FG>32174466</code_FG>
+<code_FH>9962680</code_FH>
+<code_FI>42137146</code_FI>
+<code_FJ>1126910661</code_FJ>
+<code_FK>72134582</code_FK>
+<code_FL>1199045243</code_FL>
+<code_FM>0</code_FM>
+<code_FN>0</code_FN>
+<code_FO>0</code_FO>
+<code_FP>1515230</code_FP>
+<code_FQ>10903</code_FQ>
+<code_FR>1200571376</code_FR>
+</salesofgoods>
+<chargesofgoods>
+<code_FS>1132474629</code_FS>
+<code_FT>-12356249</code_FT>
+<code_FU>0</code_FU>
+<code_FV>87806</code_FV>
+<code_FW>42439786</code_FW>
+<code_FX>3546470</code_FX>
+<code_FY>17963472</code_FY>
+<code_FZ>6981506</code_FZ>
+<depreciation>
+<code_GA>315660</code_GA>
+<code_GB>0</code_GB>
+<code_GC>1103996</code_GC>
+<code_GD>0</code_GD>
+<code_GE>387683</code_GE>
+<code_GF>1192944760</code_GF>
+<code_GG>7626615</code_GG>
+</depreciation>
+</chargesofgoods>
+<operationsencommum>
+<code_GH>0</code_GH>
+<code_GI>0</code_GI>
+</operationsencommum>
+<financialincome>
+<code_GJ>0</code_GJ>
+<code_GK>0</code_GK>
+<code_GL>2644134</code_GL>
+<code_GM>59484</code_GM>
+<code_GN>101831</code_GN>
+<code_GO>0</code_GO>
+<code_GP>2805450</code_GP>
+</financialincome>
+<financialcharges>
+<code_GQ>0</code_GQ>
+<code_GR>10807144</code_GR>
+<code_GS>124618</code_GS>
+<code_GT>0</code_GT>
+<code_GU>10931763</code_GU>
+<code_GV>-8126313</code_GV>
+<code_GW>-499698</code_GW>
+</financialcharges>
+<extraordinaryincome>
+<code_HA>0</code_HA>
+<code_HB>3792</code_HB>
+<code_HC>901308</code_HC>
+<code_HD>905100</code_HD>
+</extraordinaryincome>
+<extraordinarycharges>
+<code_HE>40806</code_HE>
+<code_HF>59484</code_HF>
+<code_HG>1443395</code_HG>
+<code_HH>1543685</code_HH>
+<code_HI>-638585</code_HI>
+<code_HJ>0</code_HJ>
+<code_HK>256171</code_HK>
+<code_HL>1204281925</code_HL>
+<code_HM>1205676379</code_HM>
+<code_HN>-1394454</code_HN>
+</extraordinarycharges>
+<renvois>
+<code_HP>0</code_HP>
+<code_HQ>0</code_HQ>
+<code_A1>0</code_A1>
+<code_A2>0</code_A2>
+<code_A3>0</code_A3>
+<code_A4>0</code_A4>
+<code_KF>0</code_KF>
+<code_LP>442744</code_LP>
+<code_MY>0</code_MY>
+<code_NC>0</code_NC>
+<code_2E>28696</code_2E>
+</renvois>
+<immobilisation>
+<code_KA>18449</code_KA>
+<code_KB>0</code_KB>
+<code_KC>0</code_KC>
+<code_KD>2064586</code_KD>
+<code_KE>0</code_KE>
+<code_KF>0</code_KF>
+<code_LN>13181125</code_LN>
+<code_LO>0</code_LO>
+<code_LP>442744</code_LP>
+<code_LQ>318714487</code_LQ>
+<code_LR>0</code_LR>
+<code_LS>0</code_LS>
+<code_0G>0</code_0G>
+<code_0H>0</code_0H>
+<code_0J>0</code_0J>
+<code_LT1>0</code_LT1>
+<code_LT2>0</code_LT2>
+<code_LU>18449</code_LU>
+<code_LV1>0</code_LV1>
+<code_LV2>0</code_LV2>
+<code_LW>2064586</code_LW>
+<code_MY>0</code_MY>
+<code_NC>0</code_NC>
+<code_NG1>0</code_NG1>
+<code_NG2>169439</code_NG2>
+<code_NH>13454431</code_NH>
+<code_NJ1>0</code_NJ1>
+<code_NJ2>88180</code_NJ2>
+<code_NK>318626308</code_NK>
+<code_0K1>0</code_0K1>
+<code_0K2>257618</code_0K2>
+<code_0L>334163774</code_0L>
+</immobilisation>
+<amortissement>
+<code_PA>0</code_PA>
+<code_PB>0</code_PB>
+<code_PC>0</code_PC>
+<code_PD>0</code_PD>
+<code_PE>0</code_PE>
+<code_PF>0</code_PF>
+<code_PG>0</code_PG>
+<code_PH>0</code_PH>
+<code_QU>11917907</code_QU>
+<code_QV>315660</code_QV>
+<code_QW>83156</code_QW>
+<code_QX>12150411</code_QX>
+<code_0N>0</code_0N>
+<code_0P>0</code_0P>
+<code_0Q>0</code_0Q>
+<code_0R>0</code_0R>
+<code_SM_1>0</code_SM_1>
+<code_SM_2>0</code_SM_2>
+<code_SM>0</code_SM>
+<code_SN>0</code_SN>
+<code_SP>18449</code_SP>
+<code_SP_1>0</code_SP_1>
+<code_SP_2>0</code_SP_2>
+<code_SR>0</code_SR>
+</amortissement>
+<provisionsinscritesaubilan>
+<code_TO>0</code_TO>
+<code_3Z>0</code_3Z>
+<code_TS>0</code_TS>
+<code_TT>0</code_TT>
+<code_TU>0</code_TU>
+<code_4D>0</code_4D>
+<code_4H>0</code_4H>
+<code_4M>0</code_4M>
+<code_4S>0</code_4S>
+<code_4W>0</code_4W>
+<code_5A>0</code_5A>
+<code_5E>0</code_5E>
+<code_5K>0</code_5K>
+<code_5P>0</code_5P>
+<code_5R>0</code_5R>
+<code_5S>0</code_5S>
+<code_5T>0</code_5T>
+<code_5U>0</code_5U>
+<code_5Y>1443395</code_5Y>
+<code_5Z>901308</code_5Z>
+<code_TV>1443395</code_TV>
+<code_TW>901308</code_TW>
+<code_TX>1443395</code_TX>
+<code_6A>0</code_6A>
+<code_6B>0</code_6B>
+<code_6C>0</code_6C>
+<code_6D>0</code_6D>
+<code_6E>0</code_6E>
+<code_6F>0</code_6F>
+<code_6G>0</code_6G>
+<code_6H>0</code_6H>
+<code_02>0</code_02>
+<code_03>0</code_03>
+<code_04>0</code_04>
+<code_05>0</code_05>
+<code_9X>22154363</code_9X>
+<code_06>0</code_06>
+<code_07>0</code_07>
+<code_08>0</code_08>
+<code_09>0</code_09>
+<code_6N>932230</code_6N>
+<code_6P>482343</code_6P>
+<code_6R>960576</code_6R>
+<code_6S>453996</code_6S>
+<code_6T>583000</code_6T>
+<code_6U>650000</code_6U>
+<code_6V>583000</code_6V>
+<code_6W>650000</code_6W>
+<code_6X>0</code_6X>
+<code_6Y>0</code_6Y>
+<code_6Z>0</code_6Z>
+<code_7A>0</code_7A>
+<code_7B>23729077</code_7B>
+<code_TY>1132343</code_TY>
+<code_TZ>1603060</code_TZ>
+<code_UA>23258359</code_UA>
+<code_7C>24630385</code_7C>
+<code_UB>2575738</code_UB>
+<code_UC>2504368</code_UC>
+<code_UD>24701754</code_UD>
+<code_UE>1103996</code_UE>
+<code_UF>1515230</code_UF>
+<code_UG>0</code_UG>
+<code_UH>59484</code_UH>
+<code_UJ>1443395</code_UJ>
+<code_UK>901308</code_UK>
+</provisionsinscritesaubilan>
+<etatdesecheancesdescreances>
+<code_UL>0</code_UL>
+<code_UM>0</code_UM>
+<code_UP>0</code_UP>
+<code_UR>0</code_UR>
+<code_UT>28212</code_UT>
+<code_UV>28212</code_UV>
+<code_VA>0</code_VA>
+<code_UX>237268133</code_UX>
+<code_UU>0</code_UU>
+<code_UQ>0</code_UQ>
+<code_UY>2519</code_UY>
+<code_UZ>3678</code_UZ>
+<code_VM>15824798</code_VM>
+<code_VB>8317479</code_VB>
+<code_VN>0</code_VN>
+<code_VP>0</code_VP>
+<code_VC>181602</code_VC>
+<code_VR>28906500</code_VR>
+<code_VS>897329</code_VS>
+<code_VT>291430250</code_VT>
+<code_VU>291430250</code_VU>
+<code_VV>0</code_VV>
+<code_7Y1>0</code_7Y1>
+<code_7Y2>0</code_7Y2>
+<code_7Y3>0</code_7Y3>
+<code_7Z1>174557920</code_7Z1>
+<code_7Z2>174557920</code_7Z2>
+<code_7Z3>0</code_7Z3>
+<code_VG1>0</code_VG1>
+<code_VG2>0</code_VG2>
+<code_VG3>0</code_VG3>
+<code_VH1>0</code_VH1>
+<code_VH2>0</code_VH2>
+<code_VH3>0</code_VH3>
+<code_8A1>11596822</code_8A1>
+<code_8A2>11596822</code_8A2>
+<code_8A3>0</code_8A3>
+<code_8B1>169461425</code_8B1>
+<code_8B2>169461425</code_8B2>
+<code_8B3>169461425</code_8B3>
+<code_8C1>2735625</code_8C1>
+<code_8C2>2735625</code_8C2>
+<code_8C3>0</code_8C3>
+<code_8D1>4526568</code_8D1>
+<code_8D2>4526568</code_8D2>
+<code_8D3>0</code_8D3>
+<code_8E1>0</code_8E1>
+<code_8E2>0</code_8E2>
+<code_8E3>0</code_8E3>
+<code_VW1>32929079</code_VW1>
+<code_VW2>32929079</code_VW2>
+<code_VW3>0</code_VW3>
+<code_VX1>0</code_VX1>
+<code_VX2>0</code_VX2>
+<code_VX3>0</code_VX3>
+<code_VQ1>92497</code_VQ1>
+<code_VQ2>92497</code_VQ2>
+<code_VQ3>0</code_VQ3>
+<code_8J1>0</code_8J1>
+<code_8J2>0</code_8J2>
+<code_8J3>0</code_8J3>
+<code_8J4>0</code_8J4>
+<code_VI1>0</code_VI1>
+<code_VI2>0</code_VI2>
+<code_VI3>0</code_VI3>
+<code_VI4>0</code_VI4>
+<code_8K1>13122771</code_8K1>
+<code_8K2>13122771</code_8K2>
+<code_8K3>0</code_8K3>
+<code_SZ1>0</code_SZ1>
+<code_SZ2>0</code_SZ2>
+<code_SZ3>0</code_SZ3>
+<code_8L1>1269211</code_8L1>
+<code_8L2>1269211</code_8L2>
+<code_8L3>0</code_8L3>
+<code_VY>410291919</code_VY>
+<code_VZ2>410291919</code_VZ2>
+<code_VZ3>0</code_VZ3>
+<code_VZ4>0</code_VZ4>
+<code_VJ>0</code_VJ>
+<code_VK>0</code_VK>
+</etatdesecheancesdescreances>
+<tableaudaffectation>
+<code_ZE>0</code_ZE>
+<code_YQ>0</code_YQ>
+<code_YR>0</code_YR>
+<code_YS>0</code_YS>
+<code_YT>0</code_YT>
+<code_XQ>0</code_XQ>
+<code_YU>0</code_YU>
+<code_SS>0</code_SS>
+<code_YV>0</code_YV>
+<code_ST>0</code_ST>
+<code_ZJ>0</code_ZJ>
+<code_YW>0</code_YW>
+<code_9Z>0</code_9Z>
+<code_YX>0</code_YX>
+<code_YY>0</code_YY>
+<code_YZ>0</code_YZ>
+<code_YP>471</code_YP>
+</tableaudaffectation>
+</result>
+<structure>
+<protection>38.22</protection>
+<netgearing>27.93</netgearing>
+<repaymentpower>-9055.41</repaymentpower>
+<capitalrequirement>43</capitalrequirement>
+<workingcapitalrequirement>39</workingcapitalrequirement>
+<netcash>3</netcash>
+</structure>
+<performances>
+<returnoninvestedcapital>3</returnoninvestedcapital>
+<roe>-0.55</roe>
+<grossprofitratio>3.04</grossprofitratio>
+<growthvsyearagoqtr>87283617</growthvsyearagoqtr>
+<inventoryturns>0</inventoryturns>
+<receivablesdays>71</receivablesdays>
+<payabledays>52</payabledays>
+</performances>
+<sig>
+<profit>3.18</profit>
+<grossprofit>3.04</grossprofit>
+<wageandsalary>68.53</wageandsalary>
+<grossoperatingsurplus>0.66</grossoperatingsurplus>
+<pretaxincome>-0.04</pretaxincome>
+<netprofitornetloss>-0.12</netprofitornetloss>
+</sig>
+<sig2013>
+<turnover>1199045243</turnover>
+<salesofgoods>1156908097</salesofgoods>
+<purchaseofgoods>1132474629</purchaseofgoods>
+<stockofgoods>-12356249</stockofgoods>
+<tradingmargin>36789717</tradingmargin>
+<salesofgoodsproduced>42137146</salesofgoodsproduced>
+<stockedproduction>0</stockedproduction>
+<selfconstructedassets>0</selfconstructedassets>
+<periodproduction>42137146</periodproduction>
+<purchaseofrawmaterials>0</purchaseofrawmaterials>
+<changeinstocksofraws>87806</changeinstocksofraws>
+<otherexternalpurchases>42439786</otherexternalpurchases>
+<addedvalue>36399271</addedvalue>
+<operatinggrants>0</operatinggrants>
+<taxduty>3546470</taxduty>
+<personalcharges>24944978</personalcharges>
+<grossoperatingsurplus>7907823</grossoperatingsurplus>
+<releasesofreserves>1515230</releasesofreserves>
+<otheroperatingincome>10903</otheroperatingincome>
+<depreciation>1419656</depreciation>
+<othercharges>387683</othercharges>
+<operatingresult>7626617</operatingresult>
+<resultofjointventure>0</resultofjointventure>
+<financialincome>2805450</financialincome>
+<financialcharges>10931763</financialcharges>
+<pretaxresult>-499696</pretaxresult>
+<extraordinaryincome>905100</extraordinaryincome>
+<extraordinarycharges>1543685</extraordinarycharges>
+<extraordinaryresult>-638585</extraordinaryresult>
+<employeeprofit>0</employeeprofit>
+<taxonprofits>256171</taxonprofits>
+<netresult>-1394452</netresult>
+</sig2013>
+<ratiossig>
+<structure>
+<fixedassetfinancing>1.43</fixedassetfinancing>
+<globaldebt>123</globaldebt>
+<workingcapital>43</workingcapital>
+<financialindependence>136.81</financialindependence>
+<solvability>38.22</solvability>
+<capacitydebtfutures />
+<coveragecurrentassets>38.84</coveragecurrentassets>
+<generalliquidity>0.71</generalliquidity>
+<restrictedliquidity>0.74</restrictedliquidity>
+<avg_fixedassetfinancing>20.20</avg_fixedassetfinancing>
+<avg_globaldebt>3781.70</avg_globaldebt>
+<avg_workingcapital>-773.26</avg_workingcapital>
+<avg_financialindependence>62766.30</avg_financialindependence>
+<avg_solvability>-52.53</avg_solvability>
+<avg_capacitydebtfutures>153094.57</avg_capacitydebtfutures>
+<avg_coveragecurrentassets>-8.25</avg_coveragecurrentassets>
+<avg_generalliquidity>4.21</avg_generalliquidity>
+<avg_restrictedliquidity>7.45</avg_restrictedliquidity>
+<med_fixedassetfinancing>2.88</med_fixedassetfinancing>
+<med_globaldebt>99</med_globaldebt>
+<med_workingcapital>58</med_workingcapital>
+<med_financialindependence>285.78</med_financialindependence>
+<med_solvability>38.16</med_solvability>
+<med_capacitydebtfutures>2173.92</med_capacitydebtfutures>
+<med_coveragecurrentassets>41.12</med_coveragecurrentassets>
+<med_generalliquidity>0.81</med_generalliquidity>
+<med_restrictedliquidity>1.28</med_restrictedliquidity>
+</structure>
+<management>
+<needbackground>28</needbackground>
+<treasurery>3</treasurery>
+<inventoryturnover>21</inventoryturnover>
+<averagelength>71</averagelength>
+<averagecredit>52</averagecredit>
+<inventoryturnoverraw>0</inventoryturnoverraw>
+<intermediateproducts />
+<rotationtangibleassets>8911.90</rotationtangibleassets>
+<avg_needbackground>-9.50</avg_needbackground>
+<avg_treasurery>219.41</avg_treasurery>
+<avg_inventoryturnover>139.49</avg_inventoryturnover>
+<avg_averagelength>71.13</avg_averagelength>
+<avg_averagecredit>133.45</avg_averagecredit>
+<avg_inventoryturnoverraw>343.96</avg_inventoryturnoverraw>
+<avg_intermediateproducts>4454.53</avg_intermediateproducts>
+<avg_rotationtangibleassets>-190162.04</avg_rotationtangibleassets>
+<med_needbackground>15</med_needbackground>
+<med_treasurery>19</med_treasurery>
+<med_inventoryturnover>24</med_inventoryturnover>
+<med_averagelength>56</med_averagelength>
+<med_averagecredit>51</med_averagecredit>
+<med_inventoryturnoverraw>0</med_inventoryturnoverraw>
+<med_intermediateproducts>1313.50</med_intermediateproducts>
+<med_rotationtangibleassets>1946.79</med_rotationtangibleassets>
+</management>
+<profitability>
+<margintrading>3.07</margintrading>
+<profitabilitybusiness>0.66</profitabilitybusiness>
+<netprofit>-0.12</netprofit>
+<growthrate>7.85</growthrate>
+<ratesintegration>3.04</ratesintegration>
+<rateleasingfurniture>0</rateleasingfurniture>
+<workfactor>68.53</workfactor>
+<weightinterests>0.91</weightinterests>
+<avg_margintrading>15.65</avg_margintrading>
+<avg_profitabilitybusiness>-85.45</avg_profitabilitybusiness>
+<avg_netprofit>-125.64</avg_netprofit>
+<avg_growthrate>43.99</avg_growthrate>
+<avg_ratesintegration>-50.52</avg_ratesintegration>
+<avg_rateleasingfurniture>0.15</avg_rateleasingfurniture>
+<avg_workfactor>69.89</avg_workfactor>
+<avg_weightinterests>5.18</avg_weightinterests>
+<med_margintrading>14.21</med_margintrading>
+<med_profitabilitybusiness>3.18</med_profitabilitybusiness>
+<med_netprofit>2.06</med_netprofit>
+<med_growthrate>2.17</med_growthrate>
+<med_ratesintegration>26.52</med_ratesintegration>
+<med_rateleasingfurniture>0</med_rateleasingfurniture>
+<med_workfactor>77.72</med_workfactor>
+<med_weightinterests>0.06</med_weightinterests>
+</profitability>
+<returnoncapital>
+<cashflow>-0.17</cashflow>
+<ratesofeconomic>2</ratesofeconomic>
+<financialprofitability>254700876</financialprofitability>
+<returninvestment>0.91</returninvestment>
+<avg_cashflow>-92</avg_cashflow>
+<avg_ratesofeconomic>11.99</avg_ratesofeconomic>
+<avg_financialprofitability>1577039.03</avg_financialprofitability>
+<avg_returninvestment>5.18</avg_returninvestment>
+<med_cashflow>2.84</med_cashflow>
+<med_ratesofeconomic>13</med_ratesofeconomic>
+<med_financialprofitability>86833.50</med_financialprofitability>
+<med_returninvestment>0.06</med_returninvestment>
+</returnoncapital>
+<sig>
+<netturnover>1199045243</netturnover>
+<margintrading>3.18</margintrading>
+<addedvalue>3.04</addedvalue>
+<personalcharges>2.08</personalcharges>
+<distributionwage>68.53</distributionwage>
+<grossoperating>0.66</grossoperating>
+<revenues>7626617</revenues>
+<incomefromcontinuing>-0.04</incomefromcontinuing>
+<netincome>-1394454</netincome>
+<profitabilityfinal>-0.12</profitabilityfinal>
+<cashflow>-2055729</cashflow>
+<totalnetreturn>-0.17</totalnetreturn>
+<avg_netturnover>12454624.73</avg_netturnover>
+<avg_margintrading>101.69</avg_margintrading>
+<avg_addedvalue>-49.18</avg_addedvalue>
+<avg_personalcharges>31.42</avg_personalcharges>
+<avg_distributionwage>58.65</avg_distributionwage>
+<avg_grossoperating>-3490.44</avg_grossoperating>
+<avg_revenues>139487.47</avg_revenues>
+<avg_incomefromcontinuing>-100.72</avg_incomefromcontinuing>
+<avg_netincome>97834.71</avg_netincome>
+<avg_profitabilityfinal>-125.65</avg_profitabilityfinal>
+<avg_cashflow>156785.49</avg_cashflow>
+<avg_totalnetreturn>-92.16</avg_totalnetreturn>
+<med_netturnover>620041</med_netturnover>
+<med_margintrading>23.98</med_margintrading>
+<med_addedvalue>25.96</med_addedvalue>
+<med_personalcharges>21.05</med_personalcharges>
+<med_distributionwage>71.11</med_distributionwage>
+<med_grossoperating>2.99</med_grossoperating>
+<med_revenues>12641</med_revenues>
+<med_incomefromcontinuing>2.28</med_incomefromcontinuing>
+<med_netincome>12044</med_netincome>
+<med_profitabilityfinal>2.06</med_profitabilityfinal>
+<med_cashflow>17025</med_cashflow>
+<med_totalnetreturn>2.83</med_totalnetreturn>
+</sig>
+</ratiossig>
+</full>
+</account>
+<account>
+<full>
+<dateofbalance>31/12/2013</dateofbalance>
+<periodduration>12</periodduration>
+<currency>Euro</currency>
+<activeaccount>
+<creditimmobilizes>
+<code_AA3>0</code_AA3>
+<intangibleassettotal>
+<code_AB>18449</code_AB>
+<code_AC>18449</code_AC>
+<code_AB3>18449</code_AB3>
+<code_AD>0</code_AD>
+<code_AE>0</code_AE>
+<code_AD3>0</code_AD3>
+<code_AF>0</code_AF>
+<code_AG>0</code_AG>
+<code_AF3>0</code_AF3>
+<code_AH>2064586</code_AH>
+<code_AI>0</code_AI>
+<code_AH3>2064586</code_AH3>
+<code_AJ>0</code_AJ>
+<code_AK>0</code_AK>
+<code_AJ3>0</code_AJ3>
+<code_AL>0</code_AL>
+<code_AM>0</code_AM>
+<code_AL3>0</code_AL3>
+</intangibleassettotal>
+<tangibleassetstotal>
+<code_AN>0</code_AN>
+<code_AO>0</code_AO>
+<code_AN3>0</code_AN3>
+<code_AP>0</code_AP>
+<code_AQ>0</code_AQ>
+<code_AP3>0</code_AP3>
+<code_AR>3162675</code_AR>
+<code_AS>3140573</code_AS>
+<code_AR3>22102</code_AR3>
+<code_AT>9932169</code_AT>
+<code_AU>8777334</code_AU>
+<code_AT3>1154834</code_AT3>
+<code_AV>86282</code_AV>
+<code_AW>0</code_AW>
+<code_AV3>86282</code_AV3>
+<code_AX>0</code_AX>
+<code_AY>0</code_AY>
+<code_AX3>0</code_AX3>
+</tangibleassetstotal>
+<immobilizationfinancial>
+<code_CS>0</code_CS>
+<code_CT>0</code_CT>
+<code_CS3>0</code_CS3>
+<code_CU>318657579</code_CU>
+<code_CV>22213847</code_CV>
+<code_CU3>296443733</code_CU3>
+<code_BB>0</code_BB>
+<code_BC>0</code_BC>
+<code_BB3>0</code_BB3>
+<code_BD>0</code_BD>
+<code_BE>0</code_BE>
+<code_BD3>0</code_BD3>
+<code_BF>0</code_BF>
+<code_BG>0</code_BG>
+<code_BF3>0</code_BF3>
+<code_BH>56908</code_BH>
+<code_BI>0</code_BI>
+<code_BH3>56908</code_BH3>
+<code_BJ>333978648</code_BJ>
+<code_BK>34150203</code_BK>
+<code_BJ3>299828445</code_BJ3>
+</immobilizationfinancial>
+</creditimmobilizes>
+<actifcirculant>
+<capital>
+<code_BL>0</code_BL>
+<code_BM>0</code_BM>
+<code_BL3>0</code_BL3>
+<code_BN>0</code_BN>
+<code_BO>0</code_BO>
+<code_BN3>0</code_BN3>
+<code_BP>0</code_BP>
+<code_BQ>0</code_BQ>
+<code_BP3>0</code_BP3>
+<code_BR>0</code_BR>
+<code_BS>0</code_BS>
+<code_BR3>0</code_BR3>
+<code_BT>77602130</code_BT>
+<code_BU>932230</code_BU>
+<code_BT3>76669900</code_BT3>
+<code_BV>0</code_BV>
+<code_BW>0</code_BW>
+<code_BV3>0</code_BV3>
+</capital>
+<credits>
+<code_BX>210779173</code_BX>
+<code_BY>583000</code_BY>
+<code_BX3>210196173</code_BX3>
+<code_BZ>39458963</code_BZ>
+<code_CA>0</code_CA>
+<code_BZ3>39458963</code_BZ3>
+<code_CB>0</code_CB>
+<code_CC>0</code_CC>
+<code_CB3>0</code_CB3>
+<code_CD>0</code_CD>
+<code_CE>0</code_CE>
+<code_CD3>0</code_CD3>
+<code_CF>4401396</code_CF>
+<code_CG>0</code_CG>
+<code_CF3>4401396</code_CF3>
+<code_CH>1094551</code_CH>
+<code_CI>0</code_CI>
+<code_CH3>1094551</code_CH3>
+<code_CJ>333336214</code_CJ>
+<code_CK>1515230</code_CK>
+<code_CJ3>331820984</code_CJ3>
+</credits>
+</actifcirculant>
+<accountsofregularization>
+<code_CL3>0</code_CL3>
+<code_CM3>0</code_CM3>
+<code_CN3>0</code_CN3>
+<code_CO>667314862</code_CO>
+<code_1A>35665433</code_1A>
+<code_CO3>631649429</code_CO3>
+<code_CP>0</code_CP>
+<code_CR>0</code_CR>
+</accountsofregularization>
+</activeaccount>
+<passiveaccount>
+<shareholderequity>
+<code_DA>15297189</code_DA>
+<code_DB>195350260</code_DB>
+<code_EK>0</code_EK>
+<code_DC>0</code_DC>
+<code_DD>1529719</code_DD>
+<code_DE>0</code_DE>
+<code_DF>0</code_DF>
+<code_B1>0</code_B1>
+<code_DG>0</code_DG>
+<code_EJ>0</code_EJ>
+<code_DH>42904468</code_DH>
+<code_DI>1013693</code_DI>
+<code_DJ>0</code_DJ>
+<code_DK>0</code_DK>
+<code_DL>256095330</code_DL>
+</shareholderequity>
+<otherfunds>
+<code_DM>0</code_DM>
+<code_DN>0</code_DN>
+<code_DO>0</code_DO>
+</otherfunds>
+<riskprovisions>
+<code_DP>901308</code_DP>
+<code_DQ>0</code_DQ>
+<code_DR>901308</code_DR>
+</riskprovisions>
+<liabilities>
+<code_DS>0</code_DS>
+<code_DT>174557920</code_DT>
+<code_DU>0</code_DU>
+<code_DV>0</code_DV>
+<code_DW>0</code_DW>
+<code_DX>152055318</code_DX>
+<code_DY>34710029</code_DY>
+<code_DZ>0</code_DZ>
+<code_EA>11952414</code_EA>
+</liabilities>
+<compteregularaire>
+<code_EB>1377110</code_EB>
+<code_EC>374652791</code_EC>
+<code_ED>0</code_ED>
+<code_EE>631649429</code_EE>
+</compteregularaire>
+<renvois>
+<code_EF>0</code_EF>
+<code_EG>200094871</code_EG>
+<code_EH>0</code_EH>
+<code_EI>0</code_EI>
+</renvois>
+</passiveaccount>
+<result>
+<salesofgoods>
+<code_FA>1008123576</code_FA>
+<code_FB>67345335</code_FB>
+<code_FC>1075468911</code_FC>
+<code_FD>0</code_FD>
+<code_FE>0</code_FE>
+<code_FF>0</code_FF>
+<code_FG>26530429</code_FG>
+<code_FH>9762286</code_FH>
+<code_FI>36292715</code_FI>
+<code_FJ>1034654005</code_FJ>
+<code_FK>77107621</code_FK>
+<code_FL>1111761626</code_FL>
+<code_FM>0</code_FM>
+<code_FN>0</code_FN>
+<code_FO>0</code_FO>
+<code_FP>1710808</code_FP>
+<code_FQ>392280</code_FQ>
+<code_FR>1113864714</code_FR>
+</salesofgoods>
+<chargesofgoods>
+<code_FS>1016351082</code_FS>
+<code_FT>21010258</code_FT>
+<code_FU>0</code_FU>
+<code_FV>25614</code_FV>
+<code_FW>36962854</code_FW>
+<code_FX>3461580</code_FX>
+<code_FY>17088656</code_FY>
+<code_FZ>7122736</code_FZ>
+<depreciation>
+<code_GA>345045</code_GA>
+<code_GB>0</code_GB>
+<code_GC>1515230</code_GC>
+<code_GD>0</code_GD>
+<code_GE>703339</code_GE>
+<code_GF>1104586394</code_GF>
+<code_GG>9278320</code_GG>
+</depreciation>
+</chargesofgoods>
+<operationsencommum>
+<code_GH>0</code_GH>
+<code_GI>0</code_GI>
+</operationsencommum>
+<financialincome>
+<code_GJ>0</code_GJ>
+<code_GK>0</code_GK>
+<code_GL>2140789</code_GL>
+<code_GM>0</code_GM>
+<code_GN>109283</code_GN>
+<code_GO>0</code_GO>
+<code_GP>2250072</code_GP>
+</financialincome>
+<financialcharges>
+<code_GQ>0</code_GQ>
+<code_GR>10633611</code_GR>
+<code_GS>85363</code_GS>
+<code_GT>0</code_GT>
+<code_GU>10718974</code_GU>
+<code_GV>-8468902</code_GV>
+<code_GW>809418</code_GW>
+</financialcharges>
+<extraordinaryincome>
+<code_HA>0</code_HA>
+<code_HB>0</code_HB>
+<code_HC>1050960</code_HC>
+<code_HD>1050960</code_HD>
+</extraordinaryincome>
+<extraordinarycharges>
+<code_HE>1127</code_HE>
+<code_HF>13</code_HF>
+<code_HG>901308</code_HG>
+<code_HH>902448</code_HH>
+<code_HI>148512</code_HI>
+<code_HJ>0</code_HJ>
+<code_HK>-55762</code_HK>
+<code_HL>1117165745</code_HL>
+<code_HM>1116152054</code_HM>
+<code_HN>1013693</code_HN>
+</extraordinarycharges>
+<renvois>
+<code_HP>0</code_HP>
+<code_HQ>0</code_HQ>
+<code_A1>0</code_A1>
+<code_A2>0</code_A2>
+<code_A3>0</code_A3>
+<code_A4>0</code_A4>
+<code_KF>232592</code_KF>
+<code_LP>599673</code_LP>
+<code_MY>0</code_MY>
+<code_NC>0</code_NC>
+<code_2E>0</code_2E>
+</renvois>
+<immobilisation>
+<code_KA>18449</code_KA>
+<code_KB>0</code_KB>
+<code_KC>0</code_KC>
+<code_KD>1831994</code_KD>
+<code_KE>0</code_KE>
+<code_KF>232592</code_KF>
+<code_LN>12806147</code_LN>
+<code_LO>0</code_LO>
+<code_LP>599673</code_LP>
+<code_LQ>318679541</code_LQ>
+<code_LR>0</code_LR>
+<code_LS>34946</code_LS>
+<code_0G>0</code_0G>
+<code_0H>0</code_0H>
+<code_0J>0</code_0J>
+<code_LT1>0</code_LT1>
+<code_LT2>0</code_LT2>
+<code_LU>18449</code_LU>
+<code_LV1>0</code_LV1>
+<code_LV2>0</code_LV2>
+<code_LW>2064586</code_LW>
+<code_MY>0</code_MY>
+<code_NC>0</code_NC>
+<code_NG1>0</code_NG1>
+<code_NG2>224695</code_NG2>
+<code_NH>13181125</code_NH>
+<code_NJ1>0</code_NJ1>
+<code_NJ2>0</code_NJ2>
+<code_NK>318714487</code_NK>
+<code_0K1>0</code_0K1>
+<code_0K2>224695</code_0K2>
+<code_0L>333978648</code_0L>
+</immobilisation>
+<amortissement>
+<code_PA>0</code_PA>
+<code_PB>0</code_PB>
+<code_PC>0</code_PC>
+<code_PD>0</code_PD>
+<code_PE>0</code_PE>
+<code_PF>0</code_PF>
+<code_PG>0</code_PG>
+<code_PH>0</code_PH>
+<code_QU>11769146</code_QU>
+<code_QV>345045</code_QV>
+<code_QW>196284</code_QW>
+<code_QX>11917907</code_QX>
+<code_0N>0</code_0N>
+<code_0P>0</code_0P>
+<code_0Q>0</code_0Q>
+<code_0R>0</code_0R>
+<code_SM_1>0</code_SM_1>
+<code_SM_2>0</code_SM_2>
+<code_SM>0</code_SM>
+<code_SN>0</code_SN>
+<code_SP>18449</code_SP>
+<code_SP_1>0</code_SP_1>
+<code_SP_2>0</code_SP_2>
+<code_SR>0</code_SR>
+</amortissement>
+<provisionsinscritesaubilan>
+<code_TO>0</code_TO>
+<code_3Z>0</code_3Z>
+<code_TS>0</code_TS>
+<code_TT>0</code_TT>
+<code_TU>0</code_TU>
+<code_4D>0</code_4D>
+<code_4H>0</code_4H>
+<code_4M>0</code_4M>
+<code_4S>0</code_4S>
+<code_4W>0</code_4W>
+<code_5A>0</code_5A>
+<code_5E>0</code_5E>
+<code_5K>0</code_5K>
+<code_5P>0</code_5P>
+<code_5R>0</code_5R>
+<code_5S>0</code_5S>
+<code_5T>0</code_5T>
+<code_5U>0</code_5U>
+<code_5Y>901308</code_5Y>
+<code_5Z>1050960</code_5Z>
+<code_TV>901308</code_TV>
+<code_TW>1050960</code_TW>
+<code_TX>901308</code_TX>
+<code_6A>0</code_6A>
+<code_6B>0</code_6B>
+<code_6C>0</code_6C>
+<code_6D>0</code_6D>
+<code_6E>0</code_6E>
+<code_6F>0</code_6F>
+<code_6G>0</code_6G>
+<code_6H>0</code_6H>
+<code_02>0</code_02>
+<code_03>0</code_03>
+<code_04>0</code_04>
+<code_05>0</code_05>
+<code_9X>22213847</code_9X>
+<code_06>0</code_06>
+<code_07>0</code_07>
+<code_08>0</code_08>
+<code_09>0</code_09>
+<code_6N>1012808</code_6N>
+<code_6P>932230</code_6P>
+<code_6R>1012808</code_6R>
+<code_6S>932230</code_6S>
+<code_6T>698000</code_6T>
+<code_6U>583000</code_6U>
+<code_6V>698000</code_6V>
+<code_6W>583000</code_6W>
+<code_6X>0</code_6X>
+<code_6Y>0</code_6Y>
+<code_6Z>0</code_6Z>
+<code_7A>0</code_7A>
+<code_7B>23924655</code_7B>
+<code_TY>1515230</code_TY>
+<code_TZ>1710808</code_TZ>
+<code_UA>23729077</code_UA>
+<code_7C>24975615</code_7C>
+<code_UB>2416538</code_UB>
+<code_UC>2761768</code_UC>
+<code_UD>24630385</code_UD>
+<code_UE>1515230</code_UE>
+<code_UF>1710808</code_UF>
+<code_UG>0</code_UG>
+<code_UH>0</code_UH>
+<code_UJ>901308</code_UJ>
+<code_UK>1050960</code_UK>
+</provisionsinscritesaubilan>
+<etatdesecheancesdescreances>
+<code_UL>0</code_UL>
+<code_UM>0</code_UM>
+<code_UP>0</code_UP>
+<code_UR>0</code_UR>
+<code_UT>56908</code_UT>
+<code_UV>0</code_UV>
+<code_VA>0</code_VA>
+<code_UX>210779173</code_UX>
+<code_UU>0</code_UU>
+<code_UQ>0</code_UQ>
+<code_UY>36254</code_UY>
+<code_UZ>3748</code_UZ>
+<code_VM>8422859</code_VM>
+<code_VB>10421044</code_VB>
+<code_VN>0</code_VN>
+<code_VP>0</code_VP>
+<code_VC>166681</code_VC>
+<code_VR>20408377</code_VR>
+<code_VS>1094551</code_VS>
+<code_VT>251389596</code_VT>
+<code_VU>251332688</code_VU>
+<code_VV>56908</code_VV>
+<code_7Y1>0</code_7Y1>
+<code_7Y2>0</code_7Y2>
+<code_7Y3>0</code_7Y3>
+<code_7Z1>174557920</code_7Z1>
+<code_7Z2>0</code_7Z2>
+<code_7Z3>174557920</code_7Z3>
+<code_VG1>0</code_VG1>
+<code_VG2>0</code_VG2>
+<code_VG3>0</code_VG3>
+<code_VH1>0</code_VH1>
+<code_VH2>0</code_VH2>
+<code_VH3>0</code_VH3>
+<code_8A1>0</code_8A1>
+<code_8A2>0</code_8A2>
+<code_8A3>0</code_8A3>
+<code_8B1>152055318</code_8B1>
+<code_8B2>152055318</code_8B2>
+<code_8B3>152055318</code_8B3>
+<code_8C1>2760017</code_8C1>
+<code_8C2>2760017</code_8C2>
+<code_8C3>0</code_8C3>
+<code_8D1>4340605</code_8D1>
+<code_8D2>4340605</code_8D2>
+<code_8D3>0</code_8D3>
+<code_8E1>0</code_8E1>
+<code_8E2>0</code_8E2>
+<code_8E3>0</code_8E3>
+<code_VW1>27517253</code_VW1>
+<code_VW2>27517253</code_VW2>
+<code_VW3>0</code_VW3>
+<code_VX1>0</code_VX1>
+<code_VX2>0</code_VX2>
+<code_VX3>0</code_VX3>
+<code_VQ1>92154</code_VQ1>
+<code_VQ2>92154</code_VQ2>
+<code_VQ3>0</code_VQ3>
+<code_8J1>0</code_8J1>
+<code_8J2>0</code_8J2>
+<code_8J3>0</code_8J3>
+<code_8J4>0</code_8J4>
+<code_VI1>1503797</code_VI1>
+<code_VI2>1503797</code_VI2>
+<code_VI3>0</code_VI3>
+<code_VI4>0</code_VI4>
+<code_8K1>10448617</code_8K1>
+<code_8K2>10448617</code_8K2>
+<code_8K3>0</code_8K3>
+<code_SZ1>0</code_SZ1>
+<code_SZ2>0</code_SZ2>
+<code_SZ3>0</code_SZ3>
+<code_8L1>1377110</code_8L1>
+<code_8L2>1377110</code_8L2>
+<code_8L3>0</code_8L3>
+<code_VY>374652791</code_VY>
+<code_VZ2>200094871</code_VZ2>
+<code_VZ3>174557920</code_VZ3>
+<code_VZ4>0</code_VZ4>
+<code_VJ>0</code_VJ>
+<code_VK>0</code_VK>
+</etatdesecheancesdescreances>
+<tableaudaffectation>
+<code_ZE>0</code_ZE>
+<code_YQ>0</code_YQ>
+<code_YR>0</code_YR>
+<code_YS>0</code_YS>
+<code_YT>0</code_YT>
+<code_XQ>0</code_XQ>
+<code_YU>0</code_YU>
+<code_SS>0</code_SS>
+<code_YV>0</code_YV>
+<code_ST>0</code_ST>
+<code_ZJ>0</code_ZJ>
+<code_YW>0</code_YW>
+<code_9Z>0</code_9Z>
+<code_YX>0</code_YX>
+<code_YY>0</code_YY>
+<code_YZ>0</code_YZ>
+<code_YP>488</code_YP>
+</tableaudaffectation>
+</result>
+<structure>
+<protection>40.54</protection>
+<netgearing>27.64</netgearing>
+<repaymentpower>-34792.66</repaymentpower>
+<capitalrequirement>43</capitalrequirement>
+<workingcapitalrequirement>41</workingcapitalrequirement>
+<netcash>1</netcash>
+</structure>
+<performances>
+<returnoninvestedcapital>3</returnoninvestedcapital>
+<roe>0.40</roe>
+<grossprofitratio>3.37</grossprofitratio>
+<growthvsyearagoqtr>79260308</growthvsyearagoqtr>
+<inventoryturns>0</inventoryturns>
+<receivablesdays>68</receivablesdays>
+<payabledays>52</payabledays>
+</performances>
+<sig>
+<profit>3.54</profit>
+<grossprofit>3.37</grossprofit>
+<wageandsalary>64.72</wageandsalary>
+<grossoperatingsurplus>0.88</grossoperatingsurplus>
+<pretaxincome>0.07</pretaxincome>
+<netprofitornetloss>0.09</netprofitornetloss>
+</sig>
+<sig2013>
+<turnover>1111761626</turnover>
+<salesofgoods>1075468911</salesofgoods>
+<purchaseofgoods>1016351082</purchaseofgoods>
+<stockofgoods>21010258</stockofgoods>
+<tradingmargin>38107571</tradingmargin>
+<salesofgoodsproduced>36292715</salesofgoodsproduced>
+<stockedproduction>0</stockedproduction>
+<selfconstructedassets>0</selfconstructedassets>
+<periodproduction>36292715</periodproduction>
+<purchaseofrawmaterials>0</purchaseofrawmaterials>
+<changeinstocksofraws>25614</changeinstocksofraws>
+<otherexternalpurchases>36962854</otherexternalpurchases>
+<addedvalue>37411818</addedvalue>
+<operatinggrants>0</operatinggrants>
+<taxduty>3461580</taxduty>
+<personalcharges>24211392</personalcharges>
+<grossoperatingsurplus>9738846</grossoperatingsurplus>
+<releasesofreserves>1710808</releasesofreserves>
+<otheroperatingincome>392280</otheroperatingincome>
+<depreciation>1860275</depreciation>
+<othercharges>703339</othercharges>
+<operatingresult>9278320</operatingresult>
+<resultofjointventure>0</resultofjointventure>
+<financialincome>2250072</financialincome>
+<financialcharges>10718974</financialcharges>
+<pretaxresult>809418</pretaxresult>
+<extraordinaryincome>1050960</extraordinaryincome>
+<extraordinarycharges>902448</extraordinarycharges>
+<extraordinaryresult>148512</extraordinaryresult>
+<employeeprofit>0</employeeprofit>
+<taxonprofits>-55762</taxonprofits>
+<netresult>1013692</netresult>
+</sig2013>
+<ratiossig>
+<structure>
+<fixedassetfinancing>1.39</fixedassetfinancing>
+<globaldebt>121</globaldebt>
+<workingcapital>43</workingcapital>
+<financialindependence>146.70</financialindependence>
+<solvability>40.54</solvability>
+<capacitydebtfutures />
+<coveragecurrentassets>39.65</coveragecurrentassets>
+<generalliquidity>1.26</generalliquidity>
+<restrictedliquidity>1.28</restrictedliquidity>
+<avg_fixedassetfinancing>19.34</avg_fixedassetfinancing>
+<avg_globaldebt>346.97</avg_globaldebt>
+<avg_workingcapital>143.24</avg_workingcapital>
+<avg_financialindependence>290243.99</avg_financialindependence>
+<avg_solvability>-32.34</avg_solvability>
+<avg_capacitydebtfutures>780186.31</avg_capacitydebtfutures>
+<avg_coveragecurrentassets>3.47</avg_coveragecurrentassets>
+<avg_generalliquidity>1.38</avg_generalliquidity>
+<avg_restrictedliquidity>3.50</avg_restrictedliquidity>
+<med_fixedassetfinancing>2.78</med_fixedassetfinancing>
+<med_globaldebt>99</med_globaldebt>
+<med_workingcapital>55</med_workingcapital>
+<med_financialindependence>238.40</med_financialindependence>
+<med_solvability>37.10</med_solvability>
+<med_capacitydebtfutures>1738.59</med_capacitydebtfutures>
+<med_coveragecurrentassets>40.78</med_coveragecurrentassets>
+<med_generalliquidity>0.80</med_generalliquidity>
+<med_restrictedliquidity>1.27</med_restrictedliquidity>
+</structure>
+<management>
+<needbackground>32</needbackground>
+<treasurery>1</treasurery>
+<inventoryturnover>27</inventoryturnover>
+<averagelength>68</averagelength>
+<averagecredit>51</averagecredit>
+<inventoryturnoverraw>0</inventoryturnoverraw>
+<intermediateproducts />
+<rotationtangibleassets>8434.50</rotationtangibleassets>
+<avg_needbackground>28.01</avg_needbackground>
+<avg_treasurery>110.44</avg_treasurery>
+<avg_inventoryturnover>229.76</avg_inventoryturnover>
+<avg_averagelength>83.40</avg_averagelength>
+<avg_averagecredit>1798.20</avg_averagecredit>
+<avg_inventoryturnoverraw>476.94</avg_inventoryturnoverraw>
+<avg_intermediateproducts>4206.68</avg_intermediateproducts>
+<avg_rotationtangibleassets>92184.24</avg_rotationtangibleassets>
+<med_needbackground>15</med_needbackground>
+<med_treasurery>16</med_treasurery>
+<med_inventoryturnover>27</med_inventoryturnover>
+<med_averagelength>54</med_averagelength>
+<med_averagecredit>47</med_averagecredit>
+<med_inventoryturnoverraw>0</med_inventoryturnoverraw>
+<med_intermediateproducts>1359.50</med_intermediateproducts>
+<med_rotationtangibleassets>1902.97</med_rotationtangibleassets>
+</management>
+<profitability>
+<margintrading>3.43</margintrading>
+<profitabilitybusiness>0.88</profitabilitybusiness>
+<netprofit>0.09</netprofit>
+<growthrate>7.68</growthrate>
+<ratesintegration>3.37</ratesintegration>
+<rateleasingfurniture>0</rateleasingfurniture>
+<workfactor>64.72</workfactor>
+<weightinterests>0.96</weightinterests>
+<avg_margintrading>17.07</avg_margintrading>
+<avg_profitabilitybusiness>-9.87</avg_profitabilitybusiness>
+<avg_netprofit>-10.71</avg_netprofit>
+<avg_growthrate>36.59</avg_growthrate>
+<avg_ratesintegration>23.23</avg_ratesintegration>
+<avg_rateleasingfurniture>0.15</avg_rateleasingfurniture>
+<avg_workfactor>54.15</avg_workfactor>
+<avg_weightinterests>2.33</avg_weightinterests>
+<med_margintrading>14.77</med_margintrading>
+<med_profitabilitybusiness>2.92</med_profitabilitybusiness>
+<med_netprofit>1.82</med_netprofit>
+<med_growthrate>0</med_growthrate>
+<med_ratesintegration>26.16</med_ratesintegration>
+<med_rateleasingfurniture>0</med_rateleasingfurniture>
+<med_workfactor>78.52</med_workfactor>
+<med_weightinterests>0.08</med_weightinterests>
+</profitability>
+<returnoncapital>
+<cashflow>-0.05</cashflow>
+<ratesofeconomic>2</ratesofeconomic>
+<financialprofitability>256095330</financialprofitability>
+<returninvestment>0.96</returninvestment>
+<avg_cashflow>-4.34</avg_cashflow>
+<avg_ratesofeconomic>18</avg_ratesofeconomic>
+<avg_financialprofitability>1005398.79</avg_financialprofitability>
+<avg_returninvestment>2.33</avg_returninvestment>
+<med_cashflow>2.72</med_cashflow>
+<med_ratesofeconomic>14</med_ratesofeconomic>
+<med_financialprofitability>61888</med_financialprofitability>
+<med_returninvestment>0.08</med_returninvestment>
+</returnoncapital>
+<sig>
+<netturnover>1111761626</netturnover>
+<margintrading>3.54</margintrading>
+<addedvalue>3.37</addedvalue>
+<personalcharges>2.18</personalcharges>
+<distributionwage>64.72</distributionwage>
+<grossoperating>0.88</grossoperating>
+<revenues>9278320</revenues>
+<incomefromcontinuing>0.07</incomefromcontinuing>
+<netincome>1013693</netincome>
+<profitabilityfinal>0.09</profitabilityfinal>
+<cashflow>-501709</cashflow>
+<totalnetreturn>-0.05</totalnetreturn>
+<avg_netturnover>10030497.01</avg_netturnover>
+<avg_margintrading>185.73</avg_margintrading>
+<avg_addedvalue>22.75</avg_addedvalue>
+<avg_personalcharges>31.40</avg_personalcharges>
+<avg_distributionwage>54.07</avg_distributionwage>
+<avg_grossoperating>-335.55</avg_grossoperating>
+<avg_revenues>127835.58</avg_revenues>
+<avg_incomefromcontinuing>-12.64</avg_incomefromcontinuing>
+<avg_netincome>13246.60</avg_netincome>
+<avg_profitabilityfinal>-10.69</avg_profitabilityfinal>
+<avg_cashflow>110397.65</avg_cashflow>
+<avg_totalnetreturn>-5.17</avg_totalnetreturn>
+<med_netturnover>477121</med_netturnover>
+<med_margintrading>25.65</med_margintrading>
+<med_addedvalue>25.55</med_addedvalue>
+<med_personalcharges>21.21</med_personalcharges>
+<med_distributionwage>68.84</med_distributionwage>
+<med_grossoperating>2.83</med_grossoperating>
+<med_revenues>8754</med_revenues>
+<med_incomefromcontinuing>2</med_incomefromcontinuing>
+<med_netincome>8646</med_netincome>
+<med_profitabilityfinal>1.82</med_profitabilityfinal>
+<med_cashflow>12654</med_cashflow>
+<med_totalnetreturn>2.69</med_totalnetreturn>
+</sig>
+</ratiossig>
+</full>
+</account>
+</accounts>
+<balancesynthesis>
+<balancesheet>
+<annualaccount>31/12/2015</annualaccount>
+<month>12</month>
+<employees>0</employees>
+<accounttype>Bilan Normal</accounttype>
+<currency>Euro</currency>
+<activeaccount>
+<capitalnotcalled>0</capitalnotcalled>
+<totalfixedassets>299923523</totalfixedassets>
+<intangibleassets>2155527</intangibleassets>
+<tangibleassets>1300257</tangibleassets>
+<financialassets>296486189</financialassets>
+<netcurrentassets>381572588</netcurrentassets>
+<stocks>68308181</stocks>
+<advancedpyaments>0</advancedpyaments>
+<receivables>312084946</receivables>
+<tradereceivables>188694920</tradereceivables>
+<miscreceivables>122736165</miscreceivables>
+<securitiesandcash>1179461</securitiesandcash>
+<prepaidexpenses>0</prepaidexpenses>
+<accountofregularization>0</accountofregularization>
+<totalassets>681496111</totalassets>
+<misctotalassets>299923523</misctotalassets>
+<networth>253119152</networth>
+<avg_capitalnotcalled>8</avg_capitalnotcalled>
+<avg_totalfixedassets>1394072</avg_totalfixedassets>
+<avg_intangibleassets>298427</avg_intangibleassets>
+<avg_tangibleassets>158862</avg_tangibleassets>
+<avg_financialassets>937214</avg_financialassets>
+<avg_netcurrentassets>5537707</avg_netcurrentassets>
+<avg_stocks>445921</avg_stocks>
+<avg_advancedpyaments>13018</avg_advancedpyaments>
+<avg_receivables>3890926</avg_receivables>
+<avg_securitiesandcash>1187630</avg_securitiesandcash>
+<avg_prepaidexpenses>1125</avg_prepaidexpenses>
+<avg_accountofregularization>14011</avg_accountofregularization>
+<avg_totalassets>6943229</avg_totalassets>
+<med_capitalnotcalled>0</med_capitalnotcalled>
+<med_totalfixedassets>24178</med_totalfixedassets>
+<med_intangibleassets>0</med_intangibleassets>
+<med_tangibleassets>6818</med_tangibleassets>
+<med_financialassets>3000</med_financialassets>
+<med_netcurrentassets>374348</med_netcurrentassets>
+<med_stocks>16204</med_stocks>
+<med_advancedpyaments>0</med_advancedpyaments>
+<med_receivables>172265</med_receivables>
+<med_securitiesandcash>71707</med_securitiesandcash>
+<med_prepaidexpenses>0</med_prepaidexpenses>
+<med_accountofregularization>0</med_accountofregularization>
+<med_totalassets>453435</med_totalassets>
+</activeaccount>
+<passiveaccount>
+<shareholdersequity>255274679</shareholdersequity>
+<sharecapital>15297189</sharecapital>
+<revaluationreserve>0</revaluationreserve>
+<otherreserves>239977490</otherreserves>
+<othercapitalresources>0</othercapitalresources>
+<provisionsforrisksandcharges>1073753</provisionsforrisksandcharges>
+<liabilities>425147678</liabilities>
+<financialliabilities>184437172</financialliabilities>
+<advancedpaymentsreceived>0</advancedpaymentsreceived>
+<tradeaccountpayables>187759616</tradeaccountpayables>
+<taxandsocialliabilities>36604475</taxandsocialliabilities>
+<otherdebtsandfixedassetsliabilities>14454969</otherdebtsandfixedassetsliabilities>
+<accountofregularization>1891447</accountofregularization>
+<totalliabilities>681496111</totalliabilities>
+<bankloansandliabilities>0</bankloansandliabilities>
+<sundryloanandliabilities>184437172</sundryloanandliabilities>
+<miscliabilities>14454969</miscliabilities>
+<avg_shareholdersequity>2009319</avg_shareholdersequity>
+<avg_sharecapital>1123689</avg_sharecapital>
+<avg_othercapitalresources>1650</avg_othercapitalresources>
+<avg_provisionsforrisksandcharges>186554</avg_provisionsforrisksandcharges>
+<avg_liabilities>4740353</avg_liabilities>
+<avg_financialliabilities>917577</avg_financialliabilities>
+<avg_advancedpaymentsreceived>15002</avg_advancedpaymentsreceived>
+<avg_tradeaccountpayables>2031682</avg_tradeaccountpayables>
+<avg_taxandsocialliabilities>809286</avg_taxandsocialliabilities>
+<avg_otherdebtsandfixedassetsliabilities>443211</avg_otherdebtsandfixedassetsliabilities>
+<avg_accountofregularization>14011</avg_accountofregularization>
+<avg_totalliabilities>6943225</avg_totalliabilities>
+<med_shareholdersequity>148261</med_shareholdersequity>
+<med_sharecapital>33750</med_sharecapital>
+<med_othercapitalresources>0</med_othercapitalresources>
+<med_provisionsforrisksandcharges>0</med_provisionsforrisksandcharges>
+<med_liabilities>227969</med_liabilities>
+<med_financialliabilities>9952</med_financialliabilities>
+<med_advancedpaymentsreceived>0</med_advancedpaymentsreceived>
+<med_tradeaccountpayables>67281</med_tradeaccountpayables>
+<med_taxandsocialliabilities>78772</med_taxandsocialliabilities>
+<med_otherdebtsandfixedassetsliabilities>5140</med_otherdebtsandfixedassetsliabilities>
+<med_accountofregularization>0</med_accountofregularization>
+<med_totalliabilities>453435</med_totalliabilities>
+</passiveaccount>
+<profitloss>
+<operatingincome>1349714051</operatingincome>
+<netturnover>1348593953</netturnover>
+<netexportturnover>85349692</netexportturnover>
+<operatingcharges>1339280597</operatingcharges>
+<operatingprofitloss>10433454</operatingprofitloss>
+<financialincome>3054152</financialincome>
+<financialcharges>11518794</financialcharges>
+<financialprofitloss>-8464643</financialprofitloss>
+<pretaxnetoperatingincome>1968812</pretaxnetoperatingincome>
+<extraordinaryincome>1443395</extraordinaryincome>
+<extraordinarycharges>1075409</extraordinarycharges>
+<extraordinaryprofitloss>367986</extraordinaryprofitloss>
+<netprofitloss>573804</netprofitloss>
+<avg_operatingincome>16096504</avg_operatingincome>
+<avg_netturnover>15886289</avg_netturnover>
+<avg_netexportturnover>4713505</avg_netexportturnover>
+<avg_operatingcharges>15945560</avg_operatingcharges>
+<avg_operatingprofitloss>150942</avg_operatingprofitloss>
+<avg_financialincome>251712</avg_financialincome>
+<avg_financialcharges>256149</avg_financialcharges>
+<avg_financialprofitloss>-4438</avg_financialprofitloss>
+<avg_pretaxnetoperatingincome>146454</avg_pretaxnetoperatingincome>
+<avg_extraordinaryincome>170623</avg_extraordinaryincome>
+<avg_extraordinarycharges>59019</avg_extraordinarycharges>
+<avg_extraordinaryprofitloss>111604</avg_extraordinaryprofitloss>
+<avg_netprofitloss>166133</avg_netprofitloss>
+<med_operatingincome>818803</med_operatingincome>
+<med_netturnover>792863</med_netturnover>
+<med_netexportturnover>0</med_netexportturnover>
+<med_operatingcharges>799770</med_operatingcharges>
+<med_operatingprofitloss>18108</med_operatingprofitloss>
+<med_financialincome>94</med_financialincome>
+<med_financialcharges>463</med_financialcharges>
+<med_financialprofitloss>0</med_financialprofitloss>
+<med_pretaxnetoperatingincome>18663</med_pretaxnetoperatingincome>
+<med_extraordinaryincome>13</med_extraordinaryincome>
+<med_extraordinarycharges>217</med_extraordinarycharges>
+<med_extraordinaryprofitloss>0</med_extraordinaryprofitloss>
+<med_netprofitloss>17447</med_netprofitloss>
+</profitloss>
+</balancesheet>
+<balancesheet>
+<annualaccount>31/12/2014</annualaccount>
+<month>12</month>
+<employees>471</employees>
+<accounttype>Bilan Normal</accounttype>
+<currency>Euro</currency>
+<activeaccount>
+<capitalnotcalled>0</capitalnotcalled>
+<totalfixedassets>299840551</totalfixedassets>
+<intangibleassets>2083035</intangibleassets>
+<tangibleassets>1304021</tangibleassets>
+<financialassets>296471945</financialassets>
+<netcurrentassets>366595639</netcurrentassets>
+<stocks>64791885</stocks>
+<advancedpyaments>0</advancedpyaments>
+<receivables>290752038</receivables>
+<tradereceivables>236618133</tradereceivables>
+<miscreceivables>53236576</miscreceivables>
+<securitiesandcash>11051716</securitiesandcash>
+<prepaidexpenses>0</prepaidexpenses>
+<accountofregularization>0</accountofregularization>
+<totalassets>666436190</totalassets>
+<misctotalassets>299840551</misctotalassets>
+<networth>252617841</networth>
+<avg_capitalnotcalled>90</avg_capitalnotcalled>
+<avg_totalfixedassets>1119605</avg_totalfixedassets>
+<avg_intangibleassets>130110</avg_intangibleassets>
+<avg_tangibleassets>132958</avg_tangibleassets>
+<avg_financialassets>856861</avg_financialassets>
+<avg_netcurrentassets>4028238</avg_netcurrentassets>
+<avg_stocks>389735</avg_stocks>
+<avg_advancedpyaments>10485</avg_advancedpyaments>
+<avg_receivables>2924054</avg_receivables>
+<avg_securitiesandcash>703670</avg_securitiesandcash>
+<avg_prepaidexpenses>1475</avg_prepaidexpenses>
+<avg_accountofregularization>6788</avg_accountofregularization>
+<avg_totalassets>5153350</avg_totalassets>
+<med_capitalnotcalled>0</med_capitalnotcalled>
+<med_totalfixedassets>19241</med_totalfixedassets>
+<med_intangibleassets>0</med_intangibleassets>
+<med_tangibleassets>5371</med_tangibleassets>
+<med_financialassets>2400</med_financialassets>
+<med_netcurrentassets>291623</med_netcurrentassets>
+<med_stocks>13232</med_stocks>
+<med_advancedpyaments>0</med_advancedpyaments>
+<med_receivables>127069</med_receivables>
+<med_securitiesandcash>54631</med_securitiesandcash>
+<med_prepaidexpenses>0</med_prepaidexpenses>
+<med_accountofregularization>0</med_accountofregularization>
+<med_totalassets>362357</med_totalassets>
+</activeaccount>
+<passiveaccount>
+<shareholdersequity>254700876</shareholdersequity>
+<sharecapital>15297189</sharecapital>
+<revaluationreserve>0</revaluationreserve>
+<otherreserves>239403687</otherreserves>
+<othercapitalresources>0</othercapitalresources>
+<provisionsforrisksandcharges>1443395</provisionsforrisksandcharges>
+<liabilities>410291919</liabilities>
+<financialliabilities>186154742</financialliabilities>
+<advancedpaymentsreceived>0</advancedpaymentsreceived>
+<tradeaccountpayables>169461425</tradeaccountpayables>
+<taxandsocialliabilities>40283769</taxandsocialliabilities>
+<otherdebtsandfixedassetsliabilities>13122771</otherdebtsandfixedassetsliabilities>
+<accountofregularization>1269211</accountofregularization>
+<totalliabilities>666436190</totalliabilities>
+<bankloansandliabilities>0</bankloansandliabilities>
+<sundryloanandliabilities>186154742</sundryloanandliabilities>
+<miscliabilities>13122771</miscliabilities>
+<avg_shareholdersequity>1586834</avg_shareholdersequity>
+<avg_sharecapital>902036</avg_sharecapital>
+<avg_othercapitalresources>1497</avg_othercapitalresources>
+<avg_provisionsforrisksandcharges>163734</avg_provisionsforrisksandcharges>
+<avg_liabilities>3398724</avg_liabilities>
+<avg_financialliabilities>650497</avg_financialliabilities>
+<avg_advancedpaymentsreceived>20734</avg_advancedpaymentsreceived>
+<avg_tradeaccountpayables>1456447</avg_tradeaccountpayables>
+<avg_taxandsocialliabilities>661116</avg_taxandsocialliabilities>
+<avg_otherdebtsandfixedassetsliabilities>279345</avg_otherdebtsandfixedassetsliabilities>
+<avg_accountofregularization>6788</avg_accountofregularization>
+<avg_totalliabilities>5153371</avg_totalliabilities>
+<med_shareholdersequity>104958</med_shareholdersequity>
+<med_sharecapital>25000</med_sharecapital>
+<med_othercapitalresources>0</med_othercapitalresources>
+<med_provisionsforrisksandcharges>0</med_provisionsforrisksandcharges>
+<med_liabilities>191283</med_liabilities>
+<med_financialliabilities>8729</med_financialliabilities>
+<med_advancedpaymentsreceived>0</med_advancedpaymentsreceived>
+<med_tradeaccountpayables>56076</med_tradeaccountpayables>
+<med_taxandsocialliabilities>62668</med_taxandsocialliabilities>
+<med_otherdebtsandfixedassetsliabilities>4574</med_otherdebtsandfixedassetsliabilities>
+<med_accountofregularization>0</med_accountofregularization>
+<med_totalliabilities>362357</med_totalliabilities>
+</passiveaccount>
+<profitloss>
+<operatingincome>1200571376</operatingincome>
+<netturnover>1199045243</netturnover>
+<netexportturnover>72134582</netexportturnover>
+<operatingcharges>1192944760</operatingcharges>
+<operatingprofitloss>7626615</operatingprofitloss>
+<financialincome>2805450</financialincome>
+<financialcharges>10931763</financialcharges>
+<financialprofitloss>-8126313</financialprofitloss>
+<pretaxnetoperatingincome>-499698</pretaxnetoperatingincome>
+<extraordinaryincome>905100</extraordinaryincome>
+<extraordinarycharges>1543685</extraordinarycharges>
+<extraordinaryprofitloss>-638585</extraordinaryprofitloss>
+<netprofitloss>-1394454</netprofitloss>
+<avg_operatingincome>12647194</avg_operatingincome>
+<avg_netturnover>12454625</avg_netturnover>
+<avg_netexportturnover>3549659</avg_netexportturnover>
+<avg_operatingcharges>12506463</avg_operatingcharges>
+<avg_operatingprofitloss>140731</avg_operatingprofitloss>
+<avg_financialincome>117553</avg_financialincome>
+<avg_financialcharges>91258</avg_financialcharges>
+<avg_financialprofitloss>26296</avg_financialprofitloss>
+<avg_pretaxnetoperatingincome>166741</avg_pretaxnetoperatingincome>
+<avg_extraordinaryincome>93605</avg_extraordinaryincome>
+<avg_extraordinarycharges>124266</avg_extraordinarycharges>
+<avg_extraordinaryprofitloss>-30661</avg_extraordinaryprofitloss>
+<avg_netprofitloss>97068</avg_netprofitloss>
+<med_operatingincome>634235</med_operatingincome>
+<med_netturnover>620041</med_netturnover>
+<med_netexportturnover>0</med_netexportturnover>
+<med_operatingcharges>618930</med_operatingcharges>
+<med_operatingprofitloss>13066</med_operatingprofitloss>
+<med_financialincome>40</med_financialincome>
+<med_financialcharges>374</med_financialcharges>
+<med_financialprofitloss>0</med_financialprofitloss>
+<med_pretaxnetoperatingincome>12622</med_pretaxnetoperatingincome>
+<med_extraordinaryincome>0</med_extraordinaryincome>
+<med_extraordinarycharges>205</med_extraordinarycharges>
+<med_extraordinaryprofitloss>0</med_extraordinaryprofitloss>
+<med_netprofitloss>11678</med_netprofitloss>
+</profitloss>
+</balancesheet>
+<balancesheet>
+<annualaccount>31/12/2013</annualaccount>
+<month>12</month>
+<employees>488</employees>
+<accounttype>Bilan Normal</accounttype>
+<currency>Euro</currency>
+<activeaccount>
+<capitalnotcalled>0</capitalnotcalled>
+<totalfixedassets>299828445</totalfixedassets>
+<intangibleassets>2083035</intangibleassets>
+<tangibleassets>1263218</tangibleassets>
+<financialassets>296500641</financialassets>
+<netcurrentassets>331820984</netcurrentassets>
+<stocks>76669900</stocks>
+<advancedpyaments>0</advancedpyaments>
+<receivables>250749687</receivables>
+<tradereceivables>210196173</tradereceivables>
+<miscreceivables>39458963</miscreceivables>
+<securitiesandcash>4401396</securitiesandcash>
+<prepaidexpenses>0</prepaidexpenses>
+<accountofregularization>0</accountofregularization>
+<totalassets>631649429</totalassets>
+<misctotalassets>299828446</misctotalassets>
+<networth>254012295</networth>
+<avg_capitalnotcalled>142</avg_capitalnotcalled>
+<avg_totalfixedassets>931492</avg_totalfixedassets>
+<avg_intangibleassets>122800</avg_intangibleassets>
+<avg_tangibleassets>108665</avg_tangibleassets>
+<avg_financialassets>707431</avg_financialassets>
+<avg_netcurrentassets>3104645</avg_netcurrentassets>
+<avg_stocks>309731</avg_stocks>
+<avg_advancedpyaments>17399</avg_advancedpyaments>
+<avg_receivables>2338825</avg_receivables>
+<avg_securitiesandcash>438417</avg_securitiesandcash>
+<avg_prepaidexpenses>1238</avg_prepaidexpenses>
+<avg_accountofregularization>7654</avg_accountofregularization>
+<avg_totalassets>4042209</avg_totalassets>
+<med_capitalnotcalled>0</med_capitalnotcalled>
+<med_totalfixedassets>17380</med_totalfixedassets>
+<med_intangibleassets>0</med_intangibleassets>
+<med_tangibleassets>5021</med_tangibleassets>
+<med_financialassets>1987</med_financialassets>
+<med_netcurrentassets>207608</med_netcurrentassets>
+<med_stocks>11619</med_stocks>
+<med_advancedpyaments>0</med_advancedpyaments>
+<med_receivables>100073</med_receivables>
+<med_securitiesandcash>40983</med_securitiesandcash>
+<med_prepaidexpenses>0</med_prepaidexpenses>
+<med_accountofregularization>0</med_accountofregularization>
+<med_totalassets>254697</med_totalassets>
+</activeaccount>
+<passiveaccount>
+<shareholdersequity>256095330</shareholdersequity>
+<sharecapital>15297189</sharecapital>
+<revaluationreserve>0</revaluationreserve>
+<otherreserves>240798141</otherreserves>
+<othercapitalresources>0</othercapitalresources>
+<provisionsforrisksandcharges>901308</provisionsforrisksandcharges>
+<liabilities>374652791</liabilities>
+<financialliabilities>174557920</financialliabilities>
+<advancedpaymentsreceived>0</advancedpaymentsreceived>
+<tradeaccountpayables>152055318</tradeaccountpayables>
+<taxandsocialliabilities>34710029</taxandsocialliabilities>
+<otherdebtsandfixedassetsliabilities>11952414</otherdebtsandfixedassetsliabilities>
+<accountofregularization>1377110</accountofregularization>
+<totalliabilities>631649429</totalliabilities>
+<bankloansandliabilities>0</bankloansandliabilities>
+<sundryloanandliabilities>174557920</sundryloanandliabilities>
+<miscliabilities>11952414</miscliabilities>
+<avg_shareholdersequity>1013568</avg_shareholdersequity>
+<avg_sharecapital>531593</avg_sharecapital>
+<avg_othercapitalresources>1819</avg_othercapitalresources>
+<avg_provisionsforrisksandcharges>182452</avg_provisionsforrisksandcharges>
+<avg_liabilities>2842701</avg_liabilities>
+<avg_financialliabilities>756324</avg_financialliabilities>
+<avg_advancedpaymentsreceived>16883</avg_advancedpaymentsreceived>
+<avg_tradeaccountpayables>1072338</avg_tradeaccountpayables>
+<avg_taxandsocialliabilities>537703</avg_taxandsocialliabilities>
+<avg_otherdebtsandfixedassetsliabilities>207024</avg_otherdebtsandfixedassetsliabilities>
+<avg_accountofregularization>7654</avg_accountofregularization>
+<avg_totalliabilities>4042519</avg_totalliabilities>
+<med_shareholdersequity>79369</med_shareholdersequity>
+<med_sharecapital>18846</med_sharecapital>
+<med_othercapitalresources>0</med_othercapitalresources>
+<med_provisionsforrisksandcharges>0</med_provisionsforrisksandcharges>
+<med_liabilities>148985</med_liabilities>
+<med_financialliabilities>8609</med_financialliabilities>
+<med_advancedpaymentsreceived>0</med_advancedpaymentsreceived>
+<med_tradeaccountpayables>41825</med_tradeaccountpayables>
+<med_taxandsocialliabilities>52742</med_taxandsocialliabilities>
+<med_otherdebtsandfixedassetsliabilities>3588</med_otherdebtsandfixedassetsliabilities>
+<med_accountofregularization>0</med_accountofregularization>
+<med_totalliabilities>254697</med_totalliabilities>
+</passiveaccount>
+<profitloss>
+<operatingincome>1113864714</operatingincome>
+<netturnover>1111761626</netturnover>
+<netexportturnover>77107621</netexportturnover>
+<operatingcharges>1104586394</operatingcharges>
+<operatingprofitloss>9278320</operatingprofitloss>
+<financialincome>2250072</financialincome>
+<financialcharges>10718974</financialcharges>
+<financialprofitloss>-8468902</financialprofitloss>
+<pretaxnetoperatingincome>809418</pretaxnetoperatingincome>
+<extraordinaryincome>1050960</extraordinaryincome>
+<extraordinarycharges>902448</extraordinarycharges>
+<extraordinaryprofitloss>148512</extraordinaryprofitloss>
+<netprofitloss>1013693</netprofitloss>
+<avg_operatingincome>10197059</avg_operatingincome>
+<avg_netturnover>10030497</avg_netturnover>
+<avg_netexportturnover>2747885</avg_netexportturnover>
+<avg_operatingcharges>10069140</avg_operatingcharges>
+<avg_operatingprofitloss>127933</avg_operatingprofitloss>
+<avg_financialincome>97591</avg_financialincome>
+<avg_financialcharges>92934</avg_financialcharges>
+<avg_financialprofitloss>4657</avg_financialprofitloss>
+<avg_pretaxnetoperatingincome>132613</avg_pretaxnetoperatingincome>
+<avg_extraordinaryincome>28599</avg_extraordinaryincome>
+<avg_extraordinarycharges>110186</avg_extraordinarycharges>
+<avg_extraordinaryprofitloss>-81586</avg_extraordinaryprofitloss>
+<avg_netprofitloss>12913</avg_netprofitloss>
+<med_operatingincome>484620</med_operatingincome>
+<med_netturnover>477121</med_netturnover>
+<med_netexportturnover>0</med_netexportturnover>
+<med_operatingcharges>476016</med_operatingcharges>
+<med_operatingprofitloss>8943</med_operatingprofitloss>
+<med_financialincome>14</med_financialincome>
+<med_financialcharges>397</med_financialcharges>
+<med_financialprofitloss>0</med_financialprofitloss>
+<med_pretaxnetoperatingincome>9237</med_pretaxnetoperatingincome>
+<med_extraordinaryincome>0</med_extraordinaryincome>
+<med_extraordinarycharges>125</med_extraordinarycharges>
+<med_extraordinaryprofitloss>0</med_extraordinaryprofitloss>
+<med_netprofitloss>8462</med_netprofitloss>
+</profitloss>
+</balancesheet>
+</balancesynthesis>
+<paymentdata>
+<dbt>14</dbt>
+<industrydbt>14</industrydbt>
+<paymenttrend>Stable</paymenttrend>
+<AnnualDbtWithTrend>
+<Last12Months>
+<DBTWithTrendItemInfo>
+<DBTTrend>22</DBTTrend>
+<DBTValue>26</DBTValue>
+<YearMonth>201604</YearMonth>
+</DBTWithTrendItemInfo>
+<DBTWithTrendItemInfo>
+<DBTTrend>21</DBTTrend>
+<DBTValue>24</DBTValue>
+<YearMonth>201605</YearMonth>
+</DBTWithTrendItemInfo>
+<DBTWithTrendItemInfo>
+<DBTTrend>19</DBTTrend>
+<DBTValue>14</DBTValue>
+<YearMonth>201606</YearMonth>
+</DBTWithTrendItemInfo>
+<DBTWithTrendItemInfo>
+<DBTTrend>18</DBTTrend>
+<DBTValue>13</DBTValue>
+<YearMonth>201607</YearMonth>
+</DBTWithTrendItemInfo>
+<DBTWithTrendItemInfo>
+<DBTTrend>17</DBTTrend>
+<DBTValue>19</DBTValue>
+<YearMonth>201608</YearMonth>
+</DBTWithTrendItemInfo>
+<DBTWithTrendItemInfo>
+<DBTTrend>15</DBTTrend>
+<DBTValue>19</DBTValue>
+<YearMonth>201609</YearMonth>
+</DBTWithTrendItemInfo>
+<DBTWithTrendItemInfo>
+<DBTTrend>14</DBTTrend>
+<DBTValue>11</DBTValue>
+<YearMonth>201610</YearMonth>
+</DBTWithTrendItemInfo>
+<DBTWithTrendItemInfo>
+<DBTTrend>13</DBTTrend>
+<DBTValue>5</DBTValue>
+<YearMonth>201611</YearMonth>
+</DBTWithTrendItemInfo>
+<DBTWithTrendItemInfo>
+<DBTTrend>12</DBTTrend>
+<DBTValue>14</DBTValue>
+<YearMonth>201612</YearMonth>
+</DBTWithTrendItemInfo>
+<DBTWithTrendItemInfo>
+<DBTTrend>10</DBTTrend>
+<DBTValue>16</DBTValue>
+<YearMonth>201702</YearMonth>
+</DBTWithTrendItemInfo>
+</Last12Months>
+<TrendEndValue>10.345454545454545454545454546</TrendEndValue>
+<TrendIntercept>21.854545454545454545454545455</TrendIntercept>
+<TrendSlope>-1.2787878787878787878787878788</TrendSlope>
+<TrendStartValue>21.854545454545454545454545455</TrendStartValue>
+</AnnualDbtWithTrend>
+<AverageMonthlyBalance>568.87</AverageMonthlyBalance>
+<Balance>62287.76</Balance>
+<BalanceP1>0</BalanceP1>
+<BalanceP2>0</BalanceP2>
+<BalanceP3>0</BalanceP3>
+<BalanceP4>0</BalanceP4>
+<BalanceWithinTerms>62287.76</BalanceWithinTerms>
+<InvoicesBetween3And12Monts>
+<PaidP1>200</PaidP1>
+<PaidP2>57</PaidP2>
+<PaidP3>17</PaidP3>
+<PaidP4>32</PaidP4>
+<PaidWithinTerms>40</PaidWithinTerms>
+<TotalPaid>346</TotalPaid>
+</InvoicesBetween3And12Monts>
+<InvoicesLast3Monts>
+<PaidP1>54</PaidP1>
+<PaidP2>8</PaidP2>
+<PaidP3>1</PaidP3>
+<PaidP4>6</PaidP4>
+<PaidWithinTerms>33</PaidWithinTerms>
+<TotalPaid>102</TotalPaid>
+</InvoicesLast3Monts>
+<LastSixMonthsBalance>
+<BalanceInfo>
+<Balance>84557.64</Balance>
+<YearMonth>201608</YearMonth>
+</BalanceInfo>
+<BalanceInfo>
+<Balance>0</Balance>
+<YearMonth>201609</YearMonth>
+</BalanceInfo>
+<BalanceInfo>
+<Balance>62632.76</Balance>
+<YearMonth>201610</YearMonth>
+</BalanceInfo>
+<BalanceInfo>
+<Balance>62728.94</Balance>
+<YearMonth>201611</YearMonth>
+</BalanceInfo>
+<BalanceInfo>
+<Balance>959.49</Balance>
+<YearMonth>201612</YearMonth>
+</BalanceInfo>
+<BalanceInfo>
+<Balance>568.87</Balance>
+<YearMonth>201702</YearMonth>
+</BalanceInfo>
+</LastSixMonthsBalance>
+<RecentHighBalance>62287.76</RecentHighBalance>
+<TotalTradeLines>8</TotalTradeLines>
+<TotalTradeLinesOutstanding>2</TotalTradeLinesOutstanding>
+</paymentdata>
+<sectoractivity>
+<balancesheets>
+<balancesheet>
+<annualaccount>31/12/2015</annualaccount>
+<activeaccount>
+<avg_capitalnotcalled>60</avg_capitalnotcalled>
+<avg_totalfixedassets>1397424</avg_totalfixedassets>
+<avg_intangibleassets>523122</avg_intangibleassets>
+<avg_tangibleassets>135419</avg_tangibleassets>
+<avg_financialassets>739213</avg_financialassets>
+<avg_netcurrentassets>7093486</avg_netcurrentassets>
+<avg_stocks>482316</avg_stocks>
+<avg_advancedpayments>32733</avg_advancedpayments>
+<avg_receivables>5670334</avg_receivables>
+<avg_securitiesandcash>907985</avg_securitiesandcash>
+<avg_prepaidexpanses>823</avg_prepaidexpanses>
+<avg_accountsofregularization>24002</avg_accountsofregularization>
+<avg_totalassets>8511491</avg_totalassets>
+<med_capitalnotcalled>0</med_capitalnotcalled>
+<med_totalfixedassets>53283</med_totalfixedassets>
+<med_intangibleassets>0</med_intangibleassets>
+<med_tangibleassets>8620</med_tangibleassets>
+<med_financialassets>4938</med_financialassets>
+<med_netcurrentassets>506630</med_netcurrentassets>
+<med_stocks>21244</med_stocks>
+<med_advancedpayments>0</med_advancedpayments>
+<med_receivables>233407</med_receivables>
+<med_securitiesandcash>110125</med_securitiesandcash>
+<med_prepaidexpanses>44</med_prepaidexpanses>
+<med_accountsofregularization>0</med_accountsofregularization>
+<med_totalassets>633330</med_totalassets>
+</activeaccount>
+<passiveaccount>
+<avg_shareholdersequity>2692421</avg_shareholdersequity>
+<avg_sharecapital>1166103</avg_sharecapital>
+<avg_othercapitalresources>1223</avg_othercapitalresources>
+<avg_provisionsforrisksandcharges>205262</avg_provisionsforrisksandcharges>
+<avg_liabilities>5605706</avg_liabilities>
+<avg_financialliabilities>486250</avg_financialliabilities>
+<avg_advancedpaymentsreceived>34789</avg_advancedpaymentsreceived>
+<avg_tradeaccountpayables>2055868</avg_tradeaccountpayables>
+<avg_taxandsocialliabilities>983959</avg_taxandsocialliabilities>
+<avg_otherdebtandfixedassetsliabilities>5560</avg_otherdebtandfixedassetsliabilities>
+<avg_accountofregularization>1690500</avg_accountofregularization>
+<avg_totalliabilities>8511491</avg_totalliabilities>
+<med_shareholdersequity>193206</med_shareholdersequity>
+<med_sharecapital>40000</med_sharecapital>
+<med_othercapitalresources>0</med_othercapitalresources>
+<med_provisionsforrisksandcharges>0</med_provisionsforrisksandcharges>
+<med_liabilities>329506</med_liabilities>
+<med_financialliabilities>16767</med_financialliabilities>
+<med_advancedpaymentsreceived>0</med_advancedpaymentsreceived>
+<med_tradeaccountpayables>102347</med_tradeaccountpayables>
+<med_taxandsocialliabilities>107438</med_taxandsocialliabilities>
+<med_otherdebtandfixedassetsliabilities />
+<med_accountofregularization>0</med_accountofregularization>
+<med_totalliabilities>633330</med_totalliabilities>
+</passiveaccount>
+<profitloss>
+<avg_operatingincome>20298411</avg_operatingincome>
+<avg_netturnover>19824123</avg_netturnover>
+<avg_netexportturnover>1205410</avg_netexportturnover>
+<avg_operatingcharges>19991269</avg_operatingcharges>
+<avg_operatingprofitloss>307142</avg_operatingprofitloss>
+<avg_financialincome>193881</avg_financialincome>
+<avg_financialcharges>90216</avg_financialcharges>
+<avg_financialprofitloss>103665</avg_financialprofitloss>
+<avg_pretaxnetoperatingincome>410896</avg_pretaxnetoperatingincome>
+<avg_extraordinaryincome>34923</avg_extraordinaryincome>
+<avg_extraordinarycharges>86193</avg_extraordinarycharges>
+<avg_extraordinaryprofitloss>-51270</avg_extraordinaryprofitloss>
+<avg_netprofitloss>261356</avg_netprofitloss>
+<med_operatingincome>1134122</med_operatingincome>
+<med_netturnover>1094334</med_netturnover>
+<med_netexportturnover>0</med_netexportturnover>
+<med_operatingcharges>1115814</med_operatingcharges>
+<med_operatingprofitloss>30566</med_operatingprofitloss>
+<med_financialincome>283</med_financialincome>
+<med_financialcharges>714</med_financialcharges>
+<med_financialprofitloss>0</med_financialprofitloss>
+<med_pretaxnetoperatingincome>32447</med_pretaxnetoperatingincome>
+<med_extraordinaryincome>410</med_extraordinaryincome>
+<med_extraordinarycharges>236</med_extraordinarycharges>
+<med_extraordinaryprofitloss>0</med_extraordinaryprofitloss>
+<med_netprofitloss>29617</med_netprofitloss>
+</profitloss>
+<ratiossig>
+<structure>
+<avg_fixedassetfinancing>13</avg_fixedassetfinancing>
+<avg_globaldebt>1194</avg_globaldebt>
+<avg_workingcapital>500</avg_workingcapital>
+<avg_financialindependence>94144</avg_financialindependence>
+<avg_solvability>-44</avg_solvability>
+<avg_capacitydebtfutures>258710</avg_capacitydebtfutures>
+<avg_coveragecurrentassets>-36</avg_coveragecurrentassets>
+<avg_generalliquidity>1</avg_generalliquidity>
+<med_restrictedliquidity />
+<med_fixedassetfinancing>3</med_fixedassetfinancing>
+<med_globaldebt>96</med_globaldebt>
+<med_workingcapital>63</med_workingcapital>
+<med_financialindependence>358</med_financialindependence>
+<med_solvability>41</med_solvability>
+<med_capacitydebtfutures>2705</med_capacitydebtfutures>
+<med_coveragecurrentassets>44</med_coveragecurrentassets>
+<med_generalliquidity>1</med_generalliquidity>
+</structure>
+<management>
+<avg_needbackground>-8</avg_needbackground>
+<avg_treasurery>91</avg_treasurery>
+<avg_inventoryturnover>83</avg_inventoryturnover>
+<avg_averagelength>109</avg_averagelength>
+<avg_averagecredit>86</avg_averagecredit>
+<avg_intermediateproducts>2423</avg_intermediateproducts>
+<avg_rotationtangibleassets>8748</avg_rotationtangibleassets>
+<med_needbackground>9</med_needbackground>
+<med_treasurery>22</med_treasurery>
+<med_inventoryturnover>0</med_inventoryturnover>
+<med_averagelength>54</med_averagelength>
+<med_averagecredit>51</med_averagecredit>
+<med_intermediateproducts>781</med_intermediateproducts>
+<med_rotationtangibleassets>1942</med_rotationtangibleassets>
+</management>
+<profitability>
+<avg_margintrading>15</avg_margintrading>
+<avg_profitabilitybusiness>-17</avg_profitabilitybusiness>
+<avg_netprofit>5</avg_netprofit>
+<avg_growthrate>29</avg_growthrate>
+<avg_ratesintegration>21</avg_ratesintegration>
+<avg_rateleasingfurniture>1</avg_rateleasingfurniture>
+<avg_workfactor>68</avg_workfactor>
+<avg_weightinterests>6</avg_weightinterests>
+<med_margintrading>14</med_margintrading>
+<med_profitabilitybusiness>3</med_profitabilitybusiness>
+<med_netprofit>2</med_netprofit>
+<med_growthrate>2</med_growthrate>
+<med_ratesintegration>26</med_ratesintegration>
+<med_rateleasingfurniture>0</med_rateleasingfurniture>
+<med_workfactor>78</med_workfactor>
+<med_weightinterests>0</med_weightinterests>
+</profitability>
+<returnoncapital>
+<avg_cashflow>11</avg_cashflow>
+<avg_ratesofeconomic>26</avg_ratesofeconomic>
+<avg_financialprofitability>2691606</avg_financialprofitability>
+<avg_returninvestment>6</avg_returninvestment>
+<med_cashflow>3</med_cashflow>
+<med_ratesofeconomic>14</med_ratesofeconomic>
+<med_financialprofitability>186912</med_financialprofitability>
+<med_returninvestment>11</med_returninvestment>
+</returnoncapital>
+<sig>
+<avg_netturnover>19824123</avg_netturnover>
+<avg_margintrading>78</avg_margintrading>
+<avg_addedvalue>20</avg_addedvalue>
+<avg_personalcharges>36</avg_personalcharges>
+<avg_distributionwage>58</avg_distributionwage>
+<avg_grossoperating>-722</avg_grossoperating>
+<avg_revenues>307147</avg_revenues>
+<avg_incomefromcontinuing>5</avg_incomefromcontinuing>
+<avg_netincome>262161</avg_netincome>
+<avg_profitabilityfinal>5</avg_profitabilityfinal>
+<avg_cashflow>341938</avg_cashflow>
+<med_netturnover>1094334</med_netturnover>
+<med_margintrading>22</med_margintrading>
+<med_addedvalue>25</med_addedvalue>
+<med_personalcharges>21</med_personalcharges>
+<med_distributionwage>75</med_distributionwage>
+<med_grossoperating>3</med_grossoperating>
+<med_revenues>30181</med_revenues>
+<med_incomefromcontinuing>3</med_incomefromcontinuing>
+<med_netincome>29898</med_netincome>
+<med_profitabilityfinal>2</med_profitabilityfinal>
+<med_cashflow>36075</med_cashflow>
+</sig>
+</ratiossig>
+</balancesheet>
+<balancesheet>
+<annualaccount>31/12/2014</annualaccount>
+<activeaccount>
+<avg_capitalnotcalled>8</avg_capitalnotcalled>
+<avg_totalfixedassets>1394072</avg_totalfixedassets>
+<avg_intangibleassets>298427</avg_intangibleassets>
+<avg_tangibleassets>158862</avg_tangibleassets>
+<avg_financialassets>937214</avg_financialassets>
+<avg_netcurrentassets>5537707</avg_netcurrentassets>
+<avg_stocks>445921</avg_stocks>
+<avg_advancedpayments>13018</avg_advancedpayments>
+<avg_receivables>3890926</avg_receivables>
+<avg_securitiesandcash>1187630</avg_securitiesandcash>
+<avg_prepaidexpanses>1125</avg_prepaidexpanses>
+<avg_accountsofregularization>14011</avg_accountsofregularization>
+<avg_totalassets>6943229</avg_totalassets>
+<med_capitalnotcalled>0</med_capitalnotcalled>
+<med_totalfixedassets>24178</med_totalfixedassets>
+<med_intangibleassets>0</med_intangibleassets>
+<med_tangibleassets>6818</med_tangibleassets>
+<med_financialassets>3000</med_financialassets>
+<med_netcurrentassets>374348</med_netcurrentassets>
+<med_stocks>16204</med_stocks>
+<med_advancedpayments>0</med_advancedpayments>
+<med_receivables>172265</med_receivables>
+<med_securitiesandcash>71707</med_securitiesandcash>
+<med_prepaidexpanses>0</med_prepaidexpanses>
+<med_accountsofregularization>0</med_accountsofregularization>
+<med_totalassets>453435</med_totalassets>
+</activeaccount>
+<passiveaccount>
+<avg_shareholdersequity>2009319</avg_shareholdersequity>
+<avg_sharecapital>1123689</avg_sharecapital>
+<avg_othercapitalresources>1650</avg_othercapitalresources>
+<avg_provisionsforrisksandcharges>186554</avg_provisionsforrisksandcharges>
+<avg_liabilities>4740353</avg_liabilities>
+<avg_financialliabilities>917577</avg_financialliabilities>
+<avg_advancedpaymentsreceived>15002</avg_advancedpaymentsreceived>
+<avg_tradeaccountpayables>2031682</avg_tradeaccountpayables>
+<avg_taxandsocialliabilities>809286</avg_taxandsocialliabilities>
+<avg_otherdebtandfixedassetsliabilities>5140</avg_otherdebtandfixedassetsliabilities>
+<avg_accountofregularization>834688</avg_accountofregularization>
+<avg_totalliabilities>6943225</avg_totalliabilities>
+<med_shareholdersequity>148261</med_shareholdersequity>
+<med_sharecapital>33750</med_sharecapital>
+<med_othercapitalresources>0</med_othercapitalresources>
+<med_provisionsforrisksandcharges>0</med_provisionsforrisksandcharges>
+<med_liabilities>227969</med_liabilities>
+<med_financialliabilities>9952</med_financialliabilities>
+<med_advancedpaymentsreceived>0</med_advancedpaymentsreceived>
+<med_tradeaccountpayables>67281</med_tradeaccountpayables>
+<med_taxandsocialliabilities>78772</med_taxandsocialliabilities>
+<med_otherdebtandfixedassetsliabilities />
+<med_accountofregularization>0</med_accountofregularization>
+<med_totalliabilities>453435</med_totalliabilities>
+</passiveaccount>
+<profitloss>
+<avg_operatingincome>16096504</avg_operatingincome>
+<avg_netturnover>15886289</avg_netturnover>
+<avg_netexportturnover>4713505</avg_netexportturnover>
+<avg_operatingcharges>15945560</avg_operatingcharges>
+<avg_operatingprofitloss>150942</avg_operatingprofitloss>
+<avg_financialincome>251712</avg_financialincome>
+<avg_financialcharges>256149</avg_financialcharges>
+<avg_financialprofitloss>-4438</avg_financialprofitloss>
+<avg_pretaxnetoperatingincome>146454</avg_pretaxnetoperatingincome>
+<avg_extraordinaryincome>170623</avg_extraordinaryincome>
+<avg_extraordinarycharges>59019</avg_extraordinarycharges>
+<avg_extraordinaryprofitloss>111604</avg_extraordinaryprofitloss>
+<avg_netprofitloss>166133</avg_netprofitloss>
+<med_operatingincome>818803</med_operatingincome>
+<med_netturnover>792863</med_netturnover>
+<med_netexportturnover>0</med_netexportturnover>
+<med_operatingcharges>799770</med_operatingcharges>
+<med_operatingprofitloss>18108</med_operatingprofitloss>
+<med_financialincome>94</med_financialincome>
+<med_financialcharges>463</med_financialcharges>
+<med_financialprofitloss>0</med_financialprofitloss>
+<med_pretaxnetoperatingincome>18663</med_pretaxnetoperatingincome>
+<med_extraordinaryincome>13</med_extraordinaryincome>
+<med_extraordinarycharges>217</med_extraordinarycharges>
+<med_extraordinaryprofitloss>0</med_extraordinaryprofitloss>
+<med_netprofitloss>17447</med_netprofitloss>
+</profitloss>
+<ratiossig>
+<structure>
+<avg_fixedassetfinancing>31</avg_fixedassetfinancing>
+<avg_globaldebt>1378</avg_globaldebt>
+<avg_workingcapital>3371</avg_workingcapital>
+<avg_financialindependence>61589</avg_financialindependence>
+<avg_solvability>-50</avg_solvability>
+<avg_capacitydebtfutures>154865</avg_capacitydebtfutures>
+<avg_coveragecurrentassets>1</avg_coveragecurrentassets>
+<avg_generalliquidity>1</avg_generalliquidity>
+<med_restrictedliquidity />
+<med_fixedassetfinancing>3</med_fixedassetfinancing>
+<med_globaldebt>99</med_globaldebt>
+<med_workingcapital>62</med_workingcapital>
+<med_financialindependence>328</med_financialindependence>
+<med_solvability>41</med_solvability>
+<med_capacitydebtfutures>2138</med_capacitydebtfutures>
+<med_coveragecurrentassets>43</med_coveragecurrentassets>
+<med_generalliquidity>1</med_generalliquidity>
+</structure>
+<management>
+<avg_needbackground>1576</avg_needbackground>
+<avg_treasurery>202</avg_treasurery>
+<avg_inventoryturnover>51</avg_inventoryturnover>
+<avg_averagelength>1757</avg_averagelength>
+<avg_averagecredit>108</avg_averagecredit>
+<avg_intermediateproducts>4236</avg_intermediateproducts>
+<avg_rotationtangibleassets>11448</avg_rotationtangibleassets>
+<med_needbackground>15</med_needbackground>
+<med_treasurery>20</med_treasurery>
+<med_inventoryturnover>0</med_inventoryturnover>
+<med_averagelength>57</med_averagelength>
+<med_averagecredit>50</med_averagecredit>
+<med_intermediateproducts>1468</med_intermediateproducts>
+<med_rotationtangibleassets>1971</med_rotationtangibleassets>
+</management>
+<profitability>
+<avg_margintrading>17</avg_margintrading>
+<avg_profitabilitybusiness>210</avg_profitabilitybusiness>
+<avg_netprofit>164</avg_netprofit>
+<avg_growthrate>49</avg_growthrate>
+<avg_ratesintegration>241</avg_ratesintegration>
+<avg_rateleasingfurniture>0</avg_rateleasingfurniture>
+<avg_workfactor>71</avg_workfactor>
+<avg_weightinterests>3</avg_weightinterests>
+<med_margintrading>14</med_margintrading>
+<med_profitabilitybusiness>4</med_profitabilitybusiness>
+<med_netprofit>2</med_netprofit>
+<med_growthrate>1</med_growthrate>
+<med_ratesintegration>26</med_ratesintegration>
+<med_rateleasingfurniture>0</med_rateleasingfurniture>
+<med_workfactor>77</med_workfactor>
+<med_weightinterests>0</med_weightinterests>
+</profitability>
+<returnoncapital>
+<avg_cashflow>189</avg_cashflow>
+<avg_ratesofeconomic>21</avg_ratesofeconomic>
+<avg_financialprofitability>2002485</avg_financialprofitability>
+<avg_returninvestment>3</avg_returninvestment>
+<med_cashflow>3</med_cashflow>
+<med_ratesofeconomic>14</med_ratesofeconomic>
+<med_financialprofitability>129373</med_financialprofitability>
+<med_returninvestment>11</med_returninvestment>
+</returnoncapital>
+<sig>
+<avg_netturnover>15886289</avg_netturnover>
+<avg_margintrading>132</avg_margintrading>
+<avg_addedvalue>235</avg_addedvalue>
+<avg_personalcharges>27</avg_personalcharges>
+<avg_distributionwage>57</avg_distributionwage>
+<avg_grossoperating>-9295</avg_grossoperating>
+<avg_revenues>150759</avg_revenues>
+<avg_incomefromcontinuing>190</avg_incomefromcontinuing>
+<avg_netincome>167325</avg_netincome>
+<avg_profitabilityfinal>164</avg_profitabilityfinal>
+<avg_cashflow>193187</avg_cashflow>
+<med_netturnover>792863</med_netturnover>
+<med_margintrading>24</med_margintrading>
+<med_addedvalue>25</med_addedvalue>
+<med_personalcharges>20</med_personalcharges>
+<med_distributionwage>70</med_distributionwage>
+<med_grossoperating>3</med_grossoperating>
+<med_revenues>17327</med_revenues>
+<med_incomefromcontinuing>3</med_incomefromcontinuing>
+<med_netincome>17695</med_netincome>
+<med_profitabilityfinal>2</med_profitabilityfinal>
+<med_cashflow>22470</med_cashflow>
+</sig>
+</ratiossig>
+</balancesheet>
+<balancesheet>
+<annualaccount>31/12/2013</annualaccount>
+<activeaccount>
+<avg_capitalnotcalled>90</avg_capitalnotcalled>
+<avg_totalfixedassets>1119605</avg_totalfixedassets>
+<avg_intangibleassets>130110</avg_intangibleassets>
+<avg_tangibleassets>132958</avg_tangibleassets>
+<avg_financialassets>856861</avg_financialassets>
+<avg_netcurrentassets>4028238</avg_netcurrentassets>
+<avg_stocks>389735</avg_stocks>
+<avg_advancedpayments>10485</avg_advancedpayments>
+<avg_receivables>2924054</avg_receivables>
+<avg_securitiesandcash>703670</avg_securitiesandcash>
+<avg_prepaidexpanses>1475</avg_prepaidexpanses>
+<avg_accountsofregularization>6788</avg_accountsofregularization>
+<avg_totalassets>5153350</avg_totalassets>
+<med_capitalnotcalled>0</med_capitalnotcalled>
+<med_totalfixedassets>19241</med_totalfixedassets>
+<med_intangibleassets>0</med_intangibleassets>
+<med_tangibleassets>5371</med_tangibleassets>
+<med_financialassets>2400</med_financialassets>
+<med_netcurrentassets>291623</med_netcurrentassets>
+<med_stocks>13232</med_stocks>
+<med_advancedpayments>0</med_advancedpayments>
+<med_receivables>127069</med_receivables>
+<med_securitiesandcash>54631</med_securitiesandcash>
+<med_prepaidexpanses>0</med_prepaidexpanses>
+<med_accountsofregularization>0</med_accountsofregularization>
+<med_totalassets>362357</med_totalassets>
+</activeaccount>
+<passiveaccount>
+<avg_shareholdersequity>1586834</avg_shareholdersequity>
+<avg_sharecapital>902036</avg_sharecapital>
+<avg_othercapitalresources>1497</avg_othercapitalresources>
+<avg_provisionsforrisksandcharges>163734</avg_provisionsforrisksandcharges>
+<avg_liabilities>3398724</avg_liabilities>
+<avg_financialliabilities>650497</avg_financialliabilities>
+<avg_advancedpaymentsreceived>20734</avg_advancedpaymentsreceived>
+<avg_tradeaccountpayables>1456447</avg_tradeaccountpayables>
+<avg_taxandsocialliabilities>661116</avg_taxandsocialliabilities>
+<avg_otherdebtandfixedassetsliabilities>4574</avg_otherdebtandfixedassetsliabilities>
+<avg_accountofregularization>581409</avg_accountofregularization>
+<avg_totalliabilities>5153371</avg_totalliabilities>
+<med_shareholdersequity>104958</med_shareholdersequity>
+<med_sharecapital>25000</med_sharecapital>
+<med_othercapitalresources>0</med_othercapitalresources>
+<med_provisionsforrisksandcharges>0</med_provisionsforrisksandcharges>
+<med_liabilities>191283</med_liabilities>
+<med_financialliabilities>8729</med_financialliabilities>
+<med_advancedpaymentsreceived>0</med_advancedpaymentsreceived>
+<med_tradeaccountpayables>56076</med_tradeaccountpayables>
+<med_taxandsocialliabilities>62668</med_taxandsocialliabilities>
+<med_otherdebtandfixedassetsliabilities />
+<med_accountofregularization>0</med_accountofregularization>
+<med_totalliabilities>362357</med_totalliabilities>
+</passiveaccount>
+<profitloss>
+<avg_operatingincome>12647194</avg_operatingincome>
+<avg_netturnover>12454625</avg_netturnover>
+<avg_netexportturnover>3549659</avg_netexportturnover>
+<avg_operatingcharges>12506463</avg_operatingcharges>
+<avg_operatingprofitloss>140731</avg_operatingprofitloss>
+<avg_financialincome>117553</avg_financialincome>
+<avg_financialcharges>91258</avg_financialcharges>
+<avg_financialprofitloss>26296</avg_financialprofitloss>
+<avg_pretaxnetoperatingincome>166741</avg_pretaxnetoperatingincome>
+<avg_extraordinaryincome>93605</avg_extraordinaryincome>
+<avg_extraordinarycharges>124266</avg_extraordinarycharges>
+<avg_extraordinaryprofitloss>-30661</avg_extraordinaryprofitloss>
+<avg_netprofitloss>97068</avg_netprofitloss>
+<med_operatingincome>634235</med_operatingincome>
+<med_netturnover>620041</med_netturnover>
+<med_netexportturnover>0</med_netexportturnover>
+<med_operatingcharges>618930</med_operatingcharges>
+<med_operatingprofitloss>13066</med_operatingprofitloss>
+<med_financialincome>40</med_financialincome>
+<med_financialcharges>374</med_financialcharges>
+<med_financialprofitloss>0</med_financialprofitloss>
+<med_pretaxnetoperatingincome>12622</med_pretaxnetoperatingincome>
+<med_extraordinaryincome>0</med_extraordinaryincome>
+<med_extraordinarycharges>205</med_extraordinarycharges>
+<med_extraordinaryprofitloss>0</med_extraordinaryprofitloss>
+<med_netprofitloss>11678</med_netprofitloss>
+</profitloss>
+<ratiossig>
+<structure>
+<avg_fixedassetfinancing>20</avg_fixedassetfinancing>
+<avg_globaldebt>3782</avg_globaldebt>
+<avg_workingcapital>-773</avg_workingcapital>
+<avg_financialindependence>62766</avg_financialindependence>
+<avg_solvability>-53</avg_solvability>
+<avg_capacitydebtfutures>153095</avg_capacitydebtfutures>
+<avg_coveragecurrentassets>-8</avg_coveragecurrentassets>
+<avg_generalliquidity>4</avg_generalliquidity>
+<med_restrictedliquidity />
+<med_fixedassetfinancing>3</med_fixedassetfinancing>
+<med_globaldebt>99</med_globaldebt>
+<med_workingcapital>58</med_workingcapital>
+<med_financialindependence>286</med_financialindependence>
+<med_solvability>38</med_solvability>
+<med_capacitydebtfutures>2174</med_capacitydebtfutures>
+<med_coveragecurrentassets>41</med_coveragecurrentassets>
+<med_generalliquidity>1</med_generalliquidity>
+</structure>
+<management>
+<avg_needbackground>-10</avg_needbackground>
+<avg_treasurery>219</avg_treasurery>
+<avg_inventoryturnover>139</avg_inventoryturnover>
+<avg_averagelength>71</avg_averagelength>
+<avg_averagecredit>133</avg_averagecredit>
+<avg_intermediateproducts>4455</avg_intermediateproducts>
+<avg_rotationtangibleassets>-190162</avg_rotationtangibleassets>
+<med_needbackground>15</med_needbackground>
+<med_treasurery>19</med_treasurery>
+<med_inventoryturnover>0</med_inventoryturnover>
+<med_averagelength>56</med_averagelength>
+<med_averagecredit>51</med_averagecredit>
+<med_intermediateproducts>1314</med_intermediateproducts>
+<med_rotationtangibleassets>1947</med_rotationtangibleassets>
+</management>
+<profitability>
+<avg_margintrading>16</avg_margintrading>
+<avg_profitabilitybusiness>-85</avg_profitabilitybusiness>
+<avg_netprofit>-126</avg_netprofit>
+<avg_growthrate>44</avg_growthrate>
+<avg_ratesintegration>-51</avg_ratesintegration>
+<avg_rateleasingfurniture>0</avg_rateleasingfurniture>
+<avg_workfactor>70</avg_workfactor>
+<avg_weightinterests>5</avg_weightinterests>
+<med_margintrading>14</med_margintrading>
+<med_profitabilitybusiness>3</med_profitabilitybusiness>
+<med_netprofit>2</med_netprofit>
+<med_growthrate>2</med_growthrate>
+<med_ratesintegration>27</med_ratesintegration>
+<med_rateleasingfurniture>0</med_rateleasingfurniture>
+<med_workfactor>78</med_workfactor>
+<med_weightinterests>0</med_weightinterests>
+</profitability>
+<returnoncapital>
+<avg_cashflow>-92</avg_cashflow>
+<avg_ratesofeconomic>12</avg_ratesofeconomic>
+<avg_financialprofitability>1577039</avg_financialprofitability>
+<avg_returninvestment>5</avg_returninvestment>
+<med_cashflow>3</med_cashflow>
+<med_ratesofeconomic>13</med_ratesofeconomic>
+<med_financialprofitability>86834</med_financialprofitability>
+<med_returninvestment>10</med_returninvestment>
+</returnoncapital>
+<sig>
+<avg_netturnover>12454625</avg_netturnover>
+<avg_margintrading>102</avg_margintrading>
+<avg_addedvalue>-49</avg_addedvalue>
+<avg_personalcharges>31</avg_personalcharges>
+<avg_distributionwage>59</avg_distributionwage>
+<avg_grossoperating>-3490</avg_grossoperating>
+<avg_revenues>139487</avg_revenues>
+<avg_incomefromcontinuing>-101</avg_incomefromcontinuing>
+<avg_netincome>97835</avg_netincome>
+<avg_profitabilityfinal>-126</avg_profitabilityfinal>
+<avg_cashflow>156785</avg_cashflow>
+<med_netturnover>620041</med_netturnover>
+<med_margintrading>24</med_margintrading>
+<med_addedvalue>26</med_addedvalue>
+<med_personalcharges>21</med_personalcharges>
+<med_distributionwage>71</med_distributionwage>
+<med_grossoperating>3</med_grossoperating>
+<med_revenues>12641</med_revenues>
+<med_incomefromcontinuing>2</med_incomefromcontinuing>
+<med_netincome>12044</med_netincome>
+<med_profitabilityfinal>2</med_profitabilityfinal>
+<med_cashflow>17025</med_cashflow>
+</sig>
+</ratiossig>
+</balancesheet>
+</balancesheets>
+</sectoractivity>
+</company>
+</body>
+</xmlresponse>"

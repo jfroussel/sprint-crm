@@ -1,0 +1,164 @@
+#!/usr/bin/env php
+<?php
+use Symfony\Component\Filesystem\LockHandler;
+
+require_once __DIR__.'/../redcat.php';
+
+$redis = $redcat->get(Redis::class);
+
+$maxRunningDefault = 2;
+$namespaces = [
+	'import:routine'=>[
+		'maxRunning'=>1,
+	],
+	'import:user'=>[
+		'maxRunning'=>2,
+	],
+	'scenario'=>[
+		'maxRunning'=>2,
+	],
+];
+$gcCycle = 4;
+
+if(isset($argv[1])){
+	$action = trim($argv[1],'-');
+	switch($action){
+		case 'clear':
+			$redis->del('my:tasks:daemon:pid');
+			$redis->del('my:tasks:daemon:pids');
+			$redis->del('my:tasks:running');
+			$redis->del('my:tasks:waiting');
+			$redis->del('my:tasks:unfinished');
+			foreach(array_keys($namespaces) as $ns){
+				$redis->del("my:tasks:running:$ns:progress");
+				$redis->del("my:tasks:running:$ns:global");
+			}
+		case 'restart':
+		case 'stop':
+			$pid = $redis->get('my:tasks:daemon:pid');
+			if($pid){
+				$output = [];
+				exec('ps -p '.$pid,$output);
+			}
+			if($pid && count($output)>1){
+				exec('kill -9 '.$pid);
+				echo "main($pid) terminated\n";
+			}
+			else{
+				echo "main not running\n";
+			}
+			
+			while($pid = $redis->lPop('my:tasks:daemon:pids')){
+				$output = [];
+				exec('ps -p '.$pid,$output);
+				if(count($output)>1){
+					exec('kill -9 '.$pid);
+					echo "thread($pid) terminated\n";
+				}
+			}
+			if($action=='stop'||$action=='clear') return;
+		break;
+	}
+}
+
+if(pcntl_fork()!=0) return;
+
+posix_setsid();
+
+$lock = new LockHandler('my:daemon');
+if (!$lock->lock()) {
+	echo "allready running\n";
+	return;
+}
+
+chdir(__DIR__.'/..');
+
+$redis->set('my:tasks:daemon:pid',getmypid());
+$redis->del('my:tasks:daemon:pids');
+
+$running = [];
+$runningUniq = [];
+
+$gc = 0;
+
+foreach(array_reverse($redis->hGetAll('my:tasks:unfinished')) as $pid=>$json){
+	$redis->lPush('my:tasks:waiting',$json);
+	$redis->hDel('my:tasks:unfinished',$pid);
+}
+
+while(true){
+	
+	//waiting to running process
+	$waiting = $redis->lRange('my:tasks:waiting',0,-1);
+	$count = count($waiting);
+	for($i=0;$i<$count;$i++){
+		$json = $waiting[$i];
+		$task = json_decode($json,true);
+		$key = $task['key'];
+		$max = isset($namespaces[$key]['maxRunning'])?$namespaces[$key]['maxRunning']:$maxRunningDefault;
+		$run = &$running[$key];
+		if( count($run)<$max ){
+			
+			if(isset($task['uniq'])){
+				if(in_array($task['uniq'],$runningUniq)){
+					$redis->lRem('my:tasks:waiting',$json);
+					continue;
+				}
+			}
+			
+			$cmd = $task['cmd'];
+			$pid = exec($cmd.' > /dev/null 2>&1 & echo $!');
+			
+			$redis->hSet('my:tasks:unfinished',$pid,$json);
+			$redis->lRem('my:tasks:waiting',$json);
+			
+			$redis->rPush('my:tasks:daemon:pids',$pid);
+			$running[$key][$pid] = $task;
+			
+			if(isset($task['uniq'])){
+				$runningUniq[$pid] = $task['uniq'];
+			}
+			
+		}
+	}
+	
+	//clean running process
+	foreach($running as $key=>&$tasks){
+		foreach(array_keys($tasks) as $pid){
+			$output = [];
+			exec('ps -p '.$pid,$output);
+			if(!(count($output)>1)){
+				unset($tasks[$pid]);
+				
+				if(isset($runningUniq[$pid])){
+					unset($runningUniq[$pid]);
+				}
+				
+				$redis->hDel('my:tasks:unfinished',$pid);
+			}
+		}
+	}
+	
+	//garbage collector
+	if($gc==$gcCycle){
+		$gc = 0;
+		foreach(array_keys($namespaces) as $ns){
+			$namespace = "my:tasks:running:$ns:progress";
+			foreach($redis->hGetAll($namespace) as $pid=>$json){
+				$output = [];
+				$r = exec('ps -p '.$pid,$output);
+				if(!(count($output)>1)){
+					$redis->hDel($namespace,$pid);
+					continue;
+				}
+				$progress = json_decode($json,true);
+				if( ( isset($progress['expire'])&&$progress['expire']<time() ) || ( isset($progress['finish'])&&$progress['finish'] )){
+					$redis->hDel($namespace,$pid);
+				}
+			}
+		}
+	}
+
+	usleep(300000);
+	$gc++;
+}

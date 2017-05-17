@@ -1,0 +1,92 @@
+<form class="form-horizontal" j-name="email"  id="email">
+	<div class="modal-header bgm-bluegray m-b-20 ">
+		<div class="col-md-12">
+			<h4 class="modal-title c-white t-uppercase">Envoyer un email au debiteur :  "{{debtor.nom_client}}" <span class="debtor-name"></span> </h4>
+			<div class="timer" id="timer"><span>{{minutes}}</span>:<span>{{seconds}}</span></div>
+		</div>
+	</div>
+	<div class="modal-body">
+		<div class="row">
+			<div class="col-md-3">
+				<div class="fg-line">
+					<p class="c-black f-500 m-b-20">Expediteur</p>
+					<div class="select">
+						<select  class="form-control"  name="expediteur" autocomplete="off">
+							<option value="">...</option>
+							<option j-for="(id, user) in usersList" :value="{{user.id}}">{{user.first_name}} {{user.last_name}}</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div class="fg-line">
+					<p class="c-black f-500 m-b-20">A:</p>
+					<div class="select">
+						<select  class="form-control"  name="contact_id" autocomplete="off">
+							<option value="">...</option>
+							<option j-for="contact in contactsList" :value="{{contact.id}}">{{contact.nom}} {{contact.prenom}}</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div class="fg-line">
+					<p class="c-black f-500 m-b-20">CC:</p>
+					<div class="select">
+						<select  class="form-control"  name="destinataireCC" autocomplete="off">
+							<option value="">...</option>
+							<option j-for="contact in contactsList" :value="{{contact.id}}">{{contact.nom}} {{contact.prenom}}</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<div class="fg-line">
+					<p class="c-black f-500 m-b-20">CCI:</p>
+					<div class="select">
+						<select  class="form-control"  name="destinataireCCI" autocomplete="off">
+							<option value="">...</option>
+							<option j-for="contact in contactsList" :value="{{contact.id}}">{{contact.nom}} {{contact.prenom}}</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="fg-line">
+					<p class="c-black f-500 m-b-20">Modèles</p>
+					<div class="select">
+					<select  class="form-control"  name="template_id" autocomplete="off">
+						<option value="">Choisir votre template ...</option>
+						<option j-for="(id, template) in templatesList" :value="{{id}}">{{template.name}}</option>
+					</select>
+					</div>
+				</div>
+				<hr>
+			</div>
+
+			<div class="col-md-12">
+				<h5>Detail de l'email</h5>
+				<div j-show="email.template_id" class="email-preview">
+
+				</div>
+				<div j-show="!email.template_id">
+					<textarea  is="ckeditor" id="editeur-one-email"  name="message" ></textarea>
+				</div>
+				<hr>
+			</div>
+
+			<div class="col-md-12">
+
+
+			</div>
+
+		<hr>
+		<hr>
+		<div class="modal-footer">
+			<p>
+				<button type="submit" class="btn btn-success">Envoyer</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+			</p>
+		</div>
+	</form>
+</div>

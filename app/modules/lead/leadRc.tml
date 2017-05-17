@@ -1,0 +1,17 @@
+<extend "layout/main">
+	
+    <attr selector="body" addClass="home"/>
+    <attr selector="body" data-lead-category="<?=App\Model\Lead::REACTIVATION_CREANCE?>"/>
+    <prepend title>MyCreance.com</prepend>
+	<append title> - Recouvrement de creance</append>
+	<remove "#navbar-items" />
+	<append "header">
+		<include "rc">
+	</append>
+	<write main>
+
+		<incorpore "lead-sections.tml">
+
+	</write>
+	<append "body"> <script type="text/javascript" src="dist/app-lead.js"></script> </append>
+</extend>

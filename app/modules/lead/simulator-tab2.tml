@@ -1,0 +1,176 @@
+<form action="" id="step2" j-name="step2">
+    <input name="method" value="addStep2" type="hidden">
+    <p>Qui est votre débiteur(celui qui vous doit).Ces informations figurerons uniquement sur le manddat d recouvrement.Ces informations resteront confidentielles à Mycreance et ne seront jamais publics ou utilisées à des fins commerciales.</p>
+    <div class="col-md-12">
+        <div class="radio m-b-15">
+			<div class="form-group">
+				<label class="radio-inline">Votre débiteur est : </label>
+				<label>
+					<input type="radio" name="deb_type" id="debit_type2" value="enterprise" required checked>
+					<i class="input-helper"></i>
+					Une entreprise
+				</label>
+				<label>
+					<input type="radio" name="deb_type" id="debit_type1" value="particular" required>
+					<i class="input-helper"></i>
+					Un particulier
+				</label>
+			</div>
+        </div>
+    </div>
+    <div class="vspacer10"></div>
+    <div class="col-sm-6">
+        <div class="form-group" id="form_debit_name">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="zmdi zmdi-pin"></i></span>
+                <div class="fg-line">
+                    <input type="text" class="form-control" placeholder="Raison sociale" name="debit_name">
+                </div>
+            </div>
+			<br>
+        </div>
+
+        <div class="form-group" id="form_debit_siren">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="zmdi zmdi-pin"></i></span>
+                <div class="fg-line">
+                    <input type="text" class="form-control" placeholder="N° siren" name="debit_siren">
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="form-group" id="form_debit_tva">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="zmdi zmdi-pin"></i></span>
+                <div class="fg-line">
+                    <input type="text" class="form-control" placeholder="TVA intra." name="debit_tva" autocomplete="off" onclick="return false;">
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="form-group">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="zmdi zmdi-pin"></i></span>
+                <div class="fg-line">
+                    <input type="text" class="form-control" placeholder="Adresse" name="debit_address">
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="form-group">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="zmdi zmdi-pin"></i></span>
+                <div class="fg-line">
+                    <input type="text" class="form-control" placeholder="Code postal" name="debit_zip_code">
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="form-group">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="zmdi zmdi-pin"></i></span>
+                <div class="fg-line">
+                    <input type="text" class="form-control" placeholder="Ville" name="debit_city">
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <div class="form-group">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="zmdi zmdi-pin"></i></span>
+                <div class="fg-line">
+                    <input type="text" class="form-control" placeholder="Pays" name="debit_country">
+                </div>
+            </div>
+        </div>
+        <br>
+
+
+    </div>
+    <div class="col-sm-6">
+        <div class="form-group">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="zmdi zmdi-account"></i></span>
+                <div class="fg-line">
+                    <input type="text" class="form-control" placeholder="Nom" name="debit_last_name">
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <div class="form-group">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="zmdi zmdi-account"></i></span>
+                <div class="fg-line">
+                    <input type="text" class="form-control" placeholder="Prenom" name="debit_first_name">
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <div class="form-group">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="zmdi zmdi-account"></i></span>
+                <div class="fg-line">
+                    <input id="form_debit_fonction" type="text" class="form-control" placeholder="Fonction" name="debit_capacity">
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <div class="form-group">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="zmdi zmdi-email"></i></span>
+                <div class="fg-line">
+                    <input type="email" class="form-control" placeholder="Email Address" name="debit_email">
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="form-group">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="zmdi zmdi-local-phone"></i></span>
+                <div class="fg-line">
+                    <input type="tel" pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$" class="form-control" placeholder="Téléphone Fixe" name="debit_phone">
+                </div>
+            </div>
+        </div>
+        
+        <br>
+
+        <div class="form-group">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="zmdi zmdi-local-phone"></i></span>
+                <div class="fg-line">
+                    <input type="tel" pattern="^((\+\d{1,3}(-| )?\(?\d\)?(-| )?\d{1,5})|(\(?\d{2,6}\)?))(-| )?(\d{3,4})(-| )?(\d{4})(( x| ext)\d{1,5}){0,1}$" class="form-control" placeholder="Téléphone Mobile" name="debit_mobile">
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="vspacer10"></div>
+        <hr>
+    </div>
+    <div class="col-md-12">
+        <div class="col-md-2"></div>
+        <div class="col-md-2">
+            <div class="media-left media-top testimo-mc">
+                <a href="#">
+                    <img class="media-object" src="img/mycreance/testimo.jpg" alt="...">
+                </a>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="media-body">
+                «J’ai fait appel à Mycreance pour deux factures impayées vieilles de 13 mois. Ils m’ont mis en relation avec une agence de recouvrement qui m’a recouvré ma créance en 21 jours.»
+            </div>
+        </div>
+    </div>
+</form>

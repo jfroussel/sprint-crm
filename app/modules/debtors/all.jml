@@ -1,0 +1,35 @@
+<ol class="breadcrumb">
+	<li class="active">Sociétés</li>
+</ol>
+<div class="container">
+    <div class="card">
+        <h3>Gestion des sociétés</h3>
+
+        <table
+                is="datatables"
+                j-data-ajax--url="plugins/datatables.json?table=debtor"
+                j-data-paging="true"
+                j-data-scroll-y="458px"
+                j-data-scroll-X="1000px"
+                id="debtors-table"
+                class="table table-striped table-bordered"
+        >
+            <thead>
+            <tr style="font-size: 10px">
+                <th data-column="id" data-order="asc">id</th>
+                <th data-column="raison_sociale" data-width="300px">raison sociale</th>
+                <th data-column="adresse">Adresse</th>
+                <th data-column="code_postal">Code postal</th>
+                <th data-column="ville" data-width="200px">Ville</th>
+                <th data-column="pays">Pays</th>
+                <th data-action="edit" data-route="debtors/update?id="></th>
+                <th data-action="remove" data-route="debtors/update?id="></th>
+            </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+</div>
+</div>
+
+

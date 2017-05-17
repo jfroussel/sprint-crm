@@ -1,0 +1,55 @@
+<div class="modal-header bgm-bluegray m-b-20 ">
+	<h4 class="modal-title c-white t-uppercase">Envoyer un email pour le debiteur :  "{{nom_client}}" <span class="debtor-name"></span> </h4>
+</div>
+<div class="modal-body">
+	<div class="row">
+		<div class="col-md-4">
+			<p class="c-black f-500 m-b-20">Expediteur
+				<select class="selectpicker show-tick "  name="active" autocomplete="off">
+					<option value="note">name1</option>
+					<option value="email">name2</option>
+					<option value="appel">name3</option>
+					<option value="courrier">name4</option>
+				</select>
+			</p>
+			<hr>
+		</div>
+
+		<div class="col-md-4">
+			<p class="c-black f-500 m-b-20">Destinataire(s)
+				<select class="selectpicker show-tick"  multiple name="active" autocomplete="off">
+					<option value="note">name1</option>
+					<option value="email">name2</option>
+					<option value="appel">name3</option>
+					<option value="courrier">name4</option>
+				</select>
+			</p>
+			<hr>
+		</div>
+
+		<div class="col-md-2">
+			<p class="c-black f-500 m-b-20">Modéles
+				<select class="selectpicker show-tick"   name="active" autocomplete="off">
+					<option value="modele1">modele1</option>
+					<option value="modele2">modele2</option>
+					<option value="modele3">modele3</option>
+					<option value="model24">model24</option>
+				</select>
+			</p>
+			<hr>
+		</div>
+
+		<div class="col-md-12">
+			<textarea style="min-width:100%" is="ckeditor" id="editeur-one-email" name="message" rows="10" ></textarea>
+			<hr>
+		</div>
+	</div>
+	<hr>
+	<hr>
+	<div class="modal-footer">
+		<p>
+			<button type="button" class="btn btn-success">Envoyer</button>
+			<button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+		</p>
+	</div>
+</div>

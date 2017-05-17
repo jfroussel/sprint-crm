@@ -1,0 +1,187 @@
+<extend "simulator.tml">
+<write "#simulator .simulator">
+<div class="modal fade" id="simulator-modal" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content" style="background-color: #e8e8e8">
+        <div class="modal-header modal-header-mc">
+            <h2 class="modal-title" style="text-align:center; color:#5d5d5d" id="myModalLabel">Choisissez la procédure pour reactiver <br> vos créances commerciales</h2>
+        </div>
+            <br>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="card pt-inner"  id="rc-amiable" data-lead-type="amiable">
+                            <div class="pti-header-mc bgm-white">
+                                <h3 style="color:#484747"><b>AMIABLE</b></h3>
+                                <div style="color:#484747">30 jours</div>
+                                <div style="color:#484747">(reactivation de creances)</div>
+                            </div>
+
+                            <div class="panel price panel-green">
+
+                                <ul class="list-group list-group-flush text-left">
+                                    <li class="list-group-item"><i class="zmdi zmdi-check text-success"></i> Lettre de mise en recouvrement A.R</li>
+                                    <li class="list-group-item"><i class="zmdi zmdi-check text-success"></i> 30 jours de recouvrement</li>
+                                    <li class="list-group-item"><i class="zmdi zmdi-check text-success"></i> Mise en place d'échéancier</li>
+                                    <li class="list-group-item"><i class="zmdi zmdi-check text-success"></i> Redaction du protocol transactionnel s'il y a lieu</li>
+                                    <li class="list-group-item"><i class="zmdi zmdi-check text-success"></i> Relances téléphoniques</li>
+                                    <li class="list-group-item"><i class="zmdi zmdi-check text-success"></i> Envoi de SMS</li>
+                                    <li class="list-group-item"><i class="zmdi zmdi-check text-success"></i> Envoi de courriers simples</li>
+                                    <li class="list-group-item"><i class="zmdi zmdi-check text-success"></i> Sommation par voie d'huissier</li>
+                                </ul>
+                                <div class="panel-body text-center">
+                                </div>
+                                <div class="row price-block">
+                                    <div class="col-md-12 price-lead text-left"><?= $lead->frais + $honoraryCosts['A'] + $procedureCosts['A'] ?><span class="price-euro"> € HT</span></div>
+                                    <div class="col-md-12 price-type">
+                                        Total coût recouvrement amiable<br>
+                                        Dont:<br>
+                                        <em>Honoraires au succes = <?= $honoraryCosts['A']?:'0'  ?> € HT</em><br>
+                                        <em>Frais de procédures = <?= $procedureCosts['A']?:'0' ?> € HT</em><br>
+                                        <em>Frais de dossier = <?= $lead->frais ?> € HT</em><br>
+                                    </div>
+                                </div>
+                                <div class="panel-footer">
+                                    <a class="btn btn-lg btn-primary formule-selector">CHOISIR</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card pt-inner"  id="rc-pre-contentieux" data-lead-type="pre-contentieux">
+                            <div class="pti-header-mc bgm-white">
+                                <h3 style="color:#484747"><b>CONTENTIEUX</b></h3>
+                                <div style="color:#484747">procedure pre-contentieuse</div>
+                                <div style="color:#484747">(reactivation de creances)</div>
+                            </div>
+
+                            <div class="panel price panel-green">
+                                <ul class="list-group list-group-flush text-left">
+                                    <li class="list-group-item"><i class="zmdi zmdi-check text-success"></i> Lettre de mise en recouvrement A.R</li>
+                                    <li class="list-group-item"><i class="zmdi zmdi-check text-success"></i> 30 jours de recouvrement</li>
+                                    <li class="list-group-item"><i class="zmdi zmdi-check text-success"></i> Mise en place d'échéancier</li>
+                                    <li class="list-group-item"><i class="zmdi zmdi-check text-success"></i> Redaction du protocol transactionnel s'il y a lieu</li>
+                                    <li class="list-group-item"><i class="zmdi zmdi-check text-success"></i> Relances téléphoniques</li>
+                                    <li class="list-group-item"><i class="zmdi zmdi-check text-success"></i> Envoi de SMS</li>
+                                    <li class="list-group-item"><i class="zmdi zmdi-check text-success"></i> Envoi de courriers simples</li>
+                                    <li class="list-group-item"><i class="zmdi zmdi-check text-success"></i> Sommation par voie d'huissier</li>
+                                </ul>
+                                <div class="panel-body text-center">
+                                </div>
+                                <div class="row price-block">
+                                    <div class="col-md-12 price-lead text-left"><?= $lead->frais + $honoraryCosts['B'] + $procedureCosts['B'] ?><span class="price-euro"> € HT</span></div>
+                                    <div class="col-md-12 price-type">
+                                        Total coût recouvrement amiable<br>
+                                        Dont:<br>
+                                        <em>Honoraires au succes = <?= $honoraryCosts['B']?:'0'  ?> € HT</em><br>
+                                        <em>Frais de procédures = <?= $procedureCosts['B']?:'0' ?> € HT</em><br>
+                                        <em>Frais de dossier = <?= $lead->frais ?> € HT</em><br>
+                                    </div>
+                                </div>
+                                <div class="panel-footer">
+                                    <a class="btn btn-lg btn-primary formule-selector">CHOISIR</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card pt-inner"  id="rc-injonction-payer" data-lead-type="injonction-de-payer">
+                            <div class="pti-header-mc bgm-white">
+                                <h3 style="color:#484747"><b>CONTENTIEUX</b></h3>
+                                <div style="color:#484747">injonction de payer</div>
+                                <div style="color:#484747">(reactivation de creances)</div>
+                            </div>
+                            <div class="panel price panel-green">
+                                <ul class="list-group list-group-flush text-left">
+                                    <li class="list-group-item"><i class="zmdi zmdi-check text-success"></i> Lettre de mise en recouvrement A.R</li>
+                                    <li class="list-group-item"><i class="zmdi zmdi-check text-success"></i> 30 jours de recouvrement</li>
+                                    <li class="list-group-item"><i class="zmdi zmdi-check text-success"></i> Mise en place d'échéancier</li>
+                                    <li class="list-group-item"><i class="zmdi zmdi-check text-success"></i> Redaction du protocol transactionnel s'il y a lieu</li>
+                                    <li class="list-group-item"><i class="zmdi zmdi-check text-success"></i> Relances téléphoniques</li>
+                                    <li class="list-group-item"><i class="zmdi zmdi-check text-success"></i> Envoi de SMS</li>
+                                    <li class="list-group-item"><i class="zmdi zmdi-check text-success"></i> Envoi de courriers simples</li>
+                                    <li class="list-group-item"><i class="zmdi zmdi-check text-success"></i> Sommation par voie d'huissier</li>
+                                </ul>
+                                <div class="panel-body text-center">
+                                </div>
+                                <div class="row price-block">
+                                    <div class="col-md-12 price-lead text-left"><?= $lead->frais + $honoraryCosts['C'] + $procedureCosts['C'] ?><span class="price-euro"> € HT</span></div>
+                                    <div class="col-md-12 price-type">
+                                        Total coût recouvrement amiable<br>
+                                        Dont:<br>
+                                        <em>Honoraires au succes = <?= $honoraryCosts['C']?:'0'  ?> € HT</em><br>
+                                        <em>Frais de procédures = <?= $procedureCosts['C']?:'0' ?> € HT</em><br>
+                                        <em>Frais de dossier = <?= $lead->frais ?> € HT</em><br>
+                                    </div>
+                                </div>
+
+                                <div class="panel-footer">
+                                    <a class="btn btn-lg btn-primary formule-selector">CHOISIR</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card pt-inner"  id="rc-assignation-fond" data-lead-type="assignation-au-fond">
+                            <div class="pti-header-mc bgm-white">
+                                <h3 style="color:#484747"><b>CONTENTIEUX</b></h3>
+                                <div style="color:#484747">assignation au fond</div>
+                                <div style="color:#484747">(reactivation de creances)</div>
+                            </div>
+                            <div class="panel price panel-green">
+                                <ul class="list-group list-group-flush text-left">
+                                    <li class="list-group-item"><i class="zmdi zmdi-check text-success"></i> Lettre de mise en recouvrement A.R</li>
+                                    <li class="list-group-item"><i class="zmdi zmdi-check text-success"></i> 30 jours de recouvrement</li>
+                                    <li class="list-group-item"><i class="zmdi zmdi-check text-success"></i> Mise en place d'échéancier</li>
+                                    <li class="list-group-item"><i class="zmdi zmdi-check text-success"></i> Redaction du protocol transactionnel s'il y a lieu</li>
+                                    <li class="list-group-item"><i class="zmdi zmdi-check text-success"></i> Relances téléphoniques</li>
+                                    <li class="list-group-item"><i class="zmdi zmdi-check text-success"></i> Envoi de SMS</li>
+                                    <li class="list-group-item"><i class="zmdi zmdi-check text-success"></i> Envoi de courriers simples</li>
+                                    <li class="list-group-item"><i class="zmdi zmdi-check text-success"></i> Sommation par voie d'huissier</li>
+                                </ul>
+                                <div class="panel-body text-center">
+                                </div>
+                                <div class="row price-block">
+                                    <div class="col-md-12 price-lead text-left"><?= $lead->frais + $honoraryCosts['D'] + $procedureCosts['D'] ?><span class="price-euro"> € HT</span></div>
+                                    <div class="col-md-12 price-type">
+                                        Total coût recouvrement amiable<br>
+                                        Dont:<br>
+                                        <em>Honoraires au succes = <?= $honoraryCosts['D']?:'0'  ?> € HT</em><br>
+                                        <em>Frais de procédures = <?= $procedureCosts['D']?:'0' ?> € HT</em><br>
+                                        <em>Frais de dossier = <?= $lead->frais ?> € HT</em><br>
+                                    </div>
+                                </div>
+
+                                <div class="panel-footer">
+                                    <a class="btn btn-lg btn-primary formule-selector">CHOISIR</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="simulation-inscription" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header modal-header-mc" style="background-color: #428bca">
+                <h2 class="modal-title" style="text-align:center; color:#FFF" id="myModalLabel">confiez votre creance à recouvrer en 2 minutes</h2>
+            </div>
+            <br>
+            <div class="modal-body">
+                <div class="card-body card-padding">
+                    <div id="lead-form-wizard" class="form-wizard-basic fw-container">
+                        <incorpore "simulator-tabs">
+
+                        <incorpore "simulator-pagination">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</write>
+</extend>

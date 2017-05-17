@@ -1,0 +1,108 @@
+<div class="modal-header bgm-bluegray m-b-20 ">
+    <h4 class="modal-title c-white t-uppercase">Ajouter une nouvelle banque</h4>
+</div>
+<div class="modal-body">
+    <form class="form-horizontal" j-name="bank"  id="bank">
+        <div class="row">
+
+            <div class="col-md-6">
+                <div class="checkbox">
+                    <label>
+                        <input type="checkbox" name="active" value="1">
+                        <i class="input-helper"></i>
+                        Choisir par default
+                    </label>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="card-body">
+            <div class="form-group">
+                <label for="banque" class="col-sm-2 control-label">Banque</label>
+                <div class="col-sm-10">
+                    <div class="fg-line">
+                        <input type="text" class="form-control input-sm" name="name" id="banque" placeholder="Banque">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="number" class="col-sm-2 control-label">N° de Compte</label>
+                <div class="col-sm-10">
+                    <div class="fg-line">
+                        <input type="text" class="form-control input-sm" name="number" id="number" placeholder="N° de compte">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="banque" class="col-sm-2 control-label">Compte avec IBAN</label>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="radio" name="iban_active" value="0">
+                                    <i class="input-helper"></i>
+                                    Oui
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-3">
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="radio" name="iban_active" value="1">
+                                    <i class="input-helper"></i>
+                                    Non
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="bic" class="col-sm-2 control-label">BIC</label>
+                <div class="col-sm-10">
+                    <div class="fg-line">
+                        <input type="text" class="form-control input-sm" name="bic" id="bic" placeholder="BIC">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="iban" class="col-sm-2 control-label">IBAN</label>
+                <div class="col-sm-10">
+                    <div class="fg-line">
+                        <input type="text" class="form-control input-sm" name="iban" id="iban" placeholder="IBAN">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="sepa" class="col-sm-2 control-label">N° National d'émetteur SEPA</label>
+                <div class="col-sm-10">
+                    <div class="fg-line">
+                        <input type="text" class="form-control input-sm" id="sepa" name="sepa" placeholder="N° National d'émetteur SEPA">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="code" class="col-sm-2 control-label">Code comptable</label>
+                <div class="col-sm-10">
+                    <div class="fg-line">
+                        <input type="text" class="form-control input-sm" name="code" id="code" placeholder="Code comptable">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal-footer">
+
+            <p>
+                <button type="submit" class="btn btn-success">Ajouter</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+            </p>
+        </div>
+    </form>
+</div>

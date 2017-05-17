@@ -1,0 +1,212 @@
+<div class="modal-header bgm-bluegray m-b-20 ">
+	<h4 class="modal-title c-white t-uppercase">Ajouter un échéancier pour le debiteur :  "{{debtor.nom_client}}"  <span class="debtor-name"></span> </h4>
+	<div class="timer" id="timer"><span>{{minutes}}</span>:<span>{{seconds}}</span></div>
+</div>
+<div class="modal-body">
+	<form class="form-horizontal" j-name="schedule"  id="schedule">
+		<br>
+		<div role="tab-panel">
+			<ul class="tab-nav">
+				<li class="active" id="tab-auto" j-on-click="clearManual"><a href="#schedule-automatic" role="tab" data-toggle="tab" aria-expanded="true">Echéancier automatique</a></li>
+				<li id="tab-man" j-on-click="clearAutomatic"><a href="#schedule-manual" role="tab" data-toggle="tab" aria-expanded="true">Echéancier manuel</a></li>
+			</ul>
+			<div class="tab-content">
+		        <div role="tabpanel" class="tab-pane active" id="schedule-automatic">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="fg-line">
+								<p class="c-black f-500 m-b-20">Auteur</p>
+								<div class="select">
+									<select  class="form-control"  name="expediteur" autocomplete="off">
+										<option j-for="(id, user) in usersList" :value="{{user.id}}">{{user.first_name}} {{user.last_name}}</option>
+									</select>
+								</div>
+								<br>
+							</div>
+							<p class="error_auto"></p>
+							<div class="col-md-12">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="zmdi zmdi-calendar-note"></i></span>
+									<div class="fg-line">
+										<input class="form-control" placeholder="Base de l'échéancier" name="base_schedule" type="text">
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="zmdi zmdi-calendar"></i></span>
+									<div class="dtp-container">
+										<input is="datepicker" type="text" name="date_first_schedule" class="form-control"
+											   placeholder="Date de la 1ére écheance">
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="zmdi zmdi-money-box"></i></span>
+									<div class="fg-line">
+										<input class="form-control" name="amount" placeholder="Montant de l'échéance" type="text">
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="fg-line">
+								<p class="c-black f-500 m-b-20">Intervenant</p>
+								<div class="select">
+									<select  class="form-control"  name="type" autocomplete="off">
+										<option j-for="(id, contact) in contactsList" :value="{{contact.id}}">{{contact.prenom}} {{contact.nom}}</option>
+									</select>
+								</div>
+								<br>
+							</div>
+							<div class="col-md-12">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="zmdi zmdi-format-list-numbered"></i></span>
+									<div class="fg-line">
+										<input class="form-control" name="nbschedule" placeholder="Nombre d'échéances" type="text">
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="zmdi zmdi-money"></i></span>
+									<div class="fg-line">
+										<input class="form-control" placeholder="Frais de retards" name="late" type="text">
+									</div
+								</div>
+						   	</div>
+						</div>
+					</div>
+		        	</div>
+				</div>
+		      	<div role="tabpanel" class="tab-pane" id="schedule-manual">
+		         	<div class="row">
+						<div class="col-md-4">
+							<div class="fg-line">
+								<p class="c-black f-500 m-b-20">Auteur</p>
+								<div class="select">
+									<select  class="form-control"  name="expediteur" autocomplete="off">
+										<option j-for="(id, user) in usersList" :value="{{user.id}}">{{user.first_name}} {{user.last_name}}</option>
+									</select>
+								</div>
+								<br>
+							</div>
+							<div class="col-md-12">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="zmdi zmdi-calendar-note"></i></span>
+									<div class="fg-line">
+										<input class="form-control" placeholder="Base de l'échéancier" name="base_schedule" type="text">
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="zmdi zmdi-alarm"></i></span>
+									<div class="fg-line">
+										<input class="form-control" placeholder="Frais de retards" name="late" type="text">
+									</div>
+								</div>
+						   	</div>
+						</div>
+						<div class="col-md-4">
+							<div class="fg-line">
+								<p class="c-black f-500 m-b-20">Intervenant</p>
+								<div class="select">
+									<select  class="form-control"  name="type" autocomplete="off">
+										<option j-for="(id, contact) in contactsList" :value="{{contact.id}}">{{contact.prenom}} {{contact.nom}}</option>
+									</select>
+								</div>
+								<br>
+							</div>
+						</div>
+						<div class="col-md-12" id="echeances-rows">
+							<div class="clear"></div>
+							<div class="col-md-2 col-md-offset-10">
+								<p>Restant : {{ schedule.rest }}€</p>
+							</div>
+							<div class="col-md-12">
+								<table id="deadlines_table" class="table table-bordered table-hover tab_logic">
+									<thead>
+										<th>N° de l'échéance</th>
+										<th>Montant de l'échéance</th>
+										<th>Date de l'échéance</th>
+										<th>Actions</th>
+									</thead>
+
+									<tbody>
+										<tr j-for="(i, deadline) in schedule._xmany_deadline">
+											<td>
+												{{Number(i)+1}}
+											</td>
+											<td>
+												<div class="row">
+													<p style="text-align:center;">{{ schedule._xmany_deadline[i][0]}}</p>
+												</div>
+											</td>
+											<td>
+												<div class="row">
+													<p style="text-align:center;">{{ schedule._xmany_deadline[i][1]}}</p>
+													<!-- <input is="datepicker" type="text" :name="_xmany_deadline[{{i}}][1]" class="form-control"> -->
+												</div>
+											</td>
+											<td>
+												<button type="button" :data-increment="{{i}}" j-on-click="deleteDeadline" class="delete_row btn btn-danger btn-icon waves-effect waves-circle waves-float pull-right" name="button">-</button>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+							<div class="clear"></div>
+							<div class="clear"></div>
+							<div class="clear"></div>
+							<p class="add_error" style="color: red;"></p>
+							<div class="col-md-4">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="zmdi zmdi-calendar-note"></i></span>
+									<div class="fg-line">
+										<input class="form-control" placeholder="Montant de l'échéance" name="deadline_amount" type="text">
+									</div>
+								</div>
+							</div>
+							<div class="clear"></div>
+							<div class="col-md-4">
+								<div class="input-group">
+									<span class="input-group-addon"><i class="zmdi zmdi-calendar"></i></span>
+									<div class="dtp-container">
+										<input is="datepicker" type="text" name="date_deadline" class="form-control"
+											   placeholder="Date de l'échéance">
+									</div>
+								</div>
+							</div>
+							<div class="clear"></div>
+							<div class="col-md-2 col-md-offset-10">
+									<div class="input-group">
+										<div class="fg-line">
+											<input id="add_deadline" class="btn btn-success" value="Ajouter" type="button" j-on-click="addDeadline">
+										</div>
+									</div>
+								</div>
+						</div>
+					</div>
+		        </div>
+	      	</div>
+		</div>
+		<div class="col-md-12">
+			<h5>Commentaires</h5>
+			<textarea cols="80" is="ckeditor" id="editeur-one-shedule" name="message" rows="10" ></textarea>
+			<br>
+		</div>
+
+		<div class="col-md-12">
+
+		</div>
+
+		<div class="modal-footer">
+			<p>
+				<button type="submit" class="btn btn-success">Enregistrer</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+			</p>
+		</div>
+	</form>
+</div>

@@ -1,0 +1,94 @@
+<?php
+global $redcat;
+$BASE_HREF = $redcat(RedCat\Route\Url::class)->getBaseHref();
+if(isset($errors)){
+	$errors = [];
+}
+$request = $redcat(RedCat\Route\Request::class);
+$user = $redcat(App\Route\User::class);
+?>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>MyCreance</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="google-site-verification" content="kY2dtAHc3JIED3mLYo9pqRK8mGxgRbMy9Gaw-RQy0mE"/>
+	<base href="<?=$BASE_HREF?>">
+	<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+	
+	<link href="vendor/bower-asset/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+	<link href="node_modules/material-design-iconic-font/dist/css/material-design-iconic-font.css" rel="stylesheet" type="text/css">
+	
+	
+	
+	<link href="vendor/bower-asset/bootstrap-material-wrap/css/bootstrap-material-wrap.css" rel="stylesheet" type="text/css">
+    <link href="node_modules/slick-carousel/slick/slick.css" rel="stylesheet" type="text/css">
+    <link href="node_modules/slick-carousel/slick/slick-theme.css" rel="stylesheet" type="text/css">
+	<link href="vendor/bower-asset/fileinput-img/fileinput-img.css" rel="stylesheet" type="text/css">
+	
+	<link href="node_modules/jquery-ui-dist/jquery-ui.theme.css" rel="stylesheet" type="text/css">
+	<link href="vendor/bower-asset/bootstrap-material-wrap/css/jquery-ui-autocomplete.css" rel="stylesheet" type="text/css">
+	
+	<link href="vendor/bower-asset/stylize-common/css/common/shortcut-classes.css" rel="stylesheet" type="text/css">
+	<link href="vendor/bower-asset/stylize-common/css/common/m-colors.css" rel="stylesheet" type="text/css">
+	
+	
+
+	<link href="node_modules/intl-tel-input/build/css/intlTelInput.css" rel="stylesheet" type="text/css">
+	
+	<link href="vendor/bower-asset/timeliner/css/timeliner.css" rel="stylesheet" type="text/css">
+	
+	<link href="node_modules/datatables.net-bs/css/dataTables.bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="node_modules/datatables.net-scroller-bs/css/scroller.bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="node_modules/datatables-buttons/css/buttons.dataTables.css" rel="stylesheet" type="text/css">
+	<link href="node_modules/datatables-buttons/css/buttons.bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="css/datatables.custom.css" rel="stylesheet" type="text/css">
+	<link href="css/forms.css" rel="stylesheet" type="text/css">
+	<link href="css/parameters.css" rel="stylesheet" type="text/css">
+	<link href="css/validation.css" rel="stylesheet" type="text/css">
+	<link href="css/scenario.css" rel="stylesheet" type="text/css">
+	<link href="css/mycreance.css" rel="stylesheet" type="text/css">
+    <link href="css/fullcalendar.min.css" rel="stylesheet" type="text/css">
+
+    <link href="node_modules/owl.carousel/dist/assets/owl.carousel.css" rel="stylesheet" type="text/css">
+    <link href="node_modules/owl.carousel/dist/assets/owl.theme.default.css" rel="stylesheet" type="text/css">
+    <link href="css/imageHover.css" rel="stylesheet" type="text/css">
+    <link href="css/btn-file.css" rel="stylesheet" type="text/css">
+    <link href="node_modules/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css">
+	<link href="node_modules/bootstrap-select/dist/css/bootstrap-select.css" rel="stylesheet" type="text/css">
+	<link href="node_modules/roboto-fontface/css/roboto/roboto-fontface.css" rel="stylesheet" type="text/css">
+	<link href="css/inputnumber.css" rel="stylesheet" type="text/css">
+	
+	<link href="css/style.css" rel="stylesheet" type="text/css">
+	
+	<link href="css/bootstrap-modal-scroll.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="node_modules/flipclock/compiled/flipclock.css">
+
+</head>
+<body>
+	<incorpore "layout/header">
+    
+	<main></main>
+
+    <if "!$user->id">
+        <footer id="footer-corporate">
+            <incorpore "layout/footer-corporate">
+        </footer>
+    <else>
+        <footer id="footer-app">
+            <incorpore "layout/footer-app">
+        </footer>
+    </if>
+
+    <script type="text/javascript" src="dist/vendor.js"></script>
+    <script type="text/javascript" src="dist/common.js"></script>
+    <script type="text/javascript" src="dist/app.js"></script>
+	
+	<if "$user->id">
+		<script type="text/javascript" src="js/chat-freshdesk.js"></script>
+	</if>
+</body>
+</html>

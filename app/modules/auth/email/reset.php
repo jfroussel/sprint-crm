@@ -1,0 +1,1 @@
+Lien de réinitialisation du mot de passe : <strong><a href="<?php echo $site;?>auth/reset?key=<?php echo $key;?>"  target="_blank">Nouveau mot de passe</a></strong>

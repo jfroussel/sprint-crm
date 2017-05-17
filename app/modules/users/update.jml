@@ -1,0 +1,396 @@
+<section id="content" class="profile">
+	<div id="profile-main">
+		<div class="pm-overview pm-overview-user">
+			<div class="pmo-pic">
+				<div class="img" style="width: 200px">
+					<img :src="{{avatar}}">
+				</div>
+			</div>
+            <div class="type-mc">
+                <h3>CREANCIER</h3>
+            </div>
+            <div class="pmo-block pmo-contact hidden-xs pmo-contact-mc">
+                <ul>
+                    <li><b>Type :  </b>{{user.social_denomination}}</li>
+                    <li><b>Siret :  </b>{{user.siret_code}}</li>
+                    <li><b>Iban :  </b></li>
+                    <li><b>Inscription :  </b>{{user.ctime}}</li>
+                    <li><b>Site web :  </b><a  href="{{user.company_website}}">{{user.company_website}}</a></li>
+
+                    <li j-if="user.address">
+                        <!--<i class="zmdi zmdi-pin"></i>-->
+                        <b>Adresse : </b><br>
+                        <address class="m-b-0  pull-left">
+                            {{user.address}}, <br>
+                            {{user.postal_code}} {{ user.city}}, <br>
+                            {{user.country}}<br>
+                        </address>
+                    </li>
+                    <br>
+                </ul>
+            </div>
+            <div class="row">
+                <hr>
+               <div class="col-md-12 social-bar-mc">
+                   <div class="col-md-3 col-offset-md-2 col-md-3-mc">
+                       <a :href="http://facebook.com/{{user.facebook}}" >
+                           <img src="img/facebook.png" class="img-responsive" style="width: 40px;height: 40px" alt="">
+                       </a>
+                   </div>
+                   <div class="col-md-3 col-md-3-mc">
+                       <a :href="https://twitter.com/{{user.twitter}}">
+                           <img src="img/twitter.png" class="img-responsive" style="width: 40px;height: 40px" alt="">
+                       </a>
+                   </div>
+                   <div class="col-md-3 col-md-3-mc">
+                       <a :href="https://plus.google.com/{{user.google}}">
+                           <img src="img/google.png" class="img-responsive" style="width: 40px;height: 40px" alt="">
+                       </a>
+                   </div>
+               </div>
+                <hr>
+            </div>
+            <div class="pmo-block pmo-contact hidden-xs pmo-contact-mc">
+				<h2>Contact</h2>
+				<ul>
+                    <li><i class="zmdi zmdi-account"></i><a class="icon-contact" href="">{{user.last_name}}&nbsp{{user.first_name}}</a></li>
+					<li j-if="user.url"><i class="fa fa-home"></i>{{user.url}}</li>
+                    <li j-if="user.group"><i class="zmdi zmdi-accounts"></i><a class="icon-contact" href="">Groupe/{{user.group}}</a></li>
+					<li j-if="user.email"><i class="zmdi zmdi-email "></i><a class="icon-contact" :href="mailto:{{user.email}}">{{user.email}}</a></li>
+					<li j-if="user.phone"><i class="fa fa-phone"></i><a class="icon-contact" :href="tel:{{user.phone}}">{{user.phone}}</a></li>
+					<li j-if="user.cellphone"><i class="fa fa-mobile"></i><a class="icon-contact" :href="tel:{{user.cellphone}}">{{user.cellphone}}</a></li>
+				</ul>
+			</div>
+		</div>
+		<form class="pm-body clearfix" j-name="user" autocomplete="off">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="pmbb-header">
+						<h3 class="page-title-mc">Informations de mon compte</h3>
+					</div>
+					<hr>
+				</div>
+			</div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="pmb-block">
+                        <div class="pmbb-header user-one-title">
+                           <h2>Informations générales de votre société</h2>
+                        </div>
+                        <br>
+                        <div class="pmbb-body">
+                            <div class="pmbb-view">
+                                <dl class="dl-horizontal">
+                                    <fieldset class="form-group form-inline">
+                                        <dt><label class="label-mc" for="company_name">Nom de la société</label></dt>
+                                        <dd><input name="company_name" class="form-control" id="company_name"></dd>
+                                    </fieldset>
+                                </dl>
+                                <dl class="dl-horizontal">
+                                    <fieldset class="form-group form-inline">
+                                        <dt><label class="label-mc" for="company_trade_name">Nom commercial</label></dt>
+                                        <dd><input name="company_trade_name" class="form-control" id="company_trade_name"></dd>
+                                    </fieldset>
+                                </dl>
+                                <dl class="dl-horizontal">
+                                    <fieldset class="form-group form-inline">
+                                        <dt><label class="label-mc" for="company_reference">Référence</label></dt>
+                                        <dd><input name="company_reference" class="form-control" id="company_reference"></dd>
+                                    </fieldset>
+                                </dl>
+                                <dl class="dl-horizontal">
+                                    <fieldset class="form-group form-inline">
+                                        <dt><label class="label-mc" for="company_website">Site web</label></dt>
+                                        <dd><input type="url" name="company_website" class="form-control" id="company_website" placeholder="http://www.monsite.com"></dd>
+                                    </fieldset>
+                                </dl>
+                                <dl class="dl-horizontal">
+                                    <fieldset class="form-group form-inline">
+                                        <dt><label class="label-mc" for="company_rate_category">Categorie tarifaire</label></dt>
+                                        <dd>
+                                            <select name="company_rate_category" id="company_rate_category" class="form-control">
+                                                <option value=""></option>
+                                                <option value="Mr">Soumis à TVA</option>
+                                                <option value="Me">Non soumis à TVA</option>
+                                            </select>
+                                        </dd>
+                                    </fieldset>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="pmb-block">
+                        <div class="pmbb-header">
+                            <h2>Coordonnées de votre société</h2>
+                        </div>
+                        <br>
+                        <div class="pmbb-body">
+                            <div class="pmbb-view">
+                                <dl class="dl-horizontal">
+                                    <fieldset class="form-group form-inline">
+                                        <dt><label class="label-mc" for="address">Adresse</label></dt>
+                                        <dd><input name="address" class="form-control input-lg-mc" id="address"></dd>
+                                    </fieldset>
+                                </dl>
+                                <dl class="dl-horizontal">
+                                    <fieldset class="form-group form-inline">
+                                        <dt><label class="label-mc" for="postal_code">Code postal</label></dt>
+                                        <dd><input name="postal_code" class="form-control" id="postal_code"></dd>
+                                    </fieldset>
+                                </dl>
+                                <dl class="dl-horizontal">
+                                    <fieldset class="form-group form-inline">
+                                        <dt><label class="label-mc" for="city">Ville</label></dt>
+                                        <dd><input name="city" class="form-control" id="city"></dd>
+                                    </fieldset>
+                                </dl>
+                                <dl class="dl-horizontal">
+                                    <fieldset class="form-group form-inline">
+                                        <dt><label class="label-mc" for="country">Pays</label></dt>
+                                        <dd><input name="country" class="form-control" id="country"></dd>
+                                    </fieldset>
+                                </dl>
+                                <dl class="dl-horizontal">
+                                    <fieldset class="form-group form-inline">
+                                        <dt><label class="label-mc" for="phone">Téléphone</label></dt>
+                                        <dd><input name="phone" class="form-control" id="phone"></dd>
+                                    </fieldset>
+                                </dl>
+                                <dl class="dl-horizontal">
+                                    <fieldset class="form-group form-inline">
+                                        <dt><label class="label-mc" for="fax">Télécopie</label></dt>
+                                        <dd><input name="fax" class="form-control" id="fax"></dd>
+                                    </fieldset>
+                                </dl>
+                                <dl class="dl-horizontal">
+                                    <fieldset class="form-group form-inline">
+                                        <dt><label class="label-mc" for="email">Email</label></dt>
+                                        <dd><input type="email" name="email" class="form-control" id="email"></dd>
+                                    </fieldset>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="pmb-block">
+                        <div class="pmbb-header">
+                            <h2>Autres informations  de votre société</h2>
+                        </div>
+                        <br>
+                        <div class="pmbb-body">
+                            <div class="pmbb-view">
+                                <dl class="dl-horizontal">
+                                    <fieldset class="form-group form-inline">
+                                        <dt><label class="label-mc" for="legal_form">Forme juridique</label></dt>
+                                        <dd><input name="legal_form" class="form-control" id="legal_form"></dd>
+                                    </fieldset>
+                                </dl>
+                                <dl class="dl-horizontal">
+                                    <fieldset class="form-group form-inline">
+                                        <dt><label class="label-mc" for="siren_code">Numero siren</label></dt>
+                                        <dd><input name="siren_code" class="form-control" id="siren_code"></dd>
+                                    </fieldset>
+                                </dl>
+                                <dl class="dl-horizontal">
+                                    <fieldset class="form-group form-inline">
+                                        <dt><label class="label-mc" for="siret_code">Numero siret</label></dt>
+                                        <dd><input name="siret_code" class="form-control" id="siret_code"></dd>
+                                    </fieldset>
+                                </dl>
+                                <dl class="dl-horizontal">
+                                    <fieldset class="form-group form-inline">
+                                        <dt><label class="label-mc" for="naf_code">Code NAF</label></dt>
+                                        <dd><input name="naf_code" class="form-control" id="naf_code"></dd>
+                                    </fieldset>
+                                </dl>
+                                <dl class="dl-horizontal">
+                                    <fieldset class="form-group form-inline">
+                                        <dt><label class="label-mc" for="share_capital">Capital social</label></dt>
+                                        <dd><input name="share_capital" class="form-control" id="share_capital"></dd>
+                                    </fieldset>
+                                </dl>
+                                <dl class="dl-horizontal">
+                                    <fieldset class="form-group form-inline">
+                                        <dt><label class="label-mc" for="rcs">RCS</label></dt>
+                                        <dd><input name="rcs" class="form-control" id="rcs"></dd>
+                                    </fieldset>
+                                </dl>
+                                <dl class="dl-horizontal">
+                                    <fieldset class="form-group form-inline">
+                                        <dt><label class="label-mc" for="tva_number">Numero TVA intra</label></dt>
+                                        <dd><input name="tva_number" class="form-control" id="tva_number" readonly></dd>
+                                    </fieldset>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="pmb-block">
+                        <div class="pmbb-header">
+                            <h2>Contact principal de votre société</h2>
+                        </div>
+                        <br>
+                        <div class="pmbb-body">
+                            <div class="pmbb-view">
+                                <dl class="dl-horizontal">
+                                    <fieldset class="form-group form-inline">
+                                        <dt><label class="label-mc" for="civility">Civilité</label></dt>
+                                        <dd>
+                                            <select name="civility" id="civility" class="form-control">
+                                                <option value=""></option>
+                                                <option value="Mr">Monsieur</option>
+                                                <option value="Me">Madame</option>
+                                                <option value="Mlle">Mademoiselle</option>
+                                            </select>
+                                        </dd>
+                                    </fieldset>
+                                </dl>
+                                <dl class="dl-horizontal">
+                                    <fieldset class="form-group form-inline">
+                                        <dt><label class="label-mc" for="first_name">Prénom</label></dt>
+                                        <dd><input name="first_name" type="text" id="first_name" class="form-control"></dd>
+                                    </fieldset>
+                                </dl>
+                                <dl class="dl-horizontal">
+                                    <fieldset class="form-group form-inline">
+                                        <dt><label class="label-mc" for="last_name">Nom</label></dt>
+                                        <dd><input name="last_name" type="text"	id="last_name" class="form-control"></dd>
+                                    </fieldset>
+                                </dl>
+                                <dl class="dl-horizontal">
+                                    <fieldset class="form-group form-inline">
+                                        <dt><label class="label-mc" for="function">Fonction</label></dt>
+                                        <dd><input name="function" class="form-control" id="function"></dd>
+                                    </fieldset>
+                                </dl>
+                                <!--<dl class="dl-horizontal">-->
+                                    <!--<fieldset class="form-group form-inline">-->
+                                        <!--<dt><label class="label-mc" for="group">Groupe</label></dt>-->
+                                        <!--<dd>-->
+                                            <!--<select name="group" id="group" class="form-control">-->
+                                                <!--<option value=""></option>-->
+                                                <!--<option value="admin">Admin</option>-->
+                                                <!--<option value="sales">Sales</option>-->
+                                                <!--<option value="assistant">Assistant</option>-->
+                                                <!--<option value="gestionnaire">Gestionnaire</option>-->
+                                            <!--</select>-->
+                                        <!--</dd>-->
+                                    <!--</fieldset>-->
+                                <!--</dl>-->
+                                <dl class="dl-horizontal">
+                                    <fieldset class="form-group form-inline">
+                                        <dt><label class="label-mc" for="email">Email</label></dt>
+                                        <dd><input name="email" class="form-control" id="email"></dd>
+                                    </fieldset>
+                                </dl>
+                                <dl class="dl-horizontal">
+                                    <fieldset class="form-group form-inline">
+                                        <dt><label class="label-mc" for="phone">Téléphone</label></dt>
+                                        <dd><input name="phone" class="form-control" id="phone"></dd>
+                                    </fieldset>
+                                </dl>
+                                <dl class="dl-horizontal">
+                                    <fieldset class="form-group form-inline">
+                                        <dt><label class="label-mc" for="cellphone">Tél.portable</label></dt>
+                                        <dd><input name="cellphone" class="form-control" id="cellphone"></dd>
+                                    </fieldset>
+                                </dl>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="pmb-block">
+                        <div class="pmbb-header">
+                            <h2>Autres informations</h2>
+                        </div>
+                        <br>
+                        <div class="pmbb-body">
+                            <div class="pmbb-view">
+                                <dl class="dl-horizontal">
+                                    <fieldset class="form-group form-inline">
+                                        <dt><label class="label-mc" for="avatar" class="inputimg">Logo de la societe</label></dt>
+                                        <dd><input is="fileinputImg" type="file" accept="image/*" name="avatarFile" id="avatar" :data-src="{{avatarLocal}}" class="fileinput-img"></dd>
+                                    </fieldset>
+                                </dl>
+                                <!--<dl class="dl-horizontal">-->
+                                    <!--<fieldset class="form-group form-inline">-->
+                                        <!--<dt><label class="label-mc" for="id">N° identifiant</label></dt>-->
+                                        <!--<dd><input type="text" id="id" name="id" readonly class="form-control"></dd>-->
+                                    <!--</fieldset>-->
+                                <!--</dl>-->
+                                <!--<dl class="dl-horizontal">-->
+                                    <!--<fieldset class="form-group form-inline">-->
+                                        <!--<dt><label class="label-mc" for="password">Nouveau mot de passe</label></dt>-->
+                                        <!--<dd><input type="password" id="password" name="password" autocomplete="false" readonly onfocus="this.removeAttribute('readonly');" class="form-control"></dd>-->
+                                    <!--</fieldset>-->
+                                <!--</dl>-->
+                                <br>
+                                <dl class="dl-horizontal">
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="active" value="1">
+                                            <i class="input-helper"></i>
+                                            Activer le compte de cet utilisateur
+                                        </label>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Enregistrer</button>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-6">
+                    <div class="pmb-block">
+                        <div class="pmbb-header">
+                            <h2>Reseaux sociaux</h2>
+                        </div>
+                        <br>
+                        <div class="pmbb-body">
+                            <div class="pmbb-view">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="zmdi zmdi-twitter"></i></span>
+                                    <div class="fg-line">
+                                        <input type="text" name="twitter" class="form-control" placeholder="Twitter">
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="zmdi zmdi-skype"></i></span>
+                                    <div class="fg-line">
+                                        <input type="text" name="skype" class="form-control" placeholder="Skype">
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="zmdi zmdi-facebook"></i></span>
+                                    <div class="fg-line">
+                                        <input type="text" name="facebook" class="form-control" placeholder="Facebook">
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="zmdi zmdi-google-plus"></i></span>
+                                    <div class="fg-line">
+                                        <input type="text" name="google" class="form-control" placeholder="Google +">
+                                    </div>
+                                </div>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+		</form>
+	</div>
+</section>

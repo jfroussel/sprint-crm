@@ -1,0 +1,129 @@
+<div class="modal-header bgm-bluegray m-b-20 ">
+	<h4 class="modal-title c-white t-uppercase">Modifier la  note dans l'agenda  pour le debiteur : "{{debtor.nom_client}}"  <span class="debtor-name"></span> </h4>
+</div>
+<div class="modal-body" >
+	<div class="row">
+		<div>
+			<h5>
+				Auteur de la note : {{user.first_name}} {{user.last_name}}<br>
+				Date de création : {{agenda.ctime}}<br>
+				Modifiée le : {{agenda.mtime}}<br>
+				Action prevue le : {{agenda.todo_date}}<br>
+				Destinataire de la note : {{contact.nom}} {{contact.prenom}}
+			</h5>
+		</div>
+		<hr>
+		<form class="form-horizontal" j-name="agenda"  id="agenda">
+			<div class="row">
+				<div class="col-md-4">
+					<p class="c-black f-500 m-b-20">Action à faire ...</p>
+					<div class="fg-line">
+						<div class="select">
+							<select  class="form-control"  name="type" autocomplete="off">
+								<option value="" disabled selected>type d'action...</option>
+								<option value="email">email</option>
+								<option value="appel">appel</option>
+								<option value="tache">tâche à réaliser</option>
+								<option value="alerte">alerte</option>
+								<option value="courrier">courrier</option>
+								<option value="fax">fax</option>
+							</select>
+						</div>
+					</div>
+					<hr>
+				</div>
+				<div class="col-md-4">
+					<p class="c-black f-500 m-b-20">Nouvelle Date ...</p>
+					<input type="text" is="datepicker" class="form-control" value="todo_date"  name="todo_date"  required="required"  >
+				</div>
+				<div class="col-md-4">
+					<div class="fg-line">
+						<p class="c-black f-500 m-b-20">Contact(s)</p>
+						<div class="select">
+							<select class="form-control"  name="destinataire" autocomplete="off">
+								<option value="">Choisir votre destinataire</option>
+								<option j-for="contact in contactsList" :value="{{contact.id}}">{{contact.nom}} {{contact.prenom}}</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<h5>Commentaires</h5>
+					<textarea cols="80" is="ckeditor"  id="editeur-agenda-note" name="message" rows="10" ></textarea>
+				</div>
+				<div class="col-md-12">
+
+					<h5>Factures</h5>
+
+					<!--<input class="amount-select-info"  :value="{{debit}}"placeholder="0,00€" type="text" autocomplete="off" readonly>-->
+
+					<input class="amount-select-info" name="debit" placeholder="0,00€" type="text" autocomplete="off" readonly>
+
+					<h6 class="text-lowercase">(Montant des factures actuellement selectionnées.)</h6>
+
+					<table
+							is="datatables"
+							j-data-ajax--url="plugins/datatables.json?table=paperwork&where_debtor_id={{debtor.id}}&where_lettrage&whereNot_type_ecriture="
+
+							j-data-checkbox-name="_many2many_paperwork"
+							j-data-scroll-y="100px"
+							j-data-scroll-x="2000px"
+							id="paperworks-table-agenda"
+							class="table table-striped table-bordered"
+					>
+						<thead>
+						<tr style="font-size: 10px">
+							<th></th>
+							<th data-column="id" data-visible="false">id</th>
+							<th data-column="type_ecriture">type</th>
+							<th data-column="state" data-visible="false">Status</th>
+							<th data-column="state_fr" data-width="80">Statut</th>
+							<th data-column="jours_retard">jours retard</th>
+							<th data-column="date_facture" data-width="80" data-format="dateformat" >date </th>
+							<th data-column="numero_piece" data-width="200" data-order="desc">Nr piece</th>
+							<th data-column="date_echeance" data-format="dateformat">echeance</th>
+							<th data-column="journal" data-order="desc">journal</th>
+							<th data-column="debit" data-order="desc">debit</th>
+							<th data-column="credit" data-order="desc">credit</th>
+							<th data-column="mtlit">mtlit.</th>
+							<th data-column="mtir">i.r</th>
+							<th data-column="mtpr">p.r</th>
+							<th data-column="mtcp">c.p</th>
+							<th data-column="mtifr">i.f.r</th>
+							<!--<th data-column="mtfr">f.r</th>-->
+							<th data-column="lettrage">lettrage</th>
+							<th data-column="date_lettrage">date lettrage</th>
+							<!--<th data-action="edit"  data-route="paperworks/update?id="></th>-->
+						</tr>
+						</thead>
+						<tbody></tbody>
+					</table>
+					<hr>
+				</div>
+				<hr>
+			</div>
+			<div class="modal-footer">
+				<div class="row text-right">
+					<div class="checkbox m-b-15" >
+						<label>
+							<input type="checkbox" value="1"  name="status" id="wtf">
+							<i class="input-helper"></i>
+							Archiver la note
+							<hr>
+						</label>
+					</div>
+				</div>
+				<div class="row">
+					<div>
+						<button type="submit" class="btn btn-success">Enregistrer</button>
+						<button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+
+

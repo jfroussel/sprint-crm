@@ -1,0 +1,31 @@
+<div class="card">
+	<div class="card-header ch-alt">
+		<h2>Gestion des modéles <small>Espace de gestion de vos modéles MyCreance.com.</small></h2>
+		<div class="pull-right"><a j-href="templates/create" class="btn btn-brown ">Ajouter un modéle</a></div>
+	</div>
+	<hr>
+	<table
+		is="datatables"
+		j-data-ajax--url="plugins/datatables.json?table=template"
+		id="templates-table"
+		class="table table-striped table-bordered"
+	>
+		<thead>
+			<tr>
+				<th data-column="id" data-order="asc">id</th>
+				<th data-column="category">categorie</th>
+                <th data-column="type">type</th>
+                <th data-column="name">libellé</th>
+				<th
+					data-column="active"
+					data-format="active"
+					data-css-class="toggler"
+				>statut</th>
+				<th data-column="ctime" data-format="dateformat" data-order="desc">enregistré le</th>
+				<th data-action="edit" data-route="templates/update?id="></th>
+				<th data-action="remove" data-url="templates/all.json?method=delete" data-remove-body="Êtes-vous sûr de vouloir supprimer le scenario « %s » ?"></th>
+			</tr>
+		</thead>
+		<tbody></tbody>
+	</table>
+</div>

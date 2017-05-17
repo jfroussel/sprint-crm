@@ -1,0 +1,174 @@
+<form action="" id="step1" j-name="step1">
+	<input name="method" value="addStep1" type="hidden">
+
+	<p>Nous allons établir le mandat de recouvrement en 4 étapes.Indiquez-nous vos coordonnées pour les faire figurer sur le mandat.<br>Ces informations resteront coonfidentielles à Mycreance et ne seront jamais publics ou utilisées à des fins commerciales.
+	</p>
+	<div class="col-md-12">
+        <div class="radio m-b-15">
+			<div class="form-group">
+				<label class="radio-inline">Vous êtes : </label>
+				<label>
+					<input type="radio" name="profil_type" id="inlineRadio2" value="enterprise" autocomplete="off" required checked>
+					<i class="input-helper"></i>
+					Une entreprise
+				</label>
+				<label>
+					<input type="radio" name="profil_type" id="inlineRadio1" value="particular" autocomplete="off" required>
+					<i class="input-helper"></i>
+					Un particulier
+				</label>
+			</div>
+        </div>
+	</div>
+	<div class="vspacer10"></div>
+	<div class="col-sm-6">
+		<div class="form-group" id="form_corporate_name">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="zmdi zmdi-account"></i></span>
+				<div class="fg-line">
+					<input type="text" class="form-control" placeholder="Raison sociale" name="corporate_name" required data-validation-required-message="Ce champ est requis" autocomplete="off">
+				</div>
+			</div>
+		</div>
+        <div class="form-group" id="form_corporate_siren">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="zmdi zmdi-pin"></i></span>
+                <div class="fg-line">
+                    <input type="text" class="form-control" placeholder="N° siren" name="siren" autocomplete="off">
+                </div>
+            </div>
+        </div>
+        <div class="form-group" id="form_corporate_tva">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="zmdi zmdi-pin"></i></span>
+                <div class="fg-line">
+                    <input type="text" class="form-control" placeholder="TVA intra." name="tva" autocomplete="off" readonly>
+                </div>
+            </div>
+        </div>
+		<div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="zmdi zmdi-pin"></i></span>
+				<div class="fg-line">
+					<input type="text" class="form-control" placeholder="Adresse" name="address" autocomplete="off" required>
+				</div>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="zmdi zmdi-pin"></i></span>
+				<div class="fg-line">
+					<input type="text" class="form-control" placeholder="Code postal" name="zip_code" autocomplete="off" required>
+				</div>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="zmdi zmdi-pin"></i></span>
+				<div class="fg-line">
+					<input type="text" class="form-control" placeholder="Ville" name="city" autocomplete="off" required>
+				</div>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="zmdi zmdi-pin"></i></span>
+				<div class="fg-line">
+					<input type="text" class="form-control" placeholder="pays" name="country" autocomplete="off" required>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<div class="col-sm-6">
+        <div class="form-group">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="zmdi zmdi-account"></i></span>
+                <div class="fg-line">
+                    <input type="text" class="form-control" placeholder="Nom" name="last_name" autocomplete="off" required>
+                </div>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="zmdi zmdi-account"></i></span>
+                <div class="fg-line">
+                    <input type="text" class="form-control" placeholder="Prenom" name="first_name" autocomplete="off" required>
+                </div>
+            </div>
+        </div>
+		<div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="zmdi zmdi-email"></i></span>
+				<div class="fg-line">
+					<input type="text" class="form-control" placeholder="Email Address" name="corporate_email" value="<?= $lead->corporate_email ? $lead->corporate_email : $lead->email ?>" autocomplete="off" required>
+				</div>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="zmdi zmdi-local-phone"></i></span>
+				<div class="fg-line">
+					<input type="tel" class="form-control" placeholder="Tél.domicile" name="phone" autocomplete="off" required>
+				</div>
+			</div>
+		</div>
+		
+		<div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="zmdi zmdi-local-phone"></i></span>
+				<div class="fg-line">
+					<input type="tel" class="form-control" placeholder="Tél.portable" name="mobile_phone" autocomplete="off">
+				</div>
+			</div>
+		</div>
+
+		<div class="form-group">
+			<div class="input-group">
+				<span class="input-group-addon"><i class="zmdi zmdi-local-phone"></i></span>
+				<div class="fg-line">
+					<input type="tel" class="form-control" placeholder="Fax" name="fax" autocomplete="off">
+				</div>
+			</div>
+		</div>
+
+        <div class="radio m-b-15" id="form_corporate_price_category">
+			<div class="form-group">
+				<div class="input-group">
+					<label class="radio-inline">Categorie tarifaire : </label>
+					<label>
+						<input type="radio" name="price_category" id="tvaOk" value="particular" autocomplete="off" required>
+						<i class="input-helper"></i>
+						Soumis à TVA
+					</label>
+					<label>
+						<input type="radio" name="price_category" id="tvaKO" value="enterprise" autocomplete="off" required>
+						<i class="input-helper"></i>
+						Non soumis à TVA
+					</label>
+				</div>
+			</div>
+        </div>
+
+		<div class="vspacer10"></div>
+		<hr>
+	</div>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-2">
+            <div class="media-left media-top testimo-mc">
+                <a href="#">
+                    <img class="media-object" src="img/mycreance/testimo.jpg" alt="...">
+                </a>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="media-body">
+                «J’ai fait appel à Mycreance pour deux factures impayées vieilles de 13 mois. Ils m’ont mis en relation avec une agence de recouvrement qui m’a recouvré ma créance en 21 jours.»
+            </div>
+        </div>
+    </div>
+
+
+</form>

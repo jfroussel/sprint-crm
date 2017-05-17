@@ -1,0 +1,90 @@
+<div class="modal-header bgm-bluegray m-b-20 ">
+	<h4 class="modal-title c-white t-uppercase">Ajouter une promesse pour le debiteur :  "{{debtor.nom_client}}"  <span class="debtor-name"></span> </h4>
+	<div class="timer" id="timer"><span>{{minutes}}</span>:<span>{{seconds}}</span></div>
+</div>
+<div class="modal-body">
+	<form class="form-horizontal" j-name="promise"  id="promise">
+
+		<div class="row">
+			<!--<div class="col-md-4">-->
+				<!--&lt;!&ndash;<input class="form-control" :value="{{amount}}" type="text" autocomplete="off" readonly>&ndash;&gt;-->
+				<!--<input class="amount-select-info form-control" name="debit" placeholder="0,00€" type="text" autocomplete="off" readonly>-->
+			<!--</div>-->
+		</div>
+
+		<div class="row">
+			<div class="col-md-2">
+				<p class="c-black f-500 m-b-20">Montant de la promesse</p>
+				<div class="input-group">
+					<span class="input-group-addon"><i class="zmdi zmdi-money"></i></span>
+					<div class="fg-line">
+						<input class="form-control" name="amount"   :placeholder="{{amount}}"   type="text" autocomplete="off" >
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<p class="c-black f-500 m-b-20">Date d'envoi du réglement</p>
+				<div class="input-group form-group">
+					<span class="input-group-addon"><i class="zmdi zmdi-calendar"></i></span>
+					<div class="dtp-container">
+						<input is="datepicker" type='text' name="date_reglement" class="form-control"
+							   placeholder="Cliquez ici..." autocomplete="off">
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<p class="c-black f-500 m-b-20">Mode de reglement</p>
+				<div class="fg-line">
+					<div class="select">
+						<select  class="form-control" j-data-style="btn-success" name="payment_type" autocomplete="off">
+							<option value="">...</option>
+							<option value="check">Chéque</option>
+							<option value="transfert">Virement</option>
+							<option value="mandat">Mandat</option>
+							<option value="cash">Espéces</option>
+							<option value="credit_card">Carte de credit</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<p class="c-black f-500 m-b-20">Date réglement theorique</p>
+				<div class="input-group form-group">
+					<span class="input-group-addon"><i class="zmdi zmdi-calendar"></i></span>
+					<div class="dtp-container">
+						<input is="datepicker" type='text' name="solutionner" class="form-control"
+							   placeholder="..." autocomplete="off">
+					</div>
+				</div>
+			</div>
+			<div class="col-md-2">
+				<p class="c-black f-500 m-b-20">Auteur de la promesse</p>
+				<div class="fg-line">
+					<div class="select">
+						<select  class="form-control"  name="contact_id" autocomplete="off">
+							<option value="">Choisir votre destinataire</option>
+							<option j-for="contact in contactsList" :value="{{contact.id}}">{{contact.nom}} {{contact.prenom}}</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				<h5>Commentaires</h5>
+				<textarea style="min-width:100%" is="ckeditor" id="editeur-one-promise" name="message" rows="10" ></textarea>
+				<hr>
+			</div>
+		</div>
+		<div class="col-md-12">
+
+		</div>
+		<hr>
+		<div class="modal-footer">
+			<p>
+				<button type="submit" class="btn btn-success">Enregistrer</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+			</p>
+		</div>
+	</form>
+</div>

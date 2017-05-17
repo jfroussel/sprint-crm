@@ -1,0 +1,106 @@
+modelisation des Dashboards en fonction du profil utilisateur:
+
+1 / si l'user se connecte avec un compte type "lead"
+
+    rubriques de la sidebar :
+     - mon compte ( comme pour le saas )
+     - deconnexion
+     - accueil
+ le content du dashboard sera un xbootgrid de ses leads
+
+
+ 2 / si l'user se connecte avec le type Saas  et user type "admin"
+    sidebar complete
+
+    si user autre que type "admin"
+    rubriques sidebar:
+    - mon compte ( comme pour le saas )
+     - deconnexion
+     - accueil + tous les modules metiers
+
+ 3 / si l'user se connecte avec un compte marketplace ( ce model n est pas encore actif )
+     c'est le meme environnement que le mode Saas.
+
+     rubriques de la sidebar:
+     - mon compte ( comme pour le saas )
+     - utilisateurs
+     - deconnexion
+     - accueil + tous les modules metiers
+
+     à savoir que pour la market place le client n'importe pas de données  il ne travaillera que sur des leads envoyé par
+     la marketplace.
+     il ne peut creer de dossier
+
+ detail des textes à mettre dans le process d'acquisition des leads :
+
+ cheques impayes:
+    en quoi consiste cette action:
+
+    montant minimum de la creance:
+    A / procédure convient lorsque l’ancienneté du chèque est supérieure à un an. .Le chèque n’a plus valeur de titre
+        exécutoire, seule une procédure amiable peut déclencher le paiement de la part du débiteur.
+    B / procédure convient lorsque l’ancienneté du chèque est inférieure à un an. .Le chèque a valeur de titre exécutoire.
+        Le but est d’obtenir le paiement de régularisation par une saisie bancaire sur les comptes de l’émetteur du chèque.
+ loyers impayes:
+    en quoi consiste cette action:
+
+    A / procédure convient lorsque votre locataire a entre 1 et 3 mois de retard de paiement. L’objectif de cette procédure
+        est d’obtenir par une négociation amiable le paiement. A défaut, une procédure précontentieuse est ouverte.
+    B / procédure convient lorsque toute tentative de conciliation amiable avec votre locataire n’a pas abouti. L’objectif est
+        d’obtenir un titre exécutoire et procéder à une saisie sur les comptes bancaires du locataire.
+    C / L’objectif est d’obtenir l’expulsion de votre locataire ainsi que le paiement des loyers dus
+
+    montant minimum de la creance:
+
+ creances commerciales:
+     en quoi consiste cette action:
+
+     montant minimum de la creance:
+
+     A /Recouvrer la créance par une négociation amiable avec le débiteur, soit un paiement complet ou mise en plca d’un
+        échéancier
+     B /procédure recommandée pour les clients récalcitrants qui ont déjà été relancé sans succès. Cette procèdure est
+        préconisée si votre débiteur est un particulier ou une TPE/PMI
+     C /procédure recommandée pour les clients « résistants », et pour lesquels une résolution amiable a été engagée sans
+        succès. L’objectif est d’obtenir de la part du juge un titre exécutoire et le faire appliquer.
+     D /procédure recommandée lorsque le créancier et le débiteur sont tous deux des sociétés commerciales. La créance
+        est récente (moins d’un an). Le créancier doit disposer du bon de commande ou devis + la preuve de la réalisation de la prestation ou de
+        la livraison du produit. C’est une procédure de saisie du tribunal en urgence.
+
+
+ reactivation de creances:
+     en quoi consiste cette action:
+
+     montant minimum de la creance:
+
+     A / Recouvrer la créance par une négociation amiable avec le débiteur, soit un paiement complet ou mise en place d’un
+        échéancier
+     B / procédure recommandée pour les clients récalcitrants qui ont déjà été relancé sans succès. Cette procédure est
+        préconisée si votre débiteur est un particulier ou une TPE/PMI
+     C / procédure recommandée pour les clients « résistants », et pour lesquels une résolution amiable a été engagée sans
+        succès. L’objectif est d’obtenir de la part du juge un titre exécutoire et le faire appliquer.
+     D / Recommandation : procédure recommandée lorsque le créancier et le débiteur sont tous deux des sociétés commerciales. La créance
+         est ancienne (plus d’un an). Le créancier doit disposer du bon de commande ou devis + la preuve de la réalisation de la prestation ou de
+         la livraison du produit. C’est une procédure contradictoire.
+
+
+
+ A faire pour livraison de jeudi 13 octobre 2016
+
+ Module corporate lead->externalisation
+     l'inscription fonctionne bien
+     le mail de confirmation est ok
+     lors de la saisie du mot de passe il faudrai rediriger le client directement sur la view de connexion. (ok mais pas testé)
+     remplacer la sidebar par sidebar-externalisation.tml 
+     remplacer la home par home-externalisation.tml
+ Module corporate lead->marketplace
+     l'inscription fonctionne bien
+     le mail de confirmation est ok
+     lors de la saisie du mot de passe il faudrai rediriger le client directement sur la view de connexion.  (ok mais pas testé)
+     remplacer la sidebar par sidebar-marketplace.tml
+     remplacer la home par home-marketplace.tml
+ Module corporate lead->(cheques impayes, loyers impayes, creance commerciales, reactivation de creances)
+     remplacer la sidebar par sidebar-lead.tml
+     remplacer la home par home-lead.tml
+
+     test jeff

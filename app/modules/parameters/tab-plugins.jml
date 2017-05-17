@@ -1,0 +1,19 @@
+<div class="row">
+    <div class="col-md-3">
+        <div class="card blog-post text-center">
+            <img src="img/plugins/email-promise.jpg" class="img-responsive" alt="">
+
+            <a class="card-header" href="">
+                <h2>bouton email promesse<small>Ce plugin vous permet d'inserer dans vos email un bouton pour recolter des promesses de réglement</small></h2>
+            </a>
+
+            <div class="card-body card-padding">
+                Ce service vous sera facturé 25€ par mois.Vous pouvez le desactiver en cliquant sur le bouton ci-dessous.
+            </div>
+            <div class="text-center">
+                <button class="btn btn-success text-center" id="plugin-email" >Activez le plugin</button>
+            </div>
+            <br>
+        </div>
+    </div>
+</div>

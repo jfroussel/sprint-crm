@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<mysqldump xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<database name="dbphpunit">
+	<table_structure name="running_scenario">
+		<field Field="id" Type="int(11) unsigned" Null="NO" Key="PRI" Extra="auto_increment" Comment="" />
+		<field Field="name" Type="varchar(191)" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="category" Type="varchar(191)" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="type" Type="varchar(191)" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="active" Type="tinyint(1) unsigned" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="user_id" Type="int(11) unsigned" Null="YES" Key="MUL" Extra="" Comment="" />
+		<field Field="start_day" Type="double" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="letter" Type="varchar(191)" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="create_day" Type="date" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="exepected_run_day" Type="date" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="running_type" Type="varchar(191)" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="step" Type="int(11) unsigned" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="current_step_length" Type="tinyint(1) unsigned" Null="YES" Key="" Extra="" Comment="" />
+		<field Field="debtor_id" Type="int(11) unsigned" Null="YES" Key="MUL" Extra="" Comment="" />
+		<field Field="paperwork_id" Type="int(11) unsigned" Null="YES" Key="MUL" Extra="" Comment="" />
+		<field Field="scenario_id" Type="int(11) unsigned" Null="YES" Key="MUL" Extra="" Comment="" />
+		<field Field="runned_day" Type="date" Null="YES" Key="" Extra="" Comment="" />
+		<key Table="running_scenario" Non_unique="0" Key_name="PRIMARY" Seq_in_index="1" Column_name="id" Collation="A" Cardinality="0" Null="" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="running_scenario" Non_unique="1" Key_name="c_fk_running_scenario_user_id" Seq_in_index="1" Column_name="user_id" Collation="A" Cardinality="0" Null="YES" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="running_scenario" Non_unique="1" Key_name="c_fk_running_scenario_debtor_id" Seq_in_index="1" Column_name="debtor_id" Collation="A" Cardinality="0" Null="YES" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="running_scenario" Non_unique="1" Key_name="c_fk_running_scenario_paperwork_id" Seq_in_index="1" Column_name="paperwork_id" Collation="A" Cardinality="0" Null="YES" Index_type="BTREE" Comment="" Index_comment="" />
+		<key Table="running_scenario" Non_unique="1" Key_name="c_fk_running_scenario_scenario_id" Seq_in_index="1" Column_name="scenario_id" Collation="A" Cardinality="0" Null="YES" Index_type="BTREE" Comment="" Index_comment="" />
+		<options Name="running_scenario" Engine="InnoDB" Version="10" Row_format="Compact" Rows="0" Avg_row_length="0" Data_length="16384" Max_data_length="0" Index_length="65536" Data_free="30408704" Auto_increment="1" Create_time="2016-12-28 10:26:43" Collation="utf8_unicode_ci" Create_options="" Comment="" />
+	</table_structure>
+	<table_data name="running_scenario">
+	</table_data>
+</database>
+</mysqldump>

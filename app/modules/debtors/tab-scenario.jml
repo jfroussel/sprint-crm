@@ -1,0 +1,46 @@
+<div class="card-body card-padding">																	 
+	<div class="col-md-8">
+		<h5>Scenario en cours d'execution : </h5>
+		<div j-for="ss in scenarioStep" class="p-timeline">
+			<div class="pt-line c-gray text-right">
+				<span class="d-block"></span>
+			</div>
+			<div>Etape du scenario : </div>
+			<div>action prevue le : {{ss.expected_run_day}}</div>
+			<div>action realisée le : {{ss.runned_day}}</div>
+			<div class="pt-body">
+				<div class="ptb-title"><h5>Type d'action : {{ss.type}}</h5></div>
+			</div>
+			<div class="content">
+				Information concernant cette action :
+			</div>
+		</div>
+	</div>			
+	<div class="col-md-4">
+		<h5>Parametrages</h5>
+		<p>Le scenario actuellement en cours est : </p>
+		<p>Modifiez ici le scenario à appliquer</p>
+			
+			<button :class="{{scenarioIsRunning?'':'hide'}} btn btn-danger btn-disabled stop-scenario" j-on-click="stopScenario">Arrêter</button>
+			
+			<select
+				j-on-change="scenarioOverride"
+				j-data-style="{{scenarioIsRunning?'':'btn-success'}}"
+				is="selectpicker"
+				name="scenario_id"
+				autocomplete="off"
+				:disabled="scenarioIsRunning"
+			>
+				<option value="" selected></option>
+				<option j-for="scenario in scenarioList" :value="{{scenario.id}}">{{scenario.name}}</option>
+			</select>
+			
+			<div class="checkbox">
+				 <label>
+					<input name="use_interval" value="1" j-on-change="updateUseInterval" type="checkbox" checked>
+					<i class="input-helper"></i>
+					Prendre en compte l'interval
+				</label>
+			</div>
+	</div>																	 
+</div>

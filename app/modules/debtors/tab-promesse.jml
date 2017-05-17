@@ -1,0 +1,28 @@
+<div class="card">
+	<div class="card-header ch-alt">
+
+		<h2>Gestion des promesses <small>Espace de gestion de promesses.</small></h2>
+		<!--<div class="pull-right"><a j-href="action/note/create" class="btn btn-brown ">Ajouter une note</a></div>-->
+
+	</div>
+
+	<table
+		is="datatables"
+		j-data-ajax--url="plugins/datatables.json?table=promise&where_debtor_id={{id}}"
+		id="promises-table"
+		class="table table-hover table-bordered"
+	>
+		<thead>
+		<tr>
+			<th data-column="id" data-order="asc">id</th>
+			<th data-column="payment_type">type</th>
+			<th data-column="amount">montant</th>
+			<th data-column="date_reglement" data-format="dateformat" data-order="desc">Date envois regl.</th>
+			<th data-column="ctime" data-format="dateformat" data-order="desc">enregistré le</th>
+			<th data-column="status"  data-order="desc">status</th>
+			<th data-action="edit" data-route="promise/update?id="></th>
+			<!--<th data-action="remove"></th>-->
+		</tr>
+		</thead>																				
+	</table>
+</div>

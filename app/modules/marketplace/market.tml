@@ -1,0 +1,154 @@
+<div class="carousel-inner" role="listbox">
+    <div class="item active">
+        <img src="img/mycreance/landing/marketplace.jpg" alt=""/>
+        <!--        <video class="video1 hidden-xs hidden-sm hidden-md" autoplay poster=" " id="bgvid1" loop>-->
+        <!--            <source src="video/mycreance/1.mp4" type="video/mp4">-->
+        <!--        </video>-->
+        <div class="carousel-caption" >
+            <div class="carousel-caption" >
+                <h2>VOUS ETES UN PROFESSIONNEL DU RECOUVREMENT DE CREANCES</h2>
+                <h3><em> « Vous recherchez des leads en  recouvrement BtoB ou BtoC<br>
+                    Inscrivez-vous en 2 minutes et vous serez contacté par un expert MYCREANCE.<br>
+                    Venez découvrir comment MYCREANCE va révolutionner votre façon de travailler»  <br class="hidden-xs hidden-sm"/></em></h3>
+                <a href="#" onclick="return false;" title="En savoir plus de notre logiciel de recouvrement" class="hidden-xs hidden-sm btn btn-xl" data-toggle="modal" data-target="#devis-marketplace">Je m'inscris en 2 minutes !  </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade devis-first-step" id="devis-marketplace" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #337ab7;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h3 class="modal-title" id="myModalLabel">INSCRIPTION à LA MARKETPLACE  Mycreance</h3>
+            </div>
+            <div class="modal-body">
+                <form action="" method="post" id="addmarketplace" j-name="marketplace">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <br>
+                            <br/>
+                            <div class="col-md-4">
+                                <div class="form-group">
+                                    <br/>
+                                    <p>
+                                        <select class="form-control-mc2" name="specialite" required="required" autocomplete="off">
+                                            <option value="">Votre specialité en recouvrement ?</option>
+                                            <option value="-1million€"> BtoB</option>
+                                            <option value="de1a3millions€">BtoC</option>
+                                            <option value="+3millions€">les 2</option>
+                                        </select>
+                                    </p>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="zmdi zmdi-account"></i></span>
+                                        <div class="fg-line">
+                                            <input type="text" class="form-control" placeholder="Raison sociale" name="raison_sociale" required data-validation-required-message="Ce champ est requis" autocomplete="off">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="zmdi zmdi-account"></i></span>
+                                        <div class="fg-line">
+                                            <input type="text" class="form-control" placeholder="siren" name="siren" required data-validation-required-message="Ce champ est requis" autocomplete="off">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="zmdi zmdi-account"></i></span>
+                                        <div class="fg-line">
+                                            <input type="text" class="form-control" placeholder="naf" name="naf" required data-validation-required-message="Ce champ est requis" autocomplete="off">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <br/>
+                                <br/>
+                                <div class="media-left media-top testimo-mc" style="vertical-align: middle">
+                                    <a href="#">
+                                        <img class="media-object" src="img/mycreance/testimo.jpg" alt="...">
+                                    </a>
+                                </div>
+                                <div class="media-body" style="color:#000">
+                                    <em>«Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad, adipisci aperiam aspernatur autem deserunt doloremque ducimus eligendi laborum nisi numquam odit omnis optio pariatur, quae quasi quisquam, tempora vitae!.»</em>
+                                </div>
+
+                            </div>
+                            <div class="col-md-1"></div>
+                            <div class="col-md-7">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="zmdi zmdi-account"></i></span>
+                                        <div class="fg-line">
+                                            <input type="text" class="form-control" placeholder="Nom" name="nom" required data-validation-required-message="Ce champ est requis" autocomplete="off">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="zmdi zmdi-account"></i></span>
+                                        <div class="fg-line">
+                                            <input type="text" class="form-control" placeholder="Prenom" name="prenom" required data-validation-required-message="Ce champ est requis" autocomplete="off">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="zmdi zmdi-email"></i></span>
+                                        <div class="fg-line">
+                                            <input type="email" class="form-control" placeholder="Email" name="email" required data-validation-required-message="Ce champ est requis" autocomplete="off">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="zmdi zmdi-phone"></i></span>
+                                        <div class="fg-line">
+                                            <input type="text" class="form-control" placeholder="téléphone" name="tel" required data-validation-required-message="Ce champ est requis" autocomplete="off">
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="zmdi zmdi-my-location"></i></span>
+                                        <div class="fg-line">
+                                            <input type="text" class="form-control" placeholder="Adresse" name="adresse" required data-validation-required-message="Ce champ est requis" autocomplete="off">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="zmdi zmdi-my-location"></i></span>
+                                        <div class="fg-line">
+                                            <input type="text" class="form-control" placeholder="Code postal" name="code_postal" required data-validation-required-message="Ce champ est requis" autocomplete="off">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><i class="zmdi zmdi-my-location"></i></span>
+                                        <div class="fg-line">
+                                            <input type="text" class="form-control" placeholder="Ville" name="ville" required data-validation-required-message="Ce champ est requis" autocomplete="off">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                <div class="modal-footer">
+                    <input type="submit" class="next-btn-mc" value="Valider">
+                    <if "isset($error)">
+                    <div style="color:#f00;font-size:16px;font-weight:bold;"><?=$error?></div>
+                    </if>
+                </div>
+            </form>
+            </div>
+        </div>
+    </div>
+</div>

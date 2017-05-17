@@ -1,0 +1,103 @@
+<div class="modal-header bgm-bluegray m-b-20 ">
+	<h4 class="modal-title c-white t-uppercase">Ajouter un litige pour le debiteur :  "{{debtor.nom_client}}"  <span class="debtor-name"></span> </h4>
+	<div class="timer" id="timer"><span>{{minutes}}</span>:<span>{{seconds}}</span></div>
+
+</div>
+<div class="modal-body">
+	<form class="form-horizontal" j-name="litige"  id="litige">
+		
+		<hr>
+		<div class="row">
+			<div class="col-md-3">
+				<p class="c-black f-500 m-b-20">Montant du litige</p>
+				<div class="input-group">
+
+					<span class="input-group-addon"><i class="zmdi zmdi-money"></i></span>
+					<div class="fg-line">
+						<input class="form-control" name="amount"   :placeholder="{{amount}}"   type="text" autocomplete="off" >
+					</div>
+
+					<!--<span class="input-group-addon"><i class="zmdi zmdi-money"></i></span>-->
+					<!--<div class="fg-line">-->
+						<!--<input class="form-control" name="amount"  placeholder="Montant du litige" type="text" autocomplete="off" >-->
+					<!--</div>-->
+				</div>
+			</div>
+			<div class="col-md-3">
+				<p class="c-black f-500 m-b-20">Type</p>
+				<div class="fg-line">
+					<div class="select">
+						<select class="form-control"  name="type" autocomplete="off">
+							<option value="application_tarifaire">Application tarifaire</option>
+							<option value="double_facturation">Double facturation</option>
+							<option value="demande_bdc">Demande de BDC</option>
+							<option value="echange_marchandise">Echange marchandise</option>
+							<option value="facture_mal_libellee">Facture mal libellée</option>
+							<option value="demande_duplicata">Demande de duplicata</option>
+							<option value="demande_explication">Demande d’explication</option>
+							<option value="retard_livraison">Retard de livraison</option>
+							<option value="attente_regul">En attente régul de fin d’année</option>
+							<option value="probleme_cloture">Problème clôturée</option>
+							<option value="autre_litige">Autre litige</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<p class="c-black f-500 m-b-20">Delai d'intervention</p>
+				<div class="fg-line">
+					<div class="select">
+						<select class="form-control"  name="solutionner" autocomplete="off">
+							<option value="1">1 jour</option>
+							<option value="2">2 jours</option>
+							<option value="3">3 jours</option>
+							<option value="4">4 jours</option>
+							<option value="5">5 jours</option>
+							<option value="6">6 jours</option>
+							<option value="7">7 jours</option>
+							<option value="8">8 jours</option>
+							<option value="9">9 jours</option>
+							<option value="10">10 jours</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<p class="c-black f-500 m-b-20">Solutionneur</p>
+				<div class="fg-line">
+					<div class="select">
+						<div class="select">
+							<select  class="form-control"  name="expediteur" autocomplete="off">
+								<option value="">...</option>
+								<option j-for="(id, user) in usersList" :value="{{user.id}}">{{user.first_name}} {{user.last_name}}</option>
+							</select>
+						</div>
+						<!--<select  class="form-control"  name="contact_id" autocomplete="off">-->
+							<!--<option value="">Choisir votre destinataire</option>-->
+							<!--<option j-for="contact in contactsList" :value="{{contact.id}}">{{contact.nom}} {{contact.prenom}}</option>-->
+						<!--</select>-->
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="col-md-12">
+			<h5>Commentaires</h5>
+			<textarea cols="80" is="ckeditor" id="editeur-litige" name="message" rows="10" ></textarea>
+			<hr>
+		</div>
+
+
+
+		<div class="col-md-12">
+
+		</div>
+		<div class="modal-footer">
+			<p>
+				<button type="submit" class="btn btn-success">Enregistrer</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+			</p>
+		</div>
+
+	</form>
+</div>

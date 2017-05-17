@@ -1,0 +1,11 @@
+
+<footer>
+    <div class="copyright-block footer navbar navbar-fixed-bottom" id="copyright-block">
+        <div class="container">
+            <div class="col-md-12">
+                <span class="copyright">Copyright &copy; Sprint-crm.com 2016 par <a title="Desico, éditeur de la solution CRM sprint-crm.com" target="_blank" href="http://www.desico.fr/">Desico</a></span>
+                <span><a style="color:#f3be2a" title="Conditions Générales d'Utilisation du site sprint-crm.com" href="cgu.php">&nbsp&nbspConditions Générales d'Utilisation du site</a></span>
+            </div>
+        </div>
+    </div>
+</footer>

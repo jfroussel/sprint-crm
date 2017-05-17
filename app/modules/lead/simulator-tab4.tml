@@ -1,0 +1,199 @@
+<form action="" id="step4" j-name="step4">
+	<input name="method" value="addStep4" type="hidden">
+    <p>Il s'agit du mandat de recouvrement qui indique qui est le créancier(vous), le débiteur(celui qui vous doit) et ce qu'il vous doit(les impayés).Vous devez choisir le mode de paiement des frais de dossier(immediatement ou à la fin de la procedure) et valider les CGV.</p>
+	<div class="col-xs-12">
+		<div class="col-md-12">
+
+			<h3 class="align-center"> Mandat de recouvrement  N° <?= $lead->mandat_number ?></h3>
+            <h4 class="align-center"> categorie de la demande : <?= $lead->category ?> </h4>
+
+            <br>
+			<br>
+			<div class="col-md-6">
+				<div class="card">
+					<div class="card-header ch-alt">
+						<h4>LE CREANCIER</h4>
+					</div>
+					<div class="card-body card-padding">
+						<div class="pmo-contact">
+                            <p><i class="zmdi zmdi-building"></i> <?= $lead->corporate_name ?></p>
+							<p><i class="zmdi zmdi-account"></i> <?= $lead->first_name ?> <?= $lead->last_name ?></p>
+							<p><i class="zmdi zmdi-phone"></i> <?= $lead->phone ?> </p>
+							<p><i class="zmdi zmdi-email"></i> <?= $lead->email ?> </p>
+
+							<i class="zmdi zmdi-pin"></i>
+							<address class="m-b-0">
+								<?= $lead->address ?> <br>
+								<?= $lead->zip_code ?> <?= $lead->city ?> <br>
+								<?= $lead->country ?>
+							</address>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="card">
+					<div class="card-header ch-alt">
+						<h4>Votre débiteur </h4>
+					</div>
+					<div class="card-body card-padding">
+						<div class="pmo-contact">
+                            <p><i class="zmdi zmdi-building"></i> <?= $lead->debit_name ?></p>
+							<p><i class="zmdi zmdi-account"></i> <?= $lead->debit_first_name ?> <?= $lead->debit_last_name ?></p>
+							<p><i class="zmdi zmdi-phone"></i> <?= $lead->debit_phone ?> </p>
+							<p><i class="zmdi zmdi-email"></i> <?= $lead->debit_email ?> </p>
+
+							<i class="zmdi zmdi-pin"></i>
+							<address class="m-b-0">
+								<?= $lead->debit_address ?> <br>
+								<?= $lead->debit_zip_code ?> <?= $lead->debit_city ?> <br>
+								<?= $lead->debit_country ?>
+							</address>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="col-md-12">
+				<br>
+				<br>
+				<h4> Liste de vos créances</h4>
+				<div class="row clearfix">
+					<div class="col-md-12 ">
+						<table class="table table-bordered table-hover" id="tab_logic">
+							<thead>
+							<tr >
+								<th class="text-center">
+									#
+								</th>
+								<th class="text-center">
+									Date
+								</th>
+								<th class="text-center">
+									Echeance
+								</th>
+								<th class="text-center">
+									Montant
+								</th>
+                                <th class="text-center">
+                                    Restant dû
+                                </th>
+								<th class="text-center">
+									N° facture
+								</th>
+								<th class="text-center">
+									Libellé
+								</th>
+							</tr>
+							</thead>
+							<tbody>
+								<? $i = 1; ?>
+								<foreach "$lead->_many_lead_invoice as $lead_invoice">
+									<tr>
+										<td>
+											<?= $i; ?>
+										</td>
+										<td>
+											<?= $lead_invoice->date ?>
+										</td>
+										<td>
+											<?= $lead_invoice->echeance ?>
+										</td>
+										<td>
+											<?= $lead_invoice->montant ?>
+										</td>
+                                        <td>
+                                            <?= $lead_invoice->restant ?>
+                                        </td>
+										<td>
+											<?= $lead_invoice->facture ?>
+										</td>
+                                        <td>
+                                            <?= $lead_invoice->libelle ?>
+                                        </td>
+										<td>
+											<if "$lead_invoice->documents">
+												<foreach "json_decode($lead_invoice->documents) as $doc">
+													<?=$doc?>
+												</foreach>
+											</if>
+										</td>
+									</tr>
+									<? $i++; ?>
+								</foreach>
+							</tbody>
+						</table>
+					</div>
+				</div>
+				<br>
+				<br>
+                <div class="col-md-6">
+                    <h4>Les honoraires Mycreance</h4>
+                    <ul class="list-group-mc">
+                        <li class="list-group-item">
+                            <span class="badge"><?=$total?> € HT</span>
+                            <b>Total creances à recouvrer :</b>
+                        </li>
+                    </ul>
+                    <ul class="list-group-mc">
+                        <li class="list-group-item">
+                            <span class="badge"><?=$honorary+$costs?> € HT</span>
+                            <b>Total coût de recouvrement :</b>
+                            <h6>Dont :</h6>
+                            <ul class="list-group-mc">
+                                <li class="list-group-item">
+                                    <span class="badge bgm-gray"><?=$honorary?> € HT  <if "$honoraryPercent">soit  <?=$honoraryPercent?>%</if></span>
+                                    <b><em>Honoraires au succés :</em></b>
+                                </li>
+                            </ul>
+                            <ul class="list-group-mc">
+                                <li class="list-group-item">
+                                    <span class="badge bgm-gray"><?=$costs?> € HT soit <if "$costsPercent"><?=$costsPercent?>%</if></span>
+                                    <b><em>Frais de procédure :</em></b>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+<!--                    <ul class="list-group">-->
+<!--                        <li class="list-group-item">-->
+<!--                            <span class="badge">--><?//=$honorary?><!-- € HT  <if "$honoraryPercent">soit  --><?//=$honoraryPercent?><!--%</if></span>-->
+<!--                            <b>Honoraires Mycreance au succés :</b>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                    <ul class="list-group">-->
+<!--                        <li class="list-group-item">-->
+<!--                            <span class="badge">--><?//=$costs?><!-- € HT soit <if "$costsPercent">--><?//=$costsPercent?><!--%</if></span>-->
+<!--                            <b>Frais de procédure :</b>-->
+<!--                        </li>-->
+<!--                    </ul>-->
+                </div>
+                <div class="col-md-6">
+                    <div class="radio m-b-15">
+						<div class="form-group">
+							<label class="m-b-15">
+								<input type="radio" aria-required="true" id="costs" name="type_frais" value="prepaid" required>
+								<i class="input-helper"></i>
+								Frais de dossier payable à l'acceptation  :  35 € HT
+							</label>
+							<label class="m-b-15">
+								<input type="radio" aria-required="true" id="costsIssu" name="type_frais" value="success" required>
+								<i class="input-helper"></i>
+								Frais de dossier payable au succes  :  115 € HT
+							</label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="checkbox">
+                            <input type="checkbox" aria-required="true" id="cgu_accepted" name="cgu_accepted" value="1" required>
+                            <i class="input-helper"></i>
+                            <label for="cgu_accepted">Accepter les conditions générales de vente</label>
+                        </div>
+                    </div>
+                </div>
+			</div>
+		</div>
+	</div>
+
+</form>

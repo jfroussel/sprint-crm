@@ -1,0 +1,77 @@
+<div class="card">
+    <div class="card-header ch-alt">
+        <div class="mini-charts">
+            <div class="col-sm-6 col-md-3">
+                <div class="mini-charts-item bgm-cyan">
+                    <div class="clearfix">
+                        <div class="chart stats-bar"></div>
+                        <div class="count">
+                            <small>Items 1</small>
+                            <h2>value en €</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="mini-charts-item bgm-lightgreen">
+                    <div class="clearfix">
+                        <div class="chart stats-bar-2"></div>
+                        <div class="count">
+                            <small>Item 2</small>
+                            <h2>value en €</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="mini-charts-item bgm-orange">
+                    <div class="clearfix">
+                        <div class="chart stats-line"></div>
+                        <div class="count">
+                            <small>item 3</small>
+                            <h2>value en €</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-md-3">
+                <div class="mini-charts-item bgm-pink">
+                    <div class="clearfix">
+                        <div class="chart stats-line-2"></div>
+                        <div class="count">
+                            <small>items 4</small>
+                            <h2>value en €</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2>Gestion des créantiers</h2>
+		<table
+			is="datatables"
+			j-data-ajax--url="plugins/datatables.json?table=creditor"
+			id="creditors-table"
+			class="table table-striped table-bordered"
+		>
+			<thead>
+				<tr>
+					<th data-column="id" data-order="asc">id</th>
+					<th data-column="nr_creancier" data-order="asc">N°créancier</th>
+					<th data-column="siret_creditor">siret</th>
+					<th data-column="nom_creancier">Nom creditor</th>
+					<th data-column="adresse_1">adresse</th>
+					<th data-column="adresse_2">compl.adresse</th>
+					<th data-column="cp_creditor">code postal</th>
+					<th data-column="ville_creditor">ville</th>
+					<th data-column="pays_creditor">pays</th>
+					<th data-action="edit" data-route="creditors/update?id="></th>
+					<th data-action="remove" data-url="creditors/all.json?method=delete" data-remove-body="Êtes-vous sûr de vouloir supprimer ce creditor « %s » ?"></th>
+				</tr>
+			</thead>
+			<tbody></tbody>
+		</table>
+
+    </div>
+
+</div>

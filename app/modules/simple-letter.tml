@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+</head>
+<body>
+
+<div class="html2pdf">
+    <div class="container">
+        <div>
+            <img class="logo" style="width: 150px" src="<?= realpath('img/logo.png')?>" alt="">
+        </div>
+        <br>
+        <div>
+            <p>
+            </p>
+        </div>
+        <div class="row">
+            <div class="col">
+                <p>Expediteur :</p>
+                <p>MyCreance.com<br>
+                    4 Rue Fizeau
+                    75015 Paris<br>
+                    France
+                </p>
+            </div>
+            <div class="col">
+                <p>Destinataire :</p>
+                </p>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div id="content">
+            <?=$html;?>
+        </div>
+        <em><p style="font-size: 12px;text-align: center"> email : support@mycreance.com - tél : 01 56 56 65 16 - website : http://www.mycreance.com</p></em>
+    </div>
+
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

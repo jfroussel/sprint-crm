@@ -1,0 +1,35 @@
+<div class="card">
+    <div class="card-header ch-alt">
+        <h2>Parametrage des banques</h2>
+        <button class="btn bgm-bluegray btn-icon-text waves-effect pull-right" data-toggle-jbs="modal" data-target="#bank-new" data-jview="parameters/bank/create" data-jview-inherit><i class="zmdi zmdi-calendar"></i>Créez une nouvelle banque</button>
+
+    </div>
+    <table
+            is="datatables"
+            j-data-ajax--url="plugins/datatables.json?table=bank",
+            j-data-checkbox-name="_many_bank"
+            id="bank-table"
+            class="table table-striped table-bordered"
+    >
+        <thead>
+        <tr>
+            <th></th>
+            <th></th>
+            <th data-column="id" data-visible="false">id</th>
+            <th data-column="name" data-order="desc">Nom de la banque</th>
+            <th data-column="number" data-order="desc">N° compte</th>
+            <th data-column="bic"  data-order="desc">BIC</th>
+            <th data-column="iban"  data-order="desc">IBAN</th>
+            <th data-column="sepa"  data-order="desc">N° émetteur SEPA</th>
+            <th data-column="code"  data-order="desc">Code comptable</th>
+            <th data-column="active">Active par default</th>
+            <th data-column="ctime" data-format="dateformat" data-order="desc">enregistré le</th>
+            <th data-action="edit" data-type="modal" data-view="parameters/bank/update"></th>
+
+            <th data-action="remove" data-url="parameters/bank.json?method=delete" data-remove-body="Êtes-vous sûr de vouloir supprimer cette banque « %s » ?"></th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    <div class="modal fade" id="bank-new" tabindex="-1" role="dialog" aria-hidden="true"></div>
+</div>

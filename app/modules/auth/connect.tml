@@ -1,0 +1,9 @@
+<extend "layout/main">
+	<attr "header>nav"  addClass="navbar-auth">
+	<write main>
+		<div class="container connect">
+			 <include login-box>
+			 <include register-box>
+		</div>
+	</write>
+</extend>

@@ -1,0 +1,95 @@
+# Project Specific
+/dist
+/esker
+/.data
+/content
+/composer.lock
+/node_modules
+/.data/db-trash
+
+# Project Specific keep RedCat couch #
+/crossdomain.xml
+/robots.txt
+/.htaccess
+
+# RedCat Project #
+/index-up.phps
+/artist
+/bin/artist.phar
+/bin/artist.phar.pubkey
+/redcat.php
+/index.php
+/config/default.php
+/install.php
+/install.phps
+/robots_cdn.txt
+/robots_ssl.txt
+#/config/env.phps
+
+# RedCat env config #
+/config/env.php
+
+# Local composer
+/composer
+
+# vendor-dir #
+/vendor
+/node_modules
+/bower_components
+
+# RedCat temp-dir #
+/.tmp
+
+# Compiled source #
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Packages #
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs #
+*.log
+
+# OS generated files #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# CLI generated files #
+*~
+*#
+*.out
+*.swp
+*.swo
+*.un~
+
+# IDE generated files #
+nbproject
+.~lock.*
+.buildpath
+.project
+.settings
+.classpath
+.metadata
+*.iml
+*.ipr
+*.sublime-workspace
+/.idea/workspace.xml
+/.idea/tasks.xml
+/terminal.glue

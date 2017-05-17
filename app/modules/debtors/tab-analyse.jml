@@ -1,0 +1,27 @@
+<div class="container-fluid" style="padding-top:50px">
+    <div class="row">
+
+    </div>
+    <div class="col-md-4 text-center">
+        <h5>Balance Agée en € </h5>
+        <canvas id="analyse-balance-agee" width="380" height="300"></canvas>
+    </div>
+    <div class="col-md-4 text-center">
+        <h5>Evolution DSO en jours</h5>
+        <canvas id="analyse-evolution-dso" width="380" height="300"></canvas>
+    </div>
+    <div class="col-md-4 text-center">
+        <h5>Chiffres clefs</h5>
+        <ul class="list-group">
+            <li class="list-group-item">Encours : <b>{{ (debtorOne.oneEncours==null?'non defini':debtorOne.oneEncours) }} </b></li>
+            <li class="list-group-item">Solde echu : <b>{{ (debtorOne.oneSoldeEchu==null?'non defini':debtorOne.oneSoldeEchu) }}</b></li>
+            <li class="list-group-item">Solde non echu : <b>{{ (debtorOne.oneSoldeNonEchu==null?'non defini':debtorOne.oneSoldeNonEchu) }}</b></li>
+            <li class="list-group-item">Promesses : <b>{{ (debtorOne.onePromesses==null?'non defini':debtorOne.onePromesses) }}</b></li>
+            <li class="list-group-item">Echeances : <b>{{ (debtorOne.oneEcheances==null?'non defini':debtorOne.oneEcheances) }}</b></li>
+            <li class="list-group-item">Litiges : <b>{{ (debtorOne.oneLitiges==null?'non defini':debtorOne.oneLitiges) }}</b></li>
+        </ul>
+
+    </div>
+
+</div>
+

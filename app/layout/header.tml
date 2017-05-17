@@ -1,0 +1,44 @@
+<header id="<?=!$user->id?'header-corporate':'header-app'?>">
+	<nav id="main-navbar" class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header page-scroll">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-menu">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand page-scroll" href="#">
+					<img class="top-logo top-logo-sm" src="img/logo.png" alt="logo de sprint-crm.com" title="sprint-crm.com">
+					<img class="top-logo top-logo-lg" src="img/logo.png" alt="logo de sprint-crm.com" title="sprint-crm.com">
+				</a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="main-menu">
+
+				<ul class="nav navbar-nav navbar-right" id="navbar-connexion">
+					<if "!$user->id">
+					<li>
+						<a class="page-scroll" title="" href="#">Decouvrir Sprint-crm</a>
+					</li>
+					<li>
+						<a class="page-scroll" title="" href="#">Tarifs</a>
+					</li>
+					<li>
+						<a class="page-scroll" title="" href="#">Centre d'aide</a>
+					</li>
+					</if>
+
+					<li>
+						<if "$user->id">
+							<a href="auth/logout" class="btn  btn-connexion ">Deconnexion</a>
+						<else>
+							<a href="auth/login"  id="connexion-btn-corporate"class="btn btn-connexion" >Connexion</a>
+						</if>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+</header>

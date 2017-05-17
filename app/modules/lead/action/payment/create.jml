@@ -1,0 +1,86 @@
+<div class="modal-header bgm-bluegray m-b-20 ">
+	<h4 class="modal-title c-white t-uppercase">Ajouter un reglement pour le debiteur :  "{{debtor.nom_client}}"  <span class="debtor-name"></span> </h4>
+	<div class="timer" id="timer"><span>{{minutes}}</span>:<span>{{seconds}}</span></div>
+</div>
+<div class="modal-body">
+	<form class="form-horizontal" j-name="payment"  id="payment">
+		<div class="row">
+
+			<div class="col-md-8">
+				<p class="c-black f-500 m-b-20">Type de réglement</p>
+				<div class="col-md-3">
+					<div class="radio m-b-15">
+						<label>
+							<input type="radio" name="type" value="debit">
+							<i class="input-helper"></i>
+							Débit
+						</label>
+					</div>
+				</div>
+				<div class="col-md-3">
+					<div class="radio m-b-15">
+						<label>
+							<input type="radio" name="type" value="credit">
+							<i class="input-helper"></i>
+							Crédit
+						</label>
+					</div>
+				</div>
+
+				<div class="input-group">
+					<div class="fg-line">
+						<input class="form-control" name="folder_number" placeholder="N° de dossier" type="text">
+					</div>
+				</div>
+				<div class="input-group">
+					<div class="fg-line">
+						<input class="form-control" name="invoice_number" placeholder="N° de facture" type="text">
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="fg-line">
+					<p class="c-black f-500 m-b-20">Mode de réglement</p>
+					<div class="select">
+						<select  name="payment_type"  class="form-control"  autocomplete="off">
+							<option value="cheque">cheque</option>
+							<option value="carte_credit">carte de credit</option>
+							<option value="virement">virement</option>
+							<option value="especes">especes</option>
+						</select>
+					</div>
+				</div>
+				<div class="input-group">
+					<div class="fg-line">
+						<input class="form-control" name="amount"   :placeholder="{{amount}}"   type="text" autocomplete="off" >
+					</div>
+				</div>
+
+				<div class="input-group">
+					<div class="fg-line">
+						<input class="form-control" name="payment_ref" placeholder="Réference du reglement" type="text">
+					</div>
+				</div>
+			</div>
+			<hr>
+		</div>
+
+		<div class="col-md-12">
+			<h5>Commentaires</h5>
+			<textarea cols="80" is="ckeditor" id="editeur-one-reglement" name="message" rows="10" >
+				{{message}}
+			</textarea>
+			<hr>
+		</div>
+		<div class="col-md-12">
+
+		</div>
+		<hr>
+		<div class="modal-footer">
+			<p>
+				<button type="submit" class="btn btn-success">Enregistrer</button>
+				<button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+			</p>
+		</div>
+	</form>
+</div>

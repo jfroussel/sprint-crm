@@ -1,0 +1,10 @@
+
+
+<extend "layout/main">
+	<attr "header>nav"  addClass="navbar-auth">
+	<write main>
+		<div class="container" style="padding-top: 120px;padding-bottom: 120px">
+			 <include login-box>
+		</div>
+	</write>
+</extend>

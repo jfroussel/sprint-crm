@@ -1,0 +1,129 @@
+
+
+<section id="content">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-2 debtor-sidebar">
+                <div>
+                    <div class="card-header">
+                        <hr>
+                        <h5>Timeline des actions</h5>
+                        <div j-for="ss in scenarioStep">
+                            <b>{{ss.type}} : </b>
+
+                            <span j-if="ss.runned_day">
+                                    réalisé le : {{ss.runned_day}} <i class="zmdi zmdi-check c-green"></i>
+                            </span>
+                            <span j-if="!ss.runned_day">
+                                    prevu le : {{ss.expected_run_day}}
+                            </span>
+                        </div>
+                        </hr>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10 .col-md-offset-2">
+                <div class="card">
+                    <div class="col-md-2">
+                        <div class="mini-charts-item bgm-lightgreen">
+                            <div class="clearfix">
+                                <div class="count">
+                                    <h2></h2>
+                                    <small>Dossiers en cours</small>
+                                    <small>écriture(s)</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="mini-charts-item bgm-bluegray">
+                            <div class="clearfix">
+                                <div class="count">
+                                    <h2></h2>
+                                    <small>Dossiers resolus</small>
+                                    <small>écriture(s)</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="mini-charts-item bgm-purple">
+                            <div class="clearfix">
+                                <div class="count">
+                                    <h2></h2>
+                                    <small>Solde echu en €</small>
+                                    <small>écriture(s)</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="mini-charts-item bgm-deeporange">
+                            <div class="clearfix">
+                                <div class="count">
+                                    <h2 id="count-promesses"></h2>
+                                    <small>Promesses en €</small>
+                                    <small>écriture(s)</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="mini-charts-item bgm-pink">
+                            <div class="clearfix">
+                                <div class="count">
+                                    <h2 id="count-echeances"></h2>
+                                    <small>Echeanciers en cours en €</small>
+                                    <small>écriture(s)</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="mini-charts-item bgm-gray">
+                            <div class="clearfix">
+                                <div class="count">
+                                    <h2 id="count-litiges"></h2>
+                                    <small>Litiges en €</small>
+                                    <small>écriture(s)</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-header">
+                        <h4>STATISTIQUES  AU : {{moment().format('LL')}}</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-10 col-md-offset-2">
+                <table
+                        is="datatables"
+                        j-data-ajax--url="plugins/datatables.json?table=lead"
+                        j-data-checkbox-name="_many2many_paperwork"
+                        j-data-scroll-y="258px"
+                        j-data-scroll-X="2000px"
+                        id="leads-table"
+                        class="table table-hover table-bordered"
+                >
+                    <thead>
+                    <tr style="font-size: 10px">
+                        <th></th>
+                        <th data-column="id" data-visible="true">id</th>
+                        <th data-column="ctime" data-format="dateformat" >Date creation</th>
+                        <th data-column="mandat_number" data-width="100px">N° Mandat</th>
+                        <th data-column="category" data-width="120px">Categorie</th>
+                        <th data-column="type">type</th>
+                        <th data-column="amount" data-visible="true">Montant previsionnel</th>
+                        <th data-column="debit_last_name">Nom</th>
+                        <th data-column="debit_first_name">Prenom</th>
+                        <th data-column="debit_phone">Tel</th>
+                        <th data-column="debit_email">Email</th>
+                        <th data-action="edit" data-route="home/leadone?id="></th>
+                    </tr>
+                    </thead>
+                </table>
+                <br>
+            </div>
+        </div>
+    </div>
+</section>

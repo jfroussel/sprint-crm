@@ -1,0 +1,102 @@
+<div class="container-fluid">
+
+		<form class="form-horizontal" j-name="template" id="template">
+			<div class="card-header ch-alt">
+				<h2>Créer un nouveau template <small></small></h2>
+			</div>
+			<br>
+            <div class="card-body card-padding">
+                <div class="row">
+                    <div class="col-md-2">
+                        <div class="form-group">
+                            <div class="input-group m-b-20">
+                                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                <div class="fg-line">
+                                    <input type="text" name="name"  class="form-control" placeholder="Nom de votre template">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div j-if="is_superroot" class="col-md-2">
+                        <div class="fg-line">
+                            <div class="select">
+                                <select  class="form-control" name="category" autocomplete="off" >
+                                    <option>Selectionnez la categorie...</option>
+                                    <option value="loyer-impaye">loyer impayé</option>
+                                    <option value="cheque-impaye">cheque impayé</option>
+                                    <option value="creance-commerciale">créance commerciale</option>
+                                    <option value="reactivation-creance">reactivation de creance</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="fg-line">
+                            <div class="select">
+                                <select  class="form-control" name="type" id="type" autocomplete="off" >
+                                    <option>Selectionnez le type...</option>
+                                    <option value="sms">Sms</option>
+                                    <option value="email">Email</option>
+                                    <option value="appel">Appel téléphonique</option>
+                                    <!--<option value="LETTRE_VERTE">lettre verte</option>-->
+                                    <option value="LETTRE_ECOPLI">lettre ecopli</option>
+                                    <!--<option value="LETTRE_PRIORITAIRE">lettre prioritaire</option>-->
+                                    <option value="LETTRE_RECOMMANDEE_AVEC_AR">lettre recommandée A/R</option>
+                                    <!--<option value="LETTRE_RECOMMANDEE">lettre recommandée</option>-->
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="fg-line">
+                            <div class="select">
+                                <select class="form-control" name="active" autocomplete="off">
+                                    <option>Selectionnez la statut...</option>
+                                    <option value="1">Actif</option>
+                                    <option value="0">Inactif</option>
+                                </select>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <br>
+                <div j-if="template.type=='email'">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <div class="input-group m-b-20">
+                                    <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                    <div class="fg-line">
+                                        <input type="text" name="mail_subject"  class="form-control" placeholder="Indiquez le sujet de votre mail">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p>
+                        <h4>Inserer le contenu de votre template</h4>
+                        </p>
+                    </div>
+                    <br>
+                    <div class="col-md-12">
+                        <div j-show="template.type=='sms'">
+                            <textarea cols="80" is="ckeditor" j-data-custom-editor="text" id="editeur-template-custom-sms" :name="{{template.type=='sms'?'message':'message_'}}" rows="10" ></textarea>
+                        </div>
+                        <div j-show="template.type!='sms'">
+                            <textarea cols="80" is="ckeditor"  id="editeur-template" :name="{{template.type!='sms'?'message':'message_'}}" rows="10" ></textarea>
+                        </div>
+
+
+                        <br>
+                        <button type="submit" class="btn  btn-success pull-right ">Enregistrer</button>
+                    </div>
+                </div>
+
+            </div>
+		</form>
+    <hr>
+</div>

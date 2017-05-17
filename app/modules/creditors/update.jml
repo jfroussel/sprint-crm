@@ -1,0 +1,74 @@
+<section id="content">
+    <div class="container-fluid">
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-header ch-alt">
+                    <h2>Information du créancier  {{ (nom_creancier==null?'non defini':nom_creancier) }}
+
+                        <small>
+                            Contact :  {{ (nom_contact_creditor==null?'non defini':nom_contact_creditor) }} {{ (typeof(prenom_contact_creditor)=='undefined'?'':prenom_contact_creditor) }}<br>
+                            Siret :   {{ (siret_creditor==null?'non defini':siret_creditor) }}<br>
+                            N° de créancier :  {{ (nr_creancier==null?'non defini':nr_creancier) }}
+                        </small>
+                    </h2>
+                </div>
+                <div class="card-body card-padding">
+                    <div class="pmo-contact">
+                        <ul>
+                            <li class="ng-binding"><i class="zmdi zmdi-phone"></i> {{ (telephone_1_contact_creditor==null?'non defini':telephone_1_contact_creditor) }}</li>
+                            <li class="ng-binding"><i class="zmdi zmdi-phone"></i> {{ (telephone_2_contact_creditor==null?'non defini':telephone_2_contact_creditor) }}</li>
+                            <li class="ng-binding"><i class="zmdi zmdi-email"></i> {{ (email_contact_creditor==null?'non defini':email_contact_creditor) }}</li>
+
+                            <li>
+                                <i class="zmdi zmdi-pin"></i>
+                                <address class="m-b-0 ng-binding">
+                                    {{ (adresse_1==null?'non defini':adresse_1) }} <br>
+                                    {{ (adresse_2==null?'non defini':adresse_2) }} <br>
+                                    {{ (cp_creditor==null?'non defini':cp_creditor) }} <br>
+                                    {{ (ville_creditor==null?'non defini':ville_creditor) }}
+                                    {{ (pays_creditor==null?'non defini':pays_creditor) }}
+                                </address>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+       <div class="col-md-9">
+           <div class="card">
+               <div class="card-header ch-alt">
+                   <h2>Liste des débiteurs
+
+                       <small>
+                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae debitis delectus dolorum ducimus ex praesentium repellendus sed vel? Accusantium eveniet hic ipsam ipsum iusto nobis perferendis repellendus sit tempore voluptate!
+                       </small>
+                   </h2>
+               </div>
+               <div class="card-body card-padding">
+                   <div class="tab-content">
+                       <table
+							is="datatables"
+							j-data-ajax--url="plugins/datatables.json?table=debtor&where_n_creancier={{nr_creancier}}"
+							id="debtors-table"
+							class="table table-striped table-bordered"
+						>
+                           <thead>
+                           <tr>
+                               <th data-column="id" data-order="asc">id</th>
+                               <th data-column="n_client" data-order="asc">N°client</th>
+                               <th data-column="nom_client">Nom client</th>
+                               <th data-column="code_postal">code postal</th>
+                               <th data-column="ville">ville</th>
+                               <th data-action="edit" data-route="debtors/update?id="></th>
+                               <th data-action="remove"></th>
+                           </tr>
+                           </thead>
+                           <tbody></tbody>
+                       </table>
+
+                   </div>
+               </div>
+           </div>
+       </div>
+    </div>
+</section>

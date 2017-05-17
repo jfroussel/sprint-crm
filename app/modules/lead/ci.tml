@@ -1,0 +1,84 @@
+<div class="carousel-inner" role="listbox">
+    <div class="item active">
+        <img src="img/mycreance/landing/ci.png" alt=""/>
+<!--        <video class="video1 hidden-xs hidden-sm hidden-md" autoplay poster=" " id="bgvid1" loop>-->
+<!--            <source src="video/mycreance/1.mp4" type="video/mp4">-->
+<!--        </video>-->
+        <div class="carousel-caption">
+            <div class="landing-baseline-left pull-left">
+            <h2>VOUS AVEZ RECU UN « CHEQUE EN BOIS » ?</h2>
+            <h3><em>«Avec MyCreance Service, j’ai fait un devis gratuit en ligne.
+                J’ai donné à MyCreance le mandat pour effectuer le recouvrement
+                au contentieux du chèque impayé. En 45 jours MyCreance a obtenu
+                le paiement forcé auprès  de mon client. »</em>   <br class="hidden-xs hidden-sm"/></h3>
+            <a href="#" onclick="return false;" title="En savoir plus de notre logiciel de recouvrement" class="hidden-xs hidden-sm btn btn-xl" data-toggle="modal" data-target="#devis-ci">Je lance une simulation !  </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade devis-first-step" id="devis-ci" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #337ab7;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h3 class="modal-title" id="myModalLabel">SIMULER LE COÛT DE RECOUVREMENT POUR <br> VOS CHEQUES IMPAYES</h3>
+            </div>
+            <form action="" method="post">
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <input name="method" value="addLead" type="hidden">
+
+                            <input type="text" name="category" value="<?=App\Model\Lead::CHEQUE_IMPAYE?>" type="hidden">
+                            <br>
+                            <div class="form-group">
+                                <p>
+                                    <select class="form-control-mc1" name="seniority" id="seniority_ci" required="required" autocomplete="off">
+                                        <option value="">Ancienneté de votre facture ?</option>
+                                        <option value="+1an"> +1 an</option>
+                                        <option value="-1an">-1 an</option>
+                                    </select>
+                                </p>
+                            </div>
+                            <div class="form-group">
+                                <p>
+                                    <input type="text" name="amount" class="form-control-mc1" id="form-control-mc-input" required="required" autocomplete="off" placeholder="Cumul des sommes ?" <?=isset($lead)?$lead->amount:''?> >
+                                </p>
+                            </div>
+                            <p>
+                                <select class="form-control-mc1" name="type" id="select-type" required="required">
+                                    <option value="">Type d'action ?</option>
+                                    <option value="amiable">Amiable</option>
+                                    <option value="judiciaire">Judiciaire</option>
+                                </select>
+                            </p>
+                            <div class="form-group">
+                                <p>
+                                    <input type="text" name="email" class="form-control-mc1 mc-input" id="form-control-mc-input" required="required" autocomplete="off" placeholder="Votre E-mail" <?=isset($lead)?$lead->email:''?> >
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-8 mc-info-lead" id="actionDetail">
+                            <h3>DÉTAILS DE L'ACTION SÉLECTIONNÉE</h3>
+                            <hr/>
+                            <h4 style="color: #b02538;">EN QUOI CONSISTE CETTE ACTION:</h4>
+                            <p id="detail-procedure-ci"></p>
+                            <h4 style="color: #b02538;">MONTANT MINIMUM DE LA CRÉANCE:</h4>
+                            <p>Valable pour tout montant</p>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <input type="submit" class="next-btn-mc" value="Suivant">
+                    <if "isset($error)">
+                    <div style="color:#f00;font-size:16px;font-weight:bold;"><?=$error?></div>
+                    </if>
+                    <if "!isset($error)">
+
+                    </if>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

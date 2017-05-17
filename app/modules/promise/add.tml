@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+</head>
+<body>
+<div class="container" style="padding-top: 50px;">
+    <div class="jumbotron">
+		<div class="promise-logo text-left">
+			<img  src="" alt="">
+		</div>
+		<hr>
+        <h3 class="text-center">Vous pouvez indiquer dès à présent la date à laquelle<br> vous allez effectuer les paiements des factures dues</h3>
+		<hr>
+		<p class="lead">
+			<ul>
+				<li>1) sélectionnez les factures</li>
+				<li>2) Indiquer la date à laquelle vous effectuez le paiement</li>
+				<li>3) Choisissez le mode de règlement</li>
+				<li>4) Validez</li>
+			</ul>
+		<h4>Nous recevons la promesse et vous ne recevrez plus de relance.</h4>
+		</p>
+        <hr class="my-4">
+        <p>Veuillez saisir le montant de votre promesse de réglement ainsi que la date à laquelle il sera effectué.</p>
+        <div class="lead">
+			<switch "$state">
+				<case "default">
+					<form class="form-inline" action="./add?posted=1" method="POST" autocomplete="off">
+						<input type="hidden" name="token" value="<?=$token?>">
+						<table class="table table-bordered">
+							<thead>
+							<tr style="font-size: 14px">
+								<td class="vcenter"><input type="checkbox" id="checkall" value="1"/></td>
+								<td>Date</td>
+								<td>N°piece</td>
+								<td>Date écheance</td>
+								<td>Journal</td>
+								<td>Débit</td>
+								<td>Crédit</td>
+								<td>Type</td>
+								<td>Jours retard</td>
+							</tr>
+							</thead>
+							<tbody>
+							<foreach "$paperworks as $id=>$paperwork">
+								<tr>
+									<td class="vcenter">
+										<input type="checkbox" name="paperwork[]" value="<?=$id?>" data-amount="<?=$paperwork->debit?>">
+									</td>
+									<? foreach($paperwork as $k => $v): ?>
+										<td style="font-size: 12px"><?= $v ?></td>
+									<? endforeach; ?>
+								</tr>
+							</foreach>
+							</tbody>
+						</table>
+						<label class="sr-only" for="amount">Montant</label>
+						<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+							<div class="input-group-addon">€</div>
+							<input type="text" name="amount" class="form-control mb-2 mr-sm-2 mb-sm-0" id="amount" placeholder="Montant" required>€
+						</div>
+						<label class="sr-only" for="datepicker">Date</label>
+						<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+							<input type="text"  name="date_reglement" class="form-control" id="datepicker" placeholder="Date de reglement" required>
+						</div>
+						<div class="input-group mb-2 mr-sm-2 mb-sm-0">
+							<select  class="form-control" j-data-style="btn-success" name="payment_type" autocomplete="off" required>
+								<option value="">Mode de reglement</option>
+								<option value="check">Chéque</option>
+								<option value="transfert">Virement</option>
+								<option value="mandat">Mandat</option>
+								<option value="cash">Espéces</option>
+								<option value="credit_card">Carte de credit</option>
+							</select>
+						</div>
+
+						<input type="submit" class="btn btn-primary btn-lg" id="button" href="#" role="button">
+					</form>
+				</case>
+				<case "error">
+					<div class="alert alert-danger" role="alert">
+						<strong>Erreur ! </strong> <?=$error?>.
+					</div>	
+				</case>
+				<case "ok">
+					<div class="alert alert-success" role="alert">
+						<strong>Merci ! </strong> Votre promesse de réglement est bien enregistrée par nos services.
+					</div>
+				</case>
+			</switch>
+		</div>
+		<hr>
+    </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<script>
+	$(document).ready(function(){
+
+		var datepicker = $('#datepicker');
+		datepicker.datepicker();
+
+		$('#button').on('click', function(e){
+			$('.alert-success').show();
+		});
+		
+		let amount = $('[name="amount"]');
+		$('#checkall').on('change',function(){
+			$('input[name="paperwork[]"]').
+				prop('checked',$(this).prop('checked'))
+				.trigger('change')
+			;
+		});
+		$('input[name="paperwork[]"]').on('change',function(){
+			let amountNumber = 0;
+			$('input[name="paperwork[]"]:checked').each(function(){					
+				amountNumber += Number($(this).attr('data-amount'));
+			});
+			amount.val(amountNumber.toFixed(2).replace('.',','));
+		});
+		
+	});
+</script>
+
+</body>
+</html>

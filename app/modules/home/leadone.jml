@@ -1,0 +1,95 @@
+<div class="container-fluid" style="padding-top:50px">
+    <div class="row">
+        <div class="col-md-2">
+            <div class="card" >
+                <div class="card-header ch-alt">
+                    <h4>Information de votre débiteur</h4>
+                </div>
+                <div class="card-body card-padding">
+                    <div class="pmo-contact">
+                        <p><i class="zmdi zmdi-pin-account"></i> {{ (lead.debit_name==null?'non defini':lead.debit_name) }}</p>
+                        <p><i class="zmdi zmdi-account"></i> {{ (lead.debit_first_name==null?'non defini':lead.debit_first_name) }} {{ (lead.debit_last_name==null?'non defini':lead.debit_last_name) }}</p>
+                        <p><i class="zmdi zmdi-phone"></i> {{ (lead.debit_phone==null?'non defini':lead.debit_phone) }} </p>
+                        <p><i class="zmdi zmdi-email"></i> {{ (lead.debit_email==null?'non defini':lead.debit_email) }} </p>
+
+                        <i class="zmdi zmdi-pin"></i>
+                        <address class="m-b-0">
+                            {{ (lead.debit_address==null?'non defini':lead.debit_address) }} <br>
+                            {{ (lead.debit_zip_code==null?'non defini':lead.debit_zip_code) }} {{ (lead.debit_city==null?'non defini':lead.debit_city) }} <br>
+                            {{ (lead.debit_country==null?'non defini':lead.debit_country) }}
+                        </address>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header ch-alt">
+                    <h4>Timeline des actions</h4>
+                </div>
+                <div class="card-body card-padding">
+                    <div j-for="ss in scenarioStep">
+                        <b>{{ss.type}} : </b>
+
+                        <span j-if="ss.runned_day">
+                                réalisé le : {{ss.runned_day}} <i class="zmdi zmdi-check c-green"></i>
+                        </span>
+                        <span j-if="!ss.runned_day">
+                                prevu le : {{ss.expected_run_day}}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-10 .col-md-offset-2">
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header ch-alt">
+                        <h4>detail de votre dossier n° {{lead.mandat_number}}</h4>
+                        <h5>Votre dossier est actuellement suivi par : </h5>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+            <div class="col-md-12">
+                <div class="card">
+                    <div class="card-header ch-alt">
+                        <h4>Information sur le dossier</h4>
+                    </div>
+                    <div class="card-body card-padding">
+                        Votre demande concerne le recouvrement de : {{lead.category}} pour un montant  de {{lead.amount}} €. <br>
+                        Détail des pieces fournies lors de votre achat : <br>
+                        <table
+                                is="datatables"
+                                j-data-ajax--url="plugins/datatables.json?table=lead_invoice&where_lead_id={{lead.id}}"
+                                j-data-scroll-y="258px"
+                                j-data-scroll-X="2000px"
+                                id="leads-invoice-table"
+                                class="table table-hover table-bordered"
+                        >
+                            <thead>
+                            <tr style="font-size: 10px">
+                                <th></th>
+                                <th data-column="id" data-visible="true">id</th>
+                                <th data-column="ctime" data-format="dateformat" >Date creation</th>
+                                <th data-column="date" data-format="dateformat" >Date facture</th>
+                                <th data-column="echeance" data-format="dateformat" >Date echeance</th>
+                                <th data-column="montant" data-visible="true">montant</th>
+                                <th data-column="restant" data-visible="true">restant dû</th>
+                                <th data-column="facture" data-visible="true">ref facture</th>
+                                <th data-column="libelle" data-visible="true">libellé</th>
+                                <th data-column="status" data-visible="true">status de la facture</th>
+                                <!--<th data-action="edit" data-route="home/leadone?id="></th>-->
+                            </tr>
+                            </thead>
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>

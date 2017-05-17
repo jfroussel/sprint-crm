@@ -1,0 +1,47 @@
+.parameters-import-files{
+	
+}
+.parameters-import-map{
+/*
+	display:none;
+*/
+}
+.import-state{
+	margin-top: 6px;
+	margin-left: 16px;
+}
+.import-manual{
+	margin-top: 15px;
+	.running,
+	.normal,
+	.queued{
+		display: flex;
+		justify-content: center;
+	}
+	.zmdi{
+		margin-top: 3px;
+		margin-left: 16px;
+	}
+}
+.import-loader{
+	display:none;
+}
+.import-success{
+
+}
+.import-failed{
+	display:none;
+}
+.import-debtor-area,
+.import-paperwork-area{
+
+}
+.import-tooltip{
+	display:none;
+}
+.tooltip-button{
+	cursor:pointer;
+}
+.import-manual{
+	
+}

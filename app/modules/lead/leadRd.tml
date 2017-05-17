@@ -1,0 +1,17 @@
+<extend "layout/main">
+	
+    <attr selector="body" addClass="home"/>
+    <attr selector="body" data-lead-category="reconnaissance de dette"/>
+	<prepend title>MyCreance.com</prepend>
+	<append title> - Reconnaissance de dette</append>
+	<remove "#navbar-items" />
+	<append "header">
+		<include "rd">
+	</append>
+	<write main>
+
+		<incorpore "lead-sections.tml">
+
+	</write>
+	<append "body"> <script type="text/javascript" src="dist/app-lead.js"></script> </append>
+</extend>

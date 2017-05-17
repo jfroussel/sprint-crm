@@ -1,0 +1,15 @@
+<extend "layout/main">
+    <attr selector="body" addClass="home"/>
+    <prepend title>MyCreance.com</prepend>
+    <append title> - externalisation du poste client</append>
+    <append "header">
+		<include "ext.tml">
+    </append>
+    <remove "#navbar-items" />
+    <append body>
+        <script type="text/javascript" src="dist/app-outsourcing.js"></script>
+    </append>
+    <write main>
+        <incorpore "../lead/outsourcing-section.tml">
+    </write>
+</extend>

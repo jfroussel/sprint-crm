@@ -1,0 +1,85 @@
+<form action="" id="step5" enctype="multipart/form-data" j-name="step5">
+	<input name="method" value="addStep5" type="hidden">
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus purus
+		sapien, cursus et egestas at, volutpat sed dolor. Aliquam sollicitudin dui.
+	</p>
+
+    <div class="container"><!-- -->
+        <div class="row">
+            <div class="col-xs-12 col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading panel-heading-mc">
+                        <h3 class="panel-title">Montant du paiement <?= $lead->frais?> € HT </h3>
+                    </div>
+                    <div class="panel-body">
+                        <form role="form" id="payment-form">
+							<span class="payment-errors"></span>
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="form-group">
+                                        <label for="cardNumber">DETAIL DE VOTRE COMMANDE</label>
+                                        <div class="input-group">
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-6">
+                <div class="panel panel-default">
+                    <div class="panel-heading panel-heading-mc">
+                        <h3 class="panel-title"><img class="pull-right" src="img/accepted_c22e0.png">Detail du paiement</h3>
+                    </div>
+                    <div class="panel-body">
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="form-group">
+									<label for="cardNumber">NUMERO DE CARTE</label>
+									<div class="input-group">
+										<input type="text" class="form-control" name="cardNumber" placeholder="Numero de carte valide" autofocus data-stripe="number" required/>
+										<span class="input-group-addon"><i class="fa fa-credit-card"></i></span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-xs-7 col-md-7">
+								<label for="expMonth">DATE D'EXPIRATION</label>
+								<div class="form-group">
+
+									<div class="col-xs-6 col-lg-6 pl-ziro">
+										<input type="text" class="form-control" name="expMonth" placeholder="MM" data-stripe="exp_month" required/>
+									</div>
+									<div class="col-xs-6 col-lg-6 pl-ziro">
+										<input type="text" class="form-control" name="expYear" placeholder="YY" data-stripe="exp_year" required/>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-5 col-md-5 pull-right">
+								<div class="form-group">
+									<label for="cvCode">CODE CV</label>
+									<input type="password" class="form-control" name="cvCode" placeholder="CV" data-stripe="cvc" required/>
+								</div>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="col-xs-12">
+								<button id="payment" class="btn btn-success btn-lg btn-block" type="submit">Valider le paiement</button>
+							</div>
+						</div>
+						<div class="row" style="display:none;">
+							<div class="col-xs-12">
+								<p class="payment-errors"></p>
+							</div>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

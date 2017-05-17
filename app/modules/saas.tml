@@ -1,0 +1,36 @@
+<extend "layout/main">
+	<write main>
+		<div class="container-fluid" style="padding-top: 15px">
+			<div class="col-md-2">
+				<switch "$user->type">
+					<case "lead">
+						<incorpore "sidebar-lead.tml">
+					</case>
+					<case "marketplace">
+						<incorpore "sidebar-marketplace.tml">
+					</case>
+					<case "outsourcing">
+						<incorpore "sidebar-outsourcing.tml">
+					</case>
+					<case "default">
+						<incorpore "sidebar.tml">
+					</case>
+				</switch>
+			</div>
+			<div class="col-md-10">
+				<div class="builder-wrap" j-app="saas"></div>
+				<div class="modal fade" id="debtor-note" tabindex="-1" role="dialog" aria-hidden="true"></div>
+				<div class="modal fade" id="debtor-agenda" tabindex="-1" role="dialog" aria-hidden="true"></div>
+				<div class="modal fade" id="debtor-letter" tabindex="-1" role="dialog" aria-hidden="true"></div>
+				<div class="modal fade" id="debtor-schedule" tabindex="-1" role="dialog" aria-hidden="true"></div>
+				<div class="modal fade" id="debtor-email" tabindex="-1" role="dialog" aria-hidden="true"></div>
+				<div class="modal fade" id="debtor-litige" tabindex="-1" role="dialog" aria-hidden="true"></div>
+				<div class="modal fade" id="debtor-promise" tabindex="-1" role="dialog" aria-hidden="true"></div>
+				<div class="modal fade" id="debtor-payment" tabindex="-1" role="dialog" aria-hidden="true"></div>
+				<div class="modal fade" id="debtor-sms" tabindex="-1" role="dialog" aria-hidden="true"></div>
+				<div class="modal fade" id="debtor-contact" tabindex="-1" role="dialog" aria-hidden="true"></div>
+				<div class="modal fade" id="debtor-surveillance" tabindex="-1" role="dialog" aria-hidden="true"></div>
+			</div>
+		</div>
+	</write>
+</extend>

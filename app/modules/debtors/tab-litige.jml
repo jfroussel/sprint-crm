@@ -1,0 +1,28 @@
+<div class="card">
+	<div class="card-header ch-alt">
+		<h2>Gestion des litiges <small>Espace de gestion de litiges.</small></h2>
+	</div>
+	<table
+		is="datatables"
+		j-data-ajax--url="plugins/datatables.json?table=litige&where_debtor_id={{id}}"											
+		id="litiges-table"
+		class="table table-hover table-bordered"
+	>
+		<thead>
+		<tr>
+			<th data-column="id" data-order="asc">id</th>
+			<th data-column="type">type</th>
+			<th data-column="message">message</th>
+			<th
+				data-url="debtors/tab-litige.json?method=store"
+				data-column="active"
+				data-format="active"
+				data-css-class="toggler"
+			>statut</th>
+			<th data-column="ctime" data-format="dateformat" data-order="desc">enregistré le</th>
+			<th data-action="edit" data-route="litige/update?id="></th>
+			<th data-action="remove"></th>
+		</tr>
+		</thead>									
+	</table>
+</div>

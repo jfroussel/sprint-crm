@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://getbootstrap.com/examples/sticky-footer/sticky-footer.css">
+</head>
+<body>
+
+<div class="html2pdf">
+    <div class="container-fluid" style="padding-top: 170px">
+
+        <div class="row">
+            <div class="col-12">
+                <?= $message ?>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted" style="font-size: 10px">Raison sociale : <?= $user->company_name==null?'NC':$user->company_name ?> - email : <?= $user->email==null?'NC':$user->email ?> - tél : <?= $user->phone==null?'NC':$user->phone ?> - website : <?= $user->company_website==null?'NC':$user->company_website ?>
+            </p>
+        </div>
+    </footer>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

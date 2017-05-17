@@ -1,0 +1,62 @@
+
+<div class="row" style="padding-top: 30px">
+    <div class="col-md-4">
+        <p>Le déclenchement des scenarios de relance est basé sur le scoring CreditSafe.</p>
+        <div class="table-responsive">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>id</th>
+                    <th>Scoring</th>
+                    <th>Description</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="bgm-green c-white">
+                    <td><b>A</b></td>
+                    <td>71-100</td>
+                    <td>Rique trés faible</td>
+
+                </tr>
+                <tr class="bgm-lightgreen c-white">
+                    <td><b>B</b></td>
+                    <td>51-71</td>
+                    <td>Risque faible</td>
+
+                </tr>
+                <tr class="bgm-amber c-white">
+                    <td><b>C</b></td>
+                    <td>30-50</td>
+                    <td>Risque modéré</td>
+
+                </tr>
+                <tr class="bgm-orange c-white">
+                    <td><b>D</b></td>
+                    <td>21-29</td>
+                    <td>Risque élevé</td>
+
+                </tr>
+                <tr class="bgm-deeporange c-white">
+                    <td><b>E</b></td>
+                    <td>1-20</td>
+                    <td>Risque trés élevé</td>
+
+                </tr>
+                <tr class="bgm-red c-white">
+                    <td><b>F</b></td>
+                    <td>0</td>
+                    <td>entreprise en situation de défaillance</td>
+
+                </tr>
+                <tr class="bgm-red c-white">
+                    <td><b>G</b></td>
+                    <td>NC</td>
+                    <td>Pas noté</td>
+                </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+</div>
+

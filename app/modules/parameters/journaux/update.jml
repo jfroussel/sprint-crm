@@ -1,0 +1,43 @@
+<div class="modal-header bgm-bluegray m-b-20 ">
+    <h4 class="modal-title c-white t-uppercase">Modifier le code journal {{journaux.code_journal}}</h4>
+</div>
+<div class="modal-body">
+    <form class="form-horizontal" j-name="journaux"  id="journaux">
+
+        <div class="row">
+            <div class="col-md-5">
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="zmdi zmdi-edit"></i></span>
+                    <div class="fg-line">
+                        <input class="form-control" placeholder="Code journal du client" name="code_journal" type="text" autocomplete="off">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="zmdi zmdi-edit"></i></span>
+                    <div class="fg-line">
+                        <input class="form-control" placeholder="Categorie journal" name="category_journal" type="text" autocomplete="off">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="zmdi zmdi-edit"></i></span>
+                    <div class="fg-line">
+                        <input class="form-control" placeholder="Si écriture au debit" name="if_debit" type="text" autocomplete="off">
+                    </div>
+                </div>
+                <div class="input-group">
+                    <span class="input-group-addon"><i class="zmdi zmdi-edit"></i></span>
+                    <div class="fg-line">
+                        <input class="form-control" placeholder="Si écriture au crédit" name="if_credit" type="text" autocomplete="off">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="modal-footer">
+            <p>
+                <button type="submit" class="btn btn-success">Modifier</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Annuler</button>
+            </p>
+        </div>
+    </form>
+</div>

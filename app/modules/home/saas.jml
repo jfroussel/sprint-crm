@@ -1,0 +1,16 @@
+<div>
+    <div class="container-fluid">
+        <div role="tabpanel">
+            <ul class="tab-nav" role="tablist">
+                <li class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab" data-jview="home/tab-home">Tableau de bord</a></li>
+                <li><a href="#agenda" aria-controls="agenda" role="tab" data-toggle="tab" data-jview="home/tab-agenda">Agenda</a></li>
+                <li><a href="#actions" aria-controls="dossiers" role="tab" data-toggle="tab" data-jview="home/tab-actions" disabled>Actions à faire</a></li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="home"></div>
+                <div role="tabpanel" class="tab-pane " id="agenda"></div>
+                <div role="tabpanel" class="tab-pane" id="actions"></div>
+            </div>
+        </div>
+    </div>
+</div>

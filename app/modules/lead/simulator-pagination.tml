@@ -1,0 +1,11 @@
+<ul class="fw-footer pagination wizard">
+    <li class="previous">
+		<button class="btn btn-primary pull-right" type="button"> <i class="zmdi zmdi-arrow-left"></i> Précédent </button>
+    </li>
+    <li class="next">
+		<button class="btn btn-primary pull-right" type="button"> Suivant <i class="zmdi zmdi-arrow-right"></i> </button>
+    </li>
+    <li class="finish">
+		<button class="btn btn-success pull-right" type="button" > <i class="zmdi zmdi-check"></i> Terminer </button>
+    </li>
+</ul>

@@ -1,0 +1,312 @@
+<div class="import-tooltip text-center">
+	<div><h4 class="c-white"><b>Contraintes:</b></h4></div>
+	<div class="text-left">le séparateur obligatoire est le point-virgule <b>;</b></div>
+	<div class="text-left">une colonne de référence unique est obligatoire</div>
+	<div class="text-left">les noms des colonnes seront automatiquement normalisés en lettres minuscules et sans accents, les espaces et tirets <b>-</b> seront remplacés par le caractère <b>_</b> (underscore) et tout autre caractère qu'une lettre, un chiffre ou un underscore sera supprimé</div>
+	<div class="text-left">les csv seront importés cette nuit automatiquement</div>
+</div>
+
+<div class="row">
+	<div class="col-md-4">
+		<div class="card">
+			<div class="card-header ch-alt">
+				<h2>Importer vos sociétés</h2>
+				<br>
+				<ul class="actions">
+					<li>
+						<a href="#" onclick="return false;" data-toggle="tooltip" data-get-html=".import-tooltip" data-placement="bottom">
+							<i class="zmdi zmdi-help-outline"></i>
+						</a>
+					</li>
+				</ul>
+				<form class="parameters-import-debtor" enctype="multipart/form-data" j-name="upload" data-type="debtor">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="float-left">
+								<label class="btn btn-yellow btn-file">
+									fichier sociétés  (max {{::maxfilesize}}) <input type="file" name="file" style="display: none;">
+								</label>
+							</div>
+							<div class="float-left import-state">
+								<div class="import-loader"><i class="fa fa-spinner fa-spin"></i></div>
+								<div j-if="userColumns.debtor" class="import-success"><i class="fa fa-check m-green"></i></div>
+								<div class="import-failed"><i class="fa fa-close m-red"></i></div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="card-body card-padding">
+
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="card">
+			<div class="card-header ch-alt import-paperwork-head">
+				<h2>Importer vos actions</h2>
+				<br>
+				<ul class="actions">
+					<li>
+						<a href="#" onclick="return false;" data-toggle="tooltip" data-get-html=".import-tooltip" data-placement="bottom">
+							<i class="zmdi zmdi-help-outline"></i>
+						</a>
+					</li>
+				</ul>
+				<form class="parameters-import-paperwork" enctype="multipart/form-data" j-name="importdetbor.upload" data-type="paperwork">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="float-left">
+								<label class="btn btn-yellow btn-file">
+									fichier actions  (max {{::maxfilesize}}) <input type="file" name="file" style="display: none;">
+								</label>
+							</div>
+							<div class="float-left import-state">
+								<div class="import-loader"><i class="fa fa-spinner fa-spin"></i></div>
+								<div j-if="userColumns.paperwork" class="import-success"><i class="fa fa-check m-green"></i></div>
+								<div class="import-failed"><i class="fa fa-close m-red"></i></div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="card-body card-padding">
+
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="card">
+			<div class="card-header ch-alt import-contact-head">
+				<h2>Importer vos contacts</h2>
+				<br>
+				<ul class="actions">
+					<li>
+						<a href="#" onclick="return false;" data-toggle="tooltip" data-get-html=".import-tooltip" data-placement="bottom">
+							<i class="zmdi zmdi-help-outline"></i>
+						</a>
+					</li>
+				</ul>
+				<form class="parameters-import-contact" enctype="multipart/form-data" j-name="importcontact.upload" data-type="contact">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="float-left">
+								<label class="btn btn-yellow btn-file">
+									fichier contacts  (max {{::maxfilesize}}) <input type="file" name="file" style="display: none;">
+								</label>
+							</div>
+							<div class="float-left import-state">
+								<div class="import-loader"><i class="fa fa-spinner fa-spin"></i></div>
+								<div j-if="userColumns.contact" class="import-success"><i class="fa fa-check m-green"></i></div>
+								<div class="import-failed"><i class="fa fa-close m-red"></i></div>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="card-body card-padding">
+
+		</div>
+	</div>
+
+</div>
+
+<div class="parameters-import-map">
+	<div class="row">
+		<div class="col-md-4">
+			<form class="form-horizontal importmap" j-name="importmap.debtor" name="debtor">
+				<div j-if="userColumns.debtor" class="import-config">
+					<div class="csv-debtor">
+						<h4>Mapping de vos champs sociétés</h4>
+						
+						<div class="import-keys">							
+							<fieldset class="form-group required import-config-primary">
+								<div class="row">
+									<label class="col-md-4 control-label">référence unique</label>
+									<div class="col-md-8">
+										<select name="primary" class="select" data-live-search="true"  data-rule-uniqselection="debtor-keys" autocomplete="off" required>
+											<option value="">non défini</option>
+											<option j-for="(i, userColumn) in userColumns.debtor" :value="{{userColumn}}">{{userColumn}}</option>
+										</select>
+									</div>
+								</div>
+							</fieldset>			
+						</div>
+						
+						<div class="import-debtor-area">
+						
+							<fieldset j-for="systemColumn in columns.debtor" class="form-group" :data-user-column="{{::systemColumn}}">
+								<div class="row">
+									<label class="col-md-4 control-label text-left">{{::systemColumn}}</label>
+									<div class="col-md-8">
+										<select :name="{{::systemColumn}}" type="text" class="select" data-live-search="true" data-rule-uniqselection="debtor-config" autocomplete="off">
+											<option value="">non défini</option>
+											<option j-for="(i, userColumn) in userColumns.debtor" :value="{{userColumn}}">{{userColumn}}</option>
+										</select>
+									</div>
+								</div>
+							</fieldset>
+						
+						</div>
+						
+					</div>
+				</div>
+			</form>
+		</div>
+
+		<div class="col-md-4">
+			<form class="form-horizontal importmap" j-name="importmap.paperwork"  name="paperwork">
+				<div j-if="userColumns.paperwork" class="import-config">
+					<div class="csv-paperwork">
+						<h4>Mapping de vos champs actions</h4>
+						
+						<div class="import-keys">							
+							<fieldset class="form-group required import-config-primary">
+								<div class="row">
+									<label class="col-md-4 control-label">référence unique</label>
+									<div class="col-md-8">
+										<select name="primary" class="select" data-live-search="true"  data-rule-uniqselection="paperwork-keys" autocomplete="off" required>
+											<option value="">non défini</option>
+											<option j-for="(i, userColumn) in userColumns.paperwork" :value="{{userColumn}}">{{userColumn}}</option>
+										</select>
+									</div>
+								</div>
+							</fieldset>
+							
+							<fieldset class="form-group required">
+								<div class="row">
+									<label class="col-md-4 control-label">référence société</label>
+									<div class="col-md-8">
+										<select name="debtor_primary" data-rule-uniqselection="paperwork-keys" autocomplete="off" required>
+											<option value="">non défini</option>
+											<option j-for="userColumn in userColumns.paperwork" :value="{{userColumn}}">{{userColumn}}</option>
+										</select>
+									</div>
+								</div>
+							</fieldset>
+						</div>
+						
+						<div class="import-paperwork-area">
+						
+							<fieldset j-for="systemColumn in columns.paperwork" class="form-group" :data-user-column="{{::systemColumn}}">
+								<div class="row">
+									<label class="col-md-4 control-label text-left">{{::systemColumn}}</label>
+									<div class="col-md-8">
+										<select :name="{{::systemColumn}}" type="text" class="select" data-live-search="true" data-rule-uniqselection="paperwork-config" autocomplete="off">
+											<option value="">non défini</option>
+											<option j-for="(i, userColumn) in userColumns.paperwork" :value="{{userColumn}}">{{userColumn}}</option>
+										</select>
+									</div>
+								</div>
+							</fieldset>
+						
+						</div>
+						
+					</div>
+				</div>
+			</form>
+		</div>
+		<div class="col-md-4">
+			<form class="form-horizontal importmap" j-name="importmap.contact" name="contact">
+				<div j-if="userColumns.contact" class="import-config">
+					<div class="csv-contact">
+						<h4>Mapping de vos champs contacts</h4>
+
+						<div class="import-keys">
+							<fieldset class="form-group required import-config-primary">
+								<div class="row">
+									<label class="col-md-4 control-label">référence unique</label>
+									<div class="col-md-8">
+										<select name="primary" class="select" data-live-search="true"  data-rule-uniqselection="contact-keys" autocomplete="off" required>
+											<option value="">non défini</option>
+											<option j-for="(i, userColumn) in userColumns.contact" :value="{{userColumn}}">{{userColumn}}</option>
+										</select>
+									</div>
+								</div>
+							</fieldset>
+
+							<fieldset class="form-group required">
+								<div class="row">
+									<label class="col-md-4 control-label">référence sociétés</label>
+									<div class="col-md-8">
+										<select name="debtor_primary" data-rule-uniqselection="contact-keys" autocomplete="off" required>
+											<option value="">non défini</option>
+											<option j-for="userColumn in userColumns.contact" :value="{{userColumn}}">{{userColumn}}</option>
+										</select>
+									</div>
+								</div>
+							</fieldset>
+						</div>
+
+						<div class="import-contact-area">
+
+							<fieldset j-for="systemColumn in columns.contact" class="form-group" :data-user-column="{{::systemColumn}}">
+								<div class="row">
+									<label class="col-md-4 control-label text-left">{{::systemColumn}}</label>
+									<div class="col-md-8">
+										<select :name="{{::systemColumn}}" type="text" class="select" data-live-search="true" data-rule-uniqselection="contact-config" autocomplete="off">
+											<option value="">non défini</option>
+											<option j-for="(i, userColumn) in userColumns.contact" :value="{{userColumn}}">{{userColumn}}</option>
+										</select>
+									</div>
+								</div>
+							</fieldset>
+
+						</div>
+
+					</div>
+				</div>
+			</form>
+		</div>
+
+	</div>
+</div>
+
+<div class="row">
+	<div class="col-md-4">
+		<div class="import-manual" data-table="debtor">
+			<div class="normal">
+				<button class="btn btn-yellow launch float-left">importer</button>
+			</div>
+			<div class="running hide">
+				<span class="btn btn-default float-left">importation en cours</span>
+				<i class="zmdi zmdi-hc-2x zmdi-rotate-right c-teal zmdi-hc-spin float-left"></i>
+			</div>
+			<div class="queued hide">
+				<span class="btn btn-default float-left">importation en attente</span>
+				<i class="zmdi zmdi-hc-2x zmdi-more c-teal float-left"></i>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="import-manual" data-table="paperwork">
+			<div class="normal">
+				<button class="btn btn-yellow launch float-left">importer</button>
+			</div>
+			<div class="running hide">
+				<span class="btn btn-default float-left">importation en cours</span>
+				<i class="zmdi zmdi-hc-2x zmdi-rotate-right c-teal zmdi-hc-spin float-left"></i>
+			</div>
+			<div class="queued hide">
+				<span class="btn btn-default float-left">importation en attente</span>
+				<i class="zmdi zmdi-hc-2x zmdi-more c-teal float-left"></i>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="import-manual" data-table="contact">
+			<div class="normal">
+				<button class="btn btn-yellow launch float-left">importer</button>
+			</div>
+			<div class="running hide">
+				<span class="btn btn-default float-left">importation en cours</span>
+				<i class="zmdi zmdi-hc-2x zmdi-rotate-right c-teal zmdi-hc-spin float-left"></i>
+			</div>
+			<div class="queued hide">
+				<span class="btn btn-default float-left">importation en attente</span>
+				<i class="zmdi zmdi-hc-2x zmdi-more c-teal float-left"></i>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,29 +1,20 @@
 <ol j-if="!breadcrumb" class="breadcrumb">
-	<li><a j-href="paperworks/all">Écritures</a></li>
+	<li><a j-href="paperworks/all">Actions</a></li>
 	<li class="active">{{primary}}</li>
-</ol>
-<ol j-if="breadcrumb" class="breadcrumb">
-	<li><a j-href="debtors/all">Débiteurs</a></li>
-	<li><a :j-href="debtors/update?id={{debtor_id}}">{{debtor_nom_client}}</a></li>
-	<li class="active">Écriture {{primary}}</li>
 </ol>
 
 <section id="content">
     <div class="container-fluid">
         <div class="col-md-12">
             <div class="card-header">
-                <h4>Detail de l'écriture Référence : <b>{{ (typeof(primary)=='undefined'?'':primary) }}</b></h4>
-                <h5>Date d'émission le : <b>{{ date}}</b></h5>
-                <h5>Date d'échéance le : <b>{{ date_echeance }}</b></h5>
-                <h5>Montant : <b>{{ montant }} €</b></h5>
+                <h4>Detail de l'action en  Référence : <b>{{ (typeof(primary)=='undefined'?'':primary) }}</b></h4>
+                <h5>Date de debut : <b>{{ date_debut}}</b></h5>
+                <h5>Date de fin : <b>{{ date_fin }}</b></h5>
+                <h5>A faire part : <b>{{ a_faire_part }}</b></h5>
                 <br>
             </div>
             <h5>Informations</h5>
-
-        </div>
-        </div>
-        </div>
-        </div>
+            <p>{{memo}}</p>
         </div>
     </div>
 </section>

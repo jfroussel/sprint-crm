@@ -9,7 +9,7 @@ export default class extends Module {
 		let breadcrumb = params.breadcrumb;
 		this.data.breadcrumb = breadcrumb;
 		return [
-			$serviceJSON('paperwork/update','load',[id,breadcrumb]),
+			$serviceJSON('paperworks/update','load',[id,breadcrumb]),
 		];
 	}
 	domReady(){

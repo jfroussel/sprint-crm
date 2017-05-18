@@ -1,26 +1,5 @@
 
 
 <div class="container-fluid" style="padding-top: 60px">
-    <div class="row">
-        <div class="col-md-6 home-chart">
-            <h5>evolution du CA</h5><br>
-            <canvas id="evolution-ca" width="380" height="200"></canvas>
-        </div>
-        <div class="col-md-6 home-chart home-chart-pieces">
-            <h5>statut des pieces </h5><br>
-            <br><br><br>
-            <canvas id="statut-pieces" width="380" height="220"></canvas>
-        </div>
-    </div>
-    <br><br>
-    <div class="row">
-        <div class="col-md-6 home-chart">
-            <h5>Balance Agée</h5><br>
-            <canvas id="balance-agee" width="380" height="200"></canvas>
-        </div>
-        <div class="col-md-6 home-chart">
-            <h5>evolution du dso</h5><br>
-            <canvas id="evolution-dso" width="380" height="200"></canvas>
-        </div>
-    </div>
+    <h3>Dashboard Sprint-crm</h3>
 </div>

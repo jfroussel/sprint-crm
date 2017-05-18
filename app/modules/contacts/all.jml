@@ -3,13 +3,9 @@
 </ol>
 <div class="card">
     <h3>Liste des contacts</h3>
-    <div class="card-header ch-alt">
-
-
+    <div class="card">
 
     </div>
-
-
     <table
             is="datatables"
             j-data-ajax--url="plugins/datatables.json?table=contact"
@@ -31,9 +27,8 @@
             <th data-column="address">adresse</th>
             <th data-column="postal_code">code postal</th>
             <th data-column="city">ville</th>
-
-            <!--<th data-action="edit" data-route="contacts/update?id="></th>-->
-            <!--<th data-action="remove" data-route="debtors/update?id="></th>-->
+            <th data-action="edit" data-route="contacts/update?id="></th>
+            <th data-action="remove" data-route="contacts/update?id="></th>
         </tr>
         </thead>
         <tbody></tbody>

@@ -11,18 +11,19 @@ export default class extends Module {
 		var id = jstack.url.getParams(this.hash).id;
 		return [
 			$serviceJSON('debtors/update','load', [id]),
-
 		];
 	}
 
 	setData(){
-	    super.setData();
+	    super.setData(...arguments);
 	    this.data.dateOfDay = moment().format('LL');
     }
 	domReady(){
-		var self = this;
-		var data = self.data;
+        let self = this;
+        let data = self.data;
+
 		var element = self.element;
+
 
         $('.debtor-name').text(data.ct_intitule);
         $('.debtor-adresse').text(data.ct_adresse);
@@ -32,10 +33,7 @@ export default class extends Module {
 		//jstack.log(data.contact);
 
 
-
-
-
-
+		console.log(data);
 		
 	}
 };

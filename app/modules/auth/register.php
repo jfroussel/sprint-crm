@@ -2,6 +2,7 @@
 namespace App\Modules\Auth;
 use RedCat\Route\Request;
 use App\Modules\Auth\Auth;
+
 class Register extends Auth{
 	function __invoke(Request $request){
 		$data = [];

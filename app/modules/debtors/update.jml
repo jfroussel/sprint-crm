@@ -1,6 +1,6 @@
 <ol class="breadcrumb">
 	<li><a j-href="debtors/all">Société</a></li>
-	<li class="active">{{raison_sociale}}</li>
+	<li class="active">{{ raison_sociale }}</li>
 </ol>
 
 <section id="content">
@@ -13,7 +13,7 @@
                             <div class="clearfix">
                                 <div class="count countDebtor">
                                     <small>Société</small>
-                                    <small>{{ (raison_sociale==null?'non defini':raison_sociale) }} </small>
+                                    <small>{{ ( raison_sociale==null?'non defini':raison_sociale ) }} </small>
                                 </div>
                             </div>
                         </div>
@@ -115,7 +115,6 @@
                        <h4>STATISTIQUES DE LA SOCIETE AU : {{dateOfDay}}</h4>
                    </div>
                    <div class="col-12 text-left task-bar-mc">
-
                        <button class="btn bgm-bluegray btn-icon-text waves-effect"  data-toggle-jbs="modal" data-target="#debtor-note" data-jview="action/note/create"><i class="zmdi zmdi-comment-text"></i>note</button>
                        <button class="btn bgm-bluegray btn-icon-text waves-effect"  data-toggle-jbs="modal" data-target="#debtor-agenda" data-jview="action/agenda/create"><i class="zmdi zmdi-comment-text"></i>agenda</button>
                        <button class="btn bgm-bluegray btn-icon-text waves-effect btn-debtor-email"  data-toggle-jbs="modal" data-target="#debtor-email" data-jview="action/email/create"><i class="zmdi zmdi-email"></i>email</button>

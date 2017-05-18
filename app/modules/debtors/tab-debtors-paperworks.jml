@@ -27,6 +27,7 @@
 		j-data-paging="true"
 		j-data-scroll-y="458px"
 		j-data-scroll-X="2000px"
+
 		id="paperworks-table"
 		class="table table-striped table-bordered"
 >

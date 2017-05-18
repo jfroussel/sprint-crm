@@ -38,14 +38,10 @@ export default jstack.directive( 'datatables' ,class extends jstack.Component{
 				}
 			},
 			dateformat: function(value) {
-				let datetime = new Date(value);
-				let timestamp = Math.floor(datetime.getTime()/1000);
-				return moment(timestamp).format('DD/MM/YYYY');
+				return moment(new Date(value)).format('DD/MM/YYYY');
 			},
 			dateTimeFormat: function(value) {
-				let datetime = new Date(value);
-				let timestamp = Math.floor(datetime.getTime()/1000); 
-				return moment(timestamp).format('DD/MM/YYYY à h:mm');
+				return moment(new Date(value)).format('DD/MM/YYYY à h:mm');
 
 			},
 			timestampformat: function(value){
@@ -472,7 +468,7 @@ export default jstack.directive( 'datatables' ,class extends jstack.Component{
 				},
 				searchPlaceholder: 'Rechercher'
 			},
-			autoWidth: true,
+			autoWidth: false,
 			scrollY: "350px",
 			scrollX: false,
 			lengthChange: false,

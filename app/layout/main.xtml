@@ -11,7 +11,7 @@ $user = $redcat(App\Route\User::class);
 <html lang="fr">
 <head>
 	<meta charset="utf-8">
-	<title>MyCreance</title>
+	<title>desico.Sprint-CRM</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="google-site-verification" content="kY2dtAHc3JIED3mLYo9pqRK8mGxgRbMy9Gaw-RQy0mE"/>

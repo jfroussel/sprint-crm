@@ -178,11 +178,11 @@ class Auth extends AbstractController{
 	}
 	protected function sendMail($email, $type, $key, $login){
 		if($type=='activation'){
-			$subject = 'Activation du compte - MyCreance';
+			$subject = 'Activation du compte - desico.Sprint-CRM';
 			$message = includeOutput('app/auth/email/activation.php',['site'=>$this->siteUrl,'uri'=>'auth/signin','key'=>$key]);
 		}
 		else{
-			$subject = 'Réinitialisation du mot de passe - MyCreance';
+			$subject = 'Réinitialisation du mot de passe - desico.Sprint-CRM';
 			$message = includeOutput('app/auth/email/reset.php',['site'=>$this->siteUrl,'uri'=>'auth/reset','key'=>$key]);
 		}
 		$mailer = $this->di->get(PHPMailer::class);

@@ -94,7 +94,7 @@ class Outsourcing extends AbstractController
     protected function _sendMail($token, $user, $outsourcing, $requestId, SilentProcess $silentProcess, PHPMailer $phpMailer, Templix $templix, Url $url){
         //$silentProcess->debug();
         $silentProcess->register(function()use($outsourcing,$user,$phpMailer,$templix,$url,$token){
-            $subject = 'Création de votre compte sur la plateforme Mycreance';
+            $subject = 'Création de votre compte sur la plateforme desico.Sprint-CRM';
             $mailData = [
                 'user'=>$user,
                 'token'=>$token,

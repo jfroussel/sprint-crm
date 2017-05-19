@@ -2,11 +2,15 @@
 	<div class="col-md-3">
 		<div class="select form-group">
 			<form>
-				<label>Assigner le débiteur à un gestionnaire</label>
-				<select j-on-j:change="updateManager" is="select" name="user_id" autocomplete="off">
-					<option value="">Aucun</option>
-					<option j-for="user in userList" :value="{{user.id}}">{{user.first_name}} {{user.last_name}} {{user.first_name||user.last_name?'':user.email}}</option>
-				</select>
+				<label>Assigner la société à un utilisateur</label>
+				<div class="fg-line">
+					<div class="select">
+						<select class="form-control" j-on-j:change="updateManager" is="select" name="user_id" autocomplete="off">
+							<option value="">Aucun</option>
+							<option j-for="user in userList" :value="{{user.id}}">{{user.first_name}} {{user.last_name}} {{user.first_name||user.last_name?'':user.email}}</option>
+						</select>
+					</div>
+				</div>
 			</form>
 		</div>
 	</div>

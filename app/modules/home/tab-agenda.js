@@ -19,10 +19,10 @@ export default class extends Module {
 
 		var calendar =  $('#calendar').fullCalendar({
 
-			height: 650,
+			height: 750,
 			locale: 'fr',
             lang: 'fr',
-            eventColor: '#34A1FF',
+            eventColor: '#343b47',
 			defaultView: 'month',
             editable: true,
             startEditable:true,

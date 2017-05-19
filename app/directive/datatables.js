@@ -12,7 +12,8 @@ import "datatables-buttons/js/buttons.flash";
 import "datatables-buttons/js/buttons.html5";
 import "datatables-buttons/js/buttons.print";
 import "datatables-buttons/js/buttons.bootstrap";
-import "bootstrap3-dialog";
+import BootstrapDialog from "bootstrap3-dialog";
+
 
 export default jstack.directive( 'datatables' ,class extends jstack.Component{
 

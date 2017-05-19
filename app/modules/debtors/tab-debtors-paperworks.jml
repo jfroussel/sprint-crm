@@ -1,10 +1,10 @@
 
-<div class="row">
-	<div class="col-md-2">
-		<h5>Liste des actions</h5>
-		<div class="fg-line">
-			<div class="select">
-				<select  class="form-control"  name="paperworksType" id="paperworksType" autocomplete="off">
+<!--<div class="row">-->
+	<!--<div class="col-md-2">-->
+		<!--<h5>Liste des actions</h5>-->
+		<!--<div class="fg-line">-->
+			<!--<div class="select">-->
+				<!--<select  class="form-control"  name="paperworksType" id="paperworksType" autocomplete="off">-->
 					<!--<option value="non-lettree">écritures non lettrées</option>-->
 					<!--<option value="lettree">écritures lettrées</option>-->
 					<!--<option value="echue">écritures echues</option>-->
@@ -12,12 +12,11 @@
 					<!--<option value="promise">écritures en promesse</option>-->
 					<!--<option value="litige">écritures en litige</option>-->
 					<!--<option value="echeance">écritures en échéancier</option>-->
-				</select>
-			</div>
-		</div>
-	</div>
-
-</div>
+				<!--</select>-->
+			<!--</div>-->
+		<!--</div>-->
+	<!--</div>-->
+<!--</div>-->
 
 
 

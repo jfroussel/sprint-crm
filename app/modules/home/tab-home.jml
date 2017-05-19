@@ -1,5 +1,7 @@
 
-
-<div class="container-fluid" style="padding-top: 60px">
-    <h3>Dashboard Sprint-crm</h3>
+<div class="container-fluid" style="padding-top: 20px">
+    <h5>Bienvenue {{user.first_name}} {{user.last_name}}</h5>
+    <p>Vous êtes connecté en tant que {{ user.email }} de la société {{ user.company_name }}</p>
 </div>
+
+

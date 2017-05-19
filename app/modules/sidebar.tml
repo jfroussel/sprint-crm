@@ -25,17 +25,9 @@
 					<li>
 						<a href="#users/update?id=<?=$user->id?>"><i class="zmdi zmdi-account"></i> Mon compte</a>
 					</li>
-					<!--<if "$user->is_superroot">-->
-						<!--<li>-->
-							<!--<a href="#lead/all"><i class="zmdi zmdi-settings"></i> Gestion des leads</a>-->
-						<!--</li>-->
-					<!--</if>-->
 					<if "!$user->group=='admin'">
 					<li>
 						<a href="#parameters/parameters"><i class="zmdi zmdi-settings"></i> Paramètres</a>
-					</li>
-					<li>
-						<a href="#scenarios/all"><i class="zmdi zmdi-tab-unselected"></i> Gestion des scenarios</a>
 					</li>
 					<li>
 						<a href="#templates/all"><i class="zmdi zmdi-tab"></i> Gestion des templates</a>
@@ -56,7 +48,6 @@
 				<li class="sub-menu active">
 					<a href=""><i class="zmdi zmdi-widgets"></i> Consulter</a>
 					<ul>
-                        <!--<li><a class="active" href="#creditors/all">Créanciers</a></li>-->
 						<li><a class="active" href="#debtors/all">Sociétés</a></li>
 						<li><a class="active" href="#contacts/all">Contacts</a></li>
 						<li><a class="active" href="#paperworks/all">Actions</a></li>

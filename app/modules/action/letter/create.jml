@@ -1,5 +1,5 @@
 <div class="modal-header bgm-bluegray m-b-20 ">
-	<h4 class="modal-title c-white t-uppercase">Envoyer un courrier pour le debiteur :  "{{debtor.nom_client}}"<span class="debtor-name"></span> </h4>
+	<h4 class="modal-title c-white t-uppercase">Envoyer un courrier à la société :  "{{raison_sociale}}"<span class="debtor-name"></span> </h4>
 	<div class="timer" id="timer"><span>{{minutes}}</span>:<span>{{seconds}}</span></div>
 </div>
 <div class="modal-body">
@@ -57,52 +57,7 @@
 			</div>
 			<hr>
 		</div>
-		<div class="col-md-12">
-			<h5>Factures</h5>
-			<!--<input class="amount-select-info"  :value="{{debit}}"placeholder="0,00€" type="text" autocomplete="off" readonly>-->
-			<input class="amount-select-info" name="debit" placeholder="0,00€" type="text" autocomplete="off" readonly>
 
-			<h6 class="text-lowercase">(Montant des factures actuellement selectionnées.)</h6>
-			<table
-					is="datatables"
-					j-data-ajax--url="plugins/datatables.json?table=paperwork&where_debtor_id={{debtor.id}}&where_lettrage&whereNot_type_ecriture="
-
-					j-data-checkbox-name="_many2many_paperwork"
-					j-data-scroll-y="200px"
-
-
-					id="paperworks-table-letter"
-					class="table table-striped table-bordered"
-			>
-				<thead>
-				<tr style="font-size: 10px">
-					<th></th>
-					<th data-column="id" data-visible="false">id</th>
-					<th data-column="type_ecriture">type</th>
-					<th data-column="state" data-visible="false">Status</th>
-					<th data-column="state_fr">Statut</th>
-					<th data-column="jours_retard">jours retard</th>
-					<th data-column="date_facture" data-format="dateformat">date </th>
-					<th data-column="numero_piece" data-order="desc">Nr piece</th>
-					<th data-column="date_echeance" data-format="dateformat">echeance</th>
-					<th data-column="journal" data-order="desc">journal</th>
-					<th data-column="debit" data-order="desc">debit</th>
-					<th data-column="credit" data-order="desc">credit</th>
-					<th data-column="mtlit">mtlit.</th>
-					<th data-column="mtir">i.r</th>
-					<th data-column="mtpr">p.r</th>
-					<th data-column="mtcp">c.p</th>
-					<th data-column="mtifr">i.f.r</th>
-					<!--<th data-column="mtfr">f.r</th>-->
-					<th data-column="lettrage">lettrage</th>
-					<th data-column="date_lettrage">date lettrage</th>
-					<!--<th data-action="edit"  data-route="paperworks/update?id="></th>-->
-				</tr>
-				</thead>
-				<tbody></tbody>
-			</table>
-			<hr>
-		</div>
 		<hr>
 		<hr>
 		<div class="modal-footer">

@@ -1,5 +1,5 @@
 import 'validate';
-import 'notifyjs';
+import 'notify-js';
 import 'app.datatables';
 
 import Module from 'module';

@@ -1,4 +1,4 @@
-import 'notifyjs';
+import 'notify-js';
 
 import Module from 'module';
 export default class extends Module {

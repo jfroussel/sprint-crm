@@ -1,6 +1,6 @@
 import 'validate';
 import moment from 'moment';
-import 'notifyjs';
+import 'notify-js';
 import 'app.datatables';
 
 import Module from 'module';

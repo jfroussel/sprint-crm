@@ -42,7 +42,7 @@ class DebtorSms extends AbstractSms{
                 "details" => array(
                     "unsubscribe_text" => "\r\n <small>desinscription</small>",
                     "can_unsubscribe" => false,
-                    "name" => "MyCreance.com",
+                    "name" => "desico.fr",
                     "from_name" => '',
                     "content" => $message
                 ),

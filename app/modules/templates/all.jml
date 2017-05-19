@@ -1,6 +1,6 @@
 <div class="card">
 	<div class="card-header ch-alt">
-		<h2>Gestion des modéles <small>Espace de gestion de vos modéles MyCreance.com.</small></h2>
+		<h2>Gestion des modéles <small>Espace de gestion de vos modéles desico.fr.</small></h2>
 		<div class="pull-right"><a j-href="templates/create" class="btn btn-brown ">Ajouter un modéle</a></div>
 	</div>
 	<hr>

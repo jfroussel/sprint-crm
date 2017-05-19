@@ -1,6 +1,6 @@
 <div class="card">
 	<div class="card-header ch-alt">
-		<h2>Gestion des utilisateurs <small>Espace de gestion de vos utilisateurs MyCreance.com.</small></h2>
+		<h2>Gestion des utilisateurs <small>Espace de gestion de vos utilisateurs desico.fr.</small></h2>
 		<div class="pull-right"><a j-href="users/create" class="btn btn-brown ">Ajouter un utilisateur</a></div>
 	</div>
 

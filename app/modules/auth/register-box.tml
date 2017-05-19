@@ -1,7 +1,7 @@
 <div class="container">
 	<form class="form-signin" method="POST">
 		<input type="hidden" name="action" value="register">
-		<h2 class="form-signin-heading">S'enregistrer sur Mycreance.com</h2>
+		<h2 class="form-signin-heading">S'enregistrer sur desico.fr</h2>
 		<br>
 		<div class="row">
 			<div class="col-md-12">

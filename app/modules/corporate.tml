@@ -1,6 +1,6 @@
 <extend "layout/main">
 	<attr selector="body" addClass="home"/>
-	<prepend title>MyCreance.com</prepend>
+	<prepend title>desico.fr</prepend>
 	<append title> - Recouvrement</append>
 	<merge "header">
 		<include "offres/home.tml">

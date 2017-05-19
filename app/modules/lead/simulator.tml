@@ -1,7 +1,7 @@
 <extend "layout/main">
     <attr selector="body" addClass="home"/>
     <attr selector="body" data-lead-type="<?=$lead->type?>"/>
-    <prepend title>MyCreance.com</prepend>
+    <prepend title>desico.fr</prepend>
     <append title> - simulator</append>
     <merge "header">
 
@@ -40,7 +40,7 @@
                 <div class="row">
                     <div class="col-lg-12 text-center">
                         <h2 class="section-heading">S'inscrire à la newsletter</h2>
-                        <p>Inscrivez-vous à la newsletter pour recevoir des informations sur Mycreance.com.</p>
+                        <p>Inscrivez-vous à la newsletter pour recevoir des informations sur desico.fr.</p>
                     </div>
                 </div>
                 <div class="row">

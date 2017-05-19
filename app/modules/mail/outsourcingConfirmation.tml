@@ -1,4 +1,4 @@
 
-<h1>Création de votre compte sur Mycreance.com</h1>
+<h1>Création de votre compte sur desico.fr</h1>
 
 <a href="<?=$baseHref?>/auth/make-password?key=<?=$token?>">Créer un mot de passe</a>

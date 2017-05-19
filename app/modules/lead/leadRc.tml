@@ -2,7 +2,7 @@
 	
     <attr selector="body" addClass="home"/>
     <attr selector="body" data-lead-category="<?=App\Model\Lead::REACTIVATION_CREANCE?>"/>
-    <prepend title>MyCreance.com</prepend>
+    <prepend title>desico.fr</prepend>
 	<append title> - Recouvrement de creance</append>
 	<remove "#navbar-items" />
 	<append "header">

@@ -9,7 +9,7 @@
                 <div class="text-left">
                     <p class="c-gray">Expediteur :</p>
 
-                    <h4>MyCreance.com</h4>
+                    <h4>desico.fr</h4>
 
                     <span class="text-muted">
                         <address>
@@ -19,7 +19,7 @@
                         </address>
 
                         01 56 56 65 16<br/>
-                        info@mycreance.com
+                        info@desico.fr
                     </span>
                 </div>
             </div>
@@ -163,13 +163,13 @@
     <footer class="m-t-15 p-20">
         <ul class="list-inline text-center list-unstyled">
             <li class="m-l-5 m-r-5">
-                <small>support@mycreance.com</small>
+                <small>support@desico.fr</small>
             </li>
             <li class="m-l-5 m-r-5">
                 <small>01 56 56 65 16</small>
             </li>
             <li class="m-l-5 m-r-5">
-                <small>www.mycreance.com</small>
+                <small>www.desico.fr</small>
             </li>
         </ul>
     </footer>
@@ -191,7 +191,7 @@
                     <div>
                         <p>Expediteur :</p>
 
-                        <h4>MyCreance.com</h4>
+                        <h4>desico.fr</h4>
 
                         <span>
                         <div>
@@ -201,7 +201,7 @@
                         </div>
 
                         01 56 56 65 16<br/>
-                        info@mycreance.com
+                        info@desico.fr
                         </span>
                     </div>
                 </td>
@@ -319,7 +319,7 @@
                 </tr>
             </table>
 
-        <p> support@mycreance.com - 01 56 56 65 16 - www.mycreance.com</p>
+        <p> support@desico.fr - 01 56 56 65 16 - www.desico.fr</p>
     </div>
 </div>
 

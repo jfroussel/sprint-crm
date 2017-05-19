@@ -1,5 +1,5 @@
 
-<h1>Confirmation de votre commande <?= $lead->mandat_number ?> sur Mycreance.com</h1>
+<h1>Confirmation de votre commande <?= $lead->mandat_number ?> sur desico.fr</h1>
 
 <if "$create">
 	<a href="<?=$baseHref?>/auth/make-password?key=<?=$token?>">Créer un mot de passe</a>

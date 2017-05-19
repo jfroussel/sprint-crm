@@ -1,5 +1,5 @@
 <div class="modal-header bgm-bluegray m-b-20 ">
-    <h4 class="modal-title c-white t-uppercase">Modifier un contact  pour le debiteur :  "{{debtor.nom_client}}"  <span class="debtor-name"></span> </h4>
+    <h4 class="modal-title c-white t-uppercase">Modifier un contact  pour le societe :  "{{debtor.nom_client}}"  <span class="debtor-name"></span> </h4>
 </div>
 <div class="modal-body">
     <form class="form-horizontal" j-name="contact"  id="contact" autocomplete="off">

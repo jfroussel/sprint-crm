@@ -20,8 +20,8 @@
 			<div id="modalBody" class="modal-body"></div>
 			<div class="modal-footer">
 				<button type="submit" class="btn btn-default" data-dismiss="modal">Enregistrer &fermer</button>
-				<!--<button class="btn btn-primary"><a id="eventUrl" target="_blank">Fiche du debiteur</a></button>-->
-				<a class="btn btn-primary"  id="eventUrl">Fiche du debiteur</a>
+				<!--<button class="btn btn-primary"><a id="eventUrl" target="_blank">Fiche du societe</a></button>-->
+				<a class="btn btn-primary"  id="eventUrl">Fiche du societe</a>
 			</div>
 		</div>
 	</div>

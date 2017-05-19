@@ -1,6 +1,6 @@
 <div class="container-fluid">
     <div class="row" >
-        <h3>Rechercher le debiteur</h3>
+        <h3>Rechercher le societe</h3>
 
         <table
                 is="datatables"

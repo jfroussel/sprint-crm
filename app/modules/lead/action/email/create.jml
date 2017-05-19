@@ -1,7 +1,7 @@
 <form class="form-horizontal" j-name="email"  id="email">
 	<div class="modal-header bgm-bluegray m-b-20 ">
 		<div class="col-md-12">
-			<h4 class="modal-title c-white t-uppercase">Envoyer un email au debiteur :  "{{debtor.nom_client}}" <span class="debtor-name"></span> </h4>
+			<h4 class="modal-title c-white t-uppercase">Envoyer un email au societe :  "{{debtor.nom_client}}" <span class="debtor-name"></span> </h4>
 			<div class="timer" id="timer"><span>{{minutes}}</span>:<span>{{seconds}}</span></div>
 		</div>
 	</div>

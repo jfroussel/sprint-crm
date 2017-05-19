@@ -268,7 +268,7 @@
 										<option value="creancier-directeur-commercial">le directeur commercial</option>
 										<option value="creancier-comptable">le comptable</option>
 									</optgroup>
-									<optgroup label="pour le debiteur">
+									<optgroup label="pour le societe">
 										<option value="debiteur-contact">le contact preferentiel</option>
 										<option value="debiteur-comptable">le comptable</option>
 									</optgroup>

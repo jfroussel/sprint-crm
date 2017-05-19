@@ -27,7 +27,7 @@
 						<p class="c-black f-500 m-b-20">Contact(s)</p>
 						<div class="select">
 							<select class="form-control"  name="destinataire" autocomplete="off">
-								<option value="">Contact preférentiel du debiteur</option>
+								<option value="">Contact preférentiel du societe</option>
 								<option j-for="contact in contactsList" :value="{{contact.id}}">{{contact.nom}} {{contact.prenom}}</option>
 							</select>
 						</div>

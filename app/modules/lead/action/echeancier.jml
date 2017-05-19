@@ -1,5 +1,5 @@
 <div class="modal-header bgm-bluegray m-b-20 ">
-	<h4 class="modal-title c-white t-uppercase">Ajouter un échéancier pour le debiteur :  "{{nom_client}}"  <span class="debtor-name"></span> </h4>
+	<h4 class="modal-title c-white t-uppercase">Ajouter un échéancier pour le societe :  "{{nom_client}}"  <span class="debtor-name"></span> </h4>
 </div>
 <div class="modal-body">
 	<div class="col-md-12">

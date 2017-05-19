@@ -1,5 +1,5 @@
 <div class="modal-header bgm-bluegray m-b-20 ">
-	<h4 class="modal-title c-white t-uppercase">Ajouter une note dans l'historique  pour le debiteur : "{{debtor.nom_client}}"  <span class="debtor-name"></span></h4>
+	<h4 class="modal-title c-white t-uppercase">Ajouter une note dans l'historique  pour le societe : "{{debtor.nom_client}}"  <span class="debtor-name"></span></h4>
 	<div class="timer" id="timer"><span>{{minutes}}</span>:<span>{{seconds}}</span></div>
 </div>
 <div class="modal-body">
@@ -27,7 +27,7 @@
 						<p class="c-black f-500 m-b-20">Contact(s)</p>
 						<div class="select">
 							<select class="form-control"  name="destinataire" autocomplete="off">
-								<option value="">Contact preférentiel du debiteur</option>
+								<option value="">Contact preférentiel du societe</option>
 								<option j-for="contact in contactsList" :value="{{contact.id}}">{{contact.nom}} {{contact.prenom}}</option>
 							</select>
 						</div>

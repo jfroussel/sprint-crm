@@ -1,5 +1,5 @@
 <div class="modal-header bgm-bluegray m-b-20 ">
-	<h4 class="modal-title c-white t-uppercase">Ajouter une note dans l'agenda  pour le debiteur : "{{debtor.nom_client}}"  <span class="debtor-name"></span> </h4>
+	<h4 class="modal-title c-white t-uppercase">Ajouter une note dans l'agenda  pour le societe : "{{debtor.nom_client}}"  <span class="debtor-name"></span> </h4>
 	<div class="timer" id="timer"><span>{{minutes}}</span>:<span>{{seconds}}</span></div>
 </div>
 <div class="modal-body">
